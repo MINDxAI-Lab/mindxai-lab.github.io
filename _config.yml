@@ -24,12 +24,12 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Home
+title: MINDxAI Lab
 email: yunmei.liu@louisville.edu
-author: Dr. Yunmei Liu
+author: MINDxAI Lab
 copyright: Copyright ©
 description: >- # this means to ignore newlines until "baseurl:"
-  Yuemei Liu - Assistant Professor at University of Louisville
+  The Modeling Interaction, cogNition, and Decision-making x AI (MINDxAI) Lab at the University of Louisville.
 
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
@@ -128,11 +128,11 @@ yat:
 # If you want to link only specific pages in your header, uncomment
 # this and add the path to the pages in order as they should show up
 header_pages:
-  - index.md
+  - index.markdown
   - Lab.md
-  - Projects.html
-  - Publications.html
-  - News.html
+  - Projects.md
+  - Publications.md
+  - News.markdown
   # - Contact.html
   # - archives.html
   # - categories.html
@@ -143,8 +143,8 @@ header_pages:
 # Page default value
 defaults:
   home:
-    heading: "Dr. Yunmei Liu"
-    subheading: "Assistant Professor at University of Louisville"
+    heading: "MINDxAI Lab"
+    subheading: "Modeling Interaction, cogNition, and Decision-making x AI"
     banner: 
       image: "assets/images/banners/IMG4.jpeg"
       height: "250px"

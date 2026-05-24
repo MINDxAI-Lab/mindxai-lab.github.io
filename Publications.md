@@ -2,7 +2,7 @@
 layout: home
 title: Publications
 ---
-<h1 align="center">PUBLICATIONS</h1>
+<h1 align="center">MINDxAI LAB PUBLICATIONS</h1>
 <!-- <div align='center'><font size='60'>Projects</font></div> -->
 ---
 

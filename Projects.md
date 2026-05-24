@@ -2,7 +2,8 @@
 layout: home
 title: PROJECTS
 ---
-<h1 align="center">CURRENT PROJECTS</h1>
+<h1 align="center">MINDxAI LAB PROJECTS</h1>
+<h2 align="center">CURRENT PROJECTS</h2>
 <!-- <div align='center'><font size='60'>Projects</font></div> -->
 ---
 
@@ -70,7 +71,7 @@ img  {
 
 
 
-<h1 align="center">PAST PROJECTS</h1>
+<h2 align="center">PAST PROJECTS</h2>
 ---
 <br/>
 
@@ -86,7 +87,7 @@ img  {
 
 <img height='200' width='300' align="right" src="/assets/images/banners/dissertation1.jpeg"/>
  <p style="text-align:justify; text-justify:inter-ideograph;">
-<font size=3>During the operation of automated systems, if a user cannot accurately understand the structure and function of automation of the system, it is likely that distrust or over-trust in the automation will occur. To address this research gap, my dissertation research developed a continuous “automation rate (AR)” function to quantify levels of automation in complex  systems. In addition, I proposed a new relationship between the AR function and operator situation awareness responses, based on existing empirical research findings. <br/> 
+<font size=3>During the operation of automated systems, if a user cannot accurately understand the structure and function of automation of the system, it is likely that distrust or over-trust in the automation will occur. This research developed a continuous automation rate (AR) function to quantify levels of automation in complex systems and proposed a new relationship between the AR function and operator situation awareness responses, based on existing empirical research findings. <br/>
 <a href="{% post_url 2019-09-01-Dissertation %}">READ MORE</a><br/><br/>
 </font>
 </p>
@@ -123,7 +124,7 @@ img  {
 <img height='200' width='300' align="right" src="/assets/images/banners/other1.png"/>
  <p style="text-align:justify; text-justify:inter-ideograph;">
 
-<font size=3>In addition to the above research studies, I have also been involved in other projects on systems safety analysis research, unmanned aerial vehicle interface design, consistency in the design of interchanges in high-density traffic corridors and non-safety-related in-vehicle and on-road message displays.  <br/><br/><br/><br/>
+<font size=3>In addition to the research studies highlighted above, the MINDxAI Lab works on systems safety analysis, unmanned aerial vehicle interface design, consistency in the design of interchanges in high-density traffic corridors, and non-safety-related in-vehicle and on-road message displays.  <br/><br/><br/><br/>
 
 <a href="{% post_url 2019-09-01-Other %}">READ MORE</a><br/><br/>
 </font>

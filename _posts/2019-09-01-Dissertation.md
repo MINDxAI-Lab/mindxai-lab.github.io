@@ -7,7 +7,7 @@ tags: [project]
 ---
 <font size=3>
 <p style="text-align:justify; text-justify:inter-ideograph;">
-During the operation of automated systems, if a user cannot accurately understand the structure and function of automation of the system, it is likely that distrust or over-trust in the automation will occur. To address this research gap, my dissertation research developed a continuous “automation rate” function to quantify levels of automation in complex  systems. In addition, I proposed a new relationship between the AR function and operator situation awareness responses, based on existing empirical research findings.
+During the operation of automated systems, if a user cannot accurately understand the structure and function of automation of the system, it is likely that distrust or over-trust in the automation will occur. To address this research gap, this work developed a continuous automation rate function to quantify levels of automation in complex systems. It also proposed a new relationship between the AR function and operator situation awareness responses, based on existing empirical research findings.
 </p>
 </font>
 

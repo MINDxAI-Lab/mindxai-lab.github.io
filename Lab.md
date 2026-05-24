@@ -3,7 +3,7 @@ layout: home
 title: Lab
 ---
 
-<h1 align="center">Human-Centric AI Lab</h1>
+<h1 align="center">MINDxAI Lab</h1>
 <!-- <div align='center'><font size='60'>Projects</font></div> -->
 
 <!-- <div style="float:left;">Address: 401 Weil Hall, P.O. Box 116595, Gainesville, FL 32611</div>
@@ -27,11 +27,20 @@ img  {
 
 <!-- <h1 align="center">ABOUT</h1> -->
 <font size=3>
-Human-centric AI is an approach to artificial intelligence (AI) that places humans at the heart of its design, development, and deployment. It's about creating AI systems that understand and adapt to human needs and contexts, ensuring that technology enhances human capabilities. <br/><br/>
+The Modeling Interaction, cogNition, and Decision-making x AI (MINDxAI) Lab develops human-centered AI and human-in-the-loop systems grounded in human factors and data-driven modeling. The lab is directed by Dr. Yunmei Liu in the Industrial and Systems Engineering Department at the University of Louisville. <br/><br/>
 
-To achieve this, we are using wearable sensors to gather a wide range of data, including physiological signals like heart rate, skin conductance, and even brain activity, as well as performance metrics such as task completion time and error rates. By analyzing this rich dataset with machine learning and statistical methods, we can model human performance and behavior with remarkable accuracy. <br/><br/>
+Our research focuses on modeling interaction, cognition, and decision-making with AI. We study human states, workload, situation awareness, performance, and behavior using experimental methods, wearable sensors, physiological signals, behavioral data, machine learning, and statistical modeling. <br/><br/>
 
-Human-Centric AI allows AI systems that not only understand our instructions but also our intentions, emotions, and limitations, paving the way for a future where human-AI collaboration is as natural and intuitive as human-human interaction.<br/><br/>
+The lab applies these approaches to healthcare, transportation, automated driving, aviation, robotics, and intelligent adaptive systems. Our goal is to design AI-enabled systems that understand human capabilities and limitations, support better decisions, and improve safety and effectiveness in complex environments.<br/><br/>
+</font>
+
+<h3>Ph.D. Students</h3>
+<font size=3>
+<b>Moajjem Chowdhury</b> - Human States Modeling, Multimodal Learning<br/>
+<b>Yan Chen</b> - Human-Automation Interaction, Human-Centered AI<br/>
+<b>Udit Das</b> - Performance Modeling, Human-AI Teaming<br/>
+<b>Qunli Liu</b> - Behavioral Data Analysis, Statistical Modeling<br/>
+<b>Ming Lu</b> - Human-Robot Interaction, Intelligent Adaptive Systems<br/><br/>
 </font>
 
 <!-- <h3 align="left" style="color: orangered;">We are excited to announce openings for two fully-funded PhD positions within our team. Click <a href="/assets/images/banners/PhD position.pdf">HERE</a> to for more details!</h3> -->
@@ -43,7 +52,7 @@ University of Louisville<br/>
 Department of Industrial Engineering<br/>
 132 Eastern Pkey, JS 309<br/>
 Louisville, KY, 40292<br/>
-<b>Emmail:</b> yunmei.liu@louisville.edu<br/>
+<b>Email:</b> yunmei.liu@louisville.edu<br/>
 <b>Phone:</b> 502-852-8858 <br/><br/>
 
 
@@ -64,8 +73,6 @@ Louisville, KY, 40292<br/>
 <!-- tracking visitors   -->
 <br/>
 <body><a href="https://clustrmaps.com/site/1bwrx"  title="Visit tracker"><img height='1' align="right" src="//www.clustrmaps.com/map_v2.png?d=3W4pPMZqPb9nCSSxEQxL9bDwrCfcMUhmw1Nxnxl3Ok8&cl=ffffff" /></a></body>
-
-
 
 
 

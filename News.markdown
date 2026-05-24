@@ -3,12 +3,14 @@ layout: home
 title: News
 # permalink: /about/
 ---
-<h1 align="center">NEWS</h1>
+<h1 align="center">MINDxAI LAB NEWS</h1>
 <!-- <div align='center'><font size='60'>Projects</font></div> -->
 
 ---
 
 <br/>
+
++ <font size=3>The MINDxAI Lab develops human-centered AI and human-in-the-loop systems in the Industrial and Systems Engineering Department at the University of Louisville. [Current] <br/><br/>
 
 + <font size=3><a href="https://www.ise.ufl.edu/awards/departmental-awards/?" target="_blank">Received the <b>2023 Linda Parker Hudson Graduate Fellowship</b> award from ISE Department - University of Florida ($2,500)</a> [March, 2023] <br/><br/>
 
@@ -30,7 +32,6 @@ title: News
 + <font size=3><a href="https://www.ise.ufl.edu/blog/2022/04/david-kaber-ph-d-and-team-use-augmented-reality-to-aid-in-extreme-operational-tasks/?" target="_blank">Got involved in DARPA project to use augmented reality to aid in extreme operational tasks</a> [April, 2022] <br/><br/>
 
 <img src="/assets/images/banners/IMG_5380.jpeg"/><br/><br/>
-
 
 
 

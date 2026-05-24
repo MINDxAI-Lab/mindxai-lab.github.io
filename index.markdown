@@ -1,154 +1,108 @@
 ---
-# Feel free to add content and custom Front Matter to this file.
-# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-#IMG_3204
 layout: home
----
-<h1 align="center">HOME</h1>
-<!-- <div align='center'><font size='60'>Projects</font></div> -->
+title: Home
 ---
 
-<br/> 
-<!-- <style>
-img  {
-  float: right;
-  margin-left: 20px;
-}
-</style> -->
-
-
-<!-- <img height='450' align="right" src="assets/images/banners/IMG_3204.jpeg"/> 
- <p style="text-align:justify; text-justify:inter-ideograph;"> -->
-<font size=3>Hi! I am an Assistant Professor in the <a href="https://engineering.louisville.edu/academics/departments/industrial/" target="_blank">Industrial Engineering Department</a> at the <a href="https://louisville.edu/" target="_blank">University of Louisville</a>, and I am affiliated with the  <a href="https://engineering.louisville.edu/research/centersinstitutes/larri/" target="_blank">Louisville Automation & Robotics Research Institute (LARRI)</a>. In addition, I am also a Theme Director for Human-Centric AI at the <a href="https://engineering.louisville.edu/research/centersinstitutes/human-systems-engineering/" target="_blank">Center for Human Systems Engineering (CHSE)</a>, enriching the center's focus on integrating AI and human factors.<br/><br/>
-
-
-<html>
-    <head>
-
-         <title>Changing Bullet Colors</title>
-
-         <style>
-
-             h3{
-
-                 color:orangered;
-
-             }
-
-             ul{
-
-                 list-style: none;
-
-             }
-
-             ul li::before {
-
-                 /* \2022 is the CSS Code/unicode for a disc */
-
-                 content: "\2022";  
-
-                 color: inline-block; 
-
-                 display: inline-block; 
-
-                 width: 1em;
-
-                 margin-left: -0.9em;
-
-                 font-weight: bold;
-
-                 font-size:1.1rem;
-
-             }
-
-         </style>
-
-   </head>
-
-   <body>
-
-     <h3>Educational Background:</h3>
-
-     <!-- Create an Unordered List -->
-
-     <ul>
-
-         <li><b>Ph.D.,</b> Industrial and Systems Engineering, University of Florida, 2023</li>
-
-         <li><b>Ph.D. Minor,</b> Statistics, University of Florida, 2023</li>
-
-         <li><b>M.S.,</b> Management Science and Engineering, Nanjing University, 2019</li>
-
-         <li><b>B.S.,</b> Industrial Engineering, Shandong University, 2016</li>
-
-     </ul>
-
-   <!-- </body>
-
-
-   <body> -->
-
-     <h3>Research Interests:</h3>
-
-
-     <ul>
-
-        Human factors, human-automation interaction, quantitative modeling, cognitive modeling, human behavior modeling, wearable technology, data analytics, statistics, machine learning, deep learning 
-
-     </ul>
-
-    <h3>Awards & Honors:</h3>
-
-     <!-- Create an Unordered List -->
-
-     <ul>
-
-        <li>Linda Parker Hudson Graduate Fellowship Award ($2,500), University of Florida, 2023</li>
-        <li>Harold D. Haldeman, Jr. Fellowship Award ($2,000), University of Florida, 2022</li>
-        <li>Certificates of Outstanding Achievement, University of Florida, 2022</li>
-        <li>Academic Scholarship ($1,200), Nanjing University, 2016, 2017, 2018</li>
-        <li>Excellent Student Fellowship Award, Shandong University, 2013, 2014, 2015</li>
-        <li>Outstanding Undergraduate Graduation Thesis, Shandong University, 2016</li>
-        <li>The Most Outstanding Student at Shandong University, Shandong University, 2015</li>
- 
-
-     </ul>
-    <h3>Teaching Experience:</h3>
-
-     <!-- Create an Unordered List -->
-
-     <ul>
-
-        <li>IE 360 - Probability and Statistics for Engineers (Undergraduate Level), University of Louisville, Spring 2024</li>
-        <li>IE 560 - Probability and Statistics for Engineers (Graduate Level), University of Louisville, Spring 2024</li>
-        <li>ESI 6553 - Systems Management, University of Florida, Summer 2021-2023</li>
- 
-
-     </ul> 
-    <h3>Community Services:</h3>
-
-     <!-- Create an Unordered List -->
-
-     <ul>
-
-        <li><b>Reviewer:</b> <i>IEEE Transactions on Human-Machine Systems, Human Factors, Applied Ergonomics, Cognition, Technology and Work, 3rd International Conference on Human-Machine Systems</i></li>
-    
-
-     </ul> 
-   </body>
-
-</html>
-
-<!-- My research covers a range of application areas including transportation, medical systems, and defense systems. If you'd like to learn more about my research experience, please visit my <a href="/Projects.html" target="_blank">PROJECTS</a> page. <br/><br/><br/> -->
-
-<!-- <b>Click <a href="/assets/images/banners/Update_CV_YL_0928.pdf" download="cv.pdf">HERE</a> to download my resume.</b><br/><br/><br/> -->
-
-
-
-</font>
- <!-- </p> -->
-
-
-
-
-
+<style>
+  .lab-hero {
+    display: grid;
+    grid-template-columns: minmax(0, 1.2fr) minmax(280px, 0.8fr);
+    gap: 28px;
+    align-items: start;
+  }
+
+  .lab-hero img {
+    width: 100%;
+    max-width: 420px;
+    border-radius: 8px;
+  }
+
+  .lab-section {
+    margin-top: 28px;
+  }
+
+  .lab-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 14px 24px;
+  }
+
+  .lab-people {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 18px;
+  }
+
+  .lab-person {
+    border-left: 3px solid #389092;
+    padding-left: 12px;
+  }
+
+  @media (max-width: 760px) {
+    .lab-hero,
+    .lab-grid,
+    .lab-people {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
+
+<h1 align="center">MINDxAI Lab</h1>
+<h2 align="center">Modeling Interaction, cogNition, and Decision-making x AI</h2>
+
+<div class="lab-hero">
+  <div>
+    <font size=3>
+      <p style="text-align:justify; text-justify:inter-ideograph;">
+        The Modeling Interaction, cogNition, and Decision-making x AI (MINDxAI) Lab develops human-centered AI and human-in-the-loop systems grounded in human factors and data-driven modeling. Our research focuses on understanding human states, cognition, interaction, and decision-making so intelligent systems can support people in safer and more effective ways.
+      </p>
+
+      <p style="text-align:justify; text-justify:inter-ideograph;">
+        The lab is directed by Dr. Yunmei Liu in the Department of Industrial and Systems Engineering at the University of Louisville. We use experimental methods, wearable sensing, physiological measures, machine learning, statistical modeling, and interface evaluation to study human performance across complex sociotechnical systems.
+      </p>
+    </font>
+  </div>
+
+  <div>
+    <img src="/assets/images/banners/MINDxAI-signage.png" alt="MINDxAI Lab overview signage"/>
+  </div>
+</div>
+
+<div class="lab-section">
+  <h3>Research Areas</h3>
+  <div class="lab-grid">
+    <div><b>Human States Modeling</b><br/>Multimodal learning from behavioral, physiological, and performance data.</div>
+    <div><b>Human-Automation Interaction</b><br/>Design and evaluation of human-centered AI and automation systems.</div>
+    <div><b>Performance Modeling</b><br/>Data-driven models of cognition, workload, situation awareness, and decision-making.</div>
+    <div><b>Application Domains</b><br/>Healthcare, transportation, automated driving, aviation, robotics, and adaptive systems.</div>
+  </div>
+</div>
+
+<div class="lab-section">
+  <h3>Lab Director</h3>
+  <font size=3>
+    <p>
+      <b>Dr. Yunmei Liu</b> is an Assistant Professor in the Industrial and Systems Engineering Department. Her research uses experimental and data-driven approaches to understand human limitations and inform the design of safer, more effective systems.
+    </p>
+  </font>
+</div>
+
+<div class="lab-section">
+  <h3>Ph.D. Students</h3>
+  <div class="lab-people">
+    <div class="lab-person"><b>Moajjem Chowdhury</b><br/>Human States Modeling<br/>Multimodal Learning</div>
+    <div class="lab-person"><b>Yan Chen</b><br/>Human-Automation Interaction<br/>Human-Centered AI</div>
+    <div class="lab-person"><b>Udit Das</b><br/>Performance Modeling<br/>Human-AI Teaming</div>
+    <div class="lab-person"><b>Qunli Liu</b><br/>Behavioral Data Analysis<br/>Statistical Modeling</div>
+    <div class="lab-person"><b>Ming Lu</b><br/>Human-Robot Interaction<br/>Intelligent Adaptive Systems</div>
+  </div>
+</div>
+
+<div class="lab-section">
+  <h3>Explore</h3>
+  <font size=3>
+    <p>
+      Learn more about our <a href="/Lab.html">lab mission</a>, <a href="/Projects.html">research projects</a>, <a href="/Publications.html">publications</a>, and <a href="/News.html">news</a>.
+    </p>
+  </font>
+</div>
