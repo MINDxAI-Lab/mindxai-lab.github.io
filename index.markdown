@@ -182,38 +182,41 @@ title: Home
 
 <div class="mindxai-home">
   <h1>MINDxAI Lab</h1>
-  <p class="lead">Modeling Interaction, cogNition, and Decision-making x AI</p>
+  <!-- <p class="lead">Modeling Interaction, cogNition, and Decision-making by Artificial Intelligence</p> -->
 
   <div class="home-section">
     <p>
-      The Modeling Interaction, cogNition, and Decision-making x AI (MINDxAI) Lab develops human-centered AI and human-in-the-loop systems grounded in human factors, cognitive systems engineering, and data-driven modeling. Our work focuses on understanding human states, interaction, cognition, and decision-making so intelligent systems can better support people in complex environments.
+      The MINDxAI Lab develops human-centered AI and human-in-the-loop systems grounded in human factors and data-driven modeling. The lab is housed in the Department of Industrial and Systems Engineering at the University of Louisville.
     </p>
     <p>
-      The lab is housed in the Department of Industrial and Systems Engineering at the University of Louisville. We combine experimental studies, wearable sensing, physiological measures, behavioral data, machine learning, statistical modeling, and interface evaluation to model human performance and inform the design of safer, more effective technologies.
+      Our research focuses on modeling interaction, cognition, and decision-making with AI. We study human states, workload, situation awareness, performance, and behavior using experimental methods, wearable sensors, physiological signals, behavioral data, machine learning, and statistical modeling.
+    </p>
+    <p>
+      The lab applies these approaches to healthcare, transportation, automated driving, aviation, robotics, and intelligent adaptive systems. Our goal is to design AI-enabled systems that understand human capabilities and limitations, support better decisions, and improve safety and effectiveness in complex environments.
     </p>
   </div>
 
   <div class="mindxai-carousel" data-carousel>
     <div class="carousel-stage">
       <figure class="carousel-slide is-active">
-        <img src="/assets/images/banners/IMG1.jpg" alt="Night roadway traffic and transportation systems">
-        <figcaption>Human factors and transportation systems</figcaption>
+        <img src="/assets/images/banners/Updated%20Images/Picture1.jpg" alt="MINDxAI Lab activity photo">
+        <figcaption>MINDxAI Lab research</figcaption>
       </figure>
       <figure class="carousel-slide">
-        <img src="/assets/images/banners/WechatIMG13.jpeg" alt="Open road representing future mobility and automated systems">
-        <figcaption>Human-centered AI for emerging mobility and automation</figcaption>
+        <img src="/assets/images/banners/Updated%20Images/Picture2.png" alt="MINDxAI Lab group photo">
+        <figcaption>Human states modeling and driving safety</figcaption>
       </figure>
       <figure class="carousel-slide">
-        <img src="/assets/images/banners/NSF.png" alt="NSF project illustration for EMG-based assistive interface design">
+        <img src="/assets/images/banners/Updated%20Images/Picture51.png" alt="NSF project illustration for EMG-based assistive interface design">
         <figcaption>Assistive human-machine interface design</figcaption>
       </figure>
       <figure class="carousel-slide">
-        <img src="/assets/images/banners/DARPA1.png" alt="DARPA project illustration for augmented reality task guidance">
-        <figcaption>Real-time perceptually enabled task guidance</figcaption>
-      </figure>
+        <img src="/assets/images/banners/Updated%20Images/Picture7.png" alt="MINDxAI Lab research photo">
+        <figcaption>Human-AI-Teaming research</figcaption>
+        </figure>
       <figure class="carousel-slide">
-        <img src="/assets/images/banners/REU.png" alt="REU advanced manufacturing and supply chain program graphic">
-        <figcaption>Research training in advanced manufacturing and supply chain systems</figcaption>
+        <img src="/assets/images/banners/Updated%20Images/Retreat%20dinner.png" alt="MINDxAI Lab retreat dinner">
+      <figcaption>MINDxAI Lab retreat dinner</figcaption>
       </figure>
     </div>
     <button class="carousel-control prev" type="button" data-carousel-prev aria-label="Previous image">&lsaquo;</button>

@@ -53,10 +53,11 @@ title: Opportunities
   <section class="opportunity-section">
     <h2>Prospective Ph.D. Students</h2>
     <p>
-      Prospective Ph.D. students with interests in human factors, industrial engineering, computer science, cognitive science, data science, robotics, healthcare systems, transportation, or related areas are encouraged to contact Dr. Yunmei Liu.
+      At this time, we have already filled all available Ph.D. positions for this year. We appreciate your interest in our lab, and encourage you to keep an eye on future opportunities as they become available.
+      <!-- Prospective Ph.D. students with interests in human factors, industrial engineering, computer science, cognitive science, data science, robotics, healthcare systems, transportation, or related areas are encouraged to contact Dr. Yunmei Liu. -->
     </p>
     <p>
-      Please include a brief statement of research interests, a CV or resume, unofficial transcripts, and any representative publications, project reports, or portfolio links.
+      <!-- Please include a brief statement of research interests, a CV or resume, unofficial transcripts, and any representative publications, project reports, or portfolio links. -->
     </p>
     <a class="opportunity-link" href="/assets/images/banners/PhD%20position.pdf">Ph.D. position information</a>
   </section>
@@ -69,7 +70,7 @@ title: Opportunities
   </section>
 
   <section class="opportunity-section">
-    <h2>Postdoctoral and Visiting Researchers</h2>
+    <h2>Visiting and Remote Researchers</h2>
     <p>
       Researchers whose work aligns with human-centered AI, cognitive systems engineering, human performance modeling, or applied human factors are welcome to reach out about possible collaboration and visiting opportunities.
     </p>

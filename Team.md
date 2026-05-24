@@ -119,12 +119,12 @@ title: Team
     MINDxAI Lab brings together researchers studying human-centered AI, human-machine interaction, cognition, decision-making, and intelligent adaptive systems.
   </p>
 
-  <img class="team-overview" src="/assets/images/banners/MINDxAI-signage.png" alt="MINDxAI Lab team overview">
+  <!-- <img class="team-overview" src="/assets/images/banners/MINDxAI-signage.png" alt="MINDxAI Lab team overview"> -->
 
   <section class="team-section">
     <h2>Lab Director</h2>
     <div class="director-profile">
-      <img src="/assets/images/banners/IMG_3204.jpeg" alt="Dr. Yunmei Liu">
+      <img src="/assets/images/banners/Updated Images/LIU, YUNMEI.jpg" alt="Dr. Yunmei Liu">
       <div>
         <h3>Dr. Yunmei Liu</h3>
         <p>
