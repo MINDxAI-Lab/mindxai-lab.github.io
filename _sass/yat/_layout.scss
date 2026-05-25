@@ -230,22 +230,26 @@ html {
 
   .site-footer-inner {
     transition: border-top 0.2s;
-    padding: $spacing-unit * 1.8 0;
+    padding: $spacing-unit * 0.65 0 $spacing-unit 0;
   }
 
   .footer-acknowledgement {
-    margin-bottom: $spacing-unit;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: $spacing-unit * 0.35;
 
     p {
-      margin: 0 0 10px;
+      margin: 0;
       color: $text-color;
       font-weight: 600;
+      white-space: nowrap;
     }
   }
 
   .footer-sponsor-logo {
     display: block;
-    width: 260px;
+    width: 174px;
     max-width: 100%;
     height: auto;
   }
@@ -253,8 +257,8 @@ html {
   .footer-content-grid {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: $spacing-unit;
-    padding-top: $spacing-unit;
+    gap: $spacing-unit * 0.8;
+    padding-top: $spacing-unit * 0.5;
     border-top: 1px solid rgba(0, 0, 0, 0.12);
   }
 
@@ -265,8 +269,8 @@ html {
   }
 
   .footer-line {
-    margin-bottom: 6px;
-    line-height: 1.5;
+    margin-bottom: 4px;
+    line-height: 1.4;
   }
 
   @include media-query($on-palm) {
@@ -275,8 +279,12 @@ html {
       gap: $spacing-unit * 0.75;
     }
 
+    .footer-acknowledgement {
+      gap: 10px;
+    }
+
     .footer-sponsor-logo {
-      width: 220px;
+      width: 144px;
     }
   }
 
