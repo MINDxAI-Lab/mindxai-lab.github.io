@@ -152,14 +152,17 @@ title: Team
     color: #2d8f92;
   }
 
-  .student-profile .student-contact-link img {
+  .student-contact-link img {
     width: 22px !important;
     height: 22px !important;
     min-width: 22px;
     max-width: 22px !important;
+    max-height: 22px !important;
     object-fit: contain;
+    display: inline-block;
     border-radius: 0;
     flex: 0 0 auto;
+    vertical-align: middle;
   }
 
   .member-grid {
