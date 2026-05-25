@@ -102,7 +102,7 @@ title: Team
     padding: 0 0 24px;
   }
 
-  .student-profile img {
+  .student-profile > img {
     width: 190px;
     height: 190px;
     object-fit: cover;
@@ -152,10 +152,13 @@ title: Team
     color: #2d8f92;
   }
 
-  .student-contact-link img {
+  .student-profile .student-contact-link img {
     width: 22px;
     height: 22px;
+    max-width: none;
     object-fit: contain;
+    border-radius: 0;
+    flex: 0 0 auto;
   }
 
   .member-grid {
@@ -233,7 +236,7 @@ title: Team
       text-align: left;
     }
 
-    .student-profile img {
+    .student-profile > img {
       width: 100%;
       height: auto;
       max-width: 220px;
