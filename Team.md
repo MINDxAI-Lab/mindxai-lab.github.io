@@ -312,7 +312,7 @@ title: Team
 
   <section class="team-section">
     <h2>Current Graduate Students</h2>
-    <div class="student-profile">
+<div class="student-profile">
       <img src="/assets/images/banners/Updated%20Images/Yan%20Chen.png" alt="Yan Chen">
       <div>
         <h3>Yan Chen, Ph.D. Student</h3>
@@ -342,7 +342,7 @@ title: Team
         <h3>Moajjem Chowdhury, Ph.D. Student</h3>
         <p>Human States Modeling<br>Multimodal Learning</p>
   <p>
-  <strong>Role in Lab Projects:</strong> Student lead for the lab’s projects on <a href="/Research.html#project-cognitive-emotional-driving-automation">Cognitive-Emotional State Assessment for Advanced Driving Automation</a> and <a href="/Research.html#project-communication-barriers-healthcare">Communication Barriers in Patient-Provider Interactions</a>.
+  <strong>Role in Lab Projects:</strong> Student lead for the lab’s projects on <a href="/Research.html#project-cognitive-emotional-driving-automation">Cognitive-Emotional State Assessment for Adaptive Automation Intervention</a> and <a href="/Research.html#project-communication-barriers-healthcare">Communication Barriers in Patient-Provider Interactions</a>.
 </p>
       <div class="student-contact">
           <span class="student-contact-label">Contact:</span>

@@ -207,116 +207,84 @@ title: Research
 <div class="research-page">
   <h1>Ongoing Research Projects</h1>
   <!-- <p class="research-subtitle">human state sensing → human-AI interaction → adaptive intervention</p> -->
-
-  <section class="research-section" id="theme-human-ai-automation">
-    <div class="research-topic-header">
-      <h2>Research Theme I: Human-AI and Automation Interactions</h2>
-      <p class="research-section-subtitle">We investigate how humans interact with intelligent and automated systems, with a focus on cognitive workload, situation awareness, emotion, trust, and task performance in safety-critical contexts such as driving automation, UAV control, and AI-assisted decision support.</p>
-    </div>
-
-    <article class="research-project" id="project-cognitive-emotional-driving-automation">
+  <section class="research-section" id="theme-adaptive-health-training-safety">
+  <div class="research-topic-header">
+    <h2>Research Theme I: Real-Time Adaptive System Design Guided by Human State Modeling</h2>
+<p class="research-section-subtitle">
+  We design and evaluate adaptive technologies that sense, model, and respond to human cognitive, emotional, physiological, and performance states <b>in real time</b>. Our applied research spans driving, rehabilitation, healthcare, immersive training, and complex work systems.
+</p>
+  </div>
+      <article class="research-project" id="project-cognitive-emotional-driving-automation">
       <figure>
         <img src="/assets/images/banners/Updated Images/Picture2.jpg" alt="NSF EDSE automation intervention project graphic">
         <figcaption>
           <a href="https://www.nsf.gov/awardsearch/show-award/?AWD_ID=2535920&HistoricalAwards=false" target="_blank" rel="noopener">Sponsor: NSF EDSE</a>
           <span>PIs: Yunmei Liu and David Kaber</span>
-
         </figcaption>
       </figure>
       <div>
-        <h3>Cognitive-Emotional State Assessment for Advanced Driving Automation</h3>
-        <p>
-          This NSF CMMI/EDSE-funded project explores an integrated cognitive-emotional state assessment system to support real-time automation intervention design for advanced driving systems. The research combines physiological signals, context-dependent emotional states, cognitive workload modeling, and trust dynamics to develop adaptive automation interventions that can improve operator safety, trust, and performance in automated vehicles.
-        </p>
+        <h3>Cognitive-Emotional State Assessment for Adaptive Automation Intervention</h3>
+<p>
+  This project aims to develop an integrated cognitive-emotional state assessment system to support real-time automation intervention and adaptive system design. By combining physiological sensing, behavioral performance data, and machine learning, the project aims to detect changes in human cognitive workload, emotional state, and task engagement during human-automation interaction.
+</p>
+<p>
+  The resulting models will help identify when and how automation should intervene, adapt, or provide support in order to improve safety. This work contributes to the design of human-centered automation systems that respond not only to task conditions, but also to the evolving cognitive and emotional states of the human operator.
+</p>
         <a class="project-button" href="https://mindxai-lab.github.io/nsf-edse-automation-intervention/" target="_blank" rel="noopener">Website</a>
-
         <a class="project-outline-button" href="https://openaccess-api.cms-conferences.org/articles/download/978-1-964867-75-5_71" target="_blank" rel="noopener">Paper 1: Kumar et al., 2025</a>
-
-
-
         <div class="project-publications">
-          <h4>Prior Related Work</h4>
+<h4>Prior Related Work: Wearable Sensing and Real-Time Human-State Prediction</h4>
           <ol class="project-publication-list">
             <li>
-              <a href="https://pubmed.ncbi.nlm.nih.gov/41457446/" target="_blank" rel="noopener"><b>Liu, Y.</b> and Kaber, D. B. (2025). Models of automation proportion in human-in-the-loop systems and operator situation awareness responses. <i>Ergonomics</i>.</a>
+            <a href="https://ieeexplore.ieee.org/document/10555690" target="_blank" rel="noopener"><b>Liu, Y.</b>, Grimaldi, N., Basnet, N., Wozniak, D., Chen, E., Zahabi, M., Kaber, D. B., and Ruiz, J. (2024). Classifying cognitive workload using machine learning techniques and non-intrusive wearable devices. <i>IEEE International Conference on Human-Machine Systems</i>, pp. 1-6.</a>
             </li>
             <li>
+            <a href="https://ieeexplore.ieee.org/document/10555701" target="_blank" rel="noopener">Grimaldi, N., <b>Liu, Y.</b>, McKendrick, R., Ruiz, J., and Kaber, D. B. (2024). Deep learning forecast of cognitive workload using fNIRS data. <i>IEEE International Conference on Human-Machine Systems</i>, pp. 1-6.</a>
+            </li>
+            <li>
+            <a href="https://openaccess.cms-conferences.org/publications" target="_blank" rel="noopener">Nadri, C., <b>Liu, Y.</b>, Zahabi, M., Kaber, D. B., Ruiz, J., Middleton, M., and McKendrick, R. (2024). Analysis of pre-flight and monitoring tasks using cognitive performance modeling. <i>International Conference on Applied Human Factors and Ergonomics</i>.</a>
+            </li>
+            <li>
+            <a href="https://openaccess.cms-conferences.org/publications" target="_blank" rel="noopener">Grimaldi, N., <b>Liu, Y.</b>, Kaber, D. B., and McKendrick, R. (2024). Deep learning forecast of perceptual load using fNIRS data. <i>International Conference on Applied Human Factors and Ergonomics</i>.</a>
+            </li>
+          </ol>
+<h4>Prior Related Work: Adaptive Automation in Aviation</h4>
+          <ol class="project-publication-list">
+            <!-- <li>
               <a href="https://doi.org/10.1016/j.ijhcs.2024.103287" target="_blank" rel="noopener">Zhang, W., <b>Liu, Y.</b>, and Kaber, D. B. (2024). Effect of interface design on cognitive workload in unmanned aerial vehicle control. <i>International Journal of Human-Computer Studies</i>.</a>
-            </li>
+            </li> -->
             <li>
-              <a href="https://ieeexplore.ieee.org/document/9582630" target="_blank" rel="noopener"><b>Liu, Y.</b> and Kaber, D. B. (2021). Quantitative models for automation rate and situation awareness response: a case study of levels of driving automation. <i>IEEE International Conference on Human-Machine Systems</i>.</a>
+            <a href="https://ieeexplore.ieee.org/abstract/document/10937388" target="_blank" rel="noopener">Wen, S., Middleton, M., Ping, S., &hellip;, <b>Liu, Y.</b>, Kaber, D. B., Zahabi, M., McMahan, R., Quispe, S., McKendrick, R., Qian, J., and Silva, C. (2025). AdaptiveCoPilot: design and testing of a neuroadaptive LLM cockpit guidance system in both novice and expert pilots. <i>IEEE VR</i>.</a>
             </li>
           </ol>
         </div>
       </div>
     </article>
-
-
-    <article class="research-project" id="project-aggressive-driving-mixed-traffic">
+  <article class="research-project" id="project-prosthetic-control">
       <figure>
-        <img src="/assets/images/banners/Updated Images/AD.png" alt="Aggressive Driving project graphic">
+        <img src="/assets/images/banners/NSF.png" alt="EMG-based upper-limb prosthetic control evaluation setup">
         <figcaption>
-         Sponsor: UofL
-          <span>PIs: Yunmei Liu, Yueshuai (Brian) He, Anthony D. McDonald, and Tianlong Chen</span>
+          <!-- Sponsor: NSF -->
+          <!-- <span>Collaborators: Yunmei Liu, Juhye Park, Jason Berman, David Kaber, H. Huang, J. Ruiz, Mahsa Zahabi, and team</span> -->
         </figcaption>
       </figure>
       <div>
-        <h3>Aggressive Driving in Mixed Traffic</h3>
-        <p>
-          This project studies how aggressive driving behaviors in mixed human-AV traffic propagate from individual driver state and local maneuvers to traffic-flow safety and efficiency. The work combines CARLA-SUMO human-in-the-loop experiments, empirical human driver modeling, SUMO/TraCI traffic-flow simulation, and human-aware adaptive AV control to understand how surrounding AV aggressiveness and human driver aggressiveness shape workload, trust, stress, speed choice, braking, lane changes, congestion, and surrogate safety outcomes.
+        <h3>Human-Centered Design for Natural Upper-Limb Prosthetic Control</h3>
+        <p>          This project focuses on advancing upper-limb prosthetic control from conventional control modes toward more natural and intuitive control. Our prior work compared alternative prosthetic control strategies, generated workload and usability evidence for early-stage design, and examined VR as a scalable platform for testing prosthetic manipulation tasks before full physical-device deployment. Together, these studies provide human-centered design guidance for selecting and refining prosthetic control interfaces that better align with users’ movement intentions, improve performance, reduce workload, and support rehabilitation training.
         </p>
+        <a class="project-outline-button" href="https://doi.org/10.1109/TNSRE.2026.3652083" target="_blank" rel="noopener">Paper 1: Liu et al. 2026</a>
+        <a class="project-outline-button" href="https://doi.org/10.1109/THMS.2024.3381094" target="_blank" rel="noopener">Paper 2: Liu et al. 2026</a>
+        <a class="project-outline-button" href="https://doi.org/10.1080/00140139.2023.2221413" target="_blank" rel="noopener">Paper 3: Park et al., 2023a</a>
+        <a class="project-outline-button" href="https://ieeexplore.ieee.org/document/10394286" target="_blank" rel="noopener">Paper 4: Park et al., 2023b</a>
 
-        <!-- <a class="project-button" href="https://mindxai-lab.github.io/nsf-edse-automation-intervention/" target="_blank" rel="noopener">Website</a> -->
+        <a class="project-outline-button" href="https://ieeexplore.ieee.org/document/9980676" target="_blank" rel="noopener">Paper 5: Park et al., 2022</a>
 
-        <a class="project-outline-button" href="https://hfesam2025.conference-program.com/presentation/?id=LECT696&sess=sess263" target="_blank" rel="noopener">Presentation 1: HFES 2025</a>
-
-        <div class="project-publications">
-          <h4>Prior Related Work</h4>
-          <ol class="project-publication-list">
-            <li>
-              <a href="https://doi.org/10.1016/j.aap.2026.108427" target="_blank" rel="noopener">Yang, G., Chase, R. T., <b>Liu, Y.</b>, Pyo, K., Cunningham, C. M., and Kaber, D. B. (2026). Driver behavior analysis at alternative intersection corridors through driving simulator. <i>Accident Analysis & Prevention</i>.</a>
-            </li>
-            <li>
-              <a href="https://doi.org/10.1016/j.apergo.2024.104287" target="_blank" rel="noopener"><b>Liu, Y.</b>, Kaber, D. B., Cunningham, C. M., Chase, R. T., and Pyo, K. (2024). Analysis of driver behavior at grade-separated intersections to support design. <i>Applied Ergonomics</i>.</a>
-            </li>
-          </ol>
-        </div>
       </div>
     </article>
 
-    <!-- <article class="research-project">
-      <img src="/assets/images/banners/NSF.png" alt="NSF project graphic">
-      <div>
-        <h3>EMG-Based Assistive Human-Machine Interface Design</h3>
-        <p>
-          This NSF-funded project develops models of powered-prosthetic user cognitive workload when applying different modes of electromyography (EMG)-based device control. These models can be used to predict workload associated with EMG-based control interfaces in other applications.
-        </p>
-        <a href="{% post_url 2019-12-01-NSF %}">Read more</a>
-      </div>
-    </article>
-
-    <article class="research-project">
-      <img src="/assets/images/banners/DARPA1.png" alt="DARPA project graphic">
-      <div>
-        <h3>Real-Time Perceptually Enabled Task Guidance in Extremes</h3>
-        <p>
-          This DARPA-funded project studies the use of augmented reality for providing knowledge task guidance in extreme situations. The research challenge is to create a data-to-knowledge pipeline from wearable devices to an intelligent agent that can determine what information or guidance to provide to human operators in real time.
-        </p>
-        <a href="{% post_url 2022-01-01-DARPA %}">Read more</a>
-      </div>
-    </article>
-
-    <article class="research-project">
-      <img src="/assets/images/banners/REU.png" alt="REU project graphic">
-      <div>
-        <h3>NSF REU Site in Advanced Manufacturing and Supply Chain</h3>
-        <p>
-          This three-year REU project at the University of Louisville provides a 10-week summer experiential training program. REU students work closely with faculty mentors on research projects motivated by real-world problems and participate in professional development opportunities including workshops, research presentations, and plant tours.
-        </p>
-        <a href="https://www.aqlanlab.org/research/reu/project-6" target="_blank" rel="noopener">Read more</a>
-      </div>
-    </article> -->
   </section>
+
+
 
 <section class="research-section" id="theme-physiological-biomedical-modeling">
   <div class="research-topic-header">
@@ -376,43 +344,88 @@ title: Research
 
   </section>
 
-  <section class="research-section" id="theme-adaptive-health-training-safety">
-  <div class="research-topic-header">
-    <h2>Research Theme III: Adaptive Health, Training, and Safety Technologies</h2>
-    <p class="research-section-subtitle">
-      We design and evaluate adaptive technologies for rehabilitation, immersive training, and complex work systems. Our applied research includes upper-limb prosthetic control, VR-based training, AI-driven law-enforcement training, and risk analysis for safety-critical systems.
-    </p>
-  </div>
 
-      <article class="research-project" id="project-prosthetic-control">
+
+
+
+
+  <section class="research-section" id="theme-human-ai-automation">
+    <div class="research-topic-header">
+      <h2>Research Theme III: Surface Transportation and Human-Automation Interactions</h2>
+      <p class="research-section-subtitle">We investigate how humans interact with intelligent and automated systems, with a focus on cognitive workload, situation awareness, emotion, trust, and task performance in safety-critical contexts such as driving automation, UAV control, and AI-assisted decision support.</p>
+    </div>
+    <article class="research-project" id="project-aggressive-driving-mixed-traffic">
       <figure>
-        <img src="/assets/images/banners/NSF.png" alt="EMG-based upper-limb prosthetic control evaluation setup">
+        <img src="/assets/images/banners/Updated Images/AD.png" alt="Aggressive Driving project graphic">
         <figcaption>
-          <!-- Sponsor: NSF -->
-          <!-- <span>Collaborators: Yunmei Liu, Juhye Park, Jason Berman, David Kaber, H. Huang, J. Ruiz, Mahsa Zahabi, and team</span> -->
+         Sponsor: UofL
+          <span>PIs: Yunmei Liu, Yueshuai (Brian) He, Anthony D. McDonald, and Tianlong Chen</span>
         </figcaption>
       </figure>
       <div>
-        <h3>Human-Centered Design for Natural Upper-Limb Prosthetic Control</h3>
+        <h3>Aggressive Driving in Mixed Traffic</h3>
         <p>
-          This project focuses on advancing upper-limb prosthetic control from conventional control modes toward more natural and intuitive control. Our prior work compared alternative prosthetic control strategies, generated workload and usability evidence for early-stage design, and examined VR as a scalable platform for testing prosthetic manipulation tasks before full physical-device deployment. Together, these studies provide human-centered design guidance for selecting and refining prosthetic control interfaces that better align with users’ movement intentions, improve performance, reduce workload, and support rehabilitation training.
+          This project studies how aggressive driving behaviors in mixed human-AV traffic propagate from individual driver state and local maneuvers to traffic-flow safety and efficiency. The work combines CARLA-SUMO human-in-the-loop experiments, empirical human driver modeling, SUMO/TraCI traffic-flow simulation, and human-aware adaptive AV control to understand how surrounding AV aggressiveness and human driver aggressiveness shape workload, trust, stress, speed choice, braking, lane changes, congestion, and surrogate safety outcomes.
         </p>
-
-        <a class="project-outline-button" href="https://doi.org/10.1109/TNSRE.2026.3652083" target="_blank" rel="noopener">Paper 1: Liu et al. 2026</a>
-
-        <a class="project-outline-button" href="https://doi.org/10.1109/THMS.2024.3381094" target="_blank" rel="noopener">Paper 2: Liu et al. 2026</a>
-
-
-        <a class="project-outline-button" href="https://doi.org/10.1080/00140139.2023.2221413" target="_blank" rel="noopener">Paper 3: Park et al., 2023a</a>
-
-        <a class="project-outline-button" href="https://ieeexplore.ieee.org/document/10394286" target="_blank" rel="noopener">Paper 4: Park et al., 2023b</a>
-
-        <a class="project-outline-button" href="https://ieeexplore.ieee.org/document/9980676" target="_blank" rel="noopener">Paper 5: Park et al., 2022</a>
-
+        <!-- <a class="project-button" href="https://mindxai-lab.github.io/nsf-edse-automation-intervention/" target="_blank" rel="noopener">Website</a> -->
+        <a class="project-outline-button" href="https://hfesam2025.conference-program.com/presentation/?id=LECT696&sess=sess263" target="_blank" rel="noopener">Presentation 1: HFES 2025</a>
+        <div class="project-publications">
+    <h4>Prior Related Work: Driver Behavior Analysis</h4>
+          <ol class="project-publication-list">
+            <li>
+              <a href="https://doi.org/10.1016/j.aap.2026.108427" target="_blank" rel="noopener">Yang, G., Chase, R. T., <b>Liu, Y.</b>, Pyo, K., Cunningham, C. M., and Kaber, D. B. (2026). Driver behavior analysis at alternative intersection corridors through driving simulator. <i>Accident Analysis & Prevention</i>.</a>
+            </li>
+            <li>
+              <a href="https://doi.org/10.1016/j.apergo.2024.104287" target="_blank" rel="noopener"><b>Liu, Y.</b>, Kaber, D. B., Cunningham, C. M., Chase, R. T., and Pyo, K. (2024). Analysis of driver behavior at grade-separated intersections to support design. <i>Applied Ergonomics</i>.</a>
+            </li>
+          </ol>
+    <h4>Prior Related Work: Human Behavior Modeling</h4>
+          <ol class="project-publication-list">
+            <li>
+              <a href="https://pubmed.ncbi.nlm.nih.gov/41457446/" target="_blank" rel="noopener"><b>Liu, Y.</b> and Kaber, D. B. (2025). Models of automation proportion in human-in-the-loop systems and operator situation awareness responses. <i>Ergonomics</i>.</a>
+            </li>
+            <li>
+              <a href="https://ieeexplore.ieee.org/document/9582630" target="_blank" rel="noopener"><b>Liu, Y.</b> and Kaber, D. B. (2021). Quantitative models for automation rate and situation awareness response: a case study of levels of driving automation. <i>IEEE International Conference on Human-Machine Systems</i>.</a>
+            </li>
+          </ol>
+        </div>
       </div>
     </article>
 
+    <!-- <article class="research-project">
+      <img src="/assets/images/banners/NSF.png" alt="NSF project graphic">
+      <div>
+        <h3>EMG-Based Assistive Human-Machine Interface Design</h3>
+        <p>
+          This NSF-funded project develops models of powered-prosthetic user cognitive workload when applying different modes of electromyography (EMG)-based device control. These models can be used to predict workload associated with EMG-based control interfaces in other applications.
+        </p>
+        <a href="{% post_url 2019-12-01-NSF %}">Read more</a>
+      </div>
+    </article>
+
+    <article class="research-project">
+      <img src="/assets/images/banners/DARPA1.png" alt="DARPA project graphic">
+      <div>
+        <h3>Real-Time Perceptually Enabled Task Guidance in Extremes</h3>
+        <p>
+          This DARPA-funded project studies the use of augmented reality for providing knowledge task guidance in extreme situations. The research challenge is to create a data-to-knowledge pipeline from wearable devices to an intelligent agent that can determine what information or guidance to provide to human operators in real time.
+        </p>
+        <a href="{% post_url 2022-01-01-DARPA %}">Read more</a>
+      </div>
+    </article>
+
+    <article class="research-project">
+      <img src="/assets/images/banners/REU.png" alt="REU project graphic">
+      <div>
+        <h3>NSF REU Site in Advanced Manufacturing and Supply Chain</h3>
+        <p>
+          This three-year REU project at the University of Louisville provides a 10-week summer experiential training program. REU students work closely with faculty mentors on research projects motivated by real-world problems and participate in professional development opportunities including workshops, research presentations, and plant tours.
+        </p>
+        <a href="https://www.aqlanlab.org/research/reu/project-6" target="_blank" rel="noopener">Read more</a>
+      </div>
+    </article> -->
   </section>
+
 
 </div>
 

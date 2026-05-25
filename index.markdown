@@ -242,7 +242,7 @@ title: Home
 
   <div class="home-section">
     <p>
-      The <strong>M</strong>odeling <strong>I</strong>nteraction, cog<strong>N</strong>ition, and <strong>D</strong>ecision-making by <strong>A</strong>rtificial <strong>I</strong>ntelligence (<strong>MINDxAI</strong>)  Lab develops human-centered AI and human-in-the-loop systems grounded in human factors and data-driven modeling. The lab is housed in the Department of Industrial and Systems Engineering at the University of Louisville.
+      The <strong>M</strong>odeling <strong>I</strong>nteraction, cog<strong>N</strong>ition, and <strong>D</strong>ecision-making by <strong>A</strong>rtificial <strong>I</strong>ntelligence (<strong>MINDxAI</strong>)  Lab develops human-centered AI and human-in-the-loop systems grounded in human factors and data-driven modeling. The lab is housed in the <b>Department of Industrial and Systems Engineering</b> at the <b>University of Louisville</b>.
     </p>
     <p>
       Our research focuses on modeling interaction, cognition, and decision-making with AI. We study human states, workload, situation awareness, performance, and behavior using experimental methods, wearable sensors, physiological signals, behavioral data, machine learning, and statistical modeling.
