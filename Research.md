@@ -211,7 +211,7 @@ title: Research
   <div class="research-topic-header">
     <h2>Research Theme I: Real-Time Adaptive System Design Guided by Human State Modeling</h2>
 <p class="research-section-subtitle">
-  We design and evaluate adaptive technologies that sense, model, and respond to human cognitive, emotional, physiological, and performance states <b>in real time</b>. Our applied research spans driving, rehabilitation, healthcare, immersive training, and complex work systems.
+  We design and evaluate adaptive technologies that sense, model, and respond to human cognitive, emotional, physiological, and performance states in <b><u>real time</u></b>. Our applied research spans driving, rehabilitation, healthcare, immersive training, and complex work systems.
 </p>
   </div>
       <article class="research-project" id="project-cognitive-emotional-driving-automation">
@@ -288,12 +288,11 @@ title: Research
 
 <section class="research-section" id="theme-physiological-biomedical-modeling">
   <div class="research-topic-header">
-    <h2>Research Theme II: Physiological Computing and Biomedical Human State Modeling</h2>
-    <p class="research-section-subtitle">
-      We develop methods to measure, model, and predict human cognitive, affective, and health-related states using multimodal biosignals and performance data. Our work integrates EMG, fNIRS, EEG, HR, and machine learning to support workload assessment, neurological condition detection and adaptive human-centered technologies.
-    </p>
+<h2>Research Theme II: Human-Centered Computing and Interaction-Aware Human-State Modeling</h2>
+<p class="research-section-subtitle">
+  We develop methods to measure, model, and predict human physiological, cognitive, affective, behavioral, and health-related states during interactions with intelligent systems, including AI, robotic, automation, and healthcare systems. Our work integrates multimodal biosignals, performance data, and machine learning to support human-AI/robot teaming, neurological condition detection, and adaptive human-centered technologies. </p>
+  <h4>Complementing Theme I’s focus on <u>real-time adaptive system design and implementation</u>, Theme II dives deeper into the <u>underlying patterns, mechanisms, and theories of human-state changes</u> through AI-enabled modeling and analysis.</h4>
   </div>
-
       <article class="research-project" id="project-eeg-seizure-modeling">
       <figure>
         <img src="/assets/images/banners/Updated Images/Seizure.png" alt="Seizure-EEG project graphic">
@@ -335,7 +334,7 @@ title: Research
           <h4>Forthcoming Work</h4>
           <ol class="project-publication-list">
             <li>
-              Chowdhury, M. H.;, and <b>Liu, Y.</b> (2026). Communication barriers in patient-provider interactions in healthcare: a scoping review. <i>Journal of Medical Internet Research (JMIR)</i>. <b>Minor Revision</b> (May 2026).
+              Chowdhury, M. H., and <b>Liu, Y.</b> (2026). Communication barriers in patient-provider interactions in healthcare: a scoping review. <i>Journal of Medical Internet Research (JMIR)</i>. <b>Minor Revision</b> (May 2026).
             </li>
           </ol>
         </div>
@@ -344,15 +343,12 @@ title: Research
 
   </section>
 
-
-
-
-
-
   <section class="research-section" id="theme-human-ai-automation">
     <div class="research-topic-header">
-      <h2>Research Theme III: Surface Transportation and Human-Automation Interactions</h2>
-      <p class="research-section-subtitle">We investigate how humans interact with intelligent and automated systems, with a focus on cognitive workload, situation awareness, emotion, trust, and task performance in safety-critical contexts such as driving automation, UAV control, and AI-assisted decision support.</p>
+<h2>Research Theme III: Human Behavior Modeling in Transportation and Automation Systems</h2>
+<p class="research-section-subtitle">
+  We study and model how humans behave, adapt, and make decisions when interacting with automated and intelligent systems in transportation contexts. Our work examines driver behavior, aggressive driving, mixed human-AV traffic, trust, workload, situation awareness, and human responses to automation, with the goal of informing safer and more human-aware transportation systems.</p>
+  <h4>Theme III complements Theme I and Theme II by focusing less on <u>real-time intervention design</u> or <u>internal human-state mechanisms</u>, and more on <u>behavioral dynamics and system-level safety and efficiency outcomes</u>.</h4>
     </div>
     <article class="research-project" id="project-aggressive-driving-mixed-traffic">
       <figure>
