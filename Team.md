@@ -153,9 +153,10 @@ title: Team
   }
 
   .student-profile .student-contact-link img {
-    width: 22px;
-    height: 22px;
-    max-width: none;
+    width: 22px !important;
+    height: 22px !important;
+    min-width: 22px;
+    max-width: 22px !important;
     object-fit: contain;
     border-radius: 0;
     flex: 0 0 auto;
