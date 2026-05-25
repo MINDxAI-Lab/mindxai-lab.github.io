@@ -3,19 +3,29 @@
 
   <div class="wrapper">
     <div class="site-footer-inner">
-      
-      <div>Contact <strong>MINDxAI Lab</strong>:</div>
-      <div>&#128233; Email: <a href="mailto:yunmei.liu@louisville.edu">yunmei.liu@louisville.edu</a></div>
-      <div><p>&#127970; Address: 132 Eastern Pkey., Louisville, Kentucky, 40292</p></div>
+      <div class="footer-acknowledgement">
+        <p>Our research is supported by:</p>
+        <img class="footer-sponsor-logo" src="/assets/images/banners/NSF%20Logo.png" alt="National Science Foundation logo">
+      </div>
 
-      <div>Links:</div>
-      <div>&#128187; <a href="https://scholar.google.com/citations?user=FeLtzgcAAAAJ&hl=en" target="_blank">Google Scholar</a></div>
-      <div>&#128279; <a href="https://www.linkedin.com/in/yunmei-liu-16a14023a/" target="_blank">Linkedin</a></div>
-      <!-- <div>{{ site.copyright }} {% if site.author %}@{{ site.author | escape }}{% endif %}</div> -->
-      <!-- <div>Powered by <a title="Jekyll is a simple, blog-aware, static site
-      generator." href="http://jekyllrb.com/">Jekyll</a> &amp; <a title="Yat, yet
-      another theme." href="https://github.com/jeffreytse/jekyll-theme-yat">Yat Theme</a>.</div>
-      <div class="footer-col rss-subscribe">Subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></div> -->
+      <div class="footer-content-grid">
+        <div class="footer-section">
+          <div class="footer-section-title">Contact <strong>MINDxAI Lab</strong>:</div>
+          <div class="footer-line">&#128233; Email: <a href="mailto:yunmei.liu@louisville.edu">yunmei.liu@louisville.edu</a></div>
+          <div class="footer-line">&#127970; Address: 132 Eastern Pkey., Louisville, Kentucky, 40292</div>
+        </div>
+
+        <div class="footer-section">
+          <div class="footer-section-title">Links:</div>
+          <div class="footer-line">&#128187; <a href="https://scholar.google.com/citations?user=FeLtzgcAAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar</a></div>
+          <div class="footer-line">&#128279; <a href="https://www.linkedin.com/company/112973792/admin/page-posts/published/" target="_blank" rel="noopener">LinkedIn</a></div>
+        </div>
+
+        <div class="footer-section">
+          <div class="footer-section-title">&copy; {{ site.time | date: "%Y" }} MINDxAI Lab.</div>
+          <div class="footer-line">This website is built using <a href="https://jekyllrb.com/" target="_blank" rel="noopener">Jekyll</a> with the <a href="https://github.com/jeffreytse/jekyll-theme-yat" target="_blank" rel="noopener">Yat theme</a>.</div>
+        </div>
+      </div>
     </div>
   </div>
 </footer>

@@ -233,6 +233,53 @@ html {
     padding: $spacing-unit * 1.8 0;
   }
 
+  .footer-acknowledgement {
+    margin-bottom: $spacing-unit;
+
+    p {
+      margin: 0 0 10px;
+      color: $text-color;
+      font-weight: 600;
+    }
+  }
+
+  .footer-sponsor-logo {
+    display: block;
+    width: 260px;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .footer-content-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: $spacing-unit;
+    padding-top: $spacing-unit;
+    border-top: 1px solid rgba(0, 0, 0, 0.12);
+  }
+
+  .footer-section-title {
+    margin-bottom: 8px;
+    color: $text-color;
+    font-weight: 700;
+  }
+
+  .footer-line {
+    margin-bottom: 6px;
+    line-height: 1.5;
+  }
+
+  @include media-query($on-palm) {
+    .footer-content-grid {
+      grid-template-columns: 1fr;
+      gap: $spacing-unit * 0.75;
+    }
+
+    .footer-sponsor-logo {
+      width: 220px;
+    }
+  }
+
   a {
     $a-color: $brand-color;
     color: $a-color;
