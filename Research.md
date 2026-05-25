@@ -16,29 +16,103 @@ title: Research
   }
 
   .research-subtitle {
-    margin-top: -4px;
+    margin: 0 auto 26px;
     color: #4d5b5d;
+    line-height: 1.65;
   }
 
   .research-section {
+    margin-top: 64px;
+    scroll-margin-top: 90px;
+  }
+
+  .research-section:first-of-type {
     margin-top: 36px;
+  }
+
+  .research-topic-header {
+    margin-bottom: 22px;
+    padding: 18px 22px;
+    border-left: 5px solid #1f7a7f;
+    border-radius: 8px;
+    background: #eef6f6;
+  }
+
+  .research-topic-header h2 {
+    margin: 0;
+  }
+
+  .research-section-subtitle {
+    margin: 10px 0 0;
+    color: #4d5b5d;
+    line-height: 1.65;
+    font-weight: 400;
   }
 
   .research-project {
     display: grid;
-    grid-template-columns: 300px minmax(0, 1fr);
-    gap: 22px;
+    grid-template-columns: 360px minmax(0, 1fr);
+    gap: 28px;
     align-items: start;
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #e2ecec;
+    border-left: 4px solid #cfe8e8;
+    border-radius: 8px;
+    background: #fff;
+    box-shadow: 0 1px 3px rgba(31, 122, 127, 0.07);
+    scroll-margin-top: 90px;
+  }
+
+  .research-project + .research-project {
     margin-top: 24px;
-    padding-top: 24px;
-    border-top: 1px solid #dfe6e7;
   }
 
   .research-project img {
-    width: 300px;
-    height: 200px;
+    width: 360px;
+    height: 240px;
     object-fit: cover;
     border-radius: 8px;
+  }
+
+  .research-project figure {
+    margin: 0;
+  }
+
+  .research-project figcaption {
+    margin-top: 10px;
+    font-size: 0.95rem;
+    font-weight: 700;
+    line-height: 1.35;
+  }
+
+  .research-project figcaption a {
+    color: #389092;
+  }
+
+  .research-project figcaption span {
+    display: block;
+    margin-top: 4px;
+    color: #4d5b5d;
+    font-weight: 700;
+  }
+
+  .project-button {
+    display: inline-block;
+    margin-top: 3px;
+    padding: 7px 16px;
+    border-radius: 6px;
+    color: #fff;
+    background: #1f7a7f;
+    text-decoration: none;
+    font-weight: 700;
+  }
+
+  .project-button:hover,
+  .project-button:focus {
+    color: #fff;
+    background: #185f63;
+    text-decoration: none;
   }
 
   .research-project h3 {
@@ -55,9 +129,67 @@ title: Research
     font-weight: 700;
   }
 
+  .project-publications {
+    margin-top: 18px;
+    padding: 14px 16px;
+    border-radius: 8px;
+    background: #f7fbfb;
+  }
+
+  .project-publications h4 {
+    margin: 0 0 8px;
+    color: #454545;
+    font-size: 1rem;
+  }
+
+  .project-publication-list {
+    margin: 0;
+    padding-left: 20px;
+  }
+
+  .project-publication-list li {
+    margin-bottom: 8px;
+    line-height: 1.55;
+  }
+
+  .project-publication-list a {
+    color: #1f7a7f;
+    font-weight: 400;
+  }
+
+  .project-outline-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 8px;
+  }
+
+  .project-outline-button {
+    display: inline-block;
+    padding: 7px 16px;
+    border: 1px solid #1f7a7f;
+    border-radius: 6px;
+    color: #165f66;
+    background: #fff;
+    text-decoration: none;
+    font-weight: 700;
+  }
+
+  .project-outline-button:hover,
+  .project-outline-button:focus {
+    color: #165f66;
+    background: #eaf5f5;
+    text-decoration: none;
+  }
+
   @media (max-width: 760px) {
+    .research-topic-header {
+      padding: 15px 16px;
+    }
+
     .research-project {
       grid-template-columns: 1fr;
+      padding: 16px;
     }
 
     .research-project img {
@@ -73,13 +205,86 @@ title: Research
 </style>
 
 <div class="research-page">
-  <h1>MINDxAI Lab Research</h1>
-  <p class="research-subtitle">Human-centered AI, cognitive modeling, human-machine interaction, and safer intelligent systems.</p>
+  <h1>Ongoing Research Projects</h1>
+  <!-- <p class="research-subtitle">human state sensing → human-AI interaction → adaptive intervention</p> -->
 
-  <section class="research-section">
-    <h2>Current Research Projects</h2>
+  <section class="research-section" id="theme-human-ai-automation">
+    <div class="research-topic-header">
+      <h2>Research Theme I: Human-AI and Automation Interactions</h2>
+      <p class="research-section-subtitle">We investigate how humans interact with intelligent and automated systems, with a focus on cognitive workload, situation awareness, emotion, trust, and task performance in safety-critical contexts such as driving automation, UAV control, and AI-assisted decision support.</p>
+    </div>
 
-    <article class="research-project">
+    <article class="research-project" id="project-cognitive-emotional-driving-automation">
+      <figure>
+        <img src="/assets/images/banners/Updated Images/Picture2.jpg" alt="NSF EDSE automation intervention project graphic">
+        <figcaption>
+          <a href="https://www.nsf.gov/awardsearch/show-award/?AWD_ID=2535920&HistoricalAwards=false" target="_blank" rel="noopener">Sponsor: NSF EDSE</a>
+          <span>PIs: Yunmei Liu and David Kaber</span>
+
+        </figcaption>
+      </figure>
+      <div>
+        <h3>Cognitive-Emotional State Assessment for Advanced Driving Automation</h3>
+        <p>
+          This NSF CMMI/EDSE-funded project explores an integrated cognitive-emotional state assessment system to support real-time automation intervention design for advanced driving systems. The research combines physiological signals, context-dependent emotional states, cognitive workload modeling, and trust dynamics to develop adaptive automation interventions that can improve operator safety, trust, and performance in automated vehicles.
+        </p>
+        <a class="project-button" href="https://mindxai-lab.github.io/nsf-edse-automation-intervention/" target="_blank" rel="noopener">Website</a>
+
+        <a class="project-outline-button" href="https://openaccess-api.cms-conferences.org/articles/download/978-1-964867-75-5_71" target="_blank" rel="noopener">Paper 1: Kumar et al., 2025</a>
+
+
+
+        <div class="project-publications">
+          <h4>Prior Related Work</h4>
+          <ol class="project-publication-list">
+            <li>
+              <a href="https://pubmed.ncbi.nlm.nih.gov/41457446/" target="_blank" rel="noopener"><b>Liu, Y.</b> and Kaber, D. B. (2025). Models of automation proportion in human-in-the-loop systems and operator situation awareness responses. <i>Ergonomics</i>.</a>
+            </li>
+            <li>
+              <a href="https://doi.org/10.1016/j.ijhcs.2024.103287" target="_blank" rel="noopener">Zhang, W., <b>Liu, Y.</b>, and Kaber, D. B. (2024). Effect of interface design on cognitive workload in unmanned aerial vehicle control. <i>International Journal of Human-Computer Studies</i>.</a>
+            </li>
+            <li>
+              <a href="https://ieeexplore.ieee.org/document/9582630" target="_blank" rel="noopener"><b>Liu, Y.</b> and Kaber, D. B. (2021). Quantitative models for automation rate and situation awareness response: a case study of levels of driving automation. <i>IEEE International Conference on Human-Machine Systems</i>.</a>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </article>
+
+
+    <article class="research-project" id="project-aggressive-driving-mixed-traffic">
+      <figure>
+        <img src="/assets/images/banners/Updated Images/AD.png" alt="Aggressive Driving project graphic">
+        <figcaption>
+         Sponsor: UofL
+          <span>PIs: Yunmei Liu, Yueshuai (Brian) He, Anthony D. McDonald, and Tianlong Chen</span>
+        </figcaption>
+      </figure>
+      <div>
+        <h3>Aggressive Driving in Mixed Traffic</h3>
+        <p>
+          This project studies how aggressive driving behaviors in mixed human-AV traffic propagate from individual driver state and local maneuvers to traffic-flow safety and efficiency. The work combines CARLA-SUMO human-in-the-loop experiments, empirical human driver modeling, SUMO/TraCI traffic-flow simulation, and human-aware adaptive AV control to understand how surrounding AV aggressiveness and human driver aggressiveness shape workload, trust, stress, speed choice, braking, lane changes, congestion, and surrogate safety outcomes.
+        </p>
+
+        <!-- <a class="project-button" href="https://mindxai-lab.github.io/nsf-edse-automation-intervention/" target="_blank" rel="noopener">Website</a> -->
+
+        <a class="project-outline-button" href="https://hfesam2025.conference-program.com/presentation/?id=LECT696&sess=sess263" target="_blank" rel="noopener">Presentation 1: HFES 2025</a>
+
+        <div class="project-publications">
+          <h4>Prior Related Work</h4>
+          <ol class="project-publication-list">
+            <li>
+              <a href="https://doi.org/10.1016/j.aap.2026.108427" target="_blank" rel="noopener">Yang, G., Chase, R. T., <b>Liu, Y.</b>, Pyo, K., Cunningham, C. M., and Kaber, D. B. (2026). Driver behavior analysis at alternative intersection corridors through driving simulator. <i>Accident Analysis & Prevention</i>.</a>
+            </li>
+            <li>
+              <a href="https://doi.org/10.1016/j.apergo.2024.104287" target="_blank" rel="noopener"><b>Liu, Y.</b>, Kaber, D. B., Cunningham, C. M., Chase, R. T., and Pyo, K. (2024). Analysis of driver behavior at grade-separated intersections to support design. <i>Applied Ergonomics</i>.</a>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </article>
+
+    <!-- <article class="research-project">
       <img src="/assets/images/banners/NSF.png" alt="NSF project graphic">
       <div>
         <h3>EMG-Based Assistive Human-Machine Interface Design</h3>
@@ -110,43 +315,111 @@ title: Research
         </p>
         <a href="https://www.aqlanlab.org/research/reu/project-6" target="_blank" rel="noopener">Read more</a>
       </div>
-    </article>
+    </article> -->
   </section>
 
-  <section class="research-section">
-    <h2>Past Research Projects</h2>
+<section class="research-section" id="theme-physiological-biomedical-modeling">
+  <div class="research-topic-header">
+    <h2>Research Theme II: Physiological Computing and Biomedical Human State Modeling</h2>
+    <p class="research-section-subtitle">
+      We develop methods to measure, model, and predict human cognitive, affective, and health-related states using multimodal biosignals and performance data. Our work integrates EMG, fNIRS, EEG, HR, and machine learning to support workload assessment, neurological condition detection and adaptive human-centered technologies.
+    </p>
+  </div>
 
-    <article class="research-project">
-      <img src="/assets/images/banners/dissertation1.jpeg" alt="Automation rate and situation awareness research graphic">
+      <article class="research-project" id="project-eeg-seizure-modeling">
+      <figure>
+        <img src="/assets/images/banners/Updated Images/Seizure.png" alt="Seizure-EEG project graphic">
+        <figcaption>
+          Sponsor: UofL and UNC-Chapel Hill
+          <span>PIs: Yunmei Liu and Tianlong Chen</span>
+        </figcaption>
+      </figure>
       <div>
-        <h3>Automation Rate and Situation Awareness Responses</h3>
+        <h3>AI-Driven Scalp EEG Modeling for Seizure Detection and Signal Enhancement</h3>
         <p>
-          During the operation of automated systems, if a user cannot accurately understand the structure and function of system automation, distrust or over-trust in the automation may occur. This research developed a continuous automation rate function to quantify levels of automation in complex systems and proposed a new relationship between the automation rate function and operator situation awareness responses.
+          We develop AI methods that transform multichannel scalp EEG into spatial, visual, and geometry-aware representations for neurological condition detection. This work supports robust seizure detection, EEG spatial super-resolution, and reliable biomedical signal modeling for real-time and clinically meaningful assessment.
+
         </p>
-        <a href="{% post_url 2019-09-01-Dissertation %}">Read more</a>
+        <!-- <a class="project-button" href="https://mindxai-lab.github.io/nsf-edse-automation-intervention/" target="_blank" rel="noopener">Website</a> -->
+
+        <a class="project-outline-button" href="https://arxiv.org/pdf/2602.04769" target="_blank" rel="noopener">arXiv 1: Chen et al., 2026</a>
+
+        <a class="project-outline-button" href="https://arxiv.org/pdf/2602.02238" target="_blank" rel="noopener">arXiv 2: Yao et al., 2026</a>
       </div>
     </article>
 
-    <article class="research-project">
-      <img src="/assets/images/banners/dissertation0.png" alt="Roadway signage research graphic">
+
+    <article class="research-project" id="project-communication-barriers-healthcare">
+      <figure>
+        <img src="/assets/images/banners/Updated Images/CB.png" alt="Communication Barriers project graphic">
+        <figcaption>
+          Sponsor: UofL
+          <span>PI: Yunmei Liu</span>
+        </figcaption>
+      </figure>
       <div>
-        <h3>Roadway Signage for Novel Grade-Separated Interchanges</h3>
+        <h3>Communication Barriers in Patient-Provider Interactions</h3>
         <p>
-          This NCDOT-funded project used a driving simulator to compare the driving performance and mental state of young and middle-aged drivers while navigating standard intersections and novel grade-separated interchange conditions. The experiment also manipulated driver exposure to different configurations of lane assignment and decision point signs.
+          This project examines how communication barriers disrupt patient-provider communication and affect patient experience, clinical decision-making, health outcomes, and healthcare system efficiency. Building on a scoping review of patient-provider communication studies, the work maps how barriers intersect and identifies intervention opportunities including interpreter services, cultural and empathy training, plain-language and visual supports, AI-enabled translation and chatbot tools, clinical note-taking agents, and wearable or remote-monitoring technologies. The goal is to inform adaptive, patient-centered communication systems that combine AI support with real-time human-state and context awareness.
         </p>
-        <a href="{% post_url 2019-09-01-GSIX %}">Read more</a>
+
+        <div class="project-publications">
+          <h4>Forthcoming Work</h4>
+          <ol class="project-publication-list">
+            <li>
+              Chowdhury, M. H.;, and <b>Liu, Y.</b> (2026). Communication barriers in patient-provider interactions in healthcare: a scoping review. <i>Journal of Medical Internet Research (JMIR)</i>. <b>Minor Revision</b> (May 2026).
+            </li>
+          </ol>
+        </div>
       </div>
     </article>
 
-    <article class="research-project">
-      <img src="/assets/images/banners/other1.png" alt="Other human factors research graphic">
-      <div>
-        <h3>Other Human Factors and Intelligent Systems Projects</h3>
-        <p>
-          In addition to the research studies highlighted above, the MINDxAI Lab works on systems safety analysis, unmanned aerial vehicle interface design, consistency in the design of interchanges in high-density traffic corridors, and non-safety-related in-vehicle and on-road message displays.
-        </p>
-        <a href="{% post_url 2019-09-01-Other %}">Read more</a>
-      </div>
-    </article>
   </section>
+
+  <section class="research-section" id="theme-adaptive-health-training-safety">
+  <div class="research-topic-header">
+    <h2>Research Theme III: Adaptive Health, Training, and Safety Technologies</h2>
+    <p class="research-section-subtitle">
+      We design and evaluate adaptive technologies for rehabilitation, immersive training, and complex work systems. Our applied research includes upper-limb prosthetic control, VR-based training, AI-driven law-enforcement training, and risk analysis for safety-critical systems.
+    </p>
+  </div>
+
+      <article class="research-project" id="project-prosthetic-control">
+      <figure>
+        <img src="/assets/images/banners/NSF.png" alt="EMG-based upper-limb prosthetic control evaluation setup">
+        <figcaption>
+          <!-- Sponsor: NSF -->
+          <!-- <span>Collaborators: Yunmei Liu, Juhye Park, Jason Berman, David Kaber, H. Huang, J. Ruiz, Mahsa Zahabi, and team</span> -->
+        </figcaption>
+      </figure>
+      <div>
+        <h3>Human-Centered Design for Natural Upper-Limb Prosthetic Control</h3>
+        <p>
+          This project focuses on advancing upper-limb prosthetic control from conventional control modes toward more natural and intuitive control. Our prior work compared alternative prosthetic control strategies, generated workload and usability evidence for early-stage design, and examined VR as a scalable platform for testing prosthetic manipulation tasks before full physical-device deployment. Together, these studies provide human-centered design guidance for selecting and refining prosthetic control interfaces that better align with users’ movement intentions, improve performance, reduce workload, and support rehabilitation training.
+        </p>
+
+        <a class="project-outline-button" href="https://doi.org/10.1109/TNSRE.2026.3652083" target="_blank" rel="noopener">Paper 1: Liu et al. 2026</a>
+
+        <a class="project-outline-button" href="https://doi.org/10.1109/THMS.2024.3381094" target="_blank" rel="noopener">Paper 2: Liu et al. 2026</a>
+
+
+        <a class="project-outline-button" href="https://doi.org/10.1080/00140139.2023.2221413" target="_blank" rel="noopener">Paper 3: Park et al., 2023a</a>
+
+        <a class="project-outline-button" href="https://ieeexplore.ieee.org/document/10394286" target="_blank" rel="noopener">Paper 4: Park et al., 2023b</a>
+
+        <a class="project-outline-button" href="https://ieeexplore.ieee.org/document/9980676" target="_blank" rel="noopener">Paper 5: Park et al., 2022</a>
+
+      </div>
+    </article>
+
+  </section>
+
 </div>
+
+
+
+
+<!-- <div class="research-page">
+  <h1>Completed Research Projects</h1>
+
+</div> -->

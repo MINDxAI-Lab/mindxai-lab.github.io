@@ -16,7 +16,7 @@ title: Home
   }
 
   .mindxai-home .lead {
-    max-width: 920px;
+    max-width: 100%;
     margin: 0 auto 28px;
     text-align: center;
     font-size: 1.05rem;
@@ -27,20 +27,29 @@ title: Home
     margin-top: 34px;
   }
 
+  .mindxai-home > .home-section:first-of-type {
+    margin-top: 12px;
+  }
+
   .home-section p {
+    max-width: 100%;
+    margin-right: auto;
+    margin-left: auto;
     line-height: 1.7;
     text-align: left;
   }
 
   .theme-grid {
     display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
     gap: 16px;
   }
 
   .theme-item {
     border-left: 4px solid #389092;
-    padding: 2px 0 2px 14px;
+    border-radius: 8px;
+    padding: 16px 18px;
+    background: #eef6f6;
   }
 
   .theme-item h3 {
@@ -48,20 +57,52 @@ title: Home
     font-size: 1.05rem;
   }
 
+  .theme-item h3 a {
+    color: #3f4a4c;
+    text-decoration: none;
+  }
+
+  .theme-item h3 a:hover,
+  .theme-item h3 a:focus {
+    color: #1f7a7f;
+    text-decoration: underline;
+  }
+
   .theme-item p {
+    margin: 0 0 10px;
+  }
+
+  .theme-projects {
     margin: 0;
+    padding-left: 18px;
+  }
+
+  .theme-projects li {
+    margin-bottom: 6px;
+    line-height: 1.45;
+  }
+
+  .theme-projects a {
+    color: #1f7a7f;
+    font-weight: 600;
+    text-decoration: none;
+  }
+
+  .theme-projects a:hover,
+  .theme-projects a:focus {
+    text-decoration: underline;
   }
 
   .mindxai-carousel {
     position: relative;
     margin: 30px auto 12px;
-    max-width: 980px;
+    max-width: 100%;
   }
 
   .carousel-stage {
     position: relative;
     overflow: hidden;
-    min-height: 420px;
+    min-height: 500px;
     background: #101415;
     border-radius: 8px;
   }
@@ -69,7 +110,7 @@ title: Home
   .carousel-slide {
     display: none;
     margin: 0;
-    min-height: 420px;
+    min-height: 500px;
   }
 
   .carousel-slide.is-active {
@@ -79,7 +120,7 @@ title: Home
   .carousel-slide img {
     display: block;
     width: 100%;
-    height: 420px;
+    height: 500px;
     object-fit: cover;
   }
 
@@ -95,7 +136,7 @@ title: Home
 
   .carousel-control {
     position: absolute;
-    top: 190px;
+    top: 230px;
     width: 40px;
     height: 40px;
     border: 0;
@@ -160,6 +201,21 @@ title: Home
     text-decoration: none;
   }
 
+  @media (max-width: 980px) {
+    .carousel-stage,
+    .carousel-slide {
+      min-height: 380px;
+    }
+
+    .carousel-slide img {
+      height: 380px;
+    }
+
+    .carousel-control {
+      top: 170px;
+    }
+  }
+
   @media (max-width: 760px) {
     .theme-grid {
       grid-template-columns: 1fr;
@@ -181,12 +237,12 @@ title: Home
 </style>
 
 <div class="mindxai-home">
-  <h1>MINDxAI Lab</h1>
+  <h1><strong>Welcome to the MINDxAI Lab!</strong></h1>
   <!-- <p class="lead">Modeling Interaction, cogNition, and Decision-making by Artificial Intelligence</p> -->
 
   <div class="home-section">
     <p>
-      The MINDxAI Lab develops human-centered AI and human-in-the-loop systems grounded in human factors and data-driven modeling. The lab is housed in the Department of Industrial and Systems Engineering at the University of Louisville.
+      The <strong>M</strong>odeling <strong>I</strong>nteraction, cog<strong>N</strong>ition, and <strong>D</strong>ecision-making by <strong>A</strong>rtificial <strong>I</strong>ntelligence (<strong>MINDxAI</strong>)  Lab develops human-centered AI and human-in-the-loop systems grounded in human factors and data-driven modeling. The lab is housed in the Department of Industrial and Systems Engineering at the University of Louisville.
     </p>
     <p>
       Our research focuses on modeling interaction, cognition, and decision-making with AI. We study human states, workload, situation awareness, performance, and behavior using experimental methods, wearable sensors, physiological signals, behavioral data, machine learning, and statistical modeling.
@@ -198,11 +254,11 @@ title: Home
 
   <div class="mindxai-carousel" data-carousel>
     <div class="carousel-stage">
-      <figure class="carousel-slide is-active">
+      <!-- <figure class="carousel-slide is-active">
         <img src="/assets/images/banners/Updated%20Images/Picture1.jpg" alt="MINDxAI Lab activity photo">
         <figcaption>MINDxAI Lab research</figcaption>
-      </figure>
-      <figure class="carousel-slide">
+      </figure> -->
+      <figure class="carousel-slide is-active">
         <img src="/assets/images/banners/Updated%20Images/Picture2.png" alt="MINDxAI Lab group photo">
         <figcaption>Human states modeling and driving safety</figcaption>
       </figure>
@@ -216,7 +272,7 @@ title: Home
         </figure>
       <figure class="carousel-slide">
         <img src="/assets/images/banners/Updated%20Images/Retreat%20dinner.png" alt="MINDxAI Lab retreat dinner">
-      <figcaption>MINDxAI Lab retreat dinner</figcaption>
+      <figcaption><strong>MINDxAI Lab</strong> retreat dinner</figcaption>
       </figure>
     </div>
     <button class="carousel-control prev" type="button" data-carousel-prev aria-label="Previous image">&lsaquo;</button>
@@ -234,20 +290,27 @@ title: Home
     <h2>Research Themes</h2>
     <div class="theme-grid">
       <div class="theme-item">
-        <h3>Human States Modeling</h3>
-        <p>Multimodal learning from behavioral, physiological, and performance data.</p>
+        <h3><a href="/Research.html#theme-human-ai-automation">Research Theme I: Human-AI and Automation Interactions</a></h3>
+        <p>Human-centered AI, automation, workload, trust, situation awareness, and safety-critical decision support.</p>
+        <ol class="theme-projects">
+          <li><a href="/Research.html#project-cognitive-emotional-driving-automation">Cognitive-Emotional State Assessment for Advanced Driving Automation</a></li>
+          <li><a href="/Research.html#project-aggressive-driving-mixed-traffic">Aggressive Driving in Mixed Traffic</a></li>
+        </ol>
       </div>
       <div class="theme-item">
-        <h3>Human-Automation Interaction</h3>
-        <p>Design and evaluation of human-centered AI, automation, and adaptive systems.</p>
+        <h3><a href="/Research.html#theme-physiological-biomedical-modeling">Research Theme II: Physiological Computing and Biomedical Human State Modeling</a></h3>
+        <p>Multimodal biosignals, biomedical AI, healthcare communication, and adaptive patient-centered technologies.</p>
+        <ol class="theme-projects">
+          <li><a href="/Research.html#project-eeg-seizure-modeling">AI-Driven Scalp EEG Modeling for Seizure Detection and Signal Enhancement</a></li>
+          <li><a href="/Research.html#project-communication-barriers-healthcare">Communication Barriers in Patient-Provider Interactions</a></li>
+        </ol>
       </div>
       <div class="theme-item">
-        <h3>Decision-Making and Performance</h3>
-        <p>Models of cognition, workload, situation awareness, trust, and decision behavior.</p>
-      </div>
-      <div class="theme-item">
-        <h3>Applied Sociotechnical Systems</h3>
-        <p>Applications in healthcare, transportation, automated driving, aviation, robotics, and manufacturing.</p>
+        <h3><a href="/Research.html#theme-adaptive-health-training-safety">Research Theme III: Adaptive Health, Training, and Safety Technologies</a></h3>
+        <p>Rehabilitation, immersive training, prosthetic control, and applied safety technologies.</p>
+        <ol class="theme-projects">
+          <li><a href="/Research.html#project-prosthetic-control">Human-Centered Design for Natural Upper-Limb Prosthetic Control</a></li>
+        </ol>
       </div>
     </div>
   </div>

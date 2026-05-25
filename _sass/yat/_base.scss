@@ -182,11 +182,27 @@ pre {
  * Wrapper
  */
 .wrapper {
-  max-width: $content-width;
-  margin: auto;
+  width: $content-width;
+  max-width: none;
+  margin-right: auto;
+  margin-left: auto;
   padding-right: $spacing-unit;
   padding-left: $spacing-unit;
+  box-sizing: border-box;
   @extend %clearfix;
+}
+
+@media screen and (max-width: 980px) {
+  .wrapper {
+    width: 100%;
+  }
+}
+
+@include media-query($on-palm) {
+  .wrapper {
+    padding-right: $spacing-unit / 2;
+    padding-left: $spacing-unit / 2;
+  }
 }
 
 
@@ -288,4 +304,3 @@ table {
   background-position: center center;
   overflow: hidden;
 }
-

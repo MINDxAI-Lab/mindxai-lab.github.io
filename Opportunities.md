@@ -15,8 +15,8 @@ title: Opportunities
   }
 
   .opportunities-intro {
-    max-width: 860px;
-    margin: 0 auto 28px;
+    max-width: 100%;
+    margin: 0 auto 26px;
     text-align: center;
     line-height: 1.65;
   }
@@ -47,7 +47,7 @@ title: Opportunities
 <div class="opportunities-page">
   <h1>Opportunities</h1>
   <p class="opportunities-intro">
-    MINDxAI Lab welcomes students and collaborators interested in human-centered AI, human-machine interaction, cognitive modeling, wearable sensing, and intelligent adaptive systems.
+    <strong>MINDxAI Lab</strong> welcomes students and collaborators interested in human-centered AI, human-machine interaction, cognitive modeling, wearable sensing, and intelligent adaptive systems.
   </p>
 
   <section class="opportunity-section">
@@ -59,27 +59,24 @@ title: Opportunities
     <p>
       <!-- Please include a brief statement of research interests, a CV or resume, unofficial transcripts, and any representative publications, project reports, or portfolio links. -->
     </p>
-    <a class="opportunity-link" href="/assets/images/banners/PhD%20position.pdf">Ph.D. position information</a>
+    <a class="opportunity-link" href="/assets/Documents/PhD%20position_2026.pdf">Prior Ph.D. position requirements</a>
   </section>
 
   <section class="opportunity-section">
-    <h2>Master's and Undergraduate Researchers</h2>
+    <h2>Master's and Undergraduate Research Assistants</h2>
     <p>
       Students interested in research experience can contribute to experimental studies, data analysis, interface evaluation, machine learning modeling, literature reviews, and prototype development. Prior experience with statistics, programming, human subjects research, or sensing systems is helpful but not required for every project.
     </p>
   </section>
 
   <section class="opportunity-section">
-    <h2>Visiting and Remote Researchers</h2>
+    <h2>Visiting Scientists and Student Internships</h2>
     <p>
-      Researchers whose work aligns with human-centered AI, cognitive systems engineering, human performance modeling, or applied human factors are welcome to reach out about possible collaboration and visiting opportunities.
+      If you are interested in visiting our lab for collaboration or sabbatical, or if you are an undergraduate or graduate student enrolled at other universities and want short-term visit or internship, please contact Dr. Liu.
     </p>
   </section>
 
   <section class="opportunity-section">
-    <h2>Contact</h2>
-    <p>
-      Email: <a href="mailto:yunmei.liu@louisville.edu">yunmei.liu@louisville.edu</a>
-    </p>
+
   </section>
 </div>

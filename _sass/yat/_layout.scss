@@ -5,6 +5,34 @@ html {
   &[data-header-transparent] {
     header.site-header {
       position: fixed;
+      top: 0;
+    }
+
+    header.site-header-transparent {
+      height: 0;
+      margin-top: 12px;
+      background-color: transparent;
+      box-shadow: none;
+      transition: 0.1s height,background-color,box-shadow;
+
+      &.site-header {
+        .site-brand-inner, .page-link {
+          color: #fff;
+          transition: 0.1s color;
+        }
+
+        @include media-query($on-laptop) {
+          .page-link {
+            color: $header-text-color;
+          }
+
+          .menu-icon {
+            > svg {
+              fill: $white-color;
+            }
+          }
+        }
+      }
     }
   }
 
@@ -46,8 +74,12 @@ html {
   }
 
   &[data-scroll-status='down'] {
-    header.site-header {
+    header.site-header:not(.site-header-transparent) {
       top: -$header-height;
+    }
+
+    header.site-header-transparent {
+      top: 0;
     }
 
     .framework .sidebar {
@@ -71,6 +103,7 @@ html {
   z-index: 1000;
 
   & > .wrapper {
+    width: auto;
     margin: 0 60px;
     padding: 0;
     max-width: 100%;
@@ -559,7 +592,9 @@ html {
  */
 .page-banner {
   display: block;
-  position: relative;
+  position: sticky;
+  top: 0;
+  z-index: 900;
   height: $banner-height;
   background-color: $banner-background;
   transition: height 0.2s;

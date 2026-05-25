@@ -2,11 +2,8 @@
 layout: home
 title: Publications
 ---
-<h1 align="center">MINDxAI LAB PUBLICATIONS</h1>
+<h1 align="center">PUBLICATIONS</h1>
 <!-- <div align='center'><font size='60'>Projects</font></div> -->
----
-
-<br/>
 
 ## Peer-Reviewed Journal Articles
 <a href="https://doi.org/10.1016/j.aap.2026.108427" target="_blank" rel="noopener"><b>[1]</b>. Yang, G., Chase, R. T., <b>Liu, Y.</b>, Pyo, K., Cunningham, C. M., and Kaber, D. B. (2026). Driver behavior analysis at alternative intersection corridors through driving simulator. <i>Accident Analysis & Prevention</i>, 229, 108427. DOI: 10.1016/j.aap.2026.108427.</a><br/><br/>
@@ -30,7 +27,7 @@ title: Publications
 ## Submitted / In-Preparation Refereed Journal Articles
 <b>[10]</b>. Chen, Y.&#42;, Chowdhury, M. H.&#42;, McDonald, A. D., and <b>Liu, Y.</b>&dagger; (2025). Understanding aggressive driving: a systematic review and multi-stage framework for safer roads. <i>Accident Analysis & Prevention</i>. Under Revision (November 2025).<br/><br/>
 
-<b>[11]</b>. Chowdhury, M. H.&#42;, and <b>Liu, Y.</b>&dagger; (2025). Systematic review of communication barriers in healthcare: implications for technological interventions. <i>Journal of Medical Internet Research (JMIR)</i>. Under Revision (July 2025).<br/><br/>
+<b>[11]</b>. Chowdhury, M. H.&#42;, and <b>Liu, Y.</b>&dagger;(2026). Communication barriers in patient-provider interactions in healthcare: a scoping review. Journal of Medical Internet Research (JMIR). Minor Revision (May 2026).
 
 <b>[12]</b>. Grimaldi, N.&#42;, Kaber, D. B., Chen, Y.&#42;, McKendrick, R., and <b>Liu, Y.</b> (2025). Time series analysis and forecasting of latent cognitive processes. <i>IEEE Transactions on Human-Machine Systems</i>. Under Revision (May 2025).<br/><br/>
 
@@ -87,6 +84,6 @@ title: Publications
 <b>[12]</b>. Grimaldi, N., <b>Liu, Y. </b>, McKendrick, R., Ruiz, J. (Presenter), and Kaber, D. (2024). Deep learning forecast of cognitive workload using fNIRS data. <i>Oral presentation given at the IEEE International Conference on Human-Machine Systems.</i> Toronto, Canada, May. <br/><br/>
 
 
-## Poster Presentations 
+<!-- ## Poster Presentations
 <img src="/assets/images/banners/Poster_GSIX.png"/><br/><br/>
-<img src="/assets/images/banners/Poster_DC.png"/>
+<img src="/assets/images/banners/Poster_DC.png"/> -->

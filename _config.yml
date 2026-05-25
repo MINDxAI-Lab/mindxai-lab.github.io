@@ -24,7 +24,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: MINDxAI Lab
+title: MINDxAI Lab @ UofL
 email: yunmei.liu@louisville.edu
 author: MINDxAI Lab
 copyright: Copyright ©
@@ -141,14 +141,14 @@ header_pages:
 
   # - README.md
 
-# Page default value
-defaults:
-  home:
-    heading: "MINDxAI Lab"
-    subheading: "Modeling Interaction, cogNition, and Decision-making x AI"
-    banner: 
-      image: "assets/images/banners/IMG4.jpeg"
-      height: "250px"
+# # Page default value
+# defaults:
+#   home:
+#     heading: "MINDxAI Lab @ UofL"
+#     subheading: "Modeling Interaction, cogNition, and Decision-making x AI"
+#     banner:
+#       image: "assets/images/banners/Picture0.png"
+#       height: "83px"
 
 # Banner default settings
 # These banner settings are for global banner default, but you can also
