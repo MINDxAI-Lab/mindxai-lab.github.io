@@ -318,7 +318,7 @@ title: Home
         </ol>
       </div>
       <div class="theme-item">
-        <h3><a href="/Research.html#theme-human-ai-automation">Research Theme III: Adaptive Health, Training, and Safety Technologies</a></h3>
+        <h3><a href="/Research.html#theme-human-ai-automation">Research Theme III: Human Behavior Modeling in Transportation and Automation Systems</a></h3>
 <p>This theme models behavioral dynamics and system-level safety and efficiency outcomes in complex systems.</p>
         <ol class="theme-projects">
           <li><a href="/Research.html#project-aggressive-driving-mixed-traffic">Aggressive Driving in Mixed Traffic</a></li>
