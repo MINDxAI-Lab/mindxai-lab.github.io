@@ -317,7 +317,7 @@ title: Team
       <div>
         <h3>Yan Chen, Ph.D. Student</h3>
 <p>
-  Yan Chen holds a B.S. in Control Science and Engineering from Shandong University. His research interests include human-centered driving systems, human adaptation in mixed traffic, aggressive driving behavior, and AI for healthcare. His current work develops vision-language model approaches for EEG analysis and examines how autonomous vehicle aggressiveness affects human driver behavior, safety, and traffic efficiency in mixed-traffic environments.
+  Yan Chen holds a B.S. in Control Science and Engineering from Shandong University. <br>His research interests include human-centered driving systems, human adaptation in mixed traffic, aggressive driving behavior, and AI for healthcare. His current work develops vision-language model approaches for EEG analysis and examines how autonomous vehicle aggressiveness affects human driver behavior, safety, and traffic efficiency in mixed-traffic environments.
 </p>
 
 <p>
@@ -340,7 +340,7 @@ title: Team
       <img src="/assets/images/banners/Updated%20Images/Moajjem.png" alt="Moajjem Chowdhury">
       <div>
         <h3>Moajjem Chowdhury, Ph.D. Student</h3>
-        <p>Human States Modeling<br>Multimodal Learning</p>
+        <p>Moajjem Hossain Chowdhury holds an M.S. in Electrical and Electronic Engineering from Universiti Kebangsaan Malaysia and a B.S. in Electrical and Electronic Engineering from North South University. <br>His research interests include human state modeling, multimodal learning, adaptive automation, human–AI collaboration, physiological signal analysis, and explainable AI. His work focuses on developing intelligent systems that integrate physiological, behavioral, and contextual data to better understand human cognitive and emotional states in complex environments. </p>
   <p>
   <strong>Role in Lab Projects:</strong> Student lead for the lab’s projects on <a href="/Research.html#project-cognitive-emotional-driving-automation">Cognitive-Emotional State Assessment for Adaptive Automation Intervention</a> and <a href="/Research.html#project-communication-barriers-healthcare">Communication Barriers in Patient-Provider Interactions</a>.
 </p>
