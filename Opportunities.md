@@ -60,23 +60,27 @@ title: Opportunities
   }
 
   .visitor-map-widget {
-    display: flex;
-    min-height: 280px;
+    min-height: 560px;
     margin-top: 16px;
-    align-items: center;
-    justify-content: center;
     overflow: hidden;
-    border: 1px dashed #b8cfd1;
+    border: 1px solid #d7e0e1;
     border-radius: 8px;
-    background: #f8fbfb;
-    text-align: center;
+    background: #fff;
   }
 
-  .visitor-map-widget img {
+  .visitor-map-frame {
     display: block;
-    max-width: 100%;
-    height: auto;
+    width: 100%;
+    min-height: 560px;
     border: 0;
+  }
+
+  .visitor-map-tracker {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    opacity: 0;
+    pointer-events: none;
   }
 
   .visitor-map-placeholder {
@@ -112,7 +116,11 @@ title: Opportunities
 
   @media (max-width: 760px) {
     .visitor-map-widget {
-      min-height: 220px;
+      min-height: 460px;
+    }
+
+    .visitor-map-frame {
+      min-height: 460px;
     }
   }
 </style>
@@ -155,8 +163,8 @@ title: Opportunities
       id="visitor-map-widget"
       class="visitor-map-widget"
       data-widget-script=""
-      data-widget-image="https://mapmyvisitors.com/map.png?d=SFvrJgpkKTZj33-y5mlUPOZFv4EhwslWeCYQDS2IJ-o&cl=ffffff"
-      data-widget-link="https://mapmyvisitors.com/web/1c4ru">
+      data-tracker-image="https://mapmyvisitors.com/map.png?d=SFvrJgpkKTZj33-y5mlUPOZFv4EhwslWeCYQDS2IJ-o&cl=ffffff"
+      data-map-page="https://mapmyvisitors.com/web/1c4ru">
       <p class="visitor-map-placeholder">
         Loading visitor map...
       </p>
@@ -201,20 +209,41 @@ title: Opportunities
     }
 
     function loadVisitorMap() {
+      var scriptSrc = widget.getAttribute("data-widget-script").trim();
+      var trackerImageSrc = widget.getAttribute("data-tracker-image").trim();
+      var mapPageSrc = widget.getAttribute("data-map-page").trim();
+
+      if (mapPageSrc) {
+        removePlaceholder();
+        var frame = document.createElement("iframe");
+        frame.className = "visitor-map-frame";
+        frame.title = "Visitor map for the MINDxAI Lab website";
+        frame.loading = "lazy";
+        frame.src = mapPageSrc;
+        widget.appendChild(frame);
+      }
+
       if (window.localStorage.getItem(storageKey) === "1") {
         widget.classList.add("is-disabled");
-        setStatus("Visitor map tracking is disabled for this browser.");
+        setStatus("Visitor map is shown, but tracking is disabled for this browser.");
         return;
       }
 
       if (window.location.hostname === "localhost" || window.location.hostname === "127.0.0.1") {
-        setStatus("Visitor map tracking is disabled on local preview.");
+        setStatus("Visitor map is shown, but tracking is disabled on local preview.");
         return;
       }
 
-      var scriptSrc = widget.getAttribute("data-widget-script").trim();
-      var imageSrc = widget.getAttribute("data-widget-image").trim();
-      var linkHref = widget.getAttribute("data-widget-link").trim();
+      if (trackerImageSrc) {
+        var tracker = document.createElement("img");
+        tracker.className = "visitor-map-tracker";
+        tracker.src = trackerImageSrc;
+        tracker.alt = "";
+        tracker.setAttribute("aria-hidden", "true");
+        widget.appendChild(tracker);
+        setStatus("Visitor map is active.");
+        return;
+      }
 
       if (scriptSrc) {
         removePlaceholder();
@@ -224,28 +253,6 @@ title: Opportunities
         script.async = true;
         script.src = scriptSrc;
         widget.appendChild(script);
-        setStatus("Visitor map is active.");
-        return;
-      }
-
-      if (imageSrc) {
-        removePlaceholder();
-        var image = document.createElement("img");
-        image.src = imageSrc;
-        image.alt = "Visitor map showing aggregate website visit locations";
-        image.loading = "lazy";
-
-        if (linkHref) {
-          var link = document.createElement("a");
-          link.href = linkHref;
-          link.target = "_blank";
-          link.rel = "noopener";
-          link.appendChild(image);
-          widget.appendChild(link);
-        } else {
-          widget.appendChild(image);
-        }
-
         setStatus("Visitor map is active.");
         return;
       }
