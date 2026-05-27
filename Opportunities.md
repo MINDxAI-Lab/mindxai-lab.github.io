@@ -53,22 +53,20 @@ title: Opportunities
     margin-bottom: 10px;
   }
 
-  .visitor-map-note,
-  .visitor-map-privacy {
-    color: #4d5b5d;
-    line-height: 1.6;
+  .visitor-map-widget {
+    margin-top: 14px;
+    padding: 10px;
+    border: 1px solid #d7e0e1;
+    border-radius: 8px;
+    background: #fff;
+    overflow: hidden;
   }
 
-  .visitor-map-link {
-    display: inline-block;
-    margin-top: 10px;
-    padding: 9px 12px;
-    border: 1px solid #389092;
-    border-radius: 8px;
-    color: #1f6f70;
-    background: #fff;
-    text-decoration: none;
-    font-weight: 700;
+  .visitor-map-widget iframe,
+  .visitor-map-widget img,
+  .visitor-map-widget canvas,
+  .visitor-map-widget svg {
+    max-width: 100%;
   }
 </style>
 
@@ -106,9 +104,12 @@ title: Opportunities
 
   <section class="visitor-map-section" aria-labelledby="visitor-map-heading">
     <h2 id="visitor-map-heading">Visitor Map</h2>
-    <p class="visitor-map-note">
-      The full MapMyVisitors page cannot be embedded directly here, but the live visitor map can be opened below.
-    </p>
-    <a class="visitor-map-link" href="https://mapmyvisitors.com/web/1c4ru" target="_blank" rel="noopener">Open Visitor Map</a>
+    <div class="visitor-map-widget">
+      <script
+        type="text/javascript"
+        id="mapmyvisitors"
+        src="https://mapmyvisitors.com/map.js?d=SFvrJgpkKTZj33-y5mlUPOZFv4EhwslWeCYQDS2IJ-o&cl=ffffff&w=a">
+      </script>
+    </div>
   </section>
 </div>
