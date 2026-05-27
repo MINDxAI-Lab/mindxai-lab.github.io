@@ -42,6 +42,79 @@ title: Opportunities
     text-decoration: none;
     font-weight: 700;
   }
+
+  .visitor-map-section {
+    margin-top: 42px;
+    padding-top: 26px;
+    border-top: 1px solid #dfe6e7;
+  }
+
+  .visitor-map-section h2 {
+    margin-bottom: 10px;
+  }
+
+  .visitor-map-note,
+  .visitor-map-privacy {
+    color: #4d5b5d;
+    line-height: 1.6;
+  }
+
+  .visitor-map-widget {
+    display: flex;
+    min-height: 280px;
+    margin-top: 16px;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border: 1px dashed #b8cfd1;
+    border-radius: 8px;
+    background: #f8fbfb;
+    text-align: center;
+  }
+
+  .visitor-map-widget img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    border: 0;
+  }
+
+  .visitor-map-placeholder {
+    max-width: 560px;
+    margin: 0;
+    padding: 20px;
+    color: #4d5b5d;
+    line-height: 1.6;
+  }
+
+  .visitor-map-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+    margin-top: 12px;
+  }
+
+  .visitor-map-actions button {
+    padding: 7px 10px;
+    border: 1px solid #389092;
+    border-radius: 6px;
+    color: #1f6f70;
+    background: #fff;
+    cursor: pointer;
+    font-weight: 700;
+  }
+
+  .visitor-map-status {
+    color: #5c6b6d;
+    font-size: 0.92rem;
+  }
+
+  @media (max-width: 760px) {
+    .visitor-map-widget {
+      min-height: 220px;
+    }
+  }
 </style>
 
 <div class="opportunities-page">
@@ -76,7 +149,124 @@ title: Opportunities
     </p>
   </section>
 
-  <section class="opportunity-section">
+  <section class="visitor-map-section" aria-labelledby="visitor-map-heading">
+    <h2 id="visitor-map-heading">Visitor Map</h2>
+    <div
+      id="visitor-map-widget"
+      class="visitor-map-widget"
+      data-widget-script=""
+      data-widget-image="https://mapmyvisitors.com/map.png?d=SFvrJgpkKTZj33-y5mlUPOZFv4EhwslWeCYQDS2IJ-o&cl=ffffff"
+      data-widget-link="https://mapmyvisitors.com/web/1c4ru">
+      <p class="visitor-map-placeholder">
+        Loading visitor map...
+      </p>
+    </div>
+
 
   </section>
 </div>
+
+<script>
+  (function () {
+    var storageKey = "mindxaiVisitorMapOptOut";
+    var params = new URLSearchParams(window.location.search);
+    var widget = document.getElementById("visitor-map-widget");
+    var status = document.querySelector("[data-visitor-map-status]");
+
+    if (!widget) {
+      return;
+    }
+
+    if (params.get("mindxai_no_track") === "1") {
+      window.localStorage.setItem(storageKey, "1");
+      window.history.replaceState(null, "", window.location.pathname + window.location.hash);
+    }
+
+    if (params.get("mindxai_track") === "1") {
+      window.localStorage.removeItem(storageKey);
+      window.history.replaceState(null, "", window.location.pathname + window.location.hash);
+    }
+
+    function setStatus(message) {
+      if (status) {
+        status.textContent = message;
+      }
+    }
+
+    function removePlaceholder() {
+      var placeholder = widget.querySelector(".visitor-map-placeholder");
+      if (placeholder) {
+        placeholder.remove();
+      }
+    }
+
+    function loadVisitorMap() {
+      if (window.localStorage.getItem(storageKey) === "1") {
+        widget.classList.add("is-disabled");
+        setStatus("Visitor map tracking is disabled for this browser.");
+        return;
+      }
+
+      if (window.location.hostname === "localhost" || window.location.hostname === "127.0.0.1") {
+        setStatus("Visitor map tracking is disabled on local preview.");
+        return;
+      }
+
+      var scriptSrc = widget.getAttribute("data-widget-script").trim();
+      var imageSrc = widget.getAttribute("data-widget-image").trim();
+      var linkHref = widget.getAttribute("data-widget-link").trim();
+
+      if (scriptSrc) {
+        removePlaceholder();
+        var script = document.createElement("script");
+        script.type = "text/javascript";
+        script.id = "visitor-map-tracker";
+        script.async = true;
+        script.src = scriptSrc;
+        widget.appendChild(script);
+        setStatus("Visitor map is active.");
+        return;
+      }
+
+      if (imageSrc) {
+        removePlaceholder();
+        var image = document.createElement("img");
+        image.src = imageSrc;
+        image.alt = "Visitor map showing aggregate website visit locations";
+        image.loading = "lazy";
+
+        if (linkHref) {
+          var link = document.createElement("a");
+          link.href = linkHref;
+          link.target = "_blank";
+          link.rel = "noopener";
+          link.appendChild(image);
+          widget.appendChild(link);
+        } else {
+          widget.appendChild(image);
+        }
+
+        setStatus("Visitor map is active.");
+        return;
+      }
+
+      setStatus("Visitor map is not active yet.");
+    }
+
+    document.querySelectorAll("[data-visitor-map-disable]").forEach(function (button) {
+      button.addEventListener("click", function () {
+        window.localStorage.setItem(storageKey, "1");
+        window.location.reload();
+      });
+    });
+
+    document.querySelectorAll("[data-visitor-map-enable]").forEach(function (button) {
+      button.addEventListener("click", function () {
+        window.localStorage.removeItem(storageKey);
+        window.location.reload();
+      });
+    });
+
+    loadVisitorMap();
+  })();
+</script>
