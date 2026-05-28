@@ -388,9 +388,9 @@ title: Home
         <div class="carousel-tabs" aria-label="Select carousel image">
           <button type="button" class="is-active" data-carousel-goto="0" aria-label="Show image 1">1</button>
           <button type="button" data-carousel-goto="1" aria-label="Show image 2">2</button>
-          <button type="button" data-carousel-goto="2" aria-label="Show image 3">3</button>
+          <!-- <button type="button" data-carousel-goto="2" aria-label="Show image 3">3</button>
           <button type="button" data-carousel-goto="3" aria-label="Show image 4">4</button>
-          <button type="button" data-carousel-goto="4" aria-label="Show image 5">5</button>
+          <button type="button" data-carousel-goto="4" aria-label="Show image 5">5</button> -->
         </div>
       </div>
 
