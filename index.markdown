@@ -429,8 +429,8 @@ title: Home
           <a href="/Team.html">Team</a>
           <a href="/Research.html">Research</a>
           <a href="/Publications.html">Publications</a>
-          <a href="/Opportunities.html">Opportunities</a>
           <a href="/News.html">News</a>
+          <a href="/Opportunities.html">Opportunities</a>
         </div>
       </div>
     </main>
