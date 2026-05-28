@@ -3,39 +3,114 @@ layout: home
 title: News
 # permalink: /about/
 ---
-<h1 align="center">MINDxAI LAB NEWS</h1>
-<!-- <div align='center'><font size='60'>Projects</font></div> -->
 
-<!-- + <font size=3>The MINDxAI Lab develops human-centered AI and human-in-the-loop systems in the Industrial and Systems Engineering Department at the University of Louisville. [Current] <br/><br/>
+<style>
+  .mindxai-news h1 {
+    margin-bottom: 28px;
+    text-align: center;
+    letter-spacing: 0;
+  }
 
-+ <font size=3><a href="https://www.ise.ufl.edu/awards/departmental-awards/?" target="_blank">Received the <b>2023 Linda Parker Hudson Graduate Fellowship</b> award from ISE Department - University of Florida ($2,500)</a> [March, 2023] <br/><br/>
+  .news-list {
+    display: grid;
+    gap: 22px;
+  }
 
-+ <font size=3><a href="https://www.ise.ufl.edu/harold-d-haldeman-jr-fellowship-award-recipient-list/" target="_blank">Received the <b>2022 Harold D. Haldeman, Jr. Fellowship</b> award from ISE Department - University of Florida ($2,000)</a> [February, 2022] <br/><br/>
+  .news-card {
+    display: grid;
+    grid-template-columns: 180px 1fr;
+    gap: 20px;
+    padding: 20px;
+    border-left: 4px solid #389092;
+    border-radius: 8px;
+    background: #f6fbfb;
+  }
 
-+ <font size=3>Won <a href="https://www.eng.ufl.edu/students/students/international/international-students/international-student-awards/" target="_blank">the UF <b>International Center Certificates of Outstanding Achievement </b></a> [October, 2022]<br/><br/>
+  .news-thumb {
+    display: block;
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    border-radius: 8px;
+    object-fit: cover;
+    background: #eef4f4;
+  }
 
-+ <font size=3><a href="https://www.ise.ufl.edu/hfes/leadership/" target="_blank">Launched and served as the <b>inaugural President</b> of UF <i>Human Factors and Ergonomics Society</i> Student Chapter</a> [August, 2022]<br/><br/>
+  .news-date {
+    margin: 0 0 8px;
+    color: #1f7a7f;
+    font-weight: 700;
+  }
 
-+ <font size=3>Led the UF HFES Student Chapter team to win the <b>Bronze Award</b> in the 2023 HFES Student Chapter recognition. [August, 2023] <br/><br/>
+  .news-card h2 {
+    margin: 0 0 10px;
+    color: #3f4a4c;
+    font-size: 1.3rem;
+    line-height: 1.35;
+    letter-spacing: 0;
+  }
 
-+ <font size=3><a href="https://fora.aa.ufl.edu/Provost/SearchCommittees/Search-Committee-for-Dean-Herbert-Wertheim-College-of-Engineering" target="_blank">Acted as a member of the Search Committee for new Dean of Engineering College - University of Florida</a> [April, 2022] <br/><br/>
+  .news-card h2 a {
+    color: inherit;
+    text-decoration: none;
+  }
 
-+ <font size=3><a href="https://www.ise.ufl.edu/ichms2022/conference-session-overview/" target="_blank">Served as Chair and Organizer of sessions on Technical Sessions at the <i>3rd IEEE International Conference of Human Machine Systems</i> </a> [November, 2022]<br/><br/>
+  .news-card h2 a:hover,
+  .news-card h2 a:focus {
+    color: #1f7a7f;
+    text-decoration: underline;
+  }
 
+  .news-card p {
+    margin: 0 0 12px;
+    line-height: 1.7;
+  }
 
-+ <font size=3><a href="https://www.ise.ufl.edu/ichms2022/about/committee-and-sponsors/?" target="_blank">Served as a reviewer for the <i>3rd IEEE International Conference of Human Machine Systems</i></a> [June, 2022] <br/><br/>
+  .news-read-more {
+    color: #1f7a7f;
+    font-weight: 700;
+    text-decoration: none;
+  }
 
-+ <font size=3><a href="https://www.ise.ufl.edu/blog/2022/04/david-kaber-ph-d-and-team-use-augmented-reality-to-aid-in-extreme-operational-tasks/?" target="_blank">Got involved in DARPA project to use augmented reality to aid in extreme operational tasks</a> [April, 2022] <br/><br/>
+  .news-read-more:hover,
+  .news-read-more:focus {
+    text-decoration: underline;
+  }
 
-<img src="/assets/images/banners/IMG_5380.jpeg"/><br/><br/> -->
+  @media (max-width: 720px) {
+    .news-card {
+      grid-template-columns: 1fr;
+      padding: 18px 16px;
+    }
 
+    .news-thumb {
+      max-height: 260px;
+    }
+  }
+</style>
 
+<div class="mindxai-news">
+  <h1>Lab News</h1>
 
-
-
-
-
-
-
-
-
+  <section class="news-list" aria-label="MINDxAI Lab news">
+    {%- assign news_posts = site.posts | where_exp: "post", "post.tags contains 'news'" -%}
+    {%- for post in news_posts -%}
+    <article class="news-card">
+      {%- if post.image -%}
+      <a href="{{ post.url | relative_url }}" aria-label="{{ post.title | escape }}">
+        <img class="news-thumb" src="{{ post.image | relative_url }}" alt="{{ post.image_alt | default: post.title | escape }}">
+      </a>
+      {%- endif -%}
+      <div>
+        {%- if post.display_date -%}
+        <p class="news-date">{{ post.display_date }}</p>
+        {%- else -%}
+        <p class="news-date">{{ post.date | date: "%B %Y" }}</p>
+        {%- endif -%}
+        <h2><a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></h2>
+        <p>{{ post.summary }}</p>
+        <a class="news-read-more" href="{{ post.url | relative_url }}">Read more</a>
+      </div>
+    </article>
+    {%- endfor -%}
+  </section>
+</div>

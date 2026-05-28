@@ -317,7 +317,7 @@ title: Team
       <div>
         <h3>Yan Chen, Ph.D. Student</h3>
 <p>
-  Yan Chen holds a B.S. in Control Science and Engineering from Shandong University. <br>His research interests include human-centered driving systems, human adaptation in mixed traffic, aggressive driving behavior, and AI for healthcare. His current work develops vision-language model approaches for EEG analysis and examines how autonomous vehicle aggressiveness affects human driver behavior, safety, and traffic efficiency in mixed-traffic environments.
+  Yan Chen holds a <b>B.S. </b>in Control Science and Engineering from Shandong University. <br>His research interests include human-centered driving systems, human adaptation in mixed traffic, aggressive driving behavior, and AI for healthcare. His current work develops vision-language model approaches for EEG analysis and examines how autonomous vehicle aggressiveness affects human driver behavior, safety, and traffic efficiency in mixed-traffic environments.
 </p>
 
 <p>
@@ -340,7 +340,7 @@ title: Team
       <img src="/assets/images/banners/Updated%20Images/Moajjem.png" alt="Moajjem Chowdhury">
       <div>
         <h3>Moajjem Chowdhury, Ph.D. Student</h3>
-        <p>Moajjem Hossain Chowdhury holds an M.S. in Electrical and Electronic Engineering from Universiti Kebangsaan Malaysia and a B.S. in Electrical and Electronic Engineering from North South University. <br>His research interests include human state modeling, multimodal learning, adaptive automation, human–AI collaboration, physiological signal analysis, and explainable AI. His work focuses on developing intelligent systems that integrate physiological, behavioral, and contextual data to better understand human cognitive and emotional states in complex environments. </p>
+        <p>Moajjem Hossain Chowdhury holds an <b>M.S.</b>  in Electrical and Electronic Engineering from Universiti Kebangsaan Malaysia and a <b>B.S. </b>in Electrical and Electronic Engineering from North South University. <br>His research interests include human state modeling, multimodal learning, adaptive automation, human–AI collaboration, physiological signal analysis, and explainable AI. His work focuses on developing intelligent systems that integrate physiological, behavioral, and contextual data to better understand human cognitive and emotional states in complex environments. </p>
   <p>
   <strong>Role in Lab Projects:</strong> Student lead for the lab’s projects on <a href="/Research.html#project-cognitive-emotional-driving-automation">Cognitive-Emotional State Assessment for Adaptive Automation Intervention</a> and <a href="/Research.html#project-communication-barriers-healthcare">Communication Barriers in Patient-Provider Interactions</a>.
 </p>
@@ -378,6 +378,53 @@ title: Team
         </div>
       </div>
     </div>
+
+<div class="student-profile">
+<img src="/assets/images/banners/Updated%20Images/Ming.jpg" alt="Ming Lu">
+      <div>
+    <h3>Ming Lu, Upcoming Ph.D. Student</h3>
+        <p>
+     Ming Lu holds a <b>M.S.</b> in Signal Processing and Machine Learning from Nanyang Technological University and a <b>B.S.</b> in Measuring Control Technology & Instruments from Southeast University. <br>His research interests include human-robot interaction, intelligent adaptive systems, and AI for healthcare. He will join the MINDxAI Lab in August 2026.
+    </p >
+    <p>
+      <strong>Role in Lab Projects:</strong> Not available at the moment.
+    </p >
+     <div class="student-contact">
+          <span class="student-contact-label">Contact:</span>
+          <a class="student-contact-link" href="ming.lu@louisville.edu">
+            <img src="/assets/images/banners/Updated%20Images/E.png" alt="Email">
+            <span>Email: ming.lu@louisville.edu</span>
+          </a>
+          <!-- <a class="student-contact-link" href="https://www.linkedin.com/in/moajjem04/" target="_blank" rel="noopener">
+            <img src="/assets/images/banners/Updated%20Images/IN.png" alt="LinkedIn">
+            <span>LinkedIn</span>
+          </a> -->
+        </div>
+  </div>
+</div>
+
+<!--
+    <div class="member-grid">
+      <div class="member-card">
+        <div class="member-avatar">ML</div>
+        <div>
+          <h3>Ming Lu, Upcoming Ph.D. Student</h3>
+ <p>
+     Ming Lu holds a Bachelor of Science degree in Measuring Control Technology & Instruments from Southeast University and a Master of Science degree in Signal Processing and Machine Learning from Nanyang Technological University. His research interests include human-robot interaction, intelligent adaptive systems, and AI for healthcare. He will join the MINDxAI Lab in August 2026.
+    </p >
+
+      <div class="student-contact">
+          <span class="student-contact-label">Contact:</span>
+          <a class="student-contact-link" href="mailto:ming.lu@louisville.edu">
+            <img src="/assets/images/banners/Updated%20Images/E.png" alt="Email">
+            <span>Email: ming.lu@louisville.edu</span>
+          </a>
+          <!-- <a class="student-contact-link" href="https://www.linkedin.com/in/udit-kumar-das-09/" target="_blank" rel="noopener">
+            <img src="/assets/images/banners/Updated%20Images/IN.png" alt="LinkedIn">
+            <span>LinkedIn</span>
+          </a> -->
+
+
     <div class="student-profile">
       <img src="/assets/images/banners/Updated%20Images/Qunli.png" alt="Qunli Liu">
       <div>
@@ -393,26 +440,6 @@ title: Team
             <img src="/assets/images/banners/Updated%20Images/IN.png" alt="LinkedIn">
             <span>LinkedIn</span>
           </a> -->
-        </div>
-      </div>
-    </div>
-    <div class="member-grid">
-      <div class="member-card">
-        <div class="member-avatar">ML</div>
-        <div>
-          <h3>Ming Lu, Upcoming Ph.D. Student</h3>
-          <p>Human-Robot Interaction<br>Intelligent Adaptive Systems</p>
-      <div class="student-contact">
-          <span class="student-contact-label">Contact:</span>
-          <a class="student-contact-link" href="mailto:ming.lu@louisville.edu">
-            <img src="/assets/images/banners/Updated%20Images/E.png" alt="Email">
-            <span>Email: ming.lu@louisville.edu</span>
-          </a>
-          <!-- <a class="student-contact-link" href="https://www.linkedin.com/in/udit-kumar-das-09/" target="_blank" rel="noopener">
-            <img src="/assets/images/banners/Updated%20Images/IN.png" alt="LinkedIn">
-            <span>LinkedIn</span>
-          </a> -->
-        </div>
         </div>
       </div>
     </div>
