@@ -102,7 +102,7 @@ title: Opportunities
     </p>
   </section>
 
-  <section class="visitor-map-section" aria-labelledby="visitor-map-heading">
+  <!-- <section class="visitor-map-section" aria-labelledby="visitor-map-heading">
     <h2 id="visitor-map-heading">Visitor Map</h2>
     <div class="visitor-map-widget">
       <script
@@ -111,5 +111,5 @@ title: Opportunities
         src="https://mapmyvisitors.com/map.js?d=SFvrJgpkKTZj33-y5mlUPOZFv4EhwslWeCYQDS2IJ-o&cl=ffffff&w=a">
       </script>
     </div>
-  </section>
+  </section> -->
 </div>
