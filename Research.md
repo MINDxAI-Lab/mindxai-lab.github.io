@@ -403,38 +403,6 @@ title: Research
       </div>
     </article>
 
-    <!-- <article class="research-project">
-      <img src="/assets/images/banners/NSF.png" alt="NSF project graphic">
-      <div>
-        <h3>EMG-Based Assistive Human-Machine Interface Design</h3>
-        <p>
-          This NSF-funded project develops models of powered-prosthetic user cognitive workload when applying different modes of electromyography (EMG)-based device control. These models can be used to predict workload associated with EMG-based control interfaces in other applications.
-        </p>
-        <a href="{% post_url 2019-12-01-NSF %}">Read more</a>
-      </div>
-    </article>
-
-    <article class="research-project">
-      <img src="/assets/images/banners/DARPA1.png" alt="DARPA project graphic">
-      <div>
-        <h3>Real-Time Perceptually Enabled Task Guidance in Extremes</h3>
-        <p>
-          This DARPA-funded project studies the use of augmented reality for providing knowledge task guidance in extreme situations. The research challenge is to create a data-to-knowledge pipeline from wearable devices to an intelligent agent that can determine what information or guidance to provide to human operators in real time.
-        </p>
-        <a href="{% post_url 2022-01-01-DARPA %}">Read more</a>
-      </div>
-    </article>
-
-    <article class="research-project">
-      <img src="/assets/images/banners/REU.png" alt="REU project graphic">
-      <div>
-        <h3>NSF REU Site in Advanced Manufacturing and Supply Chain</h3>
-        <p>
-          This three-year REU project at the University of Louisville provides a 10-week summer experiential training program. REU students work closely with faculty mentors on research projects motivated by real-world problems and participate in professional development opportunities including workshops, research presentations, and plant tours.
-        </p>
-        <a href="https://www.aqlanlab.org/research/reu/project-6" target="_blank" rel="noopener">Read more</a>
-      </div>
-    </article> -->
   </section>
 
 
