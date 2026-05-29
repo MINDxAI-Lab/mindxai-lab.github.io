@@ -361,9 +361,9 @@ title: Team
       <img src="/assets/images/banners/Updated%20Images/Udit.png" alt="Udit Das">
       <div>
         <h3>Udit Kumar Das, M.S. Student</h3>
-        <p>Performance Modeling<br>Human-AI Teaming</p>
+        <p>Udit Kumar has an <b>M.S.</b> in Applied Statistics and Data Science from Jahangirnagar University and a <b>B.S.</b> in Petroleum and Mining Engineering from Military Institute of Science and Technology, Bangladesh. <br>His research focuses on human factors, driver behavior, cognitive workload, and human–AI interaction in transportation. His current research investigates how aggressive driving behaviors affect novice drivers’ visual attention, workload, and driving behavior in simulated driving environments.</p>
 <p>
-  <strong>Role in Lab Projects:</strong> Spport the lab’s project on <a href="/Research.html#project-aggressive-driving-mixed-traffic">Aggressive Driving in Mixed Traffic</a>.
+  <strong>Role in Lab Projects:</strong> Supports the lab’s project on <a href="/Research.html#project-aggressive-driving-mixed-traffic">Aggressive Driving in Mixed Traffic</a>.
 </p>
     <div class="student-contact">
           <span class="student-contact-label">Contact:</span>
