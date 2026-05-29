@@ -385,7 +385,7 @@ title: Team
     <h3>Ming Lu, Upcoming Ph.D. Student</h3>
         <p>
      Ming Lu holds a <b>M.S.</b> in Signal Processing and Machine Learning from Nanyang Technological University and a <b>B.S.</b> in Measuring Control Technology & Instruments from Southeast University. <br>His research interests include human-robot interaction, intelligent adaptive systems, and AI for healthcare. He will join the MINDxAI Lab in August 2026.
-    </p >
+    </p>
     <p>
       <strong>Role in Lab Projects:</strong> Not available at the moment.
     </p >
@@ -424,22 +424,25 @@ title: Team
             <span>LinkedIn</span>
           </a> -->
 
-
     <div class="student-profile">
       <img src="/assets/images/banners/Updated%20Images/Qunli.png" alt="Qunli Liu">
       <div>
         <h3>Qunli Liu, Upcoming Ph.D. Student</h3>
-        <p>Behavioral Data Analysis<br>Statistical Modeling</p>
+      <p>
+      Qunli Liu holds a <b>M.S.</b> in Data Science from the University of California, Irvine and <b>B.A.</b> in Data Science from the University of California, Berkeley.
+      <br>His research interests include physiological signal analysis, behavior data analysis and statistical modeling. His current work examines human operator performance in surveillance tasks and how environmental factors shape human activity and mobility behavior in urban environments.
+    </p>
+
       <div class="student-contact">
           <span class="student-contact-label">Contact:</span>
           <a class="student-contact-link" href="mailto:qunli.liu@louisville.edu">
             <img src="/assets/images/banners/Updated%20Images/E.png" alt="Email">
             <span>Email: qunli.liu@louisville.edu</span>
           </a>
-          <!-- <a class="student-contact-link" href="https://www.linkedin.com/in/udit-kumar-das-09/" target="_blank" rel="noopener">
+          <a class="student-contact-link" href="https://www.linkedin.com/in/qunli-liu-244a5822b/" target="_blank" rel="noopener">
             <img src="/assets/images/banners/Updated%20Images/IN.png" alt="LinkedIn">
             <span>LinkedIn</span>
-          </a> -->
+          </a>
         </div>
       </div>
     </div>

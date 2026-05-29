@@ -95,9 +95,11 @@ title: News
     {%- assign news_posts = site.posts | where_exp: "post", "post.tags contains 'news'" -%}
     {%- for post in news_posts -%}
     <article class="news-card">
-      {%- if post.image -%}
+      {%- assign post_image = post.card_image | default: post.image -%}
+      {%- assign post_image_alt = post.card_image_alt | default: post.image_alt | default: post.title -%}
+      {%- if post_image -%}
       <a href="{{ post.url | relative_url }}" aria-label="{{ post.title | escape }}">
-        <img class="news-thumb" src="{{ post.image | relative_url }}" alt="{{ post.image_alt | default: post.title | escape }}">
+        <img class="news-thumb" src="{{ post_image | relative_url }}" alt="{{ post_image_alt | escape }}">
       </a>
       {%- endif -%}
       <div>

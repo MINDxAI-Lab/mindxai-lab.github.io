@@ -369,8 +369,8 @@ title: Research
       <figure>
         <img src="/assets/images/banners/Updated Images/AD.png" alt="Aggressive Driving project graphic">
         <figcaption>
-         Sponsor: UofL
-          <span>PIs: Yunmei Liu, Yueshuai (Brian) He, Anthony D. McDonald, and Tianlong Chen</span>
+          <a href="/news/jon-rieger-seed-grant-dual-axis-aggression-detection.html" target="_blank" rel="noopener">Sponsor: UofL Jon Rieger Seed Grant</a>
+          <span>PI: Yunmei Liu</span>
         </figcaption>
       </figure>
       <div>
