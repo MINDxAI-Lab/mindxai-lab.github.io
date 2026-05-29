@@ -256,7 +256,7 @@ html {
 
   .footer-content-grid {
     display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-columns: minmax(230px, 1.25fr) minmax(140px, 0.75fr) minmax(150px, 0.7fr) minmax(230px, 1fr);
     gap: $spacing-unit * 0.8;
     padding-top: $spacing-unit * 0.5;
     border-top: 1px solid rgba(0, 0, 0, 0.12);
@@ -271,6 +271,20 @@ html {
   .footer-line {
     margin-bottom: 4px;
     line-height: 1.4;
+  }
+
+  .footer-visitor-map {
+    max-width: 240px;
+    overflow: hidden;
+
+    img,
+    iframe,
+    canvas {
+      display: block;
+      max-width: 100%;
+      height: auto;
+      border: 0;
+    }
   }
 
   @include media-query($on-palm) {
