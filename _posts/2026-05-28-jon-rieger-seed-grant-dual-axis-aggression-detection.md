@@ -202,7 +202,7 @@ This project will use a CARLA–SUMO driving simulator to examine how human driv
 We hope this work will contribute to safer, more cooperative mixed traffic and inform the design of future AV driving policies.
   </p>
   <p class="jr-grant-theme">
-    <b>This award provides additional funding support for the MINDxAI Lab's <a href="{{ '/Research.html#theme-human-ai-automation' | relative_url }}">Research Theme III: Human Behavior Modeling in Transportation and Automation Systems</a>, particularly the lab's ongoing work on <a href="{{ '/Research.html#project-aggressive-driving-mixed-traffic' | relative_url }}">Aggressive Driving in Mixed Traffic</a>.</b>
+    <b>This award provides additional support for the MINDxAI Lab's <a href="{{ '/Research.html#theme-human-ai-automation' | relative_url }}">Research Theme III: Human Behavior Modeling in Transportation and Automation Systems</a>, particularly the lab's ongoing work on <a href="{{ '/Research.html#project-aggressive-driving-mixed-traffic' | relative_url }}">Aggressive Driving in Mixed Traffic</a>.</b>
   </p>
 
 </div>

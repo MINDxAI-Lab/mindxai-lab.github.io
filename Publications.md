@@ -12,7 +12,7 @@ title: Publications
 
 <b>[3]</b>. <b>Liu, Y.</b>, Park, J., Delgado, D., Music, A., Berman, J., Ruiz, J., Kaber, D. B., Huang, H., and Zahabi, M. (2026). Virtual reality as a platform for upper-limb prosthetic control modes evaluation and early-stage design. <i>IEEE Transactions on Neural Systems and Rehabilitation Engineering</i>, 34, 583-594. DOI: 10.1109/TNSRE.2026.3652083. Reference <a href="https://pubmed.ncbi.nlm.nih.gov/41525556/" target="_blank" rel="noopener">[3]</a>
 
-<b>[4]</b>. <b>Liu, Y.</b>, Berman, J., Dodson, A., Park, J., Zahabi, M., Huang, H., Ruiz, J., and Kaber, D. B. (2024). Human-centered evaluation of EMG-based upper-limb prosthetic control modes. <i>IEEE Transactions on Human-Machine Systems</i>, 54(3), 271-281. DOI: 10.1109/THMS.2024.3381094. Reference <a href="https://par.nsf.gov/biblio/10550435" target="_blank" rel="noopener">[4]</a>
+<b>[4]</b>. <b>Liu, Y.</b>, Berman, J., Dodson, A., Park, J., Zahabi, M., Huang, H., Ruiz, J., and Kaber, D. B. (2024). Human-centered evaluation of EMG-based upper-limb prosthetic control modes. <i>IEEE Transactions on Human-Machine Systems</i>, 54(3), 271-281. DOI: 10.1109/THMS.2024.3381094. Reference <a href="https://ieeexplore.ieee.org/abstract/document/10497136?casa_token=wGD8-Cn_S_QAAAAA:MrPoWwTEhrkirpK_uZyi75BAe3hbLr7-aZZR0cBLMQ9J3I9N1vI4jZ_hm_aoSJZ7Vd2xTtTs" target="_blank" rel="noopener">[4]</a>
 
 <b>[5]</b>. <b>Liu, Y.</b>, Kaber, D. B., Cunningham, C. M., Chase, R. T., and Pyo, K. (2024). Analysis of driver behavior at grade-separated intersections to support design. <i>Applied Ergonomics</i>, 118, 104287. DOI: 10.1016/j.apergo.2024.104287. Reference <a href="https://doi.org/10.1016/j.apergo.2024.104287" target="_blank" rel="noopener">[5]</a>
 

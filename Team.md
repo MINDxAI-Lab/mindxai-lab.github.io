@@ -388,7 +388,7 @@ title: Team
     </p>
     <p>
       <strong>Role in Lab Projects:</strong> Not available at the moment.
-    </p >
+    </p>
      <div class="student-contact">
           <span class="student-contact-label">Contact:</span>
           <a class="student-contact-link" href="ming.lu@louisville.edu">
@@ -432,7 +432,9 @@ title: Team
       Qunli Liu holds a <b>M.S.</b> in Data Science from the University of California, Irvine and <b>B.A.</b> in Data Science from the University of California, Berkeley.
       <br>His research interests include physiological signal analysis, behavior data analysis and statistical modeling. His current work examines human operator performance in surveillance tasks and how environmental factors shape human activity and mobility behavior in urban environments.
     </p>
-
+    <p>
+      <strong>Role in Lab Projects:</strong> Not available at the moment.
+    </p>
       <div class="student-contact">
           <span class="student-contact-label">Contact:</span>
           <a class="student-contact-link" href="mailto:qunli.liu@louisville.edu">
@@ -454,10 +456,10 @@ title: Team
       <img src="/assets/images/banners/Updated%20Images/Laksita%20Prasanna.jpg" alt="Laksita Prasanna">
       <div>
         <h3>Laksita Prasanna, B.S. Student</h3>
-        <p>Laksita Prasanna recently graduated with a Bachelor of Science in Computer Science and Engineering and a minor in Psychology from the University of Louisville.</p>
+        <p>Laksita Prasanna recently graduated with a <b>B.S.</b> in Computer Science and Engineering and a minor in Psychology from the University of Louisville.</p>
         <p>Her academic interests center on the intersection of psychology and artificial intelligence, with a particular focus on human-centered computing. She currently works as a research student assisting with investigations of communication barriers in patient-provider settings, contributing to research aimed at improving healthcare communication and outcomes.</p>
   <p>
-  <strong>Role in Lab Projects:</strong> Spport the lab’s project on <a href="/Research.html#project-communication-barriers-healthcare">Communication Barriers in Patient-Provider Interactions</a>.
+  <strong>Role in Lab Projects:</strong> Supports the lab’s project on <a href="/Research.html#project-communication-barriers-healthcare">Communication Barriers in Patient-Provider Interactions</a>.
 </p>
      <div class="student-contact">
           <span class="student-contact-label">Contact:</span>
