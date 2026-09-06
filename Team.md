@@ -321,7 +321,7 @@ title: Team
 </p>
 
 <p>
-  <strong>Role in Lab Projects:</strong> Student lead for the lab’s projects on <a href="/Research.html#project-aggressive-driving-mixed-traffic">Aggressive Driving in Mixed Traffic</a> and <a href="/Research.html#project-eeg-seizure-modeling">AI-Driven Scalp EEG Modeling for Seizure Detection and Signal Enhancement</a>.
+  <strong>Role in Lab Projects:</strong> Student lead for the lab’s projects on <a href="/Research.html#project-aggressive-driving-mixed-traffic">Aggressive Driving in Mixed Traffic</a> , smart manufacturing, rehabilitation robotics and <a href="/Research.html#project-eeg-seizure-modeling">AI-Driven Scalp EEG Modeling for Seizure Detection and Signal Enhancement</a>.
 </p>
         <div class="student-contact">
           <span class="student-contact-label">Contact:</span>
@@ -360,10 +360,10 @@ title: Team
     <div class="student-profile">
       <img src="/assets/images/banners/Updated%20Images/Udit.png" alt="Udit Das">
       <div>
-        <h3>Udit Kumar Das, M.S. Student</h3>
-        <p>Udit Kumar has an <b>M.S.</b> in Applied Statistics and Data Science from Jahangirnagar University and a <b>B.S.</b> in Petroleum and Mining Engineering from Military Institute of Science and Technology, Bangladesh. <br>His research focuses on human factors, driver behavior, cognitive workload, and human–AI interaction in transportation. His current research investigates how aggressive driving behaviors affect novice drivers’ visual attention, workload, and driving behavior in simulated driving environments.</p>
+        <h3>Udit Kumar Das, Ph.D. Student</h3>
+        <p>Udit Kumar has an <b>M.S.</b> Industrial and Systems Engineering from University of Louisville and an in Applied Statistics and Data Science from Jahangirnagar University and a <b>B.S.</b> in Petroleum and Mining Engineering from Military Institute of Science and Technology, Bangladesh. <br>His research focuses on human factors, driver behavior, cognitive workload, and human–AI interaction in transportation. His current research investigates how aggressive driving behaviors affect novice drivers’ visual attention, workload, and driving behavior in simulated driving environments.</p>
 <p>
-  <strong>Role in Lab Projects:</strong> Supports the lab’s project on <a href="/Research.html#project-aggressive-driving-mixed-traffic">Aggressive Driving in Mixed Traffic</a>.
+  <strong>Role in Lab Projects:</strong> Student lead for the lab’s project on Human-Autonomy/AI Teaming; Supports the lab’s project on <a href="/Research.html#project-aggressive-driving-mixed-traffic">Aggressive Driving in Mixed Traffic</a>.
 </p>
     <div class="student-contact">
           <span class="student-contact-label">Contact:</span>
@@ -379,61 +379,16 @@ title: Team
       </div>
     </div>
 
-<div class="student-profile">
-<img src="/assets/images/banners/Updated%20Images/Ming.jpg" alt="Ming Lu">
-      <div>
-    <h3>Ming Lu, Upcoming Ph.D. Student</h3>
-        <p>
-     Ming Lu holds a <b>M.S.</b> in Signal Processing and Machine Learning from Nanyang Technological University and a <b>B.S.</b> in Measuring Control Technology & Instruments from Southeast University. <br>His research interests include human-robot interaction, intelligent adaptive systems, and AI for healthcare. He will join the MINDxAI Lab in August 2026.
-    </p>
-    <p>
-      <strong>Role in Lab Projects:</strong> Not available at the moment.
-    </p>
-     <div class="student-contact">
-          <span class="student-contact-label">Contact:</span>
-          <a class="student-contact-link" href="ming.lu@louisville.edu">
-            <img src="/assets/images/banners/Updated%20Images/E.png" alt="Email">
-            <span>Email: ming.lu@louisville.edu</span>
-          </a>
-          <!-- <a class="student-contact-link" href="https://www.linkedin.com/in/moajjem04/" target="_blank" rel="noopener">
-            <img src="/assets/images/banners/Updated%20Images/IN.png" alt="LinkedIn">
-            <span>LinkedIn</span>
-          </a> -->
-        </div>
-  </div>
-</div>
-
-<!--
-    <div class="member-grid">
-      <div class="member-card">
-        <div class="member-avatar">ML</div>
-        <div>
-          <h3>Ming Lu, Upcoming Ph.D. Student</h3>
- <p>
-     Ming Lu holds a Bachelor of Science degree in Measuring Control Technology & Instruments from Southeast University and a Master of Science degree in Signal Processing and Machine Learning from Nanyang Technological University. His research interests include human-robot interaction, intelligent adaptive systems, and AI for healthcare. He will join the MINDxAI Lab in August 2026.
-    </p >
-
-      <div class="student-contact">
-          <span class="student-contact-label">Contact:</span>
-          <a class="student-contact-link" href="mailto:ming.lu@louisville.edu">
-            <img src="/assets/images/banners/Updated%20Images/E.png" alt="Email">
-            <span>Email: ming.lu@louisville.edu</span>
-          </a>
-          <!-- <a class="student-contact-link" href="https://www.linkedin.com/in/udit-kumar-das-09/" target="_blank" rel="noopener">
-            <img src="/assets/images/banners/Updated%20Images/IN.png" alt="LinkedIn">
-            <span>LinkedIn</span>
-          </a> -->
-
     <div class="student-profile">
       <img src="/assets/images/banners/Updated%20Images/Qunli.png" alt="Qunli Liu">
       <div>
-        <h3>Qunli Liu, Upcoming Ph.D. Student</h3>
+        <h3>Qunli Liu, Ph.D. Student</h3>
       <p>
       Qunli Liu holds a <b>M.S.</b> in Data Science from the University of California, Irvine and <b>B.A.</b> in Data Science from the University of California, Berkeley.
       <br>His research interests include physiological signal analysis, behavior data analysis and statistical modeling. His current work examines human operator performance in surveillance tasks and how environmental factors shape human activity and mobility behavior in urban environments.
     </p>
     <p>
-      <strong>Role in Lab Projects:</strong> Not available at the moment.
+      <strong>Role in Lab Projects:</strong> Supports the lab’s smart manufacturing and rehabilitation robotics projects.
     </p>
       <div class="student-contact">
           <span class="student-contact-label">Contact:</span>
@@ -473,6 +428,15 @@ title: Team
           </a>
         </div>
       </div>
+    </div>
+  </section>
+
+  <section class="team-section">
+    <h2>Alumni</h2>
+    <div>
+      <h3>Udit Kumar Das</h3>
+      <p>Udit Kumar Das completed his M.S. thesis in Industrial and Systems Engineering at the University of Louisville in Summer 2026 under the supervision of Dr. Yunmei Liu. His thesis was titled <i>A Vision-Based Framework for Identifying Overtaking Events and Characterizing Concurrent Driver Behavior in Continuous Simulator Traffic</i>.</p>
+      <p>Following his M.S. graduation, Udit continued in the MINDxAI Lab as a Ph.D. student in Industrial and Systems Engineering. During his M.S. study, he received a research award based on his thesis work and served as first author on AHFE conference papers in 2025 and 2026.</p>
     </div>
   </section>
 
