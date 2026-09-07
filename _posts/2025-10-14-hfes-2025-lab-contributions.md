@@ -23,7 +23,7 @@ hidden:
 
   .news-post-hero {
     max-width: 760px;
-    margin: 0 auto 24px;
+    margin: 0 auto;
   }
 
   .news-post-hero img {
@@ -35,7 +35,7 @@ hidden:
   }
 
   .news-post-hero figcaption {
-    margin-top: 8px;
+    margin: 4px 0 0;
     color: #5a6668;
     font-size: 0.92rem;
   }
@@ -75,10 +75,10 @@ hidden:
   }
 
   .contribution-card {
-    padding: 18px 20px;
-    border-left: 4px solid #389092;
-    border-radius: 8px;
-    background: #f6fbfb;
+    padding: 0;
+    border: 0;
+    border-radius: 0;
+    background: transparent;
   }
 
   .contribution-card h2 {

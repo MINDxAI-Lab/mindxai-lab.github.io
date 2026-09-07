@@ -24,12 +24,12 @@ hidden:
   .news-post-hero {
     display: grid;
     grid-template-columns: minmax(180px, 280px) 1fr;
-    gap: 24px;
+    gap: 18px;
     align-items: center;
-    margin: 0 0 26px;
-    padding: 20px;
-    border-radius: 8px;
-    background: #f6fbfb;
+    margin: 0 auto 8px;
+    padding: 0;
+    border-radius: 0;
+    background: transparent;
   }
 
   .news-post-hero img {

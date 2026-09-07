@@ -4,6 +4,27 @@ title: Research
 ---
 
 <style>
+  .research-page {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .research-page > h1 {
+    order: 0;
+  }
+
+  #theme-adaptive-health-training-safety {
+    order: 1;
+  }
+
+  #theme-human-ai-automation {
+    order: 2;
+  }
+
+  #theme-physiological-biomedical-modeling {
+    order: 3;
+  }
+
   .research-page h1,
   .research-page h2,
   .research-page h3 {
@@ -85,6 +106,38 @@ title: Research
     height: 240px;
     object-fit: cover;
     border-radius: 8px;
+  }
+
+  .project-media-placeholder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 360px;
+    height: 240px;
+    border: 1px dashed #b9d4d4;
+    border-radius: 8px;
+    color: #637174;
+    background: #f7fbfb;
+    text-align: center;
+  }
+
+  .project-video-placeholder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 76px;
+    margin-top: 16px;
+    border: 1px dashed #b9d4d4;
+    border-radius: 6px;
+    color: #637174;
+    background: #f7fbfb;
+    font-weight: 700;
+  }
+
+  #project-ai-vr-manufacturing-foundry .project-video-placeholder {
+    grid-column: 1 / -1;
+    margin-top: 0;
+    min-height: 150px;
   }
 
   .research-project figure {
@@ -210,6 +263,12 @@ title: Research
       max-height: 260px;
     }
 
+    .project-media-placeholder {
+      width: 100%;
+      height: auto;
+      aspect-ratio: 3 / 2;
+    }
+
     .research-project p {
       text-align: left;
     }
@@ -246,8 +305,16 @@ title: Research
   The resulting models will help identify when and how automation should intervene, adapt, or provide support in order to improve safety. This work contributes to the design of human-centered automation systems that respond not only to task conditions, but also to the evolving cognitive and emotional states of the human operator.
 </p>
         <a class="project-button" href="https://mindxai-lab.github.io/nsf-edse-automation-intervention/" target="_blank" rel="noopener">Website</a>
-        <a class="project-outline-button" href="https://openaccess-api.cms-conferences.org/articles/download/978-1-964867-75-5_71" target="_blank" rel="noopener">Paper 1: Kumar et al., 2025</a>
         <div class="project-publications">
+<h4>Publications from This Project</h4>
+          <ol class="project-publication-list">
+            <li>
+            <a href="https://openaccess-api.cms-conferences.org/articles/download/978-1-964867-75-5_71" target="_blank" rel="noopener">Das, U.&#42;, Chowdhury, M. H.&#42;, <b>Liu, Y.</b>&dagger;, and Kaber, D. (2025). A systematic review of ground-truth labeling and prediction for cognitive workload adaptive systems. <i>International Conference on Applied Human Factors and Ergonomics</i>.</a>
+            </li>
+            <li>
+              Chowdhury, M. H.&#42;, Wang, S., and <b>Liu, Y.</b>&dagger; (2026). Mediation analysis of workload and emotion on the performance of supervision tasks. <i>Proceedings of the Human Factors and Ergonomics Society Annual Meeting</i>. Accepted.
+            </li>
+          </ol>
 <h4>Prior Related Work: Wearable Sensing and Real-Time Human-State Prediction</h4>
           <ol class="project-publication-list">
             <li>
@@ -275,6 +342,25 @@ title: Research
         </div>
       </div>
     </article>
+    <article class="research-project" id="project-ai-vr-manufacturing-foundry">
+      <figure>
+        <div class="project-media-placeholder" role="img" aria-label="AI-enabled virtual reality manufacturing foundry project image placeholder">Project image coming soon</div>
+        <figcaption>
+          <a href="https://www.nsf.gov/awardsearch/show-award/?AWD_ID=2627659&HistoricalAwards=false" target="_blank" rel="noopener">Sponsor: NSF FINDERS FOUNDRY</a>
+          <span>PI: Yunmei Liu</span>
+        </figcaption>
+      </figure>
+      <div>
+        <h3>AI-Enabled Virtual Reality Manufacturing Foundry</h3>
+        <p>
+          This NSF FINDERS FOUNDRY Planning project develops an AI-enabled virtual reality platform to help high school students explore modern manufacturing careers. The platform will provide safe, accessible, and authentic opportunities for students to learn manufacturing workflows, practice decision-making, and interact with a supportive AI mentor.
+        </p>
+        <p>
+          By making advanced manufacturing careers more visible and engaging, the project aims to strengthen students’ interest in manufacturing pathways and help them understand AI as a transparent learning support for feedback, reflection, and problem solving.
+        </p>
+      </div>
+      <!-- ÷<div class="project-video-placeholder" aria-label="Video demonstration placeholder">Video Demo coming soon</div> -->
+    </article>
   <article class="research-project" id="project-prosthetic-control">
       <figure>
         <img src="/assets/images/banners/NSF.png" alt="EMG-based upper-limb prosthetic control evaluation setup">
@@ -287,12 +373,26 @@ title: Research
         <h3>Human-Centered Design for Natural Upper-Limb Prosthetic Control</h3>
         <p>          This project focuses on advancing upper-limb prosthetic control from conventional control modes toward more natural and intuitive control. Our prior work compared alternative prosthetic control strategies, generated workload and usability evidence for early-stage design, and examined VR as a scalable platform for testing prosthetic manipulation tasks before full physical-device deployment. Together, these studies provide human-centered design guidance for selecting and refining prosthetic control interfaces that better align with users’ movement intentions, improve performance, reduce workload, and support rehabilitation training.
         </p>
-        <a class="project-outline-button" href="https://doi.org/10.1109/TNSRE.2026.3652083" target="_blank" rel="noopener">Paper 1: Liu et al. 2026</a>
-        <a class="project-outline-button" href="https://doi.org/10.1109/THMS.2024.3381094" target="_blank" rel="noopener">Paper 2: Liu et al. 2026</a>
-        <a class="project-outline-button" href="https://doi.org/10.1080/00140139.2023.2221413" target="_blank" rel="noopener">Paper 3: Park et al., 2023a</a>
-        <a class="project-outline-button" href="https://ieeexplore.ieee.org/document/10394286" target="_blank" rel="noopener">Paper 4: Park et al., 2023b</a>
-
-        <a class="project-outline-button" href="https://ieeexplore.ieee.org/document/9980676" target="_blank" rel="noopener">Paper 5: Park et al., 2022</a>
+        <div class="project-publications">
+          <h4>Prior Related Work: Upper-Limb Prosthetic Control</h4>
+          <ol class="project-publication-list">
+            <li>
+              <a href="https://doi.org/10.1109/TNSRE.2026.3652083" target="_blank" rel="noopener"><b>Liu, Y.</b>, Park, J., Delgado, D., Music, A., Berman, J., Ruiz, J., Kaber, D. B., Huang, H., and Zahabi, M. (2026). Virtual reality as a platform for upper-limb prosthetic control training and early-stage design. <i>IEEE Transactions on Neural Systems and Rehabilitation Engineering</i>.</a>
+            </li>
+            <li>
+              <a href="https://doi.org/10.1109/THMS.2024.3381094" target="_blank" rel="noopener"><b>Liu, Y.</b>, Berman, J., Dodson, A., Park, J., Zahabi, M., Huang, H., Ruiz, J., and Kaber, D. (2024). Human-centered evaluation of EMG-based upper-limb prosthetic control modes. <i>IEEE Transactions on Human-Machine Systems</i>.</a>
+            </li>
+            <li>
+              <a href="https://doi.org/10.1080/00140139.2023.2221413" target="_blank" rel="noopener">Park, J., Berman, J., Dodson, A., <b>Liu, Y.</b>, Armstrong, M., Huang, H., Kaber, D. B., Ruiz, J., and Zahabi, M. (2023). Assessing workload in using electromyography (EMG)-based prostheses. <i>Ergonomics</i>.</a>
+            </li>
+            <li>
+              <a href="https://ieeexplore.ieee.org/document/10394286" target="_blank" rel="noopener">Park, J., Music, A., Daniel, D., Berman, J., Dodson, A., <b>Liu, Y.</b>, Ruiz, J., Huang, H., Kaber, D., and Zahabi, M. (2023). Cognitive workload and usability of virtual reality simulation for prosthesis training. <i>IEEE International Conference on Systems, Man, and Cybernetics</i>, pp. 1567-1572.</a>
+            </li>
+            <li>
+              <a href="https://ieeexplore.ieee.org/document/9980676" target="_blank" rel="noopener">Park, J., Berman, J., Dodson, A., <b>Liu, Y.</b>, Armstrong, M., Huang, H., Kaber, D., Ruiz, J., and Zahabi, M. (2022). Cognitive workload classification of upper-limb prosthetic devices. <i>IEEE International Conference on Human-Machine Systems</i>, pp. 1-6.</a>
+            </li>
+          </ol>
+        </div>
 
       </div>
     </article>
@@ -303,7 +403,7 @@ title: Research
 
 <section class="research-section" id="theme-physiological-biomedical-modeling">
   <div class="research-topic-header">
-<h2>Research Theme II: Human-Centered Computing and Interaction-Aware Human State Modeling</h2>
+<h2>Research Theme III: Human-Centered Computing and Interaction-Aware Human State Modeling</h2>
 <p class="theme-focus"><strong>Theme focus:</strong> This theme investigates the mechanisms and theoretical foundations of human-state changes through AI-enabled modeling and multimodal data analysis.</p>
 <p class="research-section-subtitle">
   We develop methods to measure, model, and predict human states during interactions with intelligent systems. Our work integrates multimodal biosignals, performance data, and machine learning to support human-AI/robot teaming, neurological condition detection, and adaptive human-centered technologies. </p>
@@ -323,10 +423,17 @@ title: Research
 
         </p>
         <!-- <a class="project-button" href="https://mindxai-lab.github.io/nsf-edse-automation-intervention/" target="_blank" rel="noopener">Website</a> -->
-
-        <a class="project-outline-button" href="https://arxiv.org/pdf/2602.04769" target="_blank" rel="noopener">arXiv 1: Chen et al., 2026</a>
-
-        <a class="project-outline-button" href="https://arxiv.org/pdf/2602.02238" target="_blank" rel="noopener">arXiv 2: Yao et al., 2026</a>
+        <div class="project-publications">
+          <h4>Publications From This Project</h4>
+          <ol class="project-publication-list">
+            <li>
+              <a href="https://arxiv.org/pdf/2602.04769" target="_blank" rel="noopener">Chen, Y., Peng, J., Chowdhury, M. H., Chen, T., and <b>Liu, Y.</b> (2026). NeuroCanvas: VLLM-powered robust seizure detection by reformulating multichannel EEG as image. <i>arXiv preprint arXiv:2602.04769</i>.</a>
+            </li>
+            <li>
+              <a href="https://arxiv.org/pdf/2602.02238" target="_blank" rel="noopener">Yao, L., Zhang, G., Chowdhury, M., <b>Liu, Y.</b>, and Chen, T. (2026). Geometry- and relation-aware diffusion for EEG super-resolution. <i>arXiv preprint arXiv:2602.02238</i>.</a>
+            </li>
+          </ol>
+        </div>
       </div>
     </article>
 
@@ -346,10 +453,10 @@ title: Research
         </p>
 
         <div class="project-publications">
-          <h4>Forthcoming Work</h4>
+          <h4>Publications From This Project</h4>
           <ol class="project-publication-list">
             <li>
-              Chowdhury, M. H., and <b>Liu, Y.</b> (2026). Communication barriers in patient-provider interactions in healthcare: a scoping review. <i>Journal of Medical Internet Research (JMIR)</i>. <b>Minor Revision</b> (May 2026).
+              <a href="https://www.jmir.org/2026/1/e79744/" target="_blank" rel="noopener">Chowdhury, M. H.&#42;, and <b>Liu, Y.</b>&dagger; (2026). Systematic review of communication barriers in healthcare: implications for technological interventions. <i>Journal of Medical Internet Research (JMIR)</i>. </a>
             </li>
           </ol>
         </div>
@@ -360,7 +467,7 @@ title: Research
 
   <section class="research-section" id="theme-human-ai-automation">
     <div class="research-topic-header">
-<h2>Research Theme III: Human Behavior Modeling in Transportation and Automation Systems</h2>
+<h2>Research Theme II: Human Behavior Modeling in Transportation and Automation Systems</h2>
 <p class="theme-focus"><strong>Theme focus:</strong> This theme models behavioral dynamics and system-level safety and efficiency outcomes in complex systems.</p>
 <p class="research-section-subtitle">
   We study and model how humans behave, adapt, and make decisions in transportation contexts. Our work examines driver behavior, aggressive driving, mixed human-AV traffic, trust, workload, situation awareness, and human responses to automation, with the goal of informing safer and more human-aware transportation systems.</p>
@@ -381,6 +488,15 @@ title: Research
         <!-- <a class="project-button" href="https://mindxai-lab.github.io/nsf-edse-automation-intervention/" target="_blank" rel="noopener">Website</a> -->
         <a class="project-outline-button" href="https://hfesam2025.conference-program.com/presentation/?id=LECT696&sess=sess263" target="_blank" rel="noopener">Presentation 1: HFES 2025</a>
         <div class="project-publications">
+    <h4>Publications From This Project</h4>
+          <ol class="project-publication-list">
+            <li>
+              Das, U.&#42;, Chen, Y.&#42;, Chowdhury, M. H.&#42;, and <b>Liu, Y.</b>&dagger; (2026). A vision-based multimodal framework for quantifying novice driver behavioral responses to aggressive overtaking in continuous simulator traffic. <i>International Conference on Applied Human Factors and Ergonomics</i>. Accepted.
+            </li>
+            <li>
+              Chen, Y.&#42;, Chowdhury, M. H.&#42;, and <b>Liu, Y.</b>&dagger; (2026). From driver intent to road-user perception: a narrative and systematic review of perceived aggressive driving. <i>International Conference on Applied Human Factors and Ergonomics</i>. Accepted.
+            </li>
+          </ol>
     <h4>Prior Related Work: Driver Behavior Analysis</h4>
           <ol class="project-publication-list">
             <li>
@@ -400,6 +516,25 @@ title: Research
             </li>
           </ol>
         </div>
+      </div>
+    </article>
+
+    <article class="research-project" id="project-teen-driver-safety-education">
+      <figure>
+        <div class="project-media-placeholder" role="img" aria-label="Teen Driver Safety Education project image placeholder">Project image coming soon</div>
+        <figcaption>
+          <span>Sponsor: National Highway Traffic Safety Administration (NHTSA), with KYTC</span>
+          <span>PI: Yunmei Liu</span>
+        </figcaption>
+      </figure>
+      <div>
+        <h3>Teen Driver Safety Education</h3>
+        <p>
+          This project develops a simulator-ready curriculum package to support teen driver safety education in Kentucky high schools. The work will align teacher lesson plans, student materials, classroom debriefs, and an interactive driving scenario with KYTC and KOHS safety messaging on distracted driving and aggressive driving.
+        </p>
+        <p>
+          The project will integrate a classroom rotation model, driving-log feedback on behaviors such as speed choice, following distance, braking, and hazard response, and an optional wearable-sensor component that provides a student-friendly driver-state snapshot. A classroom pilot will assess the module's feasibility and learning value before the final toolkit is delivered for use by educators and transportation safety partners.
+        </p>
       </div>
     </article>
 

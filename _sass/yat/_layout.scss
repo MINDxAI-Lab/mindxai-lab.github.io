@@ -247,11 +247,19 @@ html {
     }
   }
 
+  .footer-sponsor-logos {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
   .footer-sponsor-logo {
     display: block;
-    width: 174px;
-    max-width: 100%;
-    height: auto;
+    width: auto;
+    max-width: 174px;
+    height: 70px;
+    object-fit: contain;
   }
 
   .footer-content-grid {
@@ -298,7 +306,8 @@ html {
     }
 
     .footer-sponsor-logo {
-      width: 144px;
+      max-width: 144px;
+      height: 56px;
     }
   }
 

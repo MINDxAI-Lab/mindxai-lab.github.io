@@ -40,12 +40,11 @@ hidden:
   }
 
   .jr-grant-hero {
-    margin: 0 0 26px;
-    padding: 22px 24px;
-    border: 1px solid #dfe9e9;
-    border-top: 5px solid #389092;
-    border-radius: 8px;
-    background: #f8fcfc;
+    margin: 0 0 8px;
+    padding: 0;
+    border: 0;
+    border-radius: 0;
+    background: transparent;
   }
 
   .jr-grant-kicker {
@@ -80,10 +79,10 @@ hidden:
   }
 
   .jr-grant-fact {
-    padding: 14px 16px;
-    border: 1px solid #dfe9e9;
-    border-radius: 8px;
-    background: #fff;
+    padding: 0;
+    border: 0;
+    border-radius: 0;
+    background: transparent;
   }
 
   .jr-grant-fact h3 {
@@ -115,9 +114,9 @@ hidden:
 
   .jr-grant-theme {
     margin: 0 0 20px;
-    padding: 16px 18px;
-    border-radius: 8px;
-    background: #f8fcfc;
+    padding: 0;
+    border-radius: 0;
+    background: transparent;
     color: #3f4a4c;
   }
 
@@ -202,7 +201,7 @@ This project will use a CARLA–SUMO driving simulator to examine how human driv
 We hope this work will contribute to safer, more cooperative mixed traffic and inform the design of future AV driving policies.
   </p>
   <p class="jr-grant-theme">
-    <b>This award provides additional support for the MINDxAI Lab's <a href="{{ '/Research.html#theme-human-ai-automation' | relative_url }}">Research Theme III: Human Behavior Modeling in Transportation and Automation Systems</a>, particularly the lab's ongoing work on <a href="{{ '/Research.html#project-aggressive-driving-mixed-traffic' | relative_url }}">Aggressive Driving in Mixed Traffic</a>.</b>
+    <b>This award provides additional support for the MINDxAI Lab's <a href="{{ '/Research.html#theme-human-ai-automation' | relative_url }}">Research Theme II: Human Behavior Modeling in Transportation and Automation Systems</a>, particularly the lab's ongoing work on <a href="{{ '/Research.html#project-aggressive-driving-mixed-traffic' | relative_url }}">Aggressive Driving in Mixed Traffic</a>.</b>
   </p>
 
 </div>

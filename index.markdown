@@ -402,22 +402,24 @@ title: Home
     <p>This theme translates human-state information into the design and implementation of real-time adaptive systems.</p>
             <ol class="theme-projects">
               <li><a href="/Research.html#project-cognitive-emotional-driving-automation">Cognitive-Emotional State Assessment for Adaptive Automation Intervention</a></li>
+              <li><a href="/Research.html#project-ai-vr-manufacturing-foundry">AI-Enabled Virtual Reality Manufacturing Foundry</a></li>
               <li><a href="/Research.html#project-prosthetic-control">Human-Centered Design for Natural Upper-Limb Prosthetic Control</a></li>
             </ol>
           </div>
           <div class="theme-item">
-            <h3><a href="/Research.html#theme-physiological-biomedical-modeling">Research Theme II: Human-Centered Computing and Interaction-Aware Human State Modeling</a></h3>
+            <h3><a href="/Research.html#theme-human-ai-automation">Research Theme II: Human Behavior Modeling in Transportation and Automation Systems</a></h3>
+    <p>This theme models behavioral dynamics and system-level safety and efficiency outcomes in complex systems.</p>
+            <ol class="theme-projects">
+              <li><a href="/Research.html#project-aggressive-driving-mixed-traffic">Aggressive Driving in Mixed Traffic</a></li>
+              <li><a href="/Research.html#project-teen-driver-safety-education">Teen Driver Safety Education</a></li>
+            </ol>
+          </div>
+          <div class="theme-item">
+            <h3><a href="/Research.html#theme-physiological-biomedical-modeling">Research Theme III: Human-Centered Computing and Interaction-Aware Human State Modeling</a></h3>
     <p>This theme investigates the mechanisms and theoretical foundations of human-state changes through AI-enabled modeling and multimodal data analysis.</p>
             <ol class="theme-projects">
               <li><a href="/Research.html#project-eeg-seizure-modeling">AI-Driven Scalp EEG Modeling for Seizure Detection and Signal Enhancement</a></li>
               <li><a href="/Research.html#project-communication-barriers-healthcare">Communication Barriers in Patient-Provider Interactions</a></li>
-            </ol>
-          </div>
-          <div class="theme-item">
-            <h3><a href="/Research.html#theme-human-ai-automation">Research Theme III: Human Behavior Modeling in Transportation and Automation Systems</a></h3>
-    <p>This theme models behavioral dynamics and system-level safety and efficiency outcomes in complex systems.</p>
-            <ol class="theme-projects">
-              <li><a href="/Research.html#project-aggressive-driving-mixed-traffic">Aggressive Driving in Mixed Traffic</a></li>
             </ol>
           </div>
         </div>

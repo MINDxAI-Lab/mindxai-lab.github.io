@@ -128,6 +128,75 @@ title: Team
     text-justify: inter-word;
   }
 
+  .team-compact-list h3 {
+    margin: 0 0 2px;
+    font-size: 1.15rem;
+    line-height: 1.35;
+  }
+
+  .team-compact-list p {
+    margin: 0 0 12px;
+    line-height: 1.55;
+  }
+
+  .team-compact-list p:last-child {
+    margin-bottom: 0;
+  }
+
+  .undergrad-list .undergrad-entry + .undergrad-entry {
+    margin-top: 22px;
+  }
+
+  .undergrad-list h3 {
+    margin: 0 0 3px;
+    font-size: 1.15rem;
+    line-height: 1.35;
+  }
+
+  .undergrad-list p {
+    margin: 0 0 7px;
+    color: #637174;
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+
+  .undergrad-list ul {
+    margin: 0;
+    padding-left: 1.25rem;
+    line-height: 1.55;
+  }
+
+  .undergrad-list li + li {
+    margin-top: 3px;
+  }
+
+  .alumni-list .alumni-entry + .alumni-entry {
+    margin-top: 22px;
+  }
+
+  .alumni-list h3 {
+    margin: 0 0 3px;
+    font-size: 1.15rem;
+    line-height: 1.35;
+  }
+
+  .alumni-list p {
+    margin: 0 0 7px;
+    color: #637174;
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+
+  .alumni-list ul {
+    margin: 0;
+    padding-left: 1.25rem;
+    line-height: 1.55;
+  }
+
+  .alumni-list li + li {
+    margin-top: 3px;
+  }
+
   .student-profile p:last-child {
     margin-bottom: 0;
   }
@@ -311,7 +380,7 @@ title: Team
   </section>
 
   <section class="team-section">
-    <h2>Current Graduate Students</h2>
+    <h2>Current Ph.D. Students</h2>
 <div class="student-profile">
       <img src="/assets/images/banners/Updated%20Images/Yan%20Chen.png" alt="Yan Chen">
       <div>
@@ -406,37 +475,42 @@ title: Team
   </section>
 
   <section class="team-section">
-    <h2>Current Undergraduate Students</h2>
-    <div class="student-profile">
-      <img src="/assets/images/banners/Updated%20Images/Laksita%20Prasanna.jpg" alt="Laksita Prasanna">
-      <div>
-        <h3>Laksita Prasanna, B.S. Student</h3>
-        <p>Laksita Prasanna recently graduated with a <b>B.S.</b> in Computer Science and Engineering and a minor in Psychology from the University of Louisville.</p>
-        <p>Her academic interests center on the intersection of psychology and artificial intelligence, with a particular focus on human-centered computing. She currently works as a research student assisting with investigations of communication barriers in patient-provider settings, contributing to research aimed at improving healthcare communication and outcomes.</p>
-  <p>
-  <strong>Role in Lab Projects:</strong> Supports the lab’s project on <a href="/Research.html#project-communication-barriers-healthcare">Communication Barriers in Patient-Provider Interactions</a>.
-</p>
-     <div class="student-contact">
-          <span class="student-contact-label">Contact:</span>
-          <a class="student-contact-link" href="mailto:laksita.prasanna@louisville.edu">
-            <img src="/assets/images/banners/Updated%20Images/E.png" alt="Email">
-            <span>Email: laksita.prasanna@louisville.edu</span>
-          </a>
-          <a class="student-contact-link" href="https://www.linkedin.com/in/laksita-prasanna/" target="_blank" rel="noopener">
-            <img src="/assets/images/banners/Updated%20Images/IN.png" alt="LinkedIn">
-            <span>LinkedIn</span>
-          </a>
-        </div>
-      </div>
-    </div>
+<h2>Undergraduate Researchers</h2>
+
+
+<div class="undergrad-list">
+  <div class="undergrad-entry">
+    <h3>Michelle Gonzalez</h3><p>Undergraduate Co-op Researcher | Industrial &amp; Systems Engineering | 2026–present</p>
+    <ul>
+      <li>Receives hands-on training in VR development.</li>
+      <li>Contributes to the design and implementation of immersive smart manufacturing scenarios.</li>
+    </ul>
+  </div>
+
+  <div class="undergrad-entry">
+    <h3>Rianna Pais</h3><p>Undergraduate Researcher | Computer Science and Engineering | 2026–present</p>
+    <ul>
+      <li>Receives hands-on training in VR development.</li>
+      <li>Contributes to the development of immersive aggressive-driving research scenarios.</li>
+    </ul>
+  </div>
+
+  <div class="undergrad-entry">
+    <h3>Shane Arnold</h3><p>Undergraduate Researcher | Industrial &amp; Systems Engineering | 2025–present</p>
+    <ul>
+      <li>Contributes to research related to human factors and systems engineering.</li>
+      <li>ISE 380 course project accepted as a poster at the ASPIRE HFES International Annual Meeting, making the team the first UofL undergraduate team to receive an international HFES acceptance. <a href="https://journals.sagepub.com/doi/full/10.1177/10711813251369862" target="_blank" rel="noopener">[Link]</a></li>
+    </ul>
+  </div>
+</div>
   </section>
 
   <section class="team-section">
     <h2>Alumni</h2>
-    <div>
-      <h3>Udit Kumar Das</h3>
-      <p>Udit Kumar Das completed his M.S. thesis in Industrial and Systems Engineering at the University of Louisville in Summer 2026 under the supervision of Dr. Yunmei Liu. His thesis was titled <i>A Vision-Based Framework for Identifying Overtaking Events and Characterizing Concurrent Driver Behavior in Continuous Simulator Traffic</i>.</p>
-      <p>Following his M.S. graduation, Udit continued in the MINDxAI Lab as a Ph.D. student in Industrial and Systems Engineering. During his M.S. study, he received a research award based on his thesis work and served as first author on AHFE conference papers in 2025 and 2026.</p>
+    <div class="alumni-list">
+      <div class="alumni-entry">
+<h3>Udit Kumar Das</h3> <p>M.S. Thesis Student | Industrial &amp; Systems Engineering | 2025–2026 | Continued in the lab as a Ph.D. student.</p> <ul> <li> Graduated with an M.S. in Industrial &amp; Systems Engineering from the University of Louisville in Summer 2026. Thesis: <i>A Vision-Based Framework for Identifying Overtaking Events and Characterizing Concurrent Driver Behavior in Continuous Simulator Traffic</i>. </li> <li>Secured a competitive research award through a student proposal to support experimental data collection for his M.S. thesis research.</li> <li>Published two first-authored conference papers at the AHFE International Conference in 2025 and 2026.</li> </ul>
+      </div>
     </div>
   </section>
 
