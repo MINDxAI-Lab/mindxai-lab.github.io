@@ -73,7 +73,7 @@ title: Opportunities
 <div class="opportunities-page">
   <h1>Opportunities</h1>
   <p class="opportunities-intro">
-    <strong>MINDxAI Lab</strong> welcomes students and collaborators interested in human-centered AI, human-machine interaction, cognitive modeling, wearable sensing, and intelligent adaptive systems.
+    <strong>MINDxAI Lab</strong> welcomes students and collaborators interested in systems engineering; human factors; human-centric AI; adaptive automation; smart manufacturing; rehabilitation robotics; transportation safety; human–autonomy/AI teaming.
   </p>
 
   <section class="opportunity-section">

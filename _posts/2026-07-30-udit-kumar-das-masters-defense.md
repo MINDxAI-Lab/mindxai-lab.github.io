@@ -7,7 +7,7 @@ display_date: "July 30, 2026"
 categories: news
 tags: [news]
 summary: "Udit Kumar Das successfully defended his master's thesis in Industrial and Systems Engineering and will continue his research with the MINDxAI Lab as a Ph.D. student."
-image: "/assets/images/banners/Udit%20M.S.png"
+image: "/assets/images/banners/udit-ms-defense.png"
 image_alt: "Udit Kumar Das at his master's thesis defense"
 permalink: /news/udit-kumar-das-masters-defense.html
 hidden:
