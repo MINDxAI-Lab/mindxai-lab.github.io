@@ -144,14 +144,14 @@ hidden:
     </div> -->
     <div class="jr-grant-fact">
       <h3>Award Amount</h3>
-      <p>Up to $50,000 under the NSF Planning Award category</p>
+      <p>$50,000</p>
     </div>
     <div class="jr-grant-fact">
       <h3>Project Period</h3>
       <p>July 15, 2026 - October 31, 2026</p>
     </div>
     <div class="jr-grant-fact">
-      <h3>Principal Investigator</h3>
+      <h3>PI</h3>
       <p>Dr. Yunmei Liu, University of Louisville</p>
     </div>
   </div>

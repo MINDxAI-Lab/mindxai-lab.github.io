@@ -485,7 +485,7 @@ title: Home
           <a href="/Publications.html">Publications</a>
           <a href="/News.html">News</a>
           <a href="/Opportunities.html">Opportunities</a>
-          <a href="/MoreAboutPI.html">About the PI</a>
+          <a href="/MoreAboutPI.html">More About the PI</a>
         </div>
       </div>
     </main>
