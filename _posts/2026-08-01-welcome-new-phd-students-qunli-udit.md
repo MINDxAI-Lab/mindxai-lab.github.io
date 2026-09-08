@@ -22,8 +22,8 @@ hidden:
   .news-post-hero img { display: block; width: 100%; height: auto; border-radius: 8px; background: #eef4f4; }
   .news-post-hero figcaption { margin: 4px 0 0; color: #5a6668; font-size: 0.92rem; line-height: 1.35; }
   .news-post .lead { color: #3f4a4c; font-size: 1.08rem; line-height: 1.7; }
-  .news-post h2 { margin: 14px 0 12px; color: #3f4a4c; font-size: 1.2rem; line-height: 1.35; }
-    .news-post h3 { margin: 4px 0 12px; color: #3f4a4c; line-height: 1.35; }
+  .news-post h2 { margin: 28px 0 12px; color: #3f4a4c; font-size: 1.2rem; line-height: 1.35; }
+  .news-post h3 { margin: 4px 0 12px; color: #3f4a4c; line-height: 1.35; }
 
   .news-post p { line-height: 1.7; }
 </style>

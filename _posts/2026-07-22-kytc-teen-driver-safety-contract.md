@@ -6,7 +6,7 @@ date: 2026-07-22
 display_date: "July 22, 2026"
 categories: news
 tags: [news]
-summary: "Dr. Yunmei Liu received a $110,852.85 Kentucky Transportation Cabinet award for a one-year University of Louisville teen driver safety education project, with Robert Kluger serving as Co-PI."
+summary: "Dr. Yunmei Liu received a National Highway Traffic Safety Administration (NHTSA) grant from  Kentucky Transportation Cabinet (KYTC) for a one-year University of Louisville teen driver safety education project, with Robert Kluger serving as Co-PI."
 image: "/assets/images/banners/KYTC.png"
 image_alt: "Kentucky Transportation Cabinet logo"
 card_image: "/assets/images/banners/KYTC.png"
@@ -60,11 +60,11 @@ hidden:
       <p>October 1, 2026 - September 30, 2027</p>
     </div>
     <div class="jr-grant-fact">
-      <h3>Principal Investigator</h3>
+      <h3>PI</h3>
       <p>Dr. Yunmei Liu, University of Louisville</p>
     </div>
     <div class="jr-grant-fact">
-      <h3>Co-Principal Investigator</h3>
+      <h3>Co-PI</h3>
       <p>Robert Kluger, University of Louisville</p>
     </div>
   </div>

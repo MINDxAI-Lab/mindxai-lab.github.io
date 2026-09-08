@@ -1,12 +1,12 @@
 ---
 layout: post
-title: "Internal Jon Rieger Seed Grant Supports Aggressive Driving Research"
-subtitle: "MINDxAI Lab Theme III: Aggressive Driving in Mixed Traffic"
+title: "Dr. Yunmei Liu Receives Internal Jon Rieger Seed Grant as PI"
+subtitle: "MINDxAI Lab Theme II: Aggressive Driving in Mixed Traffic"
 date: 2026-05-28
 display_date: "May 28, 2026"
 categories: news
 tags: [news]
-summary: "Dr. Yunmei Liu received an $8,000 internal Jon Rieger Seed Grant at the University of Louisville to support the MINDxAI Lab's Theme III research on aggressive driving in mixed human-AV traffic."
+summary: "Dr. Yunmei Liu received an internal Jon Rieger Seed Grant at the University of Louisville to support the MINDxAI Lab's Theme II research on aggressive driving in mixed human-AV traffic."
 card_image: "/assets/images/banners/News%20Pics/Grants_uofl.png"
 card_image_alt: "University of Louisville grants graphic"
 permalink: /news/jon-rieger-seed-grant-dual-axis-aggression-detection.html

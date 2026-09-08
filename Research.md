@@ -393,7 +393,7 @@ title: Research
       <figure>
         <img src="/assets/images/banners/NSF.png" alt="EMG-based upper-limb prosthetic control evaluation setup">
         <figcaption>
-          <!-- Sponsor: NSF -->
+          Sponsor: NA
           <!-- <span>Collaborators: Yunmei Liu, Juhye Park, Jason Berman, David Kaber, H. Huang, J. Ruiz, Mahsa Zahabi, and team</span> -->
         </figcaption>
       </figure>
@@ -440,8 +440,8 @@ title: Research
       <figure>
         <img src="/assets/images/banners/Updated Images/Seizure.png" alt="Seizure-EEG project graphic">
         <figcaption>
-          Sponsor: UofL and UNC-Chapel Hill
-          <span>PIs: Yunmei Liu and Tianlong Chen</span>
+          Sponsor: NA
+          <!-- <span>PIs: Yunmei Liu and Tianlong Chen</span> -->
         </figcaption>
       </figure>
       <div>
@@ -470,8 +470,8 @@ title: Research
       <figure>
         <img src="/assets/images/banners/Updated Images/CB.png" alt="Communication Barriers project graphic">
         <figcaption>
-          Sponsor: UofL
-          <span>PI: Yunmei Liu</span>
+          Sponsor: NA
+          <!-- <span>PI: Yunmei Liu</span> -->
         </figcaption>
       </figure>
       <div>
@@ -551,6 +551,7 @@ title: Research
           <source src="/assets/images/banners/aggressive%20driving.mp4" type="video/mp4">
           Your browser does not support the video element.
         </video>
+
         <p class="project-video-description">
           This demo illustrates a representative aggressive-overtaking scenario in 
           continuous mixed-traffic simulation and demonstrates the behavioral responses 
@@ -568,7 +569,7 @@ title: Research
       <figure>
         <img src="/assets/images/banners/High%20school.png" alt="Teen Driver Safety Education project graphic">
         <figcaption>
-          <span>Sponsor: National Highway Traffic Safety Administration (NHTSA), with KYTC</span>
+          <a href="/news/kytc-teen-driver-safety-contract.html" target="_blank" rel="noopener">Sponsor: NHTSA with KYTC</a>
           <span>PI: Yunmei Liu</span>
         </figcaption>
       </figure>
