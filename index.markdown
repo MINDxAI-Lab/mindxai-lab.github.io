@@ -43,6 +43,41 @@ title: Home
     text-align: left;
   }
 
+  .home-opening {
+    max-width: 100%;
+    margin: 28px 0 32px;
+    padding: 17px 0 18px;
+    border-top: 1px solid #dfe6e7;
+    border-bottom: 1px solid #dfe6e7;
+    text-align: left;
+  }
+
+  .home-opening-kicker {
+    margin: 0 0 5px;
+    color: #1f7a7f;
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
+
+  .home-opening h2 {
+    margin: 0 0 7px;
+    color: #3f4a4c;
+    font-size: 1.34rem;
+    line-height: 1.25;
+  }
+
+  .home-opening p {
+    margin: 0;
+    line-height: 1.6;
+  }
+
+  .home-opening a {
+    color: #1f6f70;
+    font-weight: 700;
+  }
+
   .home-layout {
     display: grid;
     grid-template-columns: minmax(0, 1fr) minmax(260px, 320px);
@@ -359,13 +394,17 @@ title: Home
     <main class="home-main">
       <div class="home-section">
         <p>
-          The <strong>M</strong>odeling <strong>I</strong>nteraction, cog<strong>N</strong>ition, and <strong>D</strong>ecision-making by <strong>A</strong>rtificial <strong>I</strong>ntelligence (<strong>MINDxAI</strong>)  Lab develops human-centered AI and human-in-the-loop systems grounded in human factors and data-driven modeling. The lab is housed in the <b>Department of Industrial and Systems Engineering</b> at the <b>University of Louisville</b>.
+          The <strong>M</strong>odeling <strong>I</strong>nteraction, cog<strong>N</strong>ition, and <strong>D</strong>ecision-making by <strong>A</strong>rtificial <strong>I</strong>ntelligence (<strong>MINDxAI</strong>) Lab develops human-centered AI and adaptive systems that improve how people interact with complex human-in-the-loop systems. The lab is housed in the <b>Department of Industrial and Systems Engineering</b> at the <b>University of Louisville</b>.
         </p>
         <p>
-          Our research focuses on modeling interaction, cognition, and decision-making with AI. We study human states, workload, situation awareness, performance, and behavior using experimental methods, wearable sensors, physiological signals, behavioral data, machine learning, and statistical modeling.
+          We model human cognitive, emotional, physiological, and behavioral states through experiments, wearable sensing, simulation, machine learning, and multimodal data analysis. Our application areas include transportation and adaptive automation, AI-enabled smart manufacturing, rehabilitation robotics, healthcare, and human–autonomy/AI teaming.
         </p>
+      </div>
+      <div class="home-opening" aria-labelledby="home-opening-heading">
+        <p class="home-opening-kicker"><span aria-hidden="true">📣</span> Now recruiting</p>
+        <h2 id="home-opening-heading">One fully funded Ph.D. opening for 2027</h2>
         <p>
-          The lab applies these approaches to healthcare, transportation, automated driving, aviation, robotics, and intelligent adaptive systems. Our goal is to design AI-enabled systems that understand human capabilities and limitations, support better decisions, and improve safety and effectiveness in complex environments.
+          Start in Spring, Summer, or Fall 2027. <a href="/Opportunities.html">View position details and application instructions&nbsp;&rarr;</a>
         </p>
       </div>
       <div class="mindxai-carousel" data-carousel>
