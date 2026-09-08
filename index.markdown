@@ -55,7 +55,7 @@ title: Home
     top: 92px;
     margin-top: 12px;
     padding: 18px 18px 20px;
-    border-left: 4px solid #389092;
+    border: 1px solid #d7e4e4;
     border-radius: 8px;
     background: #f6fbfb;
   }
@@ -446,7 +446,7 @@ title: Home
           <a href="/Publications.html">Publications</a>
           <a href="/News.html">News</a>
           <a href="/Opportunities.html">Opportunities</a>
-          <a href="/MoreAboutPI.html">More About PI</a>
+          <a href="/MoreAboutPI.html">About the PI</a>
         </div>
       </div>
     </main>
@@ -455,7 +455,7 @@ title: Home
       <h2 id="home-news-heading">News</h2>
       <ul class="home-news-list">
         {%- assign news_posts = site.posts | where_exp: "post", "post.tags contains 'news'" -%}
-        {%- for post in news_posts limit:6 -%}
+        {%- for post in news_posts limit:10 -%}
         <li class="home-news-item">
           {%- if post.display_date -%}
           <p class="home-news-date">{{ post.display_date }}</p>

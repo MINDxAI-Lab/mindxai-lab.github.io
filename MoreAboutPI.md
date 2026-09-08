@@ -1,6 +1,6 @@
 ---
 layout: home
-title: More About PI
+title: About the PI
 ---
 
 <style>
@@ -14,7 +14,7 @@ title: More About PI
 </style>
 
 <div class="record-page">
-  <h1>More About PI</h1>
+  <h1>About the PI</h1>
 
   <section class="record-section" aria-labelledby="teaching-heading">
     <h2 id="teaching-heading">Teaching</h2>
