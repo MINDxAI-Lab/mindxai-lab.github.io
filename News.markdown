@@ -21,7 +21,6 @@ title: News
     grid-template-columns: 180px 1fr;
     gap: 20px;
     padding: 20px;
-    border-left: 4px solid #389092;
     border-radius: 8px;
     background: #f6fbfb;
   }

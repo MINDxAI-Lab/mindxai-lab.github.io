@@ -57,7 +57,6 @@ title: Opportunities
   .opportunity-card .email-format {
     margin-top: auto;
     padding: 14px 16px;
-    border-left: 4px solid #389092;
     background: #fff;
   }
   .email-format p { margin: 0 0 8px; }
