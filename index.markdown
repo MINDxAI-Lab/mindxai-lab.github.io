@@ -219,6 +219,14 @@ title: Home
     object-fit: cover;
   }
 
+  .carousel-slide video {
+    display: block;
+    width: 100%;
+    height: 500px;
+    object-fit: contain;
+    background: #101415;
+  }
+
   .carousel-slide figcaption {
     position: absolute;
     left: 0;
@@ -382,15 +390,20 @@ title: Home
             <img src="/assets/images/banners/Updated%20Images/Retreat%20dinner.png" alt="MINDxAI Lab retreat dinner">
           <figcaption><strong>MINDxAI Lab</strong> retreat dinner</figcaption>
           </figure>
+          <figure class="carousel-slide">
+            <video controls preload="metadata" aria-label="Aggressive Driving in Mixed Traffic demonstration video">
+              <source src="/assets/images/banners/aggressive%20driving.mp4" type="video/mp4">
+              Your browser does not support the video element.
+            </video>
+            <figcaption>Aggressive Driving in Mixed Traffic</figcaption>
+          </figure>
         </div>
         <button class="carousel-control prev" type="button" data-carousel-prev aria-label="Previous image">&lsaquo;</button>
         <button class="carousel-control next" type="button" data-carousel-next aria-label="Next image">&rsaquo;</button>
         <div class="carousel-tabs" aria-label="Select carousel image">
           <button type="button" class="is-active" data-carousel-goto="0" aria-label="Show image 1">1</button>
           <button type="button" data-carousel-goto="1" aria-label="Show image 2">2</button>
-          <!-- <button type="button" data-carousel-goto="2" aria-label="Show image 3">3</button>
-          <button type="button" data-carousel-goto="3" aria-label="Show image 4">4</button>
-          <button type="button" data-carousel-goto="4" aria-label="Show image 5">5</button> -->
+          <button type="button" data-carousel-goto="2" aria-label="Show video 3">3</button>
         </div>
       </div>
 
@@ -473,6 +486,12 @@ title: Home
 
         slides.forEach(function(slide, slideIndex) {
           slide.classList.toggle('is-active', slideIndex === current);
+          if (slideIndex !== current) {
+            var video = slide.querySelector('video');
+            if (video) {
+              video.pause();
+            }
+          }
         });
 
         tabs.forEach(function(tab, tabIndex) {
