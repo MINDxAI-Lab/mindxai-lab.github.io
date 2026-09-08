@@ -121,6 +121,35 @@ title: Research
     text-align: center;
   }
 
+  #project-ai-vr-manufacturing-foundry figure > img {
+    object-fit: contain;
+    background: #f7fbfb;
+  }
+
+  .project-video-demo {
+    grid-column: 1 / -1;
+    width: 100%;
+    margin: 22px 0 0;
+  }
+
+  .project-video-demo h4 {
+    margin: 0 0 10px;
+  }
+
+  .project-video-demo video {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    background: #172326;
+  }
+
+  .project-video-note {
+    margin: 8px 0 0;
+    text-align: center;
+    font-size: 0.92rem;
+  }
+
   .project-video-placeholder {
     display: flex;
     align-items: center;
@@ -344,7 +373,7 @@ title: Research
     </article>
     <article class="research-project" id="project-ai-vr-manufacturing-foundry">
       <figure>
-        <div class="project-media-placeholder" role="img" aria-label="AI-enabled virtual reality manufacturing foundry project image placeholder">Project image coming soon</div>
+        <img src="/assets/images/banners/VR_manufacturing_extended.png" alt="AI-enabled virtual reality manufacturing foundry project graphic">
         <figcaption>
           <a href="https://www.nsf.gov/awardsearch/show-award/?AWD_ID=2627659&HistoricalAwards=false" target="_blank" rel="noopener">Sponsor: NSF FINDERS FOUNDRY</a>
           <span>PI: Yunmei Liu</span>
@@ -359,7 +388,6 @@ title: Research
           By making advanced manufacturing careers more visible and engaging, the project aims to strengthen students’ interest in manufacturing pathways and help them understand AI as a transparent learning support for feedback, reflection, and problem solving.
         </p>
       </div>
-      <!-- ÷<div class="project-video-placeholder" aria-label="Video demonstration placeholder">Video Demo coming soon</div> -->
     </article>
   <article class="research-project" id="project-prosthetic-control">
       <figure>
@@ -516,6 +544,16 @@ title: Research
             </li>
           </ol>
         </div>
+      </div>
+      <div class="project-video-demo">
+        <h4>Video Demo</h4>
+        <video controls preload="metadata" aria-label="Aggressive Driving in Mixed Traffic demonstration video">
+          <source src="/assets/images/banners/aggressive%20driving.mp4" type="video/mp4">
+          Your browser does not support the video element.
+        </video>
+        <p class="project-video-note">
+          <a href="/assets/images/banners/aggressive%20driving.mp4" target="_blank" rel="noopener">Open video in a new tab</a>
+        </p>
       </div>
     </article>
 
