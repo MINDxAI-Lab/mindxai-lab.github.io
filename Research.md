@@ -551,8 +551,15 @@ title: Research
           <source src="/assets/images/banners/aggressive%20driving.mp4" type="video/mp4">
           Your browser does not support the video element.
         </video>
-        <p class="project-video-note">
-          <a href="/assets/images/banners/aggressive%20driving.mp4" target="_blank" rel="noopener">Open video in a new tab</a>
+        <p class="project-video-description">
+          This demo illustrates a representative aggressive-overtaking scenario in 
+          continuous mixed-traffic simulation and demonstrates the behavioral responses 
+          detected using our vision-based multimodal framework. It accompanies the study:
+          Das, U.*, Chen, Y.*, Chowdhury, M. H.*, and <strong>Liu, Y.</strong>† (2026),
+          “A Vision-Based Multimodal Framework for Quantifying Novice Driver Behavioral 
+          Responses to Aggressive Overtaking in Continuous Simulator Traffic,”
+          <em>International Conference on Applied Human Factors and Ergonomics (AHFE)</em>,
+          accepted.
         </p>
       </div>
     </article>
