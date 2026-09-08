@@ -566,7 +566,7 @@ title: Research
 
     <article class="research-project" id="project-teen-driver-safety-education">
       <figure>
-        <div class="project-media-placeholder" role="img" aria-label="Teen Driver Safety Education project image placeholder">Project image coming soon</div>
+        <img src="/assets/images/banners/High%20school.png" alt="Teen Driver Safety Education project graphic">
         <figcaption>
           <span>Sponsor: National Highway Traffic Safety Administration (NHTSA), with KYTC</span>
           <span>PI: Yunmei Liu</span>
