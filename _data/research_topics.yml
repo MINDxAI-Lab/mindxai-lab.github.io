@@ -1,0 +1,24 @@
+transportation-automated-driving:
+  label: Transportation & Automated Driving
+  summary: Understanding driver states and behavior to support adaptive automation, safer mixed traffic, and driver education.
+  description: Understanding driver states and behavior to support adaptive automation, safer mixed traffic, and driver education.
+human-ai-autonomy-robot-teaming:
+  label: Human–AI/Autonomy/Robot Teaming
+  summary: Understanding human collaboration with AI, autonomous systems, and robots to support performance, learning, and user control.
+  description: Understanding how people interact and coordinate with AI assistants, autonomous systems, and robotic devices. We study human states, interfaces, and adaptive support to improve joint performance, learning, and user control.
+smart-manufacturing:
+  label: Smart Manufacturing
+  summary: Exploring human-centered applications of AI and virtual reality in manufacturing workflows and interaction with intelligent systems.
+  description: Exploring human-centered applications of AI and virtual reality in modern manufacturing. Our current work develops immersive experiences for understanding manufacturing workflows and interacting with AI-supported systems.
+education-workforce-development:
+  label: Education & Workforce Development
+  summary: Advancing education, training, and workforce development through AI-supported learning and simulation across levels of expertise.
+  description: Developing learning and training experiences through AI, virtual reality, and simulation. Our work spans STEM education, driver safety education, and skill development, with attention to learners at different levels of expertise and pathways into the workforce.
+rehabilitation-robotics-assistive-technologies:
+  label: Rehabilitation Robotics & Assistive Technologies
+  summary: Designing and evaluating intuitive prosthetic interfaces and training technologies that support human movement and rehabilitation.
+  description: Designing and evaluating intuitive prosthetic interfaces and training technologies that support human movement and rehabilitation.
+healthcare-biomedical-ai:
+  label: Healthcare & Biomedical AI
+  summary: Applying AI and human-centered research to biomedical signal modeling, neurological assessment, and patient-provider communication.
+  description: Applying AI and human-centered research to biomedical signal modeling, neurological assessment, and patient-provider communication.

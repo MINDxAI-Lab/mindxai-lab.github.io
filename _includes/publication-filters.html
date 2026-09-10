@@ -1,0 +1,25 @@
+<div class="publication-browse">
+  <p class="publication-filter-help" id="publication-filter-help" hidden><strong>Filter by research area</strong> Choose an area to explore related publications, or All to see the full list.</p>
+  <div class="publication-filters" role="group" aria-label="Filter publications by research area" aria-describedby="publication-filter-help" hidden>
+    <button type="button" data-publication-filter="all" data-publication-label="All publications" aria-label="All publications: {{ site.data.publication_topics.size }} publications" aria-pressed="true" aria-controls="publication-list"><span>All</span><span class="publication-filter-count" aria-hidden="true">{{ site.data.publication_topics.size }}</span></button>
+    {%- for topic in site.data.research_topics -%}
+      {%- assign topic_count = 0 -%}
+      {%- for publication in site.data.publication_topics -%}
+        {%- if publication[1].topics contains topic[0] -%}
+          {%- assign topic_count = topic_count | plus: 1 -%}
+        {%- endif -%}
+      {%- endfor -%}
+    <button type="button" data-publication-filter="{{ topic[0] }}" data-publication-label="{{ topic[1].label | escape }}" aria-label="{{ topic[1].label | escape }}: {{ topic_count }} {% if topic_count == 1 %}publication{% else %}publications{% endif %}" aria-pressed="false" aria-controls="publication-list"><span>{{ topic[1].label | escape }}</span><span class="publication-filter-count" aria-hidden="true">{{ topic_count }}</span></button>
+    {%- endfor -%}
+  </div>
+  <p class="publication-filter-note">A publication may appear in more than one area. All also includes broader foundational and related work.</p>
+  <p class="publication-filter-status" role="status" aria-live="polite" hidden></p>
+</div>
+{%- for topic in site.data.research_topics -%}
+<section class="publication-topic-description" data-publication-description="{{ topic[0] }}" aria-labelledby="publication-topic-{{ topic[0] }}" hidden>
+  <h2 id="publication-topic-{{ topic[0] }}">{{ topic[1].label | escape }}</h2>
+  <p>{{ topic[1].summary | escape }} <a href="{{ '/Research.html' | relative_url }}#{{ topic[0] }}">Explore related research →</a></p>
+</section>
+{%- endfor -%}
+<p class="publication-empty" hidden>No publications in this area are listed yet. Explore our ongoing research using the link above.</p>
+<noscript><p>All publications are shown below. Research-area filtering requires JavaScript.</p></noscript>

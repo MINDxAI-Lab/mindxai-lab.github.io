@@ -1,0 +1,18 @@
+project-cognitive-emotional-driving-automation:
+  funded: true
+  topics: [transportation-automated-driving, human-ai-autonomy-robot-teaming]
+project-aggressive-driving-mixed-traffic:
+  funded: true
+  topics: [transportation-automated-driving, human-ai-autonomy-robot-teaming]
+project-teen-driver-safety-education:
+  funded: true
+  topics: [transportation-automated-driving, education-workforce-development]
+project-ai-vr-manufacturing-foundry:
+  funded: true
+  topics: [smart-manufacturing, human-ai-autonomy-robot-teaming, education-workforce-development]
+project-prosthetic-control:
+  topics: [rehabilitation-robotics-assistive-technologies, human-ai-autonomy-robot-teaming, education-workforce-development]
+project-eeg-seizure-modeling:
+  topics: [healthcare-biomedical-ai]
+project-communication-barriers-healthcare:
+  topics: [healthcare-biomedical-ai, human-ai-autonomy-robot-teaming]

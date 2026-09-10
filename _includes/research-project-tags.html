@@ -1,0 +1,10 @@
+{%- assign project = site.data.research_projects[include.project] -%}
+{%- if project.funded -%}
+<span class="research-funding-status">Funded Project</span>
+{%- endif -%}
+<div class="research-project-tags" aria-label="Project topics">
+  {%- for topic_key in project.topics -%}
+    {%- assign topic = site.data.research_topics[topic_key] -%}
+  <a class="research-project-tag" href="#{{ topic_key }}" data-research-topic-link="{{ topic_key }}" aria-label="View projects in {{ topic.label | escape }}">{{ topic.label | escape }}</a>
+  {%- endfor -%}
+</div>

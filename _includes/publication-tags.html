@@ -1,0 +1,10 @@
+{%- assign publication_topics = site.data.publication_topics[include.publication].topics -%}
+{%- if publication_topics.size > 0 -%}
+<div class="publication-tags" aria-label="Research areas">
+  {%- for topic_entry in site.data.research_topics -%}
+    {%- if publication_topics contains topic_entry[0] -%}
+  <a class="publication-tag" href="#{{ topic_entry[0] }}" data-publication-topic-link="{{ topic_entry[0] }}" aria-label="View publications in {{ topic_entry[1].label | escape }}">{{ topic_entry[1].label | escape }}</a>
+    {%- endif -%}
+  {%- endfor -%}
+</div>
+{%- endif -%}

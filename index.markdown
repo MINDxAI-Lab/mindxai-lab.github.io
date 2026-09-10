@@ -159,65 +159,57 @@ title: Home
 
   .research-area-grid {
     display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 250px), 1fr));
     gap: 16px;
   }
 
+  #home-research {
+    scroll-margin-top: 90px;
+  }
+
   .research-area-item {
+    display: block;
     border-left: 4px solid #389092;
     border-radius: 8px;
     padding: 16px 18px;
+    color: #3f4a4c;
     background: #eef6f6;
+    text-decoration: none;
   }
 
   .research-area-item h3 {
-    margin: 0 0 6px;
-    font-size: 1.05rem;
-  }
-
-  .research-area-item h3 a {
-    color: #3f4a4c;
-    text-decoration: none;
-  }
-
-  .research-area-item h3 a:hover,
-  .research-area-item h3 a:focus {
-    color: #1f7a7f;
-    text-decoration: underline;
-  }
-
-  .research-area-item p {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 10px;
     margin: 0 0 10px;
-  }
-
-  .research-area-label {
-    display: block;
-    margin-bottom: 5px;
-    color: #1f7a7f;
-    font-size: 0.78rem;
-    font-weight: 700;
+    color: #165f66;
+    font-size: 1.05rem;
     line-height: 1.4;
   }
 
-  .research-area-projects {
-    margin: 0;
-    padding-left: 18px;
-  }
-
-  .research-area-projects li {
-    margin-bottom: 6px;
-    line-height: 1.45;
-  }
-
-  .research-area-projects a {
-    color: #1f7a7f;
-    font-weight: 600;
+  .research-area-item:hover,
+  .research-area-item:focus-visible {
+    color: #3f4a4c;
+    background: #e5f1f1;
     text-decoration: none;
   }
 
-  .research-area-projects a:hover,
-  .research-area-projects a:focus {
-    text-decoration: underline;
+  .research-area-item:focus-visible {
+    outline: 2px solid #1f7a7f;
+    outline-offset: 3px;
+  }
+
+  .research-area-item p {
+    margin: 0;
+    line-height: 1.6;
+  }
+
+  .research-area-arrow {
+    flex: 0 0 16px;
+    width: 16px;
+    height: 16px;
+    margin-top: 4px;
   }
 
   .mindxai-carousel {
@@ -443,40 +435,15 @@ title: Home
         </div>
       </div>
 
-      <section class="home-section" aria-labelledby="home-research-heading">
+      <section class="home-section" id="home-research" aria-labelledby="home-research-heading">
         <h2 id="home-research-heading">Research Areas</h2>
         <div class="research-area-grid">
-          <div class="research-area-item">
-            <h3><a href="/Research.html#area-transportation-automated-driving"><span class="research-area-label">Research Area I</span>Transportation and Automated Driving</a></h3>
-            <p>Understanding driver states and behavior to support adaptive automation, safer mixed traffic, and driver education.</p>
-            <ol class="research-area-projects">
-              <li><a href="/Research.html#project-cognitive-emotional-driving-automation">Cognitive-Emotional State Assessment for Adaptive Automation Intervention</a></li>
-              <li><a href="/Research.html#project-aggressive-driving-mixed-traffic">Aggressive Driving in Mixed Traffic</a></li>
-              <li><a href="/Research.html#project-teen-driver-safety-education">Teen Driver Safety Education</a></li>
-            </ol>
-          </div>
-          <div class="research-area-item">
-            <h3><a href="/Research.html#area-smart-manufacturing-workforce-development"><span class="research-area-label">Research Area II</span>Smart Manufacturing and Workforce Development</a></h3>
-            <p>Using AI-supported virtual reality to advance manufacturing learning, career exploration, and workforce development.</p>
-            <ol class="research-area-projects">
-              <li><a href="/Research.html#project-ai-vr-manufacturing-foundry">AI-Enabled Virtual Reality Manufacturing Foundry</a></li>
-            </ol>
-          </div>
-          <div class="research-area-item">
-            <h3><a href="/Research.html#area-rehabilitation-robotics-assistive-technologies"><span class="research-area-label">Research Area III</span>Rehabilitation Robotics and Assistive Technologies</a></h3>
-            <p>Designing and evaluating intuitive prosthetic interfaces and training technologies that support human movement and rehabilitation.</p>
-            <ol class="research-area-projects">
-              <li><a href="/Research.html#project-prosthetic-control">Human-Centered Design for Natural Upper-Limb Prosthetic Control</a></li>
-            </ol>
-          </div>
-          <div class="research-area-item">
-            <h3><a href="/Research.html#area-healthcare-biomedical-ai"><span class="research-area-label">Research Area IV</span>Healthcare and Biomedical AI</a></h3>
-            <p>Applying AI and human-centered research to biomedical signal modeling, neurological assessment, and patient-provider communication.</p>
-            <ol class="research-area-projects">
-              <li><a href="/Research.html#project-eeg-seizure-modeling">AI-Driven Scalp EEG Modeling for Seizure Detection and Signal Enhancement</a></li>
-              <li><a href="/Research.html#project-communication-barriers-healthcare">Communication Barriers in Patient-Provider Interactions</a></li>
-            </ol>
-          </div>
+          {% for topic in site.data.research_topics %}
+          <a class="research-area-item" href="{{ '/Research.html' | relative_url }}#{{ topic[0] }}" aria-labelledby="home-area-{{ topic[0] }}">
+            <h3 id="home-area-{{ topic[0] }}"><span>{{ topic[1].label | escape | replace: '/', '/<wbr>' }}</span><svg class="research-area-arrow" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 10h12M11 5l5 5-5 5" /></svg></h3>
+            <p>{{ topic[1].summary | escape }}</p>
+          </a>
+          {% endfor %}
         </div>
       </section>
 

@@ -1,0 +1,116 @@
+# Keys match the stable publication IDs in Publications.md.
+# Labels and their order come exclusively from research_topics.yml.
+# Tags describe the paper's subject or direct methodological contribution,
+# not every possible application of its parent project.
+# Empty topics keep broader work in All without implying a domain study.
+jmir-communication-barriers:
+  topics: [healthcare-biomedical-ai]
+  rationale: "Patient-provider communication review; technology implications do not constitute an evaluated human-AI team."
+  source: https://www.jmir.org/2026/1/e79744/
+procedural-task-workload:
+  topics: [human-ai-autonomy-robot-teaming]
+  rationale: "Human-state evidence for adaptive operator assistance; cooking is a procedural-task analogue, not manufacturing or education research."
+  source: https://journals.sagepub.com/doi/10.1177/00187208261476502
+alternative-intersection-corridors:
+  topics: [transportation-automated-driving]
+  rationale: "Driver behavior and road/intersection design."
+vr-prosthetic-control:
+  topics: [human-ai-autonomy-robot-teaming, rehabilitation-robotics-assistive-technologies]
+  rationale: "Human interaction with prosthetic control modes and VR design evaluation; training outcomes are not the primary study."
+  source: https://www.ruizlab.org/publications/virtual-reality-as-a-platform-for-upper-limb-prosthetic-control-modes-evaluation-and-early-stage-design/
+automation-proportion-situation-awareness:
+  topics: [transportation-automated-driving, human-ai-autonomy-robot-teaming]
+  rationale: "Human-automation modeling and situation awareness, with driving-automation applications in the research program."
+  source: https://www.tandfonline.com/doi/full/10.1080/00140139.2025.2608273
+grade-separated-intersections:
+  topics: [transportation-automated-driving]
+  rationale: "Driver behavior evidence for intersection design."
+emg-prosthetic-control:
+  topics: [human-ai-autonomy-robot-teaming, rehabilitation-robotics-assistive-technologies]
+  rationale: "Performance, workload and usability during human control of EMG-based prosthetic devices."
+uav-interface-workload:
+  topics: [transportation-automated-driving, human-ai-autonomy-robot-teaming]
+  rationale: "UAV operator interfaces and cognitive workload; transportation includes aviation."
+fault-tree-consequence-severity:
+  topics: []
+  rationale: "General systems-safety/risk-analysis method; no direct fit to the six current research areas. Retained in All."
+  source: https://link.springer.com/article/10.1007/s13198-023-02162-1
+emg-prosthesis-workload:
+  topics: [human-ai-autonomy-robot-teaming, rehabilitation-robotics-assistive-technologies]
+  rationale: "User workload assessment during EMG-based prosthesis operation."
+safety-critical-risk-analysis:
+  topics: []
+  rationale: "General fault-tree risk-analysis chapter; industrial digitalization motivates the method but does not establish a manufacturing application. Retained in All."
+  source: https://link.springer.com/chapter/10.1007/978-3-031-32633-2_6
+workload-emotion-supervision:
+  topics: [human-ai-autonomy-robot-teaming]
+  rationale: "Workload and emotion effects on supervisory task performance, contributing to adaptive human-automation interaction."
+novice-driver-aggressive-overtaking:
+  topics: [transportation-automated-driving, human-ai-autonomy-robot-teaming]
+  rationale: "Driver responses in mixed traffic, providing human-state evidence for adaptive vehicle interaction; novice participants alone do not establish an education study."
+perceived-aggressive-driving:
+  topics: [transportation-automated-driving]
+  rationale: "Driver intent and road-user perception of aggression; the paper title and listed project evidence support transportation directly."
+functional-automation-driver-awareness:
+  topics: [transportation-automated-driving, human-ai-autonomy-robot-teaming]
+  rationale: "Driver situation awareness under functional automation."
+workload-ground-truth-review:
+  topics: [human-ai-autonomy-robot-teaming]
+  rationale: "Ground-truth labeling and prediction methods for cognitive-workload adaptive systems."
+  source: https://openaccess.cms-conferences.org/publications/book/978-1-964867-75-5/article/978-1-964867-75-5_71
+coffee-shop-operations:
+  topics: []
+  rationale: "Service workflow and barista task demands; not a smart-manufacturing or education intervention. Retained in All."
+  source: https://journals.sagepub.com/doi/10.1177/10711813251369862
+fnirs-attention-forecast:
+  topics: [transportation-automated-driving, human-ai-autonomy-robot-teaming]
+  rationale: "Pilot attention forecasting using fNIRS from a UH-60V helicopter simulator; a foundation for proactive cockpit support. Verified against the supplied published PDF."
+adaptivecopilot:
+  topics: [transportation-automated-driving, human-ai-autonomy-robot-teaming, education-workforce-development]
+  rationale: "Neuroadaptive LLM cockpit guidance in VR preflight checklist training, including different levels of pilot expertise."
+  source: https://arxiv.org/html/2501.04156v1
+riemannian-batch-normalization:
+  topics: [healthcare-biomedical-ai]
+  rationale: "General geometric deep-learning method with an explicitly evaluated EEG-classification application; biomedical AI is a demonstrated application, not a claim of clinical validation."
+  source: https://proceedings.iclr.cc/paper_files/paper/2024/hash/7f2257d2b291b8d7e712c70b67e09412-Abstract-Conference.html
+wearable-workload-classification:
+  topics: [human-ai-autonomy-robot-teaming]
+  rationale: "Wearable physiological workload prediction for adaptive task assistance; no domain tag inferred merely from physiological sensing."
+  source: https://www.ruizlab.org/publications/classifying-cognitive-workload-using-machine-learning-techniques-and-non-intrusive-wearable-devices/
+fnirs-workload-forecast:
+  topics: [transportation-automated-driving, human-ai-autonomy-robot-teaming]
+  rationale: "Helicopter-pilot workload forecasting for adaptive human systems."
+  source: https://www.ruizlab.org/publications/deep-learning-forecast-of-cognitive-workload-using-fnirs-data/
+preflight-cognitive-modeling:
+  topics: [transportation-automated-driving, human-ai-autonomy-robot-teaming]
+  rationale: "Pilot cognitive task models supporting cockpit interface redesign and adaptive assistance."
+  source: https://openaccess.cms-conferences.org/publications/book/978-1-964867-35-9/article/978-1-964867-35-9_131
+fnirs-perceptual-load-forecast:
+  topics: [transportation-automated-driving, human-ai-autonomy-robot-teaming]
+  rationale: "Forecasting perceptual load in demanding piloting tasks."
+  source: https://openaccess.cms-conferences.org/publications/book/978-1-964867-35-9/article/978-1-964867-35-9_1
+vr-prosthesis-training:
+  topics: [human-ai-autonomy-robot-teaming, education-workforce-development, rehabilitation-robotics-assistive-technologies]
+  rationale: "VR simulation explicitly evaluated for prosthesis training, user workload and usability."
+  source: https://www.ruizlab.org/publications/cognitive-workload-and-usability-of-virtual-reality-simulation-for-prosthesis-training/
+erroneous-driver-actions:
+  topics: [transportation-automated-driving]
+  rationale: "Machine-learning analysis of driver errors at interchange designs; use of ML alone does not establish human-AI teaming."
+interchange-signage-driver-awareness:
+  topics: [transportation-automated-driving]
+  rationale: "Driver situation awareness and workload effects of interchange geometry and signage."
+prosthetic-workload-classification:
+  topics: [human-ai-autonomy-robot-teaming, rehabilitation-robotics-assistive-technologies]
+  rationale: "User workload classification for upper-limb prosthetic interaction."
+automation-rate-awareness:
+  topics: [transportation-automated-driving, human-ai-autonomy-robot-teaming]
+  rationale: "Automation rate and situation-awareness models with a driving-automation case study."
+partially-automated-driving-signs:
+  topics: [transportation-automated-driving, human-ai-autonomy-robot-teaming]
+  rationale: "Driver visual detection and hazard responses during partially automated driving."
+grade-separated-signing-report:
+  topics: [transportation-automated-driving]
+  rationale: "Transportation research report on roadway signing and marking for unconventional intersections."
+corridor-consistency-report:
+  topics: [transportation-automated-driving]
+  rationale: "Transportation research report on corridor design consistency."
