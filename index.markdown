@@ -1,6 +1,7 @@
 ---
 layout: home
-title: Home
+title: Dr. Yunmei Liu
+nav_title: Home
 ---
 
 <style>
@@ -383,7 +384,7 @@ title: Home
     <main class="home-main">
       <div class="home-section">
         <p>
-          The <strong>M</strong>odeling <strong>I</strong>nteraction, cog<strong>N</strong>ition, and <strong>D</strong>ecision-making by <strong>A</strong>rtificial <strong>I</strong>ntelligence (<strong>MINDxAI</strong>) Lab develops human-centered AI and adaptive systems that improve how people interact with complex human-in-the-loop systems. The lab is housed in the <b>Department of Industrial and Systems Engineering</b> at the <b>University of Louisville</b>.
+          The <strong>M</strong>odeling <strong>I</strong>nteraction, cog<strong>N</strong>ition, and <strong>D</strong>ecision-making by <strong>A</strong>rtificial <strong>I</strong>ntelligence (<strong>MINDxAI</strong>) Lab is directed by <a href="/Team.html#yunmei-liu"><strong>Dr. Yunmei Liu</strong></a>, Assistant Professor in the <b>Department of Industrial and Systems Engineering</b> at the <b>University of Louisville</b>. The lab develops human-centered AI and adaptive systems that improve how people interact with complex human-in-the-loop systems.
         </p>
         <p>
           We model human cognitive, emotional, physiological, and behavioral states through experiments, wearable sensing, simulation, machine learning, and multimodal data analysis. Our research spans transportation and automated driving, smart manufacturing and workforce development, rehabilitation robotics and assistive technologies, and healthcare and biomedical AI.

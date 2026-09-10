@@ -26,10 +26,10 @@
 
 title: MINDxAI Lab @ UofL
 email: yunmei.liu@louisville.edu
-author: MINDxAI Lab
+author: Dr. Yunmei Liu
 copyright: Copyright ©
 description: >- # this means to ignore newlines until "baseurl:"
-  The Modeling Interaction, cogNition, and Decision-making x AI (MINDxAI) Lab at the University of Louisville.
+  The MINDxAI Lab, directed by Dr. Yunmei Liu, is a human-centered AI research lab in the Department of Industrial and Systems Engineering at the University of Louisville.
 
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://mindxai-lab.github.io" # the base hostname & protocol for your site, e.g. http://example.com

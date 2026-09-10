@@ -329,7 +329,7 @@ title: Team
 
   <!-- <img class="team-overview" src="/assets/images/banners/MINDxAI-signage.png" alt="MINDxAI Lab team overview"> -->
 
-  <section class="team-section">
+  <section class="team-section" id="yunmei-liu">
     <h2><a href="https://profiles.louisville.edu/yunmei.liu/about" target="_blank" rel="noopener"><b>Lab Director: Yunmei Liu</b></a></h2>
     <div class="director-profile">
       <div class="director-media">
