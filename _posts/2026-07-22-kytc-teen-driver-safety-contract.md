@@ -5,7 +5,7 @@ subtitle: "University of Louisville Teen Driver Safety Education Project"
 date: 2026-07-22
 display_date: "July 22, 2026"
 categories: news
-tags: [news]
+tags: [news, funding]
 summary: "Dr. Yunmei Liu received a National Highway Traffic Safety Administration (NHTSA) grant from  Kentucky Transportation Cabinet (KYTC) for a one-year University of Louisville teen driver safety education project, with Robert Kluger serving as Co-PI."
 image: "/assets/images/banners/KYTC.png"
 image_alt: "Kentucky Transportation Cabinet logo"

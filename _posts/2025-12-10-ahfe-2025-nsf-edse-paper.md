@@ -5,7 +5,7 @@ subtitle: "Applied Human Factors and Ergonomics International Conference 2025"
 date: 2025-12-10
 display_date: "December 10, 2025"
 categories: news
-tags: [news]
+tags: [news, conferences]
 summary: "MINDxAI Lab presented the first paper from its NSF EDSE project at the Applied Human Factors and Ergonomics International Conference 2025."
 image: "/assets/images/banners/News%20Pics/AHFE_2025.jpeg"
 image_alt: "PI Yunmei Liu and PI David Kaber at AHFE 2025"

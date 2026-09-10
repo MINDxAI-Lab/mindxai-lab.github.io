@@ -5,7 +5,7 @@ subtitle: "Research Experiences for Undergraduates Supplement to NSF CMMI Award 
 date: 2026-07-21
 display_date: "July 21, 2026"
 categories: news
-tags: [news]
+tags: [news, funding]
 summary: "Dr. Yunmei Liu received an NSF Research Experiences for Undergraduates supplement to support one undergraduate researcher in the MINDxAI Lab’s ongoing CMMI project on cognitive-emotional state assessment for advanced driving systems."
 image: "/assets/images/banners/NSF_Logo.png"
 image_alt: "National Science Foundation project graphic"

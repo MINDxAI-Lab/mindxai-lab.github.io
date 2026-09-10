@@ -5,7 +5,7 @@ subtitle: "University of Louisville Student Champion, 2026"
 date: 2026-08-25
 display_date: "August 25, 2026"
 categories: news
-tags: [news]
+tags: [news, honors]
 summary: "Dr. Yunmei Liu received the University of Louisville Student Champion recognition for exceptional support of student success."
 image: "/assets/images/banners/student%20champion.jpeg"
 image_alt: "Dr. Yunmei Liu receiving University of Louisville Student Champion recognition"

@@ -157,69 +157,66 @@ title: Home
     text-decoration: underline;
   }
 
-  .theme-grid {
+  .research-area-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 16px;
   }
 
-  .theme-item {
+  .research-area-item {
     border-left: 4px solid #389092;
     border-radius: 8px;
     padding: 16px 18px;
     background: #eef6f6;
   }
 
-  .theme-item h3 {
+  .research-area-item h3 {
     margin: 0 0 6px;
     font-size: 1.05rem;
   }
 
-  .theme-item h3 a {
+  .research-area-item h3 a {
     color: #3f4a4c;
     text-decoration: none;
   }
 
-  .theme-item h3 a:hover,
-  .theme-item h3 a:focus {
+  .research-area-item h3 a:hover,
+  .research-area-item h3 a:focus {
     color: #1f7a7f;
     text-decoration: underline;
   }
 
-  .theme-item p {
+  .research-area-item p {
     margin: 0 0 10px;
   }
 
-  .theme-item .theme-focus {
-    margin: 8px 0 12px;
-    color: #165f66;
+  .research-area-label {
+    display: block;
+    margin-bottom: 5px;
+    color: #1f7a7f;
+    font-size: 0.78rem;
     font-weight: 700;
-    font-size: 1.01rem;
-    line-height: 1.5;
+    line-height: 1.4;
   }
 
-  .theme-item .theme-focus strong {
-    color: #3f4a4c;
-  }
-
-  .theme-projects {
+  .research-area-projects {
     margin: 0;
     padding-left: 18px;
   }
 
-  .theme-projects li {
+  .research-area-projects li {
     margin-bottom: 6px;
     line-height: 1.45;
   }
 
-  .theme-projects a {
+  .research-area-projects a {
     color: #1f7a7f;
     font-weight: 600;
     text-decoration: none;
   }
 
-  .theme-projects a:hover,
-  .theme-projects a:focus {
+  .research-area-projects a:hover,
+  .research-area-projects a:focus {
     text-decoration: underline;
   }
 
@@ -367,7 +364,7 @@ title: Home
   }
 
   @media (max-width: 760px) {
-    .theme-grid {
+    .research-area-grid {
       grid-template-columns: 1fr;
     }
 
@@ -397,7 +394,7 @@ title: Home
           The <strong>M</strong>odeling <strong>I</strong>nteraction, cog<strong>N</strong>ition, and <strong>D</strong>ecision-making by <strong>A</strong>rtificial <strong>I</strong>ntelligence (<strong>MINDxAI</strong>) Lab develops human-centered AI and adaptive systems that improve how people interact with complex human-in-the-loop systems. The lab is housed in the <b>Department of Industrial and Systems Engineering</b> at the <b>University of Louisville</b>.
         </p>
         <p>
-          We model human cognitive, emotional, physiological, and behavioral states through experiments, wearable sensing, simulation, machine learning, and multimodal data analysis. Our application areas include transportation and adaptive automation, AI-enabled smart manufacturing, rehabilitation robotics, healthcare, and human–autonomy/AI teaming.
+          We model human cognitive, emotional, physiological, and behavioral states through experiments, wearable sensing, simulation, machine learning, and multimodal data analysis. Our research spans transportation and automated driving, smart manufacturing and workforce development, rehabilitation robotics and assistive technologies, and healthcare and biomedical AI.
         </p>
       </div>
       <div class="home-opening" aria-labelledby="home-opening-heading">
@@ -446,36 +443,42 @@ title: Home
         </div>
       </div>
 
-      <div class="home-section">
-        <h2>Research Themes</h2>
-        <div class="theme-grid">
-          <div class="theme-item">
-            <h3><a href="/Research.html#theme-adaptive-health-training-safety">Research Theme I: Real-Time Adaptive System Design Guided by Human State Modeling</a></h3>
-    <p>This theme translates human-state information into the design and implementation of real-time adaptive systems.</p>
-            <ol class="theme-projects">
+      <section class="home-section" aria-labelledby="home-research-heading">
+        <h2 id="home-research-heading">Research Areas</h2>
+        <div class="research-area-grid">
+          <div class="research-area-item">
+            <h3><a href="/Research.html#area-transportation-automated-driving"><span class="research-area-label">Research Area I</span>Transportation and Automated Driving</a></h3>
+            <p>Understanding driver states and behavior to support adaptive automation, safer mixed traffic, and driver education.</p>
+            <ol class="research-area-projects">
               <li><a href="/Research.html#project-cognitive-emotional-driving-automation">Cognitive-Emotional State Assessment for Adaptive Automation Intervention</a></li>
-              <li><a href="/Research.html#project-ai-vr-manufacturing-foundry">AI-Enabled Virtual Reality Manufacturing Foundry</a></li>
-              <li><a href="/Research.html#project-prosthetic-control">Human-Centered Design for Natural Upper-Limb Prosthetic Control</a></li>
-            </ol>
-          </div>
-          <div class="theme-item">
-            <h3><a href="/Research.html#theme-human-ai-automation">Research Theme II: Human Behavior Modeling in Transportation and Automation Systems</a></h3>
-    <p>This theme models behavioral dynamics and system-level safety and efficiency outcomes in complex systems.</p>
-            <ol class="theme-projects">
               <li><a href="/Research.html#project-aggressive-driving-mixed-traffic">Aggressive Driving in Mixed Traffic</a></li>
               <li><a href="/Research.html#project-teen-driver-safety-education">Teen Driver Safety Education</a></li>
             </ol>
           </div>
-          <div class="theme-item">
-            <h3><a href="/Research.html#theme-physiological-biomedical-modeling">Research Theme III: Human-Centered Computing and Interaction-Aware Human State Modeling</a></h3>
-    <p>This theme investigates the mechanisms and theoretical foundations of human-state changes through AI-enabled modeling and multimodal data analysis.</p>
-            <ol class="theme-projects">
+          <div class="research-area-item">
+            <h3><a href="/Research.html#area-smart-manufacturing-workforce-development"><span class="research-area-label">Research Area II</span>Smart Manufacturing and Workforce Development</a></h3>
+            <p>Using AI-supported virtual reality to advance manufacturing learning, career exploration, and workforce development.</p>
+            <ol class="research-area-projects">
+              <li><a href="/Research.html#project-ai-vr-manufacturing-foundry">AI-Enabled Virtual Reality Manufacturing Foundry</a></li>
+            </ol>
+          </div>
+          <div class="research-area-item">
+            <h3><a href="/Research.html#area-rehabilitation-robotics-assistive-technologies"><span class="research-area-label">Research Area III</span>Rehabilitation Robotics and Assistive Technologies</a></h3>
+            <p>Designing and evaluating intuitive prosthetic interfaces and training technologies that support human movement and rehabilitation.</p>
+            <ol class="research-area-projects">
+              <li><a href="/Research.html#project-prosthetic-control">Human-Centered Design for Natural Upper-Limb Prosthetic Control</a></li>
+            </ol>
+          </div>
+          <div class="research-area-item">
+            <h3><a href="/Research.html#area-healthcare-biomedical-ai"><span class="research-area-label">Research Area IV</span>Healthcare and Biomedical AI</a></h3>
+            <p>Applying AI and human-centered research to biomedical signal modeling, neurological assessment, and patient-provider communication.</p>
+            <ol class="research-area-projects">
               <li><a href="/Research.html#project-eeg-seizure-modeling">AI-Driven Scalp EEG Modeling for Seizure Detection and Signal Enhancement</a></li>
               <li><a href="/Research.html#project-communication-barriers-healthcare">Communication Barriers in Patient-Provider Interactions</a></li>
             </ol>
           </div>
         </div>
-      </div>
+      </section>
 
       <div class="home-section">
         <h2>Explore the Lab</h2>
@@ -501,7 +504,7 @@ title: Home
           {%- else -%}
           <p class="home-news-date">{{ post.date | date: "%B %Y" }}</p>
           {%- endif -%}
-          <p class="home-news-title"><a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></p>
+          <p class="home-news-title"><a href="{{ post.url | relative_url }}">{% include news-category-badge.html post=post %} {{ post.title | escape }}</a></p>
         </li>
         {%- endfor -%}
       </ul>

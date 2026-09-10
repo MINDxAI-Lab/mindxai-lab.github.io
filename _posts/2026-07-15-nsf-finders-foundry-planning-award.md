@@ -5,7 +5,7 @@ subtitle: "AI-Enabled Virtual Reality Manufacturing Foundry"
 date: 2026-07-15
 display_date: "July 15, 2026"
 categories: news
-tags: [news]
+tags: [news, funding]
 summary: "The MINDxAI Lab received an NSF FINDERS FOUNDRY Planning Award to develop an AI-enabled virtual reality learning experience for high school manufacturing education."
 card_image: "/assets/images/banners/NSF_Logo.png"
 card_image_alt: "National Science Foundation project graphic"

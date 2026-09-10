@@ -4,27 +4,6 @@ title: Research
 ---
 
 <style>
-  .research-page {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .research-page > h1 {
-    order: 0;
-  }
-
-  #theme-adaptive-health-training-safety {
-    order: 1;
-  }
-
-  #theme-human-ai-automation {
-    order: 2;
-  }
-
-  #theme-physiological-biomedical-modeling {
-    order: 3;
-  }
-
   .research-page h1,
   .research-page h2,
   .research-page h3 {
@@ -44,6 +23,11 @@ title: Research
 
   .research-section {
     margin-top: 64px;
+    scroll-margin-top: 90px;
+  }
+
+  .research-anchor {
+    display: block;
     scroll-margin-top: 90px;
   }
 
@@ -70,7 +54,7 @@ title: Research
     font-weight: 400;
   }
 
-  .theme-focus {
+  .area-focus {
     margin: 12px 0 0;
     color: #165f66;
     font-weight: 700;
@@ -78,7 +62,7 @@ title: Research
     line-height: 1.5;
   }
 
-  .theme-focus strong {
+  .area-focus strong {
     color: #3f4a4c;
   }
 
@@ -306,17 +290,15 @@ title: Research
 
 <div class="research-page">
   <h1>Ongoing Research Projects</h1>
-  <!-- <p class="research-subtitle">human state sensing → human-AI interaction → adaptive intervention</p> -->
-  <section class="research-section" id="theme-adaptive-health-training-safety">
-  <div class="research-topic-header">
-    <h2>Research Theme I: Real-Time Adaptive System Design Guided by Human State Modeling</h2>
-    <p class="theme-focus"><strong>Theme focus:</strong> This theme translates human-state information into the design and implementation of real-time adaptive systems.</p>
-<p class="research-section-subtitle">
-  We design and evaluate adaptive technologies that sense, model, and respond to human cognitive, emotional, physiological, and performance states in <b><u>real time</u></b>. Our applied research spans driving, rehabilitation, healthcare, immersive training, and complex work systems.
-</p>
+  <p class="research-subtitle">We study human cognitive, emotional, physiological, and behavioral states to inform adaptive, human-centered system design. Our projects bring this shared research approach to four application areas.</p>
 
-
-  </div>
+  <section class="research-section" id="area-transportation-automated-driving">
+    <span class="research-anchor" id="theme-adaptive-health-training-safety" aria-hidden="true"></span>
+    <span class="research-anchor" id="theme-human-ai-automation" aria-hidden="true"></span>
+    <div class="research-topic-header">
+      <h2>Research Area I: Transportation and Automated Driving</h2>
+      <p class="area-focus"><strong>Area focus:</strong> Understanding driver states and behavior to support adaptive automation, safer mixed traffic, and driver education.</p>
+    </div>
       <article class="research-project" id="project-cognitive-emotional-driving-automation">
       <figure>
         <img src="/assets/images/banners/Updated Images/Picture2.jpg" alt="NSF EDSE automation intervention project graphic">
@@ -371,135 +353,7 @@ title: Research
         </div>
       </div>
     </article>
-    <article class="research-project" id="project-ai-vr-manufacturing-foundry">
-      <figure>
-        <img src="/assets/images/banners/VR_manufacturing_extended.png" alt="AI-enabled virtual reality manufacturing foundry project graphic">
-        <figcaption>
-          <a href="https://www.nsf.gov/awardsearch/show-award/?AWD_ID=2627659&HistoricalAwards=false" target="_blank" rel="noopener">Sponsor: NSF FINDERS FOUNDRY</a>
-          <span>PI: Yunmei Liu</span>
-        </figcaption>
-      </figure>
-      <div>
-        <h3>AI-Enabled Virtual Reality Manufacturing Foundry</h3>
-        <p>
-          This NSF FINDERS FOUNDRY Planning project develops an AI-enabled virtual reality platform to help high school students explore modern manufacturing careers. The platform will provide safe, accessible, and authentic opportunities for students to learn manufacturing workflows, practice decision-making, and interact with a supportive AI mentor.
-        </p>
-        <p>
-          By making advanced manufacturing careers more visible and engaging, the project aims to strengthen students’ interest in manufacturing pathways and help them understand AI as a transparent learning support for feedback, reflection, and problem solving.
-        </p>
-      </div>
-    </article>
-  <article class="research-project" id="project-prosthetic-control">
-      <figure>
-        <img src="/assets/images/banners/NSF.png" alt="EMG-based upper-limb prosthetic control evaluation setup">
-        <figcaption>
-          Sponsor: NA
-          <!-- <span>Collaborators: Yunmei Liu, Juhye Park, Jason Berman, David Kaber, H. Huang, J. Ruiz, Mahsa Zahabi, and team</span> -->
-        </figcaption>
-      </figure>
-      <div>
-        <h3>Human-Centered Design for Natural Upper-Limb Prosthetic Control</h3>
-        <p>          This project focuses on advancing upper-limb prosthetic control from conventional control modes toward more natural and intuitive control. Our prior work compared alternative prosthetic control strategies, generated workload and usability evidence for early-stage design, and examined VR as a scalable platform for testing prosthetic manipulation tasks before full physical-device deployment. Together, these studies provide human-centered design guidance for selecting and refining prosthetic control interfaces that better align with users’ movement intentions, improve performance, reduce workload, and support rehabilitation training.
-        </p>
-        <div class="project-publications">
-          <h4>Prior Related Work: Upper-Limb Prosthetic Control</h4>
-          <ol class="project-publication-list">
-            <li>
-              <a href="https://doi.org/10.1109/TNSRE.2026.3652083" target="_blank" rel="noopener"><b>Liu, Y.</b>, Park, J., Delgado, D., Music, A., Berman, J., Ruiz, J., Kaber, D. B., Huang, H., and Zahabi, M. (2026). Virtual reality as a platform for upper-limb prosthetic control training and early-stage design. <i>IEEE Transactions on Neural Systems and Rehabilitation Engineering</i>.</a>
-            </li>
-            <li>
-              <a href="https://doi.org/10.1109/THMS.2024.3381094" target="_blank" rel="noopener"><b>Liu, Y.</b>, Berman, J., Dodson, A., Park, J., Zahabi, M., Huang, H., Ruiz, J., and Kaber, D. (2024). Human-centered evaluation of EMG-based upper-limb prosthetic control modes. <i>IEEE Transactions on Human-Machine Systems</i>.</a>
-            </li>
-            <li>
-              <a href="https://doi.org/10.1080/00140139.2023.2221413" target="_blank" rel="noopener">Park, J., Berman, J., Dodson, A., <b>Liu, Y.</b>, Armstrong, M., Huang, H., Kaber, D. B., Ruiz, J., and Zahabi, M. (2023). Assessing workload in using electromyography (EMG)-based prostheses. <i>Ergonomics</i>.</a>
-            </li>
-            <li>
-              <a href="https://ieeexplore.ieee.org/document/10394286" target="_blank" rel="noopener">Park, J., Music, A., Daniel, D., Berman, J., Dodson, A., <b>Liu, Y.</b>, Ruiz, J., Huang, H., Kaber, D., and Zahabi, M. (2023). Cognitive workload and usability of virtual reality simulation for prosthesis training. <i>IEEE International Conference on Systems, Man, and Cybernetics</i>, pp. 1567-1572.</a>
-            </li>
-            <li>
-              <a href="https://ieeexplore.ieee.org/document/9980676" target="_blank" rel="noopener">Park, J., Berman, J., Dodson, A., <b>Liu, Y.</b>, Armstrong, M., Huang, H., Kaber, D., Ruiz, J., and Zahabi, M. (2022). Cognitive workload classification of upper-limb prosthetic devices. <i>IEEE International Conference on Human-Machine Systems</i>, pp. 1-6.</a>
-            </li>
-          </ol>
-        </div>
 
-      </div>
-    </article>
-
-  </section>
-
-
-
-<section class="research-section" id="theme-physiological-biomedical-modeling">
-  <div class="research-topic-header">
-<h2>Research Theme III: Human-Centered Computing and Interaction-Aware Human State Modeling</h2>
-<p class="theme-focus"><strong>Theme focus:</strong> This theme investigates the mechanisms and theoretical foundations of human-state changes through AI-enabled modeling and multimodal data analysis.</p>
-<p class="research-section-subtitle">
-  We develop methods to measure, model, and predict human states during interactions with intelligent systems. Our work integrates multimodal biosignals, performance data, and machine learning to support human-AI/robot teaming, neurological condition detection, and adaptive human-centered technologies. </p>
-  </div>
-      <article class="research-project" id="project-eeg-seizure-modeling">
-      <figure>
-        <img src="/assets/images/banners/Updated Images/Seizure.png" alt="Seizure-EEG project graphic">
-        <figcaption>
-          Sponsor: NA
-          <!-- <span>PIs: Yunmei Liu and Tianlong Chen</span> -->
-        </figcaption>
-      </figure>
-      <div>
-        <h3>AI-Driven Scalp EEG Modeling for Seizure Detection and Signal Enhancement</h3>
-        <p>
-          We develop AI methods that transform multichannel scalp EEG into spatial, visual, and geometry-aware representations for neurological condition detection. This work supports robust seizure detection, EEG spatial super-resolution, and reliable biomedical signal modeling for real-time and clinically meaningful assessment.
-
-        </p>
-        <!-- <a class="project-button" href="https://mindxai-lab.github.io/nsf-edse-automation-intervention/" target="_blank" rel="noopener">Website</a> -->
-        <div class="project-publications">
-          <h4>Publications From This Project</h4>
-          <ol class="project-publication-list">
-            <li>
-              <a href="https://arxiv.org/pdf/2602.04769" target="_blank" rel="noopener">Chen, Y., Peng, J., Chowdhury, M. H., Chen, T., and <b>Liu, Y.</b> (2026). NeuroCanvas: VLLM-powered robust seizure detection by reformulating multichannel EEG as image. <i>arXiv preprint arXiv:2602.04769</i>.</a>
-            </li>
-            <li>
-              <a href="https://arxiv.org/pdf/2602.02238" target="_blank" rel="noopener">Yao, L., Zhang, G., Chowdhury, M., <b>Liu, Y.</b>, and Chen, T. (2026). Geometry- and relation-aware diffusion for EEG super-resolution. <i>arXiv preprint arXiv:2602.02238</i>.</a>
-            </li>
-          </ol>
-        </div>
-      </div>
-    </article>
-
-
-    <article class="research-project" id="project-communication-barriers-healthcare">
-      <figure>
-        <img src="/assets/images/banners/Updated Images/CB.png" alt="Communication Barriers project graphic">
-        <figcaption>
-          Sponsor: NA
-          <!-- <span>PI: Yunmei Liu</span> -->
-        </figcaption>
-      </figure>
-      <div>
-        <h3>Communication Barriers in Patient-Provider Interactions</h3>
-        <p>
-          This project examines how communication barriers disrupt patient-provider communication and affect patient experience, clinical decision-making, health outcomes, and healthcare system efficiency. Building on a scoping review of patient-provider communication studies, the work maps how barriers intersect and identifies intervention opportunities including interpreter services, cultural and empathy training, plain-language and visual supports, AI-enabled translation and chatbot tools, clinical note-taking agents, and wearable or remote-monitoring technologies. The goal is to inform adaptive, patient-centered communication systems that combine AI support with real-time human-state and context awareness.
-        </p>
-
-        <div class="project-publications">
-          <h4>Publications From This Project</h4>
-          <ol class="project-publication-list">
-            <li>
-              <a href="https://www.jmir.org/2026/1/e79744/" target="_blank" rel="noopener">Chowdhury, M. H.&#42;, and <b>Liu, Y.</b>&dagger; (2026). Systematic review of communication barriers in healthcare: implications for technological interventions. <i>Journal of Medical Internet Research (JMIR)</i>. </a>
-            </li>
-          </ol>
-        </div>
-      </div>
-    </article>
-
-  </section>
-
-  <section class="research-section" id="theme-human-ai-automation">
-    <div class="research-topic-header">
-<h2>Research Theme II: Human Behavior Modeling in Transportation and Automation Systems</h2>
-<p class="theme-focus"><strong>Theme focus:</strong> This theme models behavioral dynamics and system-level safety and efficiency outcomes in complex systems.</p>
-<p class="research-section-subtitle">
-  We study and model how humans behave, adapt, and make decisions in transportation contexts. Our work examines driver behavior, aggressive driving, mixed human-AV traffic, trust, workload, situation awareness, and human responses to automation, with the goal of informing safer and more human-aware transportation systems.</p>
-    </div>
     <article class="research-project" id="project-aggressive-driving-mixed-traffic">
       <figure>
         <img src="/assets/images/banners/Updated Images/AD.png" alt="Aggressive Driving project graphic">
@@ -553,11 +407,11 @@ title: Research
         </video>
 
         <p class="project-video-description">
-          This demo illustrates a representative aggressive-overtaking scenario in 
-          continuous mixed-traffic simulation and demonstrates the behavioral responses 
+          This demo illustrates a representative aggressive-overtaking scenario in
+          continuous mixed-traffic simulation and demonstrates the behavioral responses
           detected using our vision-based multimodal framework. It accompanies the study:
           Das, U.*, Chen, Y.*, Chowdhury, M. H.*, and <strong>Liu, Y.</strong>† (2026),
-          “A Vision-Based Multimodal Framework for Quantifying Novice Driver Behavioral 
+          “A Vision-Based Multimodal Framework for Quantifying Novice Driver Behavioral
           Responses to Aggressive Overtaking in Continuous Simulator Traffic,”
           <em>International Conference on Applied Human Factors and Ergonomics (AHFE)</em>,
           accepted.
@@ -583,13 +437,137 @@ title: Research
         </p>
       </div>
     </article>
-
   </section>
 
+  <section class="research-section" id="area-smart-manufacturing-workforce-development">
+    <div class="research-topic-header">
+      <h2>Research Area II: Smart Manufacturing and Workforce Development</h2>
+      <p class="area-focus"><strong>Area focus:</strong> Using AI-supported virtual reality to advance manufacturing learning, career exploration, and workforce development.</p>
+    </div>
+    <article class="research-project" id="project-ai-vr-manufacturing-foundry">
+      <figure>
+        <img src="/assets/images/banners/VR_manufacturing_extended.png" alt="AI-enabled virtual reality manufacturing foundry project graphic">
+        <figcaption>
+          <a href="https://www.nsf.gov/awardsearch/show-award/?AWD_ID=2627659&HistoricalAwards=false" target="_blank" rel="noopener">Sponsor: NSF FINDERS FOUNDRY</a>
+          <span>PI: Yunmei Liu</span>
+        </figcaption>
+      </figure>
+      <div>
+        <h3>AI-Enabled Virtual Reality Manufacturing Foundry</h3>
+        <p>
+          This NSF FINDERS FOUNDRY Planning project develops an AI-enabled virtual reality platform to help high school students explore modern manufacturing careers. The platform will provide safe, accessible, and authentic opportunities for students to learn manufacturing workflows, practice decision-making, and interact with a supportive AI mentor.
+        </p>
+        <p>
+          By making advanced manufacturing careers more visible and engaging, the project aims to strengthen students’ interest in manufacturing pathways and help them understand AI as a transparent learning support for feedback, reflection, and problem solving.
+        </p>
+      </div>
+    </article>
+  </section>
+
+  <section class="research-section" id="area-rehabilitation-robotics-assistive-technologies">
+    <div class="research-topic-header">
+      <h2>Research Area III: Rehabilitation Robotics and Assistive Technologies</h2>
+      <p class="area-focus"><strong>Area focus:</strong> Designing and evaluating intuitive prosthetic interfaces and training technologies that support human movement and rehabilitation.</p>
+    </div>
+  <article class="research-project" id="project-prosthetic-control">
+      <figure>
+        <img src="/assets/images/banners/NSF.png" alt="EMG-based upper-limb prosthetic control evaluation setup">
+        <figcaption>
+          Sponsor: NA
+          <!-- <span>Collaborators: Yunmei Liu, Juhye Park, Jason Berman, David Kaber, H. Huang, J. Ruiz, Mahsa Zahabi, and team</span> -->
+        </figcaption>
+      </figure>
+      <div>
+        <h3>Human-Centered Design for Natural Upper-Limb Prosthetic Control</h3>
+        <p>          This project focuses on advancing upper-limb prosthetic control from conventional control modes toward more natural and intuitive control. Our prior work compared alternative prosthetic control strategies, generated workload and usability evidence for early-stage design, and examined VR as a scalable platform for testing prosthetic manipulation tasks before full physical-device deployment. Together, these studies provide human-centered design guidance for selecting and refining prosthetic control interfaces that better align with users’ movement intentions, improve performance, reduce workload, and support rehabilitation training.
+        </p>
+        <div class="project-publications">
+          <h4>Prior Related Work: Upper-Limb Prosthetic Control</h4>
+          <ol class="project-publication-list">
+            <li>
+              <a href="https://doi.org/10.1109/TNSRE.2026.3652083" target="_blank" rel="noopener"><b>Liu, Y.</b>, Park, J., Delgado, D., Music, A., Berman, J., Ruiz, J., Kaber, D. B., Huang, H., and Zahabi, M. (2026). Virtual reality as a platform for upper-limb prosthetic control training and early-stage design. <i>IEEE Transactions on Neural Systems and Rehabilitation Engineering</i>.</a>
+            </li>
+            <li>
+              <a href="https://doi.org/10.1109/THMS.2024.3381094" target="_blank" rel="noopener"><b>Liu, Y.</b>, Berman, J., Dodson, A., Park, J., Zahabi, M., Huang, H., Ruiz, J., and Kaber, D. (2024). Human-centered evaluation of EMG-based upper-limb prosthetic control modes. <i>IEEE Transactions on Human-Machine Systems</i>.</a>
+            </li>
+            <li>
+              <a href="https://doi.org/10.1080/00140139.2023.2221413" target="_blank" rel="noopener">Park, J., Berman, J., Dodson, A., <b>Liu, Y.</b>, Armstrong, M., Huang, H., Kaber, D. B., Ruiz, J., and Zahabi, M. (2023). Assessing workload in using electromyography (EMG)-based prostheses. <i>Ergonomics</i>.</a>
+            </li>
+            <li>
+              <a href="https://ieeexplore.ieee.org/document/10394286" target="_blank" rel="noopener">Park, J., Music, A., Daniel, D., Berman, J., Dodson, A., <b>Liu, Y.</b>, Ruiz, J., Huang, H., Kaber, D., and Zahabi, M. (2023). Cognitive workload and usability of virtual reality simulation for prosthesis training. <i>IEEE International Conference on Systems, Man, and Cybernetics</i>, pp. 1567-1572.</a>
+            </li>
+            <li>
+              <a href="https://ieeexplore.ieee.org/document/9980676" target="_blank" rel="noopener">Park, J., Berman, J., Dodson, A., <b>Liu, Y.</b>, Armstrong, M., Huang, H., Kaber, D., Ruiz, J., and Zahabi, M. (2022). Cognitive workload classification of upper-limb prosthetic devices. <i>IEEE International Conference on Human-Machine Systems</i>, pp. 1-6.</a>
+            </li>
+          </ol>
+        </div>
+
+      </div>
+    </article>
+  </section>
+
+  <section class="research-section" id="area-healthcare-biomedical-ai">
+    <span class="research-anchor" id="theme-physiological-biomedical-modeling" aria-hidden="true"></span>
+    <div class="research-topic-header">
+      <h2>Research Area IV: Healthcare and Biomedical AI</h2>
+      <p class="area-focus"><strong>Area focus:</strong> Applying AI and human-centered research to biomedical signal modeling, neurological assessment, and patient-provider communication.</p>
+    </div>
+      <article class="research-project" id="project-eeg-seizure-modeling">
+      <figure>
+        <img src="/assets/images/banners/Updated Images/Seizure.png" alt="Seizure-EEG project graphic">
+        <figcaption>
+          Sponsor: NA
+          <!-- <span>PIs: Yunmei Liu and Tianlong Chen</span> -->
+        </figcaption>
+      </figure>
+      <div>
+        <h3>AI-Driven Scalp EEG Modeling for Seizure Detection and Signal Enhancement</h3>
+        <p>
+          We develop AI methods that transform multichannel scalp EEG into spatial, visual, and geometry-aware representations for neurological condition detection. This work supports robust seizure detection, EEG spatial super-resolution, and reliable biomedical signal modeling for real-time and clinically meaningful assessment.
+
+        </p>
+        <!-- <a class="project-button" href="https://mindxai-lab.github.io/nsf-edse-automation-intervention/" target="_blank" rel="noopener">Website</a> -->
+        <div class="project-publications">
+          <h4>Publications From This Project</h4>
+          <ol class="project-publication-list">
+            <li>
+              <a href="https://arxiv.org/pdf/2602.04769" target="_blank" rel="noopener">Chen, Y., Peng, J., Chowdhury, M. H., Chen, T., and <b>Liu, Y.</b> (2026). NeuroCanvas: VLLM-powered robust seizure detection by reformulating multichannel EEG as image. <i>arXiv preprint arXiv:2602.04769</i>.</a>
+            </li>
+            <li>
+              <a href="https://arxiv.org/pdf/2602.02238" target="_blank" rel="noopener">Yao, L., Zhang, G., Chowdhury, M., <b>Liu, Y.</b>, and Chen, T. (2026). Geometry- and relation-aware diffusion for EEG super-resolution. <i>arXiv preprint arXiv:2602.02238</i>.</a>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </article>
+
+    <article class="research-project" id="project-communication-barriers-healthcare">
+      <figure>
+        <img src="/assets/images/banners/Updated Images/CB.png" alt="Communication Barriers project graphic">
+        <figcaption>
+          Sponsor: NA
+          <!-- <span>PI: Yunmei Liu</span> -->
+        </figcaption>
+      </figure>
+      <div>
+        <h3>Communication Barriers in Patient-Provider Interactions</h3>
+        <p>
+          This project examines how communication barriers disrupt patient-provider communication and affect patient experience, clinical decision-making, health outcomes, and healthcare system efficiency. Building on a scoping review of patient-provider communication studies, the work maps how barriers intersect and identifies intervention opportunities including interpreter services, cultural and empathy training, plain-language and visual supports, AI-enabled translation and chatbot tools, clinical note-taking agents, and wearable or remote-monitoring technologies. The goal is to inform adaptive, patient-centered communication systems that combine AI support with real-time human-state and context awareness.
+        </p>
+
+        <div class="project-publications">
+          <h4>Publications From This Project</h4>
+          <ol class="project-publication-list">
+            <li>
+              <a href="https://www.jmir.org/2026/1/e79744/" target="_blank" rel="noopener">Chowdhury, M. H.&#42;, and <b>Liu, Y.</b>&dagger; (2026). Systematic review of communication barriers in healthcare: implications for technological interventions. <i>Journal of Medical Internet Research (JMIR)</i>. </a>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </article>
+  </section>
 
 </div>
-
-
 
 
 <!-- <div class="research-page">

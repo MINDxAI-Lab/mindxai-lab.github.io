@@ -5,7 +5,7 @@ subtitle: "MINDxAI Lab Student Achievement"
 date: 2026-07-30
 display_date: "July 30, 2026"
 categories: news
-tags: [news]
+tags: [news, lab-life]
 summary: "Udit Kumar Das successfully defended his master's thesis in Industrial and Systems Engineering and will continue his research with the MINDxAI Lab as a Ph.D. student."
 image: "/assets/images/banners/udit-ms-defense.png"
 image_alt: "Udit Kumar Das at his master's thesis defense"

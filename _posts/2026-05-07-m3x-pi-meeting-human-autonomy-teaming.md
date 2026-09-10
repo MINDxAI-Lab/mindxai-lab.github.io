@@ -5,7 +5,7 @@ subtitle: "NSF M3X Principal Investigator Meeting"
 date: 2026-05-07
 display_date: "May 7, 2026"
 categories: news
-tags: [news]
+tags: [news, conferences]
 summary: "Dr. Yunmei Liu was invited to attend the NSF M3X PI Meeting, where the MINDxAI Lab shared collaborative work on human-autonomy teaming with Oregon State University and the University of Florida."
 image: "/assets/images/banners/Updated%20Images/Picture3.png"
 image_alt: "Human-autonomy teaming poster presented at NSF M3X PI Meeting"

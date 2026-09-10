@@ -5,7 +5,7 @@ subtitle: "Welcoming Qunli Liu and Udit Kumar Das to the MINDxAI Lab"
 date: 2026-08-01
 display_date: "August 1, 2026"
 categories: news
-tags: [news]
+tags: [news, lab-life]
 summary: "The MINDxAI Lab welcomes new Ph.D. students Qunli Liu and Udit Kumar Das and looks forward to their contributions in the new academic year."
 image: "/assets/images/banners/New%20students_2026.jpeg"
 image_alt: "MINDxAI Lab retreat with new Ph.D. students Qunli Liu and Udit Kumar Das"

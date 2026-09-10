@@ -5,7 +5,7 @@ subtitle: "Graduate Student Council Research Grant, University of Louisville"
 date: 2026-04-01
 display_date: "April 2026"
 categories: news
-tags: [news]
+tags: [news, funding]
 summary: "UUdit Kumar Das received a $750 research grant from the University of Louisville Graduate Student Council to support his master’s thesis research on novice drivers under aggressive driving conditions."
 image: "/assets/images/banners/Updated%20Images/Udit.png"
 image_alt: "Udit Kumar Das"

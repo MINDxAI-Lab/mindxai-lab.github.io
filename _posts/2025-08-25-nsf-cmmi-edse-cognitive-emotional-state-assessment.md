@@ -5,7 +5,7 @@ subtitle: "NSF CMMI/EDSE Collaborative Research on Advanced Driving Systems"
 date: 2025-08-25
 display_date: "August 25, 2025"
 categories: news
-tags: [news]
+tags: [news, funding]
 summary: "Dr. Yunmei Liu received the National Science Foundation award as Lead PI for a three-year, $600,000 collaborative project on cognitive-emotional state assessment and adaptive automation for advanced driving systems."
 image: "/assets/images/banners/NSF_Logo.png"
 image_alt: "National Science Foundation project graphic"

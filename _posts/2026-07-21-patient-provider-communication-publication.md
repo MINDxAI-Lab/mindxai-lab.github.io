@@ -1,12 +1,12 @@
 ---
 layout: post
-title: "MINDxAI Lab Publishes New Study on Patient-Provider Communication Barriers"
+title: "MINDxAI Lab’s Student-Led JMIR Review Integrates Patient-Provider Communication Barriers"
 subtitle: "Journal of Medical Internet Research, 2026"
 date: 2026-07-21
 display_date: "July 21, 2026"
 categories: news
-tags: [news]
-summary: "A new MINDxAI Lab publication in the Journal of Medical Internet Research examines communication barriers in patient-provider interactions and opportunities for technological support."
+tags: [news, publications]
+summary: "Led by PhD student Moajjem Hossain Chowdhury, a scoping review of 253 empirical studies integrates four types of communication barriers to inform future healthcare interventions and adaptive support."
 image: "/assets/images/banners/Updated%20Images/CB.png"
 image_alt: "Communication barriers in patient-provider interactions project graphic"
 permalink: /news/patient-provider-communication-publication.html
@@ -33,15 +33,18 @@ hidden:
   </figure>
 
   <p class="lead">
-    The MINDxAI Lab is pleased to share the publication of “Communication Barriers in Patient-Provider Interactions in Health Care: Scoping Review” in the <i>Journal of Medical Internet Research</i>.
+    Led by MINDxAI Lab PhD student Moajjem Hossain Chowdhury with Dr. Yunmei Liu, “Communication Barriers in Patient-Provider Interactions in Health Care: Scoping Review” is now available open access in the <i>Journal of Medical Internet Research</i>.
   </p>
 
-  <h2>Communication Barriers in Healthcare</h2>
+  <h2>Beyond a List of Communication Barriers</h2>
   <p>
-    The study examines how linguistic, cultural, psychological, and cognitive barriers can intersect during patient-provider communication and affect patient experience, clinical decision-making, health outcomes, and healthcare system efficiency.
+    Following PRISMA-ScR, the review searched four databases, screened 6,233 records, and synthesized 253 empirical studies. It integrates linguistic, cultural, psychological, and patient–provider mental-model barriers into one framework, showing how they overlap and relate to patient experience, healthcare access, clinical decision-making, and health outcomes.
   </p>
   <p>
-    The review identifies opportunities for patient-centered technological support, including AI-enabled translation, plain-language and visual communication tools, clinical note-taking agents, and systems that account for human state and context. This work contributes to the lab’s research on adaptive healthcare systems and shared understanding.
+    The synthesis identifies important gaps, including limited research on psychological and mental-model barriers and a lack of real-time behavioral, nonverbal, and physiological indicators. These findings provide a foundation for future interventions and technology development: adaptive support requires understanding which barriers are present, how they interact, and how they can be recognized during clinical encounters.
+  </p>
+  <p>
+    The lab’s next phase will move from evidence synthesis to empirical data analysis, examining how these barriers, individually and jointly, are associated with healthcare experiences and outcomes.
   </p>
 
   <p>

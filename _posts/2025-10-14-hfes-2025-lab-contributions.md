@@ -5,7 +5,7 @@ subtitle: "ASPIRE HFES Annual Meeting 2025"
 date: 2025-10-14
 display_date: "October 2025"
 categories: news
-tags: [news]
+tags: [news, conferences]
 summary: "MINDxAI Lab presented one lecture and two posters at ASPIRE HFES 2025 across the Surface Transportation and Healthcare tracks."
 image: "/assets/images/banners/News%20Pics/HFES_2025.jpeg"
 image_alt: "MINDxAI Lab undergraduate students and Dr. Liu at ASPIRE HFES 2025"

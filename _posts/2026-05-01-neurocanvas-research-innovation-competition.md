@@ -5,7 +5,7 @@ subtitle: "University of Louisville ISE Research & Innovation Competition - Spri
 date: 2026-05-11
 display_date: "May 11, 2026"
 categories: news
-tags: [news]
+tags: [news, honors]
 summary: "The MINDxAI Lab’s NeuroCanvas project, led by Yan Chen, received Third Place at the University of Louisville Department of Industrial & Systems Engineering Research & Innovation Competition - Spring 2026."
 image: "/assets/images/banners/News%20Pics/Yan_0526.jpeg"
 image_alt: "NeuroCanvas seizure detection project visual"

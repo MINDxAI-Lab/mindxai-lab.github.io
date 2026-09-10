@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900" role="img" aria-labelledby="title desc">
+  <title id="title">IEEE Transactions on Neural Systems and Rehabilitation Engineering publication</title>
+  <desc id="desc">Virtual Reality for Prosthetic Control Evaluation. January 12, 2026.</desc>
+  <rect width="1200" height="900" fill="#eef6f6"/>
+  <rect x="0" y="0" width="16" height="900" fill="#1f7a7f"/>
+  <text x="80" y="112" fill="#1f7a7f" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="700" letter-spacing="3">JOURNAL PUBLICATION</text>
+  <text x="80" y="230" fill="#25494c" font-family="Arial, Helvetica, sans-serif" font-size="58" font-weight="700">IEEE Transactions on</text>
+  <text x="80" y="300" fill="#25494c" font-family="Arial, Helvetica, sans-serif" font-size="58" font-weight="700">Neural Systems and</text>
+  <text x="80" y="370" fill="#25494c" font-family="Arial, Helvetica, sans-serif" font-size="58" font-weight="700">Rehabilitation Engineering</text>
+  <line x1="80" y1="440" x2="1120" y2="440" stroke="#bdd9d9" stroke-width="3"/>
+  <text x="80" y="545" fill="#3f4a4c" font-family="Arial, Helvetica, sans-serif" font-size="45">Virtual Reality for</text>
+  <text x="80" y="610" fill="#3f4a4c" font-family="Arial, Helvetica, sans-serif" font-size="45">Prosthetic Control Evaluation</text>
+  <text x="80" y="792" fill="#527174" font-family="Arial, Helvetica, sans-serif" font-size="32">January 12, 2026</text>
+</svg>

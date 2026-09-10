@@ -1,0 +1,11 @@
+{%- for badge_tag in include.post.tags -%}
+  {%- assign badge_category = site.data.news_categories[badge_tag] -%}
+  {%- if badge_category -%}
+    {%- if include.link -%}
+      <a class="news-category-badge" href="{{ '/News.html' | relative_url }}#{{ badge_tag }}" aria-label="Browse {{ badge_category.label | escape }} news">{{ badge_category.label | escape }}</a>
+    {%- else -%}
+      <span class="news-category-badge">{{ badge_category.label | escape }}</span>
+    {%- endif -%}
+    {%- break -%}
+  {%- endif -%}
+{%- endfor -%}

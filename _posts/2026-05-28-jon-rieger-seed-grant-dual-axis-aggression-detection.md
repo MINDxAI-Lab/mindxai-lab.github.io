@@ -1,12 +1,12 @@
 ---
 layout: post
 title: "Dr. Yunmei Liu Receives Internal Jon Rieger Seed Grant as PI"
-subtitle: "MINDxAI Lab Theme II: Aggressive Driving in Mixed Traffic"
+subtitle: "MINDxAI Lab Research Area I: Transportation and Automated Driving"
 date: 2026-05-28
 display_date: "May 28, 2026"
 categories: news
-tags: [news]
-summary: "Dr. Yunmei Liu received an internal Jon Rieger Seed Grant at the University of Louisville to support the MINDxAI Lab's Theme II research on aggressive driving in mixed human-AV traffic."
+tags: [news, funding]
+summary: "Dr. Yunmei Liu received an internal Jon Rieger Seed Grant at the University of Louisville to support the MINDxAI Lab's Transportation and Automated Driving research on aggressive driving in mixed human-AV traffic."
 card_image: "/assets/images/banners/News%20Pics/Grants_uofl.png"
 card_image_alt: "University of Louisville grants graphic"
 permalink: /news/jon-rieger-seed-grant-dual-axis-aggression-detection.html
@@ -201,7 +201,7 @@ This project will use a CARLA–SUMO driving simulator to examine how human driv
 We hope this work will contribute to safer, more cooperative mixed traffic and inform the design of future AV driving policies.
   </p>
   <p class="jr-grant-theme">
-    <b>This award provides additional support for the MINDxAI Lab's <a href="{{ '/Research.html#theme-human-ai-automation' | relative_url }}">Research Theme II: Human Behavior Modeling in Transportation and Automation Systems</a>, particularly the lab's ongoing work on <a href="{{ '/Research.html#project-aggressive-driving-mixed-traffic' | relative_url }}">Aggressive Driving in Mixed Traffic</a>.</b>
+    <b>This award provides additional support for the MINDxAI Lab's <a href="{{ '/Research.html#area-transportation-automated-driving' | relative_url }}">Research Area I: Transportation and Automated Driving</a>, particularly the lab's ongoing work on <a href="{{ '/Research.html#project-aggressive-driving-mixed-traffic' | relative_url }}">Aggressive Driving in Mixed Traffic</a>.</b>
   </p>
 
 </div>

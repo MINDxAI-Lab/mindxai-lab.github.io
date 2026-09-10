@@ -5,7 +5,7 @@ subtitle: "Transportation Research Board Annual Meeting 2026"
 date: 2026-01-13
 display_date: "January 2026"
 categories: news
-tags: [news]
+tags: [news, conferences]
 summary: "MINDxAI Lab research on human factors, autonomous driving, and transportation safety was featured in two poster presentations at the Transportation Research Board Annual Meeting 2026."
 image: "/assets/images/banners/News%20Pics/TRB_2026_2.jpeg"
 image_alt: "MINDxAI Lab poster presentation at TRB Annual Meeting 2026"
