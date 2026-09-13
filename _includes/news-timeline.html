@@ -1,5 +1,9 @@
 {%- assign timeline_posts = include.posts | sort: 'date' -%}
 {%- assign timeline_id = include.id | default: 'news-timeline' -%}
+{%- assign timeline_initial_index = 1 -%}
+{%- if include.start == 'latest' -%}
+  {%- assign timeline_initial_index = timeline_posts.size -%}
+{%- endif -%}
 {%- if timeline_posts.size > 0 -%}
   {%- assign timeline_first = timeline_posts | first -%}
   {%- assign timeline_last = timeline_posts | last -%}
@@ -25,7 +29,7 @@
       {%- assign timeline_general_count = timeline_general_count | plus: 1 -%}
     {%- endunless -%}
   {%- endfor -%}
-<section class="research-updates" id="{{ timeline_id }}" aria-labelledby="{{ timeline_id }}-heading">
+<section class="research-updates" id="{{ timeline_id }}" data-timeline-start="{{ include.start | default: 'earliest' }}" aria-labelledby="{{ timeline_id }}-heading">
   <div class="research-updates-heading">
     <h2 id="{{ timeline_id }}-heading">{{ include.title | default: 'News' | escape }}</h2>
     <a class="research-updates-all" href="{{ '/News.html' | relative_url }}">View all news <span aria-hidden="true">→</span></a>
@@ -71,7 +75,7 @@
           {%- assign timeline_ordinal = timeline_year | times: 12 | plus: timeline_month | times: 31 | plus: timeline_day -%}
           {%- assign timeline_position = timeline_ordinal | minus: timeline_start | times: 100.0 | divided_by: timeline_span | round: 2 -%}
         <li class="research-timeline-event news-timeline-category--{{ timeline_category_key }}" role="presentation" data-news-category="{{ timeline_category_key }}" data-timeline-month="{{ timeline_month_key }}" data-timeline-year="{{ timeline_year }}" data-timeline-position="{{ timeline_position }}" style="--timeline-position: {{ timeline_position }}%; --timeline-offset: 0px;">
-          <button type="button" id="{{ timeline_id }}-tab-{{ forloop.index }}" role="tab" aria-controls="{{ timeline_id }}-panel-{{ forloop.index }}" aria-selected="{% if forloop.first %}true{% else %}false{% endif %}" tabindex="{% if forloop.first %}0{% else %}-1{% endif %}" data-research-update-tab aria-label="{{ timeline_category_label | escape }}: {{ post.date | date: '%B %-d, %Y' }} — {{ post.title | escape }}">
+          <button type="button" id="{{ timeline_id }}-tab-{{ forloop.index }}" role="tab" aria-controls="{{ timeline_id }}-panel-{{ forloop.index }}" aria-selected="{% if forloop.index == timeline_initial_index %}true{% else %}false{% endif %}" tabindex="{% if forloop.index == timeline_initial_index %}0{% else %}-1{% endif %}" data-research-update-tab aria-label="{{ timeline_category_label | escape }}: {{ post.date | date: '%B %-d, %Y' }} — {{ post.title | escape }}">
             <time class="{% if timeline_month_key == timeline_previous_month %}research-timeline-month--empty{% endif %}" datetime="{{ post.date | date: '%Y-%m-%d' }}">{{ post.date | date: '%b' }}</time>
             <span class="research-timeline-dot" aria-hidden="true"></span>
             <span class="research-timeline-year{% if timeline_year == timeline_previous_year %} research-timeline-year--empty{% endif %}" aria-hidden="true">’{{ post.date | date: '%y' }}</span>
@@ -94,7 +98,7 @@
               {%- break -%}
             {%- endif -%}
           {%- endfor -%}
-        <article id="{{ timeline_id }}-panel-{{ forloop.index }}" role="tabpanel" aria-labelledby="{{ timeline_id }}-tab-{{ forloop.index }}" data-research-update-panel{% unless forloop.first %} hidden{% endunless %}>
+        <article id="{{ timeline_id }}-panel-{{ forloop.index }}" role="tabpanel" aria-labelledby="{{ timeline_id }}-tab-{{ forloop.index }}" data-research-update-panel{% unless forloop.index == timeline_initial_index %} hidden{% endunless %}>
           <p class="research-timeline-meta">
             <time datetime="{{ post.date | date: '%Y-%m-%d' }}">{% if post.display_date %}{{ post.display_date | escape }}{% else %}{{ post.date | date: '%B %-d, %Y' }}{% endif %}</time>
             <span class="research-timeline-type news-timeline-category--{{ timeline_category_key }}">{{ timeline_category_label | escape }}</span>

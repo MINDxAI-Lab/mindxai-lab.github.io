@@ -15,6 +15,7 @@
   var laterMonths = root.querySelector('[data-news-date-later]');
   var dateEntries = [];
   var activeEntry = null;
+  var resizeAnchor = null;
   var calendar = null;
 
   function scrollBehavior() {
@@ -36,6 +37,7 @@
     if (target.hidden) return;
     clearDateTarget();
     activeEntry = entry;
+    resizeAnchor = entry;
     entry.button.setAttribute('aria-current', 'true');
     target.classList.add('news-card--date-target');
     target.querySelector('[data-news-date-back]').hidden = false;
@@ -104,6 +106,7 @@
         else return;
         event.preventDefault();
         var nextEntry = visibleEntries[nextIndex];
+        resizeAnchor = nextEntry;
         nextEntry.button.focus({ preventScroll: true });
         scrollToEntry(nextEntry);
       });
@@ -116,31 +119,48 @@
     cards.forEach(function (card) {
       card.querySelector('[data-news-date-back]').addEventListener('click', function () {
         if (!activeEntry) return;
+        resizeAnchor = activeEntry;
         scrollToEntry(activeEntry, 'auto');
         activeEntry.button.focus({ preventScroll: true });
         dateNavigation.scrollIntoView({ behavior: scrollBehavior(), block: 'center' });
       });
     });
     earlierMonths.addEventListener('click', function () {
+      resizeAnchor = null;
       dateViewport.scrollBy({ left: -dateViewport.clientWidth * 0.8, behavior: scrollBehavior() });
     });
     laterMonths.addEventListener('click', function () {
+      resizeAnchor = null;
       dateViewport.scrollBy({ left: dateViewport.clientWidth * 0.8, behavior: scrollBehavior() });
+    });
+    // Keep the default/current dot visible on resize, but do not undo manual history browsing.
+    ['pointerdown', 'touchstart', 'wheel'].forEach(function (eventName) {
+      dateViewport.addEventListener(eventName, function () { resizeAnchor = null; }, { passive: true });
+    });
+    dateViewport.addEventListener('keydown', function (event) {
+      if (event.target === dateViewport) resizeAnchor = null;
     });
     dateViewport.addEventListener('scroll', updateScrollControls, { passive: true });
     window.addEventListener('resize', function () {
       layoutDateNavigation();
-      if (activeEntry) scrollToEntry(activeEntry, 'auto');
+      if (resizeAnchor && !resizeAnchor.card.hidden) {
+        var buttonRect = resizeAnchor.button.getBoundingClientRect();
+        var viewportRect = dateViewport.getBoundingClientRect();
+        if (buttonRect.left < viewportRect.left || buttonRect.right > viewportRect.right) {
+          scrollToEntry(resizeAnchor, 'auto');
+        }
+      }
     });
     dateNavigation.hidden = false;
   }
 
-  function updateDateNavigation(category) {
+  function updateDateNavigation() {
     if (!dateEntries.length) return;
     clearDateTarget();
     layoutDateNavigation();
-    var firstAvailable = dateEntries.find(function (entry) { return !entry.card.hidden; });
-    if (category !== 'all' && firstAvailable) scrollToEntry(firstAvailable, 'auto');
+    var visibleEntries = dateEntries.filter(function (entry) { return !entry.card.hidden; });
+    resizeAnchor = visibleEntries[visibleEntries.length - 1] || null;
+    if (resizeAnchor) scrollToEntry(resizeAnchor, 'auto');
     else dateViewport.scrollLeft = 0;
     updateScrollControls();
   }
@@ -165,7 +185,7 @@
     status.textContent = category === 'all'
       ? 'Showing all ' + visibleCount + ' news items.'
       : 'Showing ' + visibleCount + ' news item' + (visibleCount === 1 ? '' : 's') + ' in ' + selected.dataset.newsLabel + '.';
-    updateDateNavigation(category);
+    updateDateNavigation();
   }
 
   buttons.forEach(function (button) {

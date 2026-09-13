@@ -400,7 +400,7 @@ nav_title: Home
       </section>
 
       {%- assign home_timeline_posts = site.posts | where_exp: 'post', "post.tags contains 'news'" -%}
-      {% include news-timeline.html posts=home_timeline_posts id='home-news-timeline' title='News' %}
+      {% include news-timeline.html posts=home_timeline_posts id='home-news-timeline' title='News' start='latest' %}
 
       <div class="home-section">
         <h2>Explore the Lab</h2>

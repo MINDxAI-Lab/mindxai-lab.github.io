@@ -16,6 +16,7 @@
       return tab.closest('.research-timeline-event');
     });
     var section = root.closest('.research-updates') || root;
+    var startAtLatest = section.dataset.timelineStart === 'latest';
     var filters = Array.from(section.querySelectorAll('[data-news-timeline-filter]'));
     var filterStatus = section.querySelector('[data-news-timeline-filter-status]');
     var visibleIndexes = tabs.map(function (tab, index) { return index; });
@@ -26,7 +27,7 @@
     var activeIndex = tabs.findIndex(function (tab) {
       return tab.getAttribute('aria-selected') === 'true';
     });
-    if (activeIndex < 0) activeIndex = 0;
+    if (activeIndex < 0) activeIndex = startAtLatest ? tabs.length - 1 : 0;
 
     function updateScrollControls() {
       if (!viewport || !scrollControls) return;
@@ -152,11 +153,13 @@
         filters.forEach(function (button) {
           button.setAttribute('aria-pressed', button === filter ? 'true' : 'false');
         });
-        selectUpdate(visibleIndexes[0], { scroll: false });
+        var defaultIndex = visibleIndexes[startAtLatest ? visibleIndexes.length - 1 : 0];
+        selectUpdate(defaultIndex, { scroll: false });
         distributeTimelineEvents();
         if (viewport) {
-          if (activeFilter === 'all') viewport.scrollTo({ left: 0, behavior: 'auto' });
-          else scrollTabIntoView(tabs[visibleIndexes[0]], 'auto');
+          if (activeFilter === 'all' && !startAtLatest) viewport.scrollTo({ left: 0, behavior: 'auto' });
+          else if (defaultIndex !== undefined) scrollTabIntoView(tabs[defaultIndex], 'auto');
+          updateScrollControls();
         }
         if (filterStatus) {
           filterStatus.textContent = activeFilter === 'all'
@@ -172,6 +175,7 @@
       distributeTimelineEvents();
       window.requestAnimationFrame(function () {
         scrollTabIntoView(tabs[activeIndex], 'auto');
+        updateScrollControls();
       });
     });
     window.addEventListener('resize', function () {
