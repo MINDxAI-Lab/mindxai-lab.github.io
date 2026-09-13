@@ -123,11 +123,46 @@ title: Research
   .research-timeline-viewport {
     overflow-x: auto;
     overscroll-behavior-inline: contain;
-    scrollbar-width: none;
+    scrollbar-width: thin;
+    scrollbar-color: #8eb3b5 #edf3f3;
   }
 
-  .research-timeline-viewport::-webkit-scrollbar {
+  .research-timeline-scroll-controls {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    margin-bottom: 12px;
+    color: #4d5b5d;
+    font-size: 0.8rem;
+  }
+
+  .research-timeline-scroll-controls[hidden] {
     display: none;
+  }
+
+  @media (max-width: 480px) {
+    .research-timeline-scroll-controls span {
+      order: 1;
+      flex-basis: 100%;
+      text-align: center;
+    }
+  }
+
+  .research-timeline-scroll-controls button {
+    padding: 6px 10px;
+    border: 1px solid #8eb3b5;
+    border-radius: 6px;
+    background: #fff;
+    color: #165f66;
+    font: inherit;
+    cursor: pointer;
+  }
+
+  .research-timeline-scroll-controls button:disabled {
+    opacity: 0.4;
+    cursor: default;
   }
 
   .research-timeline-events {
@@ -814,6 +849,11 @@ title: Research
       <li><span class="research-updates-legend-marker research-updates-legend-marker--conference" aria-hidden="true"></span>Conference Presentations</li>
     </ul>
     <div class="research-timeline" data-research-updates>
+      <div class="research-timeline-scroll-controls" data-timeline-scroll-controls hidden>
+        <button type="button" data-timeline-scroll-left aria-label="Scroll timeline to earlier dates">← Earlier dates</button>
+        <span>Swipe or scroll to explore</span>
+        <button type="button" data-timeline-scroll-right aria-label="Scroll timeline to later dates">Later dates →</button>
+      </div>
       <div class="research-timeline-viewport" aria-label="Research news timeline">
         <ol class="research-timeline-events" role="tablist" aria-label="Select a research news item">
           {%- assign research_update_index = 0 -%}
@@ -842,7 +882,7 @@ title: Research
               {%- assign research_update_offset = research_update_ordinal | minus: research_update_start_ordinal -%}
               {%- assign research_update_position = research_update_offset | times: 100.0 | divided_by: research_update_span | round: 2 -%}
               <li class="research-timeline-event research-timeline-event--{{ research_update_type }}" role="presentation" data-timeline-position="{{ research_update_position }}" style="--timeline-position: {{ research_update_position }}%; --timeline-offset: 0px;">
-                <button type="button" id="research-update-tab-{{ research_update_index }}" role="tab" aria-controls="research-update-panel-{{ research_update_index }}" aria-selected="{% if research_update_index == research_update_count %}true{% else %}false{% endif %}" data-research-update-tab data-research-update-index="{{ research_update_index | minus: 1 }}" aria-label="{{ research_update_label }}: {{ post.date | date: '%B %-d, %Y' }} — {{ post.title | escape }}">
+                <button type="button" id="research-update-tab-{{ research_update_index }}" role="tab" aria-controls="research-update-panel-{{ research_update_index }}" aria-selected="{% if research_update_index == 1 %}true{% else %}false{% endif %}" data-research-update-tab data-research-update-index="{{ research_update_index | minus: 1 }}" aria-label="{{ research_update_label }}: {{ post.date | date: '%B %-d, %Y' }} — {{ post.title | escape }}">
                   {%- if research_update_month != previous_update_month -%}
                   <time datetime="{{ post.date | date: '%Y-%m-%d' }}">{{ post.date | date: "%b" }}</time>
                   {%- else -%}
@@ -878,7 +918,7 @@ title: Research
                 {%- assign research_update_label = 'Conference Presentation' -%}
               {%- endif -%}
               {%- assign research_update_index = research_update_index | plus: 1 -%}
-          <article id="research-update-panel-{{ research_update_index }}" role="tabpanel" aria-labelledby="research-update-tab-{{ research_update_index }}" data-research-update-panel{% unless research_update_index == research_update_count %} hidden{% endunless %}>
+          <article id="research-update-panel-{{ research_update_index }}" role="tabpanel" aria-labelledby="research-update-tab-{{ research_update_index }}" data-research-update-panel{% unless research_update_index == 1 %} hidden{% endunless %}>
             <p class="research-timeline-meta">
               <time datetime="{{ post.date | date: '%Y-%m-%d' }}">{{ post.display_date | default: post.date | date: "%B %-d, %Y" }}</time>
               <span class="research-timeline-type research-timeline-type--{{ research_update_type }}">{{ research_update_label }}</span>

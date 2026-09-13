@@ -9,6 +9,9 @@
     var status = root.querySelector('[data-research-update-status]');
     var viewport = root.querySelector('.research-timeline-viewport');
     var track = root.querySelector('.research-timeline-events');
+    var scrollControls = root.querySelector('[data-timeline-scroll-controls]');
+    var scrollLeft = root.querySelector('[data-timeline-scroll-left]');
+    var scrollRight = root.querySelector('[data-timeline-scroll-right]');
     var events = tabs.map(function (tab) {
       return tab.closest('.research-timeline-event');
     });
@@ -18,7 +21,27 @@
     var activeIndex = tabs.findIndex(function (tab) {
       return tab.getAttribute('aria-selected') === 'true';
     });
-    if (activeIndex < 0) activeIndex = tabs.length - 1;
+    if (activeIndex < 0) activeIndex = 0;
+
+    function updateScrollControls() {
+      if (!viewport || !scrollControls) return;
+      var maximum = viewport.scrollWidth - viewport.clientWidth;
+      scrollControls.hidden = maximum <= 1;
+      scrollLeft.disabled = viewport.scrollLeft <= 1;
+      scrollRight.disabled = viewport.scrollLeft >= maximum - 1;
+    }
+
+    if (viewport && scrollControls) {
+      viewport.addEventListener('scroll', updateScrollControls, { passive: true });
+      [scrollLeft, scrollRight].forEach(function (button, index) {
+        button.addEventListener('click', function () {
+          viewport.scrollBy({
+            left: (index ? 1 : -1) * viewport.clientWidth * 0.8,
+            behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth'
+          });
+        });
+      });
+    }
 
     function distributeTimelineEvents() {
       var trackWidth = track && track.clientWidth;
@@ -42,6 +65,7 @@
         var offset = adjustedPosition - desiredPositions[index];
         event.style.setProperty('--timeline-offset', offset.toFixed(2) + 'px');
       });
+      updateScrollControls();
     }
 
     function scrollTabIntoView(tab, behavior) {
