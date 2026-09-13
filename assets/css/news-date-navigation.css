@@ -1,0 +1,85 @@
+.news-date-navigation {
+  margin: 0 0 28px;
+  padding: 0 0 12px;
+  border-bottom: 1px solid #dce7e7;
+}
+
+.news-date-navigation[hidden],
+.news-date-back[hidden] {
+  display: none;
+}
+
+.news-date-scroll,
+.news-date-back {
+  border: 1px solid #d3e1e1;
+  border-radius: 5px;
+  color: #185f63;
+  background: #fff;
+  font: inherit;
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+
+.news-date-ruler {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.news-date-scroll {
+  flex: 0 0 32px;
+  height: 40px;
+  padding: 0;
+  font-size: 1rem;
+}
+
+.news-date-viewport {
+  flex: 1;
+  min-width: 0;
+  overflow-x: auto;
+  padding: 3px 2px 9px;
+  scrollbar-width: thin;
+  scrollbar-color: #9ab6b8 #edf3f3;
+  overscroll-behavior-x: contain;
+}
+
+.news-date-navigation .research-timeline-event button[aria-current="true"] .research-timeline-dot {
+  box-shadow: 0 0 0 2px #fff, 0 0 0 3.5px currentColor;
+}
+
+.news-date-scroll:disabled {
+  opacity: 0.4;
+  cursor: default;
+}
+
+.news-date-scroll:not(:disabled):hover,
+.news-date-back:hover {
+  background: #eaf4f4;
+}
+
+.news-date-navigation button:focus-visible,
+.news-date-viewport:focus-visible,
+.news-date-back:focus-visible {
+  outline: 2px solid #1f7a7f;
+  outline-offset: 1px;
+}
+
+.news-card {
+  scroll-margin-top: 90px;
+}
+
+.news-card--date-target {
+  outline: 2px solid var(--news-dot, #1f7a7f);
+  outline-offset: 3px;
+}
+
+.news-date-back {
+  margin-bottom: 12px;
+  padding: 5px 9px;
+}
+
+@media (max-width: 720px) {
+  .news-date-ruler {
+    gap: 5px;
+  }
+}

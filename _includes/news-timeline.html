@@ -1,0 +1,115 @@
+{%- assign timeline_posts = include.posts | sort: 'date' -%}
+{%- assign timeline_id = include.id | default: 'news-timeline' -%}
+{%- if timeline_posts.size > 0 -%}
+  {%- assign timeline_first = timeline_posts | first -%}
+  {%- assign timeline_last = timeline_posts | last -%}
+  {%- assign timeline_year = timeline_first.date | date: '%Y' | plus: 0 -%}
+  {%- assign timeline_month = timeline_first.date | date: '%m' | plus: 0 -%}
+  {%- assign timeline_day = timeline_first.date | date: '%d' | plus: 0 -%}
+  {%- assign timeline_start = timeline_year | times: 12 | plus: timeline_month | times: 31 | plus: timeline_day -%}
+  {%- assign timeline_year = timeline_last.date | date: '%Y' | plus: 0 -%}
+  {%- assign timeline_month = timeline_last.date | date: '%m' | plus: 0 -%}
+  {%- assign timeline_day = timeline_last.date | date: '%d' | plus: 0 -%}
+  {%- assign timeline_end = timeline_year | times: 12 | plus: timeline_month | times: 31 | plus: timeline_day -%}
+  {%- assign timeline_span = timeline_end | minus: timeline_start | at_least: 1 -%}
+  {%- assign timeline_general_count = 0 -%}
+  {%- for post in timeline_posts -%}
+    {%- assign timeline_has_category = false -%}
+    {%- for tag in post.tags -%}
+      {%- if site.data.news_categories[tag] -%}
+        {%- assign timeline_has_category = true -%}
+        {%- break -%}
+      {%- endif -%}
+    {%- endfor -%}
+    {%- unless timeline_has_category -%}
+      {%- assign timeline_general_count = timeline_general_count | plus: 1 -%}
+    {%- endunless -%}
+  {%- endfor -%}
+<section class="research-updates" id="{{ timeline_id }}" aria-labelledby="{{ timeline_id }}-heading">
+  <div class="research-updates-heading">
+    <h2 id="{{ timeline_id }}-heading">{{ include.title | default: 'News' | escape }}</h2>
+    <a class="research-updates-all" href="{{ '/News.html' | relative_url }}">View all news <span aria-hidden="true">→</span></a>
+  </div>
+  <div class="research-updates-legend news-timeline-filters" role="group" aria-label="Filter news by category">
+    <button type="button" data-news-timeline-filter="all" data-news-timeline-label="All news" aria-pressed="true" aria-controls="{{ timeline_id }}-content">All ({{ timeline_posts.size }})</button>
+    {%- for category in site.data.news_categories -%}
+      {%- assign timeline_category_key = category[0] -%}
+      {%- assign timeline_category_posts = timeline_posts | where_exp: 'post', 'post.tags contains timeline_category_key' -%}
+      {%- if timeline_category_posts.size > 0 -%}
+    <button type="button" data-news-timeline-filter="{{ category[0] }}" data-news-timeline-label="{{ category[1].label | escape }}" aria-pressed="false" aria-controls="{{ timeline_id }}-content"><span class="research-updates-legend-marker news-timeline-category--{{ category[0] }}" aria-hidden="true"></span><span>{{ category[1].label | escape }} ({{ timeline_category_posts.size }})</span></button>
+      {%- endif -%}
+    {%- endfor -%}
+    {%- if timeline_general_count > 0 -%}
+    <button type="button" data-news-timeline-filter="general" data-news-timeline-label="General News" aria-pressed="false" aria-controls="{{ timeline_id }}-content"><span class="research-updates-legend-marker news-timeline-category--general" aria-hidden="true"></span><span>General News ({{ timeline_general_count }})</span></button>
+    {%- endif -%}
+  </div>
+  <p class="news-timeline-filter-status" data-news-timeline-filter-status role="status">Showing all {{ timeline_posts.size }} news items.</p>
+  <div class="research-timeline" id="{{ timeline_id }}-content" data-research-updates>
+    <div class="research-timeline-scroll-controls" data-timeline-scroll-controls hidden>
+      <button type="button" data-timeline-scroll-left aria-label="Scroll timeline to earlier dates">← Earlier dates</button>
+      <span>Swipe or scroll to explore</span>
+      <button type="button" data-timeline-scroll-right aria-label="Scroll timeline to later dates">Later dates →</button>
+    </div>
+    <div class="research-timeline-viewport" aria-label="News timeline">
+      <ol class="research-timeline-events" role="tablist" aria-label="Select a news item">
+        {%- assign timeline_previous_year = '' -%}
+        {%- assign timeline_previous_month = '' -%}
+        {%- for post in timeline_posts -%}
+          {%- assign timeline_category_key = 'general' -%}
+          {%- assign timeline_category_label = 'General News' -%}
+          {%- for tag in post.tags -%}
+            {%- if site.data.news_categories[tag] -%}
+              {%- assign timeline_category_key = tag -%}
+              {%- assign timeline_category_label = site.data.news_categories[tag].label -%}
+              {%- break -%}
+            {%- endif -%}
+          {%- endfor -%}
+          {%- assign timeline_year = post.date | date: '%Y' | plus: 0 -%}
+          {%- assign timeline_month = post.date | date: '%m' | plus: 0 -%}
+          {%- assign timeline_day = post.date | date: '%d' | plus: 0 -%}
+          {%- assign timeline_month_key = post.date | date: '%Y-%m' -%}
+          {%- assign timeline_ordinal = timeline_year | times: 12 | plus: timeline_month | times: 31 | plus: timeline_day -%}
+          {%- assign timeline_position = timeline_ordinal | minus: timeline_start | times: 100.0 | divided_by: timeline_span | round: 2 -%}
+        <li class="research-timeline-event news-timeline-category--{{ timeline_category_key }}" role="presentation" data-news-category="{{ timeline_category_key }}" data-timeline-month="{{ timeline_month_key }}" data-timeline-year="{{ timeline_year }}" data-timeline-position="{{ timeline_position }}" style="--timeline-position: {{ timeline_position }}%; --timeline-offset: 0px;">
+          <button type="button" id="{{ timeline_id }}-tab-{{ forloop.index }}" role="tab" aria-controls="{{ timeline_id }}-panel-{{ forloop.index }}" aria-selected="{% if forloop.first %}true{% else %}false{% endif %}" tabindex="{% if forloop.first %}0{% else %}-1{% endif %}" data-research-update-tab aria-label="{{ timeline_category_label | escape }}: {{ post.date | date: '%B %-d, %Y' }} — {{ post.title | escape }}">
+            <time class="{% if timeline_month_key == timeline_previous_month %}research-timeline-month--empty{% endif %}" datetime="{{ post.date | date: '%Y-%m-%d' }}">{{ post.date | date: '%b' }}</time>
+            <span class="research-timeline-dot" aria-hidden="true"></span>
+            <span class="research-timeline-year{% if timeline_year == timeline_previous_year %} research-timeline-year--empty{% endif %}" aria-hidden="true">’{{ post.date | date: '%y' }}</span>
+          </button>
+        </li>
+          {%- assign timeline_previous_year = timeline_year -%}
+          {%- assign timeline_previous_month = timeline_month_key -%}
+        {%- endfor -%}
+      </ol>
+    </div>
+    <div class="research-timeline-content">
+      <div class="research-timeline-detail">
+        {%- for post in timeline_posts -%}
+          {%- assign timeline_category_key = 'general' -%}
+          {%- assign timeline_category_label = 'General News' -%}
+          {%- for tag in post.tags -%}
+            {%- if site.data.news_categories[tag] -%}
+              {%- assign timeline_category_key = tag -%}
+              {%- assign timeline_category_label = site.data.news_categories[tag].label -%}
+              {%- break -%}
+            {%- endif -%}
+          {%- endfor -%}
+        <article id="{{ timeline_id }}-panel-{{ forloop.index }}" role="tabpanel" aria-labelledby="{{ timeline_id }}-tab-{{ forloop.index }}" data-research-update-panel{% unless forloop.first %} hidden{% endunless %}>
+          <p class="research-timeline-meta">
+            <time datetime="{{ post.date | date: '%Y-%m-%d' }}">{% if post.display_date %}{{ post.display_date | escape }}{% else %}{{ post.date | date: '%B %-d, %Y' }}{% endif %}</time>
+            <span class="research-timeline-type news-timeline-category--{{ timeline_category_key }}">{{ timeline_category_label | escape }}</span>
+          </p>
+          <h3><a href="{{ post.url | relative_url }}">{{ post.title | escape }} <span aria-hidden="true">→</span></a></h3>
+          <p class="research-timeline-summary">{{ post.summary | strip_html | escape }}</p>
+        </article>
+        {%- endfor -%}
+      </div>
+      <div class="research-timeline-controls" aria-label="News navigation">
+        <button class="research-timeline-control" type="button" data-research-update-previous aria-label="Show previous news item"><span aria-hidden="true">←</span></button>
+        <button class="research-timeline-control" type="button" data-research-update-next aria-label="Show next news item"><span aria-hidden="true">→</span></button>
+      </div>
+    </div>
+    <p class="research-updates-screen-reader-status" data-research-update-status role="status"></p>
+  </div>
+</section>
+{%- endif -%}

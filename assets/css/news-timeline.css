@@ -1,0 +1,564 @@
+.research-updates {
+  margin: 18px 0 24px;
+  padding: 20px 22px 18px;
+  border: 1px solid #dce7e7;
+  border-radius: 8px;
+  background: #fff;
+  scroll-margin-top: 90px;
+}
+
+.research-updates-heading {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 16px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #dce7e7;
+}
+
+.research-updates h2 {
+  margin: 0;
+  color: #165f66;
+  font-size: 1.25rem;
+  line-height: 1.35;
+}
+
+.research-updates-all {
+  flex: 0 0 auto;
+  color: #1f7a7f;
+  font-size: 0.88rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.research-updates-all:hover,
+.research-updates-all:focus {
+  color: #165f66;
+  text-decoration: underline;
+}
+
+.research-updates-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 14px;
+  margin: 13px 0 3px;
+  padding: 0;
+  color: #4d5b5d;
+  font-size: 0.78rem;
+  font-weight: 700;
+  list-style: none;
+}
+
+.research-updates-legend li {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.research-updates-legend-marker,
+.research-timeline-dot {
+  display: inline-block;
+  flex: 0 0 auto;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.research-updates-legend-marker--publication,
+.research-timeline-event--publication .research-timeline-dot {
+  background: #b24852;
+}
+
+.research-updates-legend-marker--funding,
+.research-timeline-event--funding .research-timeline-dot {
+  background: #c78723;
+}
+
+.research-updates-legend-marker--conference,
+.research-timeline-event--conference .research-timeline-dot {
+  background: #52789b;
+}
+
+.research-timeline {
+  margin-top: 8px;
+}
+
+.research-timeline-viewport {
+  overflow-x: auto;
+  overscroll-behavior-inline: contain;
+  scrollbar-width: thin;
+  scrollbar-color: #8eb3b5 #edf3f3;
+}
+
+.research-timeline-scroll-controls {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  margin-bottom: 12px;
+  color: #4d5b5d;
+  font-size: 0.8rem;
+}
+
+.research-timeline-scroll-controls[hidden] {
+  display: none;
+}
+
+@media (max-width: 480px) {
+  .research-timeline-scroll-controls span {
+    order: 1;
+    flex-basis: 100%;
+    text-align: center;
+  }
+}
+
+.research-timeline-scroll-controls button {
+  padding: 6px 10px;
+  border: 1px solid #8eb3b5;
+  border-radius: 6px;
+  background: #fff;
+  color: #165f66;
+  font: inherit;
+  cursor: pointer;
+}
+
+.research-timeline-scroll-controls button:disabled {
+  opacity: 0.4;
+  cursor: default;
+}
+
+.research-timeline-events {
+  position: relative;
+  width: calc(100% - 44px);
+  min-width: 720px;
+  height: 72px;
+  margin: 0 22px;
+  padding: 0;
+  list-style: none;
+}
+
+.research-timeline-events::before {
+  position: absolute;
+  top: 29px;
+  right: 0;
+  left: 0;
+  height: 2px;
+  background: #dce7e7;
+  content: "";
+}
+
+.research-timeline-event {
+  position: absolute;
+  top: 0;
+  left: calc(var(--timeline-position) + var(--timeline-offset));
+  width: 44px;
+  transform: translateX(-50%);
+}
+
+.research-timeline-event button {
+  display: grid;
+  grid-template-rows: 22px 14px 20px;
+  justify-items: center;
+  width: 44px;
+  min-height: 56px;
+  padding: 0;
+  border: 0;
+  color: #637174;
+  background: transparent;
+  font: inherit;
+  cursor: pointer;
+}
+
+.research-timeline-event time {
+  grid-row: 1;
+  font-size: 0.71rem;
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+.research-timeline-dot {
+  grid-row: 2;
+  align-self: center;
+  z-index: 1;
+  box-sizing: content-box;
+  border: 2px solid #fff;
+}
+
+.research-timeline-event button[aria-selected="true"] .research-timeline-dot,
+.research-timeline-event button:hover .research-timeline-dot {
+  box-shadow: 0 0 0 2px #fff, 0 0 0 3.5px currentColor;
+}
+
+.research-timeline-event--publication button {
+  color: #b24852;
+}
+
+.research-timeline-event--funding button {
+  color: #a66b12;
+}
+
+.research-timeline-event--conference button {
+  color: #3c668c;
+}
+
+.research-timeline-year {
+  grid-row: 3;
+  position: relative;
+  min-height: 18px;
+  color: #637174;
+  font-size: 0.68rem;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+.research-timeline-year::before {
+  position: absolute;
+  top: -4px;
+  left: 50%;
+  width: 1px;
+  height: 5px;
+  background: #b7cdcd;
+  content: "";
+  transform: translateX(-50%);
+}
+
+.research-timeline-year--empty {
+  visibility: hidden;
+}
+
+.research-timeline-month--empty {
+  visibility: hidden;
+}
+
+.research-timeline-content {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 18px;
+  align-items: start;
+  min-height: 114px;
+  margin-top: 8px;
+}
+
+.research-timeline-detail {
+  min-width: 0;
+}
+
+.research-timeline-detail article[hidden] {
+  display: none;
+}
+
+.research-timeline-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+  align-items: center;
+  margin: 0 0 5px;
+  color: #4d5b5d;
+  font-size: 0.82rem;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+.research-timeline-type {
+  display: inline-flex;
+  align-items: center;
+  min-height: 1.6em;
+  padding: 1px 7px;
+  border-radius: 999px;
+  font-size: 0.74rem;
+}
+
+.research-timeline-type--publication {
+  color: #8d313b;
+  background: #f8e8ea;
+}
+
+.research-timeline-type--funding {
+  color: #82530a;
+  background: #fbf1df;
+}
+
+.research-timeline-type--conference {
+  color: #315c80;
+  background: #e9f0f6;
+}
+
+.research-timeline-detail h3 {
+  margin: 0 0 5px;
+  font-size: 1rem;
+  line-height: 1.45;
+}
+
+.research-timeline-detail h3 a {
+  color: #1f7a7f;
+  text-decoration: none;
+}
+
+.research-timeline-detail h3 a:hover,
+.research-timeline-detail h3 a:focus {
+  color: #165f66;
+  text-decoration: underline;
+}
+
+.research-timeline-summary {
+  margin: 0;
+  color: #4d5b5d;
+  font-size: 0.92rem;
+  line-height: 1.58;
+}
+
+.research-timeline-controls {
+  display: flex;
+  gap: 6px;
+  padding-top: 4px;
+}
+
+.research-timeline-control {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  padding: 0;
+  border: 1px solid #9ebebe;
+  border-radius: 50%;
+  color: #1f7a7f;
+  background: #fff;
+  cursor: pointer;
+}
+
+.research-timeline-control:hover:not(:disabled),
+.research-timeline-control:focus-visible:not(:disabled) {
+  color: #fff;
+  background: #1f7a7f;
+}
+
+.research-timeline-control:disabled {
+  border-color: #dce7e7;
+  color: #a9b6b8;
+  cursor: not-allowed;
+}
+
+.research-updates a:focus-visible,
+.research-timeline-event button:focus-visible,
+.research-timeline-control:focus-visible {
+  outline: 2px solid #1f7a7f;
+  outline-offset: 3px;
+}
+
+.research-updates-screen-reader-status {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+@media (max-width: 480px) {
+  .research-updates {
+    padding: 17px 16px 16px;
+  }
+
+  .research-updates-heading {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 7px;
+  }
+
+}
+
+@media (max-width: 760px) {
+  .research-timeline-content {
+    grid-template-columns: 1fr;
+    gap: 12px;
+    min-height: 0;
+  }
+
+  .research-timeline-controls {
+    order: -1;
+    justify-content: flex-end;
+    padding-top: 0;
+  }
+
+  .research-timeline-events {
+    min-width: 640px;
+  }
+
+}
+
+
+.research-updates-legend-marker[class*="news-timeline-category--"],
+.research-timeline-event[class*="news-timeline-category--"] .research-timeline-dot {
+  background: var(--news-dot);
+}
+
+.research-timeline-event[class*="news-timeline-category--"] button {
+  color: var(--news-ink);
+}
+
+.research-timeline-type[class*="news-timeline-category--"] {
+  color: var(--news-ink);
+  background: var(--news-tint);
+}
+
+#home-news-timeline {
+  margin: 34px 0 0;
+}
+
+.news-timeline-filters {
+  gap: 6px;
+}
+
+.news-timeline-filters button {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  min-height: 36px;
+  padding: 6px 9px;
+  border: 1px solid #dce7e7;
+  border-radius: 6px;
+  color: #4d5b5d;
+  background: #fff;
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+}
+
+.news-timeline-filters button:hover {
+  background: #f3f8f8;
+}
+
+.news-timeline-filters button[aria-pressed="true"] {
+  color: #165f66;
+  background: #eaf5f5;
+  border-color: #1f7a7f;
+}
+
+.news-timeline-filters button:focus-visible,
+.research-timeline-scroll-controls button:focus-visible {
+  outline: 2px solid #1f7a7f;
+  outline-offset: 3px;
+}
+
+.news-timeline-filter-status {
+  margin: 10px 0 12px;
+  color: #637174;
+  font-size: 0.8rem;
+}
+
+.research-timeline-event[hidden] {
+  display: none;
+}
+
+/* Keep close dates individually clickable instead of overlapping hit areas. */
+#home-news-timeline .research-timeline-event {
+  pointer-events: none;
+}
+
+#home-news-timeline .research-timeline-event button {
+  width: 14px;
+  grid-template-columns: 14px;
+  margin: 0 auto;
+  pointer-events: auto;
+}
+
+#home-news-timeline .research-timeline-event time,
+#home-news-timeline .research-timeline-event .research-timeline-year,
+#home-news-timeline .research-timeline-event .research-timeline-month--empty {
+  pointer-events: none;
+}
+
+.research-timeline--calendar .research-timeline-events::before {
+  top: var(--timeline-axis-y);
+}
+
+.research-timeline--calendar .research-timeline-event {
+  top: calc(var(--timeline-axis-y) - 7px + var(--timeline-lane, 0px));
+  width: 14px;
+  pointer-events: none;
+}
+
+.research-timeline--calendar .research-timeline-event::before {
+  position: absolute;
+  left: 50%;
+  top: var(--timeline-stem-top, 7px);
+  height: var(--timeline-stem-height, 0px);
+  border-left: 1px solid #b7cdcd;
+  content: '';
+}
+
+.research-timeline--calendar .research-timeline-event button {
+  position: relative;
+  width: 14px;
+  min-height: 14px;
+  height: 14px;
+  grid-template-columns: 14px;
+  grid-template-rows: 14px;
+  pointer-events: auto;
+}
+
+.research-timeline--calendar .research-timeline-dot {
+  grid-row: 1;
+}
+
+.research-timeline--calendar .research-timeline-event time,
+.research-timeline--calendar .research-timeline-event .research-timeline-month--empty,
+.research-timeline--calendar .research-timeline-event .research-timeline-year {
+  display: none;
+}
+
+.research-calendar-axis {
+  position: absolute;
+  top: var(--timeline-label-y);
+  left: 0;
+  right: 0;
+  height: 40px;
+  list-style: none;
+  pointer-events: none;
+}
+
+.research-calendar-tick {
+  position: absolute;
+  top: 0;
+  height: 5px;
+  border-left: 1px solid #b7cdcd;
+}
+
+.research-calendar-tick--year {
+  height: 8px;
+  border-color: #637174;
+}
+
+.research-calendar-tick--year::before {
+  position: absolute;
+  top: calc(var(--timeline-axis-y) - var(--timeline-label-y));
+  height: calc(var(--timeline-label-y) - var(--timeline-axis-y));
+  border-left: 1px solid #e5eded;
+  content: '';
+}
+
+.research-calendar-month,
+.research-calendar-year {
+  position: absolute;
+  left: 0;
+  transform: translateX(-50%);
+  color: #637174;
+  font-size: 0.68rem;
+  line-height: 1.4;
+}
+
+.research-calendar-month {
+  top: 10px;
+}
+
+.research-calendar-year {
+  top: 26px;
+  color: #165f66;
+  font-size: 0.75rem;
+  font-weight: 700;
+}

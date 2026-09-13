@@ -4,6 +4,8 @@ title: Dr. Yunmei Liu
 nav_title: Home
 ---
 
+<link rel="stylesheet" href="{{ '/assets/css/news-timeline.css' | relative_url }}">
+
 <style>
   .mindxai-home h1,
   .mindxai-home h2,
@@ -34,6 +36,10 @@ nav_title: Home
 
   .home-main > .home-section:first-child {
     margin-top: 12px;
+  }
+
+  .home-main {
+    min-width: 0;
   }
 
   .home-section p {
@@ -80,83 +86,9 @@ nav_title: Home
   }
 
   .home-layout {
-    display: grid;
-    grid-template-columns: minmax(0, 1fr) minmax(260px, 320px);
-    gap: 28px;
-    align-items: start;
+    display: block;
   }
 
-  .home-news {
-    position: sticky;
-    top: 92px;
-    margin-top: 12px;
-    padding: 18px 18px 20px;
-    border: 1px solid #d7e4e4;
-    border-radius: 8px;
-    background: #f6fbfb;
-  }
-
-  .home-news h2 {
-    margin: 0 0 14px;
-    font-size: 1.15rem;
-  }
-
-  .home-news-list {
-    display: grid;
-    gap: 14px;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-  }
-
-  .home-news-item {
-    padding-bottom: 13px;
-    border-bottom: 1px solid #dfe8e8;
-  }
-
-  .home-news-item:last-child {
-    padding-bottom: 0;
-    border-bottom: 0;
-  }
-
-  .home-news-date {
-    margin: 0 0 4px;
-    color: #1f7a7f;
-    font-size: 0.86rem;
-    font-weight: 700;
-    line-height: 1.4;
-  }
-
-  .home-news-title {
-    margin: 0;
-    font-size: 0.96rem;
-    font-weight: 700;
-    line-height: 1.45;
-  }
-
-  .home-news-title a {
-    color: #3f4a4c;
-    text-decoration: none;
-  }
-
-  .home-news-title a:hover,
-  .home-news-title a:focus {
-    color: #1f7a7f;
-    text-decoration: underline;
-  }
-
-  .home-news-all {
-    display: inline-block;
-    margin-top: 16px;
-    color: #1f7a7f;
-    font-weight: 700;
-    text-decoration: none;
-  }
-
-  .home-news-all:hover,
-  .home-news-all:focus {
-    text-decoration: underline;
-  }
 
   .research-area-grid {
     display: grid;
@@ -329,17 +261,6 @@ nav_title: Home
     text-decoration: none;
   }
 
-  @media (max-width: 1180px) {
-    .home-layout {
-      grid-template-columns: 1fr;
-    }
-
-    .home-news {
-      position: static;
-      order: 2;
-      margin-top: 28px;
-    }
-  }
 
   @media (max-width: 980px) {
     .carousel-stage,
@@ -448,6 +369,9 @@ nav_title: Home
         </div>
       </section>
 
+      {%- assign home_timeline_posts = site.posts | where_exp: 'post', "post.tags contains 'news'" -%}
+      {% include news-timeline.html posts=home_timeline_posts id='home-news-timeline' title='News' %}
+
       <div class="home-section">
         <h2>Explore the Lab</h2>
         <div class="quick-links">
@@ -461,25 +385,11 @@ nav_title: Home
       </div>
     </main>
 
-    <aside class="home-news" aria-labelledby="home-news-heading">
-      <h2 id="home-news-heading">News</h2>
-      <ul class="home-news-list">
-        {%- assign news_posts = site.posts | where_exp: "post", "post.tags contains 'news'" -%}
-        {%- for post in news_posts limit:10 -%}
-        <li class="home-news-item">
-          {%- if post.display_date -%}
-          <p class="home-news-date">{{ post.display_date }}</p>
-          {%- else -%}
-          <p class="home-news-date">{{ post.date | date: "%B %Y" }}</p>
-          {%- endif -%}
-          <p class="home-news-title"><a href="{{ post.url | relative_url }}">{% include news-category-badge.html post=post %} {{ post.title | escape }}</a></p>
-        </li>
-        {%- endfor -%}
-      </ul>
-      <a class="home-news-all" href="/News.html">... see all News</a>
-    </aside>
   </div>
 </div>
+
+<script src="{{ '/assets/js/news-calendar-axis.js' | relative_url }}" defer></script>
+<script src="{{ '/assets/js/research-updates-timeline.js' | relative_url }}" defer></script>
 
 <script>
   (function() {

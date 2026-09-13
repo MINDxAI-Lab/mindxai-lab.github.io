@@ -1,10 +1,53 @@
+/* Shared category colors for Home, Research, and News. */
+.news-timeline-category--publications,
+.news-category--publications {
+  --news-dot: #b24852;
+  --news-ink: #8d313b;
+  --news-tint: #f8e8ea;
+}
+
+.news-timeline-category--funding,
+.news-category--funding {
+  --news-dot: #c78723;
+  --news-ink: #82530a;
+  --news-tint: #fbf1df;
+}
+
+.news-timeline-category--conferences,
+.news-category--conferences {
+  --news-dot: #52789b;
+  --news-ink: #315c80;
+  --news-tint: #e9f0f6;
+}
+
+.news-timeline-category--honors,
+.news-category--honors {
+  --news-dot: #8b65a7;
+  --news-ink: #6e4589;
+  --news-tint: #f2eaf7;
+}
+
+.news-timeline-category--lab-life,
+.news-category--lab-life {
+  --news-dot: #368374;
+  --news-ink: #256b5d;
+  --news-tint: #e4f2ed;
+}
+
+.news-timeline-category--general,
+.news-category--general {
+  --news-dot: #637174;
+  --news-ink: #4d5b5d;
+  --news-tint: #edf1f1;
+}
+
 .news-category-badge {
   display: inline-block;
   margin-right: 0.55em;
   padding: 3px 7px;
   border-radius: 4px;
-  color: #185f63;
-  background: #dfeded;
+  color: var(--news-ink, #185f63);
+  background: var(--news-tint, #dfeded);
   font-size: 0.7rem;
   font-weight: 700;
   line-height: 1.4;
@@ -14,13 +57,14 @@
 }
 
 .post-title a.news-category-badge {
-  color: #185f63;
+  color: var(--news-ink, #185f63);
   font-size: 0.8rem;
   text-decoration: none;
 }
 
 .post-title a.news-category-badge:hover {
-  background: #cfe4e4;
+  background: var(--news-tint, #cfe4e4);
+  text-decoration: underline;
 }
 
 .post-title a.news-category-badge:focus-visible {

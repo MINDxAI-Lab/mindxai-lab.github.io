@@ -4,6 +4,9 @@ title: News
 # permalink: /about/
 ---
 
+<link rel="stylesheet" href="{{ '/assets/css/news-timeline.css' | relative_url }}">
+<link rel="stylesheet" href="{{ '/assets/css/news-date-navigation.css' | relative_url }}">
+
 <style>
   .mindxai-news h1 {
     margin-bottom: 28px;
@@ -23,7 +26,7 @@ title: News
     padding: 8px 0;
     border: 0;
     border-bottom: 2px solid transparent;
-    color: #4d5b5d;
+    color: var(--news-ink, #4d5b5d);
     background: transparent;
     font: inherit;
     font-weight: 600;
@@ -31,17 +34,27 @@ title: News
   }
 
   .news-filters button[aria-pressed="true"] {
-    border-bottom-color: #1f7a7f;
-    color: #165f66;
+    border-bottom-color: var(--news-dot, #1f7a7f);
+    color: var(--news-ink, #165f66);
   }
 
   .news-filters button:hover {
-    color: #165f66;
+    color: var(--news-ink, #165f66);
+    background: var(--news-tint, #eaf5f5);
   }
 
   .news-filters button:focus-visible {
-    outline: 2px solid #1f7a7f;
+    outline: 2px solid var(--news-dot, #1f7a7f);
     outline-offset: 3px;
+  }
+
+  .news-filter-marker {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin-right: 6px;
+    border-radius: 50%;
+    background: var(--news-dot);
   }
 
   .news-filter-count {
@@ -51,7 +64,7 @@ title: News
   }
 
   .news-filter-status {
-    margin: 10px 0 22px;
+    margin: 10px 0 6px;
     color: #637174;
     font-size: 0.9rem;
   }
@@ -72,7 +85,7 @@ title: News
     grid-template-columns: 180px 1fr;
     gap: 20px;
     padding: 20px;
-    border-left: 4px solid #389092;
+    border-left: 4px solid var(--news-dot, #389092);
     border-radius: 8px;
     background: #f6fbfb;
   }
@@ -93,7 +106,7 @@ title: News
 
   .news-date {
     margin: 0 0 8px;
-    color: #1f7a7f;
+    color: var(--news-ink, #1f7a7f);
     font-weight: 700;
   }
 
@@ -112,7 +125,7 @@ title: News
 
   .news-card h2 a:hover,
   .news-card h2 a:focus {
-    color: #1f7a7f;
+    color: var(--news-ink, #1f7a7f);
     text-decoration: underline;
   }
 
@@ -122,7 +135,7 @@ title: News
   }
 
   .news-read-more {
-    color: #1f7a7f;
+    color: var(--news-ink, #1f7a7f);
     font-weight: 700;
     text-decoration: none;
   }
@@ -154,15 +167,32 @@ title: News
       {%- assign category_key = category[0] -%}
       {%- assign category_posts = news_posts | where_exp: "post", "post.tags contains category_key" -%}
       {%- if category_posts.size > 0 -%}
-    <button type="button" data-news-filter="{{ category_key }}" data-news-label="{{ category[1].label | escape }}" aria-pressed="false" aria-controls="lab-news-list">{{ category[1].label | escape }}<span class="news-filter-count">{{ category_posts.size }}</span></button>
+    <button type="button" class="news-category--{{ category_key }}" data-news-filter="{{ category_key }}" data-news-label="{{ category[1].label | escape }}" aria-pressed="false" aria-controls="lab-news-list"><span class="news-filter-marker" aria-hidden="true"></span>{{ category[1].label | escape }}<span class="news-filter-count">{{ category_posts.size }}</span></button>
       {%- endif -%}
     {%- endfor -%}
   </div>
   <p class="news-filter-status" role="status" aria-live="polite" hidden></p>
 
+  <nav class="news-date-navigation" id="news-date-navigation" aria-label="News timeline navigation" hidden>
+    <div class="news-date-ruler">
+      <button type="button" class="news-date-scroll" data-news-date-earlier aria-label="Scroll to earlier months" aria-controls="news-date-viewport">←</button>
+      <div class="news-date-viewport research-timeline-viewport" id="news-date-viewport" tabindex="0" aria-label="News timeline; scroll horizontally to explore">
+        <ol class="research-timeline-events" aria-label="Jump to a news item"></ol>
+      </div>
+      <button type="button" class="news-date-scroll" data-news-date-later aria-label="Scroll to later months" aria-controls="news-date-viewport">→</button>
+    </div>
+  </nav>
+
   <section class="news-list" id="lab-news-list" aria-label="MINDxAI Lab news">
     {%- for post in news_posts -%}
-    <article class="news-card" data-news-topics="{{ post.tags | join: ' ' | escape }}">
+      {%- assign card_category = 'general' -%}
+      {%- for tag in post.tags -%}
+        {%- if site.data.news_categories[tag] -%}
+          {%- assign card_category = tag -%}
+          {%- break -%}
+        {%- endif -%}
+      {%- endfor -%}
+    <article id="news-item-{{ forloop.index }}" class="news-card news-category--{{ card_category }}" data-news-topics="{{ post.tags | join: ' ' | escape }}" data-news-date="{{ post.date | date: '%Y-%m-%d' }}" data-news-category="{{ card_category }}" tabindex="-1">
       {%- assign post_image = post.card_image | default: post.image -%}
       {%- assign post_image_alt = post.card_image_alt | default: post.image_alt | default: post.title -%}
       {%- if post_image -%}
@@ -171,6 +201,7 @@ title: News
       </a>
       {%- endif -%}
       <div>
+        <button type="button" class="news-date-back" data-news-date-back hidden>↑ Back to timeline</button>
         {%- if post.display_date -%}
         <p class="news-date">{{ post.display_date }}</p>
         {%- else -%}
@@ -185,4 +216,5 @@ title: News
   </section>
 </div>
 
+<script src="{{ '/assets/js/news-calendar-axis.js' | relative_url }}" defer></script>
 <script src="{{ '/assets/js/news-filters.js' | relative_url }}" defer></script>

@@ -15,6 +15,11 @@
     var events = tabs.map(function (tab) {
       return tab.closest('.research-timeline-event');
     });
+    var section = root.closest('.research-updates') || root;
+    var filters = Array.from(section.querySelectorAll('[data-news-timeline-filter]'));
+    var filterStatus = section.querySelector('[data-news-timeline-filter-status]');
+    var visibleIndexes = tabs.map(function (tab, index) { return index; });
+    var activeFilter = 'all';
 
     if (!tabs.length || tabs.length !== panels.length || !previous || !next) return;
 
@@ -43,28 +48,12 @@
       });
     }
 
+    var calendarAxis = window.NewsCalendarAxis.create(root, track, panels.map(function (panel) {
+      return panel.querySelector('time[datetime]').getAttribute('datetime');
+    }));
+
     function distributeTimelineEvents() {
-      var trackWidth = track && track.clientWidth;
-      if (!trackWidth) return;
-
-      var minimumSpacing = 18;
-      var desiredPositions = events.map(function (event) {
-        return (parseFloat(event.dataset.timelinePosition) || 0) / 100 * trackWidth;
-      });
-      var adjustedPositions = [];
-
-      desiredPositions.forEach(function (position, index) {
-        var previousPosition = index ? adjustedPositions[index - 1] : -minimumSpacing;
-        adjustedPositions.push(Math.max(position, previousPosition + minimumSpacing));
-      });
-
-      var finalPosition = adjustedPositions[adjustedPositions.length - 1];
-      var scale = finalPosition > trackWidth ? trackWidth / finalPosition : 1;
-      events.forEach(function (event, index) {
-        var adjustedPosition = adjustedPositions[index] * scale;
-        var offset = adjustedPosition - desiredPositions[index];
-        event.style.setProperty('--timeline-offset', offset.toFixed(2) + 'px');
-      });
+      calendarAxis.layout(visibleIndexes);
       updateScrollControls();
     }
 
@@ -92,6 +81,8 @@
     function selectUpdate(index, options) {
       var settings = options || {};
       var nextIndex = Math.max(0, Math.min(index, tabs.length - 1));
+      if (visibleIndexes.indexOf(nextIndex) < 0) nextIndex = visibleIndexes[0];
+      if (nextIndex === undefined) return;
       activeIndex = nextIndex;
 
       tabs.forEach(function (tab, tabIndex) {
@@ -102,8 +93,8 @@
       panels.forEach(function (panel, panelIndex) {
         panel.hidden = panelIndex !== activeIndex;
       });
-      previous.disabled = activeIndex === 0;
-      next.disabled = activeIndex === tabs.length - 1;
+      previous.disabled = activeIndex === visibleIndexes[0];
+      next.disabled = activeIndex === visibleIndexes[visibleIndexes.length - 1];
 
       if (settings.focus) tabs[activeIndex].focus({ preventScroll: true });
       if (settings.scroll !== false) {
@@ -121,10 +112,11 @@
       });
       tab.addEventListener('keydown', function (event) {
         var nextIndex = null;
-        if (event.key === 'ArrowLeft') nextIndex = tabIndex - 1;
-        if (event.key === 'ArrowRight') nextIndex = tabIndex + 1;
-        if (event.key === 'Home') nextIndex = 0;
-        if (event.key === 'End') nextIndex = tabs.length - 1;
+        var visibleIndex = visibleIndexes.indexOf(tabIndex);
+        if (event.key === 'ArrowLeft') nextIndex = visibleIndexes[Math.max(0, visibleIndex - 1)];
+        if (event.key === 'ArrowRight') nextIndex = visibleIndexes[Math.min(visibleIndexes.length - 1, visibleIndex + 1)];
+        if (event.key === 'Home') nextIndex = visibleIndexes[0];
+        if (event.key === 'End') nextIndex = visibleIndexes[visibleIndexes.length - 1];
         if (nextIndex === null) return;
 
         event.preventDefault();
@@ -133,10 +125,46 @@
     });
 
     previous.addEventListener('click', function () {
-      selectUpdate(activeIndex - 1, { announce: true });
+      var visibleIndex = visibleIndexes.indexOf(activeIndex);
+      selectUpdate(visibleIndexes[Math.max(0, visibleIndex - 1)], { announce: true });
     });
     next.addEventListener('click', function () {
-      selectUpdate(activeIndex + 1, { announce: true });
+      var visibleIndex = visibleIndexes.indexOf(activeIndex);
+      selectUpdate(visibleIndexes[Math.min(visibleIndexes.length - 1, visibleIndex + 1)], { announce: true });
+    });
+
+    filters.forEach(function (filter) {
+      filter.addEventListener('click', function () {
+        activeFilter = filter.dataset.newsTimelineFilter;
+        visibleIndexes = [];
+        var previousMonth = '';
+        var previousYear = '';
+        events.forEach(function (event, index) {
+          var visible = activeFilter === 'all' || event.dataset.newsCategory === activeFilter;
+          event.hidden = !visible;
+          if (!visible) return;
+          visibleIndexes.push(index);
+          event.querySelector('time').classList.toggle('research-timeline-month--empty', event.dataset.timelineMonth === previousMonth);
+          event.querySelector('.research-timeline-year').classList.toggle('research-timeline-year--empty', event.dataset.timelineYear === previousYear);
+          previousMonth = event.dataset.timelineMonth;
+          previousYear = event.dataset.timelineYear;
+        });
+        filters.forEach(function (button) {
+          button.setAttribute('aria-pressed', button === filter ? 'true' : 'false');
+        });
+        selectUpdate(visibleIndexes[0], { scroll: false });
+        distributeTimelineEvents();
+        if (viewport) {
+          if (activeFilter === 'all') viewport.scrollTo({ left: 0, behavior: 'auto' });
+          else scrollTabIntoView(tabs[visibleIndexes[0]], 'auto');
+        }
+        if (filterStatus) {
+          filterStatus.textContent = activeFilter === 'all'
+            ? 'Showing all ' + visibleIndexes.length + ' news items.'
+            : filter.dataset.newsTimelineLabel + ': showing ' + visibleIndexes.length
+              + ' of ' + tabs.length + ' news items.';
+        }
+      });
     });
 
     selectUpdate(activeIndex, { scroll: false });
@@ -146,7 +174,15 @@
         scrollTabIntoView(tabs[activeIndex], 'auto');
       });
     });
-    window.addEventListener('resize', distributeTimelineEvents);
+    window.addEventListener('resize', function () {
+      distributeTimelineEvents();
+      if (!viewport) return;
+      var selectedRect = tabs[activeIndex].getBoundingClientRect();
+      var viewportRect = viewport.getBoundingClientRect();
+      if (selectedRect.left < viewportRect.left || selectedRect.right > viewportRect.right) {
+        scrollTabIntoView(tabs[activeIndex], 'auto');
+      }
+    });
   }
 
   document.querySelectorAll('[data-research-updates]').forEach(initTimeline);
