@@ -4,8 +4,8 @@ title: News
 # permalink: /about/
 ---
 
-<link rel="stylesheet" href="{{ '/assets/css/news-timeline.css' | relative_url }}">
-<link rel="stylesheet" href="{{ '/assets/css/news-date-navigation.css' | relative_url }}">
+<link rel="stylesheet" href="{{ '/assets/css/news-timeline.css' | relative_url }}?v={{ site.time | date: '%s' }}">
+<link rel="stylesheet" href="{{ '/assets/css/news-date-navigation.css' | relative_url }}?v={{ site.time | date: '%s' }}">
 
 <style>
   .mindxai-news h1 {
@@ -216,5 +216,5 @@ title: News
   </section>
 </div>
 
-<script src="{{ '/assets/js/news-calendar-axis.js' | relative_url }}" defer></script>
-<script src="{{ '/assets/js/news-filters.js' | relative_url }}" defer></script>
+<script src="{{ '/assets/js/news-calendar-axis.js' | relative_url }}?v={{ site.time | date: '%s' }}" defer></script>
+<script src="{{ '/assets/js/news-filters.js' | relative_url }}?v={{ site.time | date: '%s' }}" defer></script>

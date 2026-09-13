@@ -3,7 +3,7 @@ layout: home
 title: Research
 ---
 
-<link rel="stylesheet" href="{{ '/assets/css/news-timeline.css' | relative_url }}">
+<link rel="stylesheet" href="{{ '/assets/css/news-timeline.css' | relative_url }}?v={{ site.time | date: '%s' }}">
 
 <style>
   .research-page h1,
@@ -737,6 +737,6 @@ title: Research
 
 </div>
 
-<script src="{{ '/assets/js/research-filters.js' | relative_url }}" defer></script>
-<script src="{{ '/assets/js/news-calendar-axis.js' | relative_url }}" defer></script>
-<script src="{{ '/assets/js/research-updates-timeline.js' | relative_url }}" defer></script>
+<script src="{{ '/assets/js/research-filters.js' | relative_url }}?v={{ site.time | date: '%s' }}" defer></script>
+<script src="{{ '/assets/js/news-calendar-axis.js' | relative_url }}?v={{ site.time | date: '%s' }}" defer></script>
+<script src="{{ '/assets/js/research-updates-timeline.js' | relative_url }}?v={{ site.time | date: '%s' }}" defer></script>

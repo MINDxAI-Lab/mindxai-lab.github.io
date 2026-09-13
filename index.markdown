@@ -4,7 +4,7 @@ title: Dr. Yunmei Liu
 nav_title: Home
 ---
 
-<link rel="stylesheet" href="{{ '/assets/css/news-timeline.css' | relative_url }}">
+<link rel="stylesheet" href="{{ '/assets/css/news-timeline.css' | relative_url }}?v={{ site.time | date: '%s' }}">
 
 <style>
   .mindxai-home h1,
@@ -418,7 +418,7 @@ nav_title: Home
   </div>
 </div>
 
-<script src="{{ '/assets/js/news-calendar-axis.js' | relative_url }}" defer></script>
-<script src="{{ '/assets/js/research-updates-timeline.js' | relative_url }}" defer></script>
+<script src="{{ '/assets/js/news-calendar-axis.js' | relative_url }}?v={{ site.time | date: '%s' }}" defer></script>
+<script src="{{ '/assets/js/research-updates-timeline.js' | relative_url }}?v={{ site.time | date: '%s' }}" defer></script>
 
-<script src="{{ '/assets/js/home-carousel.js' | relative_url }}" defer></script>
+<script src="{{ '/assets/js/home-carousel.js' | relative_url }}?v={{ site.time | date: '%s' }}" defer></script>
