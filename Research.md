@@ -727,7 +727,12 @@ title: Research
     </article>
   </section>
 
-  {%- assign research_news_posts = site.posts | where_exp: 'post', "post.tags contains 'news'" | where_exp: 'post', "post.tags contains 'funding' or post.tags contains 'publications' or post.tags contains 'conferences'" -%}
+  {%- comment -%}Keep each where_exp condition simple for GitHub Pages' Jekyll 3 build.{%- endcomment -%}
+  {%- assign research_all_news = site.posts | where_exp: 'post', "post.tags contains 'news'" -%}
+  {%- assign research_funding_news = research_all_news | where_exp: 'post', "post.tags contains 'funding'" -%}
+  {%- assign research_publication_news = research_all_news | where_exp: 'post', "post.tags contains 'publications'" -%}
+  {%- assign research_conference_news = research_all_news | where_exp: 'post', "post.tags contains 'conferences'" -%}
+  {%- assign research_news_posts = research_funding_news | concat: research_publication_news | concat: research_conference_news | uniq -%}
   {% include news-timeline.html posts=research_news_posts id='research-updates' title='Research-Related News' %}
 
 </div>

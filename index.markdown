@@ -194,6 +194,11 @@ nav_title: Home
     background: linear-gradient(180deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.72));
   }
 
+  .carousel-slide video + figcaption {
+    bottom: 44px;
+    pointer-events: none;
+  }
+
   .carousel-control {
     position: absolute;
     top: 230px;
@@ -226,6 +231,7 @@ nav_title: Home
   .carousel-tabs {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     gap: 8px;
     margin-top: 12px;
   }
@@ -244,6 +250,26 @@ nav_title: Home
     color: #fff;
     border-color: #389092;
     background: #389092;
+  }
+
+  .carousel-tabs .carousel-playback {
+    width: auto;
+    padding: 0 12px;
+    border-radius: 17px;
+    font: inherit;
+    font-size: 0.8rem;
+  }
+
+  .carousel-tabs button:focus-visible {
+    outline: 2px solid #1f7a7f;
+    outline-offset: 3px;
+  }
+
+  .carousel-status {
+    margin: 8px 0 0;
+    color: #637174;
+    font-size: 0.85rem;
+    text-align: center;
   }
 
   .quick-links {
@@ -268,7 +294,8 @@ nav_title: Home
       min-height: 380px;
     }
 
-    .carousel-slide img {
+    .carousel-slide img,
+    .carousel-slide video {
       height: 380px;
     }
 
@@ -287,7 +314,8 @@ nav_title: Home
       min-height: 280px;
     }
 
-    .carousel-slide img {
+    .carousel-slide img,
+    .carousel-slide video {
       height: 280px;
     }
 
@@ -318,7 +346,7 @@ nav_title: Home
           Start in Spring, Summer, or Fall 2027. <a href="/Opportunities.html">View position details and application instructions&nbsp;&rarr;</a>
         </p>
       </div>
-      <div class="mindxai-carousel" data-carousel>
+      <div class="mindxai-carousel" data-carousel role="region" aria-roledescription="carousel" aria-label="MINDxAI Lab highlights">
         <div class="carousel-stage">
           <!-- <figure class="carousel-slide is-active">
             <img src="/assets/images/banners/Updated%20Images/Picture1.jpg" alt="MINDxAI Lab activity photo">
@@ -341,20 +369,22 @@ nav_title: Home
           <figcaption><strong>MINDxAI Lab</strong> retreat dinner</figcaption>
           </figure>
           <figure class="carousel-slide">
-            <video controls preload="metadata" aria-label="Aggressive Driving in Mixed Traffic demonstration video">
+            <video controls muted playsinline preload="metadata" aria-label="Aggressive Driving in Mixed Traffic demonstration video">
               <source src="/assets/images/banners/aggressive%20driving.mp4" type="video/mp4">
               Your browser does not support the video element.
             </video>
             <figcaption>Aggressive Driving in Mixed Traffic</figcaption>
           </figure>
         </div>
-        <button class="carousel-control prev" type="button" data-carousel-prev aria-label="Previous image">&lsaquo;</button>
-        <button class="carousel-control next" type="button" data-carousel-next aria-label="Next image">&rsaquo;</button>
-        <div class="carousel-tabs" aria-label="Select carousel image">
+        <button class="carousel-control prev" type="button" data-carousel-prev aria-label="Previous slide">&lsaquo;</button>
+        <button class="carousel-control next" type="button" data-carousel-next aria-label="Next slide">&rsaquo;</button>
+        <div class="carousel-tabs" aria-label="Slideshow controls">
           <button type="button" class="is-active" data-carousel-goto="0" aria-label="Show image 1">1</button>
           <button type="button" data-carousel-goto="1" aria-label="Show image 2">2</button>
           <button type="button" data-carousel-goto="2" aria-label="Show video 3">3</button>
+          <button type="button" class="carousel-playback" data-carousel-playback hidden>Pause slideshow</button>
         </div>
+        <p class="carousel-status" data-carousel-status role="status" hidden></p>
       </div>
 
       <section class="home-section" id="home-research" aria-labelledby="home-research-heading">
@@ -391,49 +421,4 @@ nav_title: Home
 <script src="{{ '/assets/js/news-calendar-axis.js' | relative_url }}" defer></script>
 <script src="{{ '/assets/js/research-updates-timeline.js' | relative_url }}" defer></script>
 
-<script>
-  (function() {
-    var carousels = document.querySelectorAll('[data-carousel]');
-
-    carousels.forEach(function(carousel) {
-      var slides = carousel.querySelectorAll('.carousel-slide');
-      var tabs = carousel.querySelectorAll('[data-carousel-goto]');
-      var prev = carousel.querySelector('[data-carousel-prev]');
-      var next = carousel.querySelector('[data-carousel-next]');
-      var current = 0;
-
-      function showSlide(index) {
-        current = (index + slides.length) % slides.length;
-
-        slides.forEach(function(slide, slideIndex) {
-          slide.classList.toggle('is-active', slideIndex === current);
-          if (slideIndex !== current) {
-            var video = slide.querySelector('video');
-            if (video) {
-              video.pause();
-            }
-          }
-        });
-
-        tabs.forEach(function(tab, tabIndex) {
-          tab.classList.toggle('is-active', tabIndex === current);
-          tab.setAttribute('aria-current', tabIndex === current ? 'true' : 'false');
-        });
-      }
-
-      prev.addEventListener('click', function() {
-        showSlide(current - 1);
-      });
-
-      next.addEventListener('click', function() {
-        showSlide(current + 1);
-      });
-
-      tabs.forEach(function(tab) {
-        tab.addEventListener('click', function() {
-          showSlide(parseInt(tab.getAttribute('data-carousel-goto'), 10));
-        });
-      });
-    });
-  }());
-</script>
+<script src="{{ '/assets/js/home-carousel.js' | relative_url }}" defer></script>
