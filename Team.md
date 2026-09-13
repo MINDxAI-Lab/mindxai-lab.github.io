@@ -121,6 +121,13 @@ title: Team
     font-size: 1.15rem;
   }
 
+  .student-enrollment {
+    margin: -3px 0 12px !important;
+    color: #637174;
+    font-size: 0.92rem;
+    line-height: 1.5;
+  }
+
   .student-profile p {
     margin: 0 0 10px;
     line-height: 1.65;
@@ -385,6 +392,7 @@ title: Team
       <img src="/assets/images/banners/Updated%20Images/Yan%20Chen.png" alt="Yan Chen">
       <div>
         <h3>Yan Chen, Ph.D. Student</h3>
+        <p class="student-enrollment"><strong>Ph.D. Student Since:</strong> August 2024–Present</p>
 <p>
   Yan Chen holds a <b>B.S. </b>in Control Science and Engineering from Shandong University. <br>His research interests include human-centered driving systems, human adaptation in mixed traffic, aggressive driving behavior, and AI for healthcare. His current work develops vision-language model approaches for EEG analysis and examines how autonomous vehicle aggressiveness affects human driver behavior, safety, and traffic efficiency in mixed-traffic environments.
 </p>
@@ -409,6 +417,7 @@ title: Team
       <img src="/assets/images/banners/Updated%20Images/Moajjem.png" alt="Moajjem Chowdhury">
       <div>
         <h3>Moajjem Chowdhury, Ph.D. Student</h3>
+        <p class="student-enrollment"><strong>Ph.D. Student Since:</strong> August 2024–Present</p>
         <p>Moajjem Hossain Chowdhury holds an <b>M.S.</b>  in Electrical and Electronic Engineering from Universiti Kebangsaan Malaysia and a <b>B.S. </b>in Electrical and Electronic Engineering from North South University. <br>His research interests include human state modeling, multimodal learning, adaptive automation, human–AI collaboration, physiological signal analysis, and explainable AI. His work focuses on developing intelligent systems that integrate physiological, behavioral, and contextual data to better understand human cognitive and emotional states in complex environments. </p>
   <p>
   <strong>Role in Lab Projects:</strong> Student lead for the lab’s projects on <a href="/Research.html#project-cognitive-emotional-driving-automation">Cognitive-Emotional State Assessment for Adaptive Automation Intervention</a> and <a href="/Research.html#project-communication-barriers-healthcare">Communication Barriers in Patient-Provider Interactions</a>.
@@ -430,6 +439,7 @@ title: Team
       <img src="/assets/images/banners/Updated%20Images/Udit.png" alt="Udit Das">
       <div>
         <h3>Udit Kumar Das, Ph.D. Student</h3>
+        <p class="student-enrollment"><strong>Ph.D. Student Since:</strong> August 2026–Present</p>
         <p>Udit Kumar has an <b>M.S.</b> Industrial and Systems Engineering from University of Louisville and an in Applied Statistics and Data Science from Jahangirnagar University and a <b>B.S.</b> in Petroleum and Mining Engineering from Military Institute of Science and Technology, Bangladesh. <br>His research focuses on human factors, driver behavior, cognitive workload, and human–AI interaction in transportation. His current research investigates how aggressive driving behaviors affect novice drivers’ visual attention, workload, and driving behavior in simulated driving environments.</p>
 <p>
   <strong>Role in Lab Projects:</strong> Student lead for the lab’s project on Human-Autonomy/AI Teaming; Supports the lab’s project on <a href="/Research.html#project-aggressive-driving-mixed-traffic">Aggressive Driving in Mixed Traffic</a>.
@@ -452,6 +462,7 @@ title: Team
       <img src="/assets/images/banners/Updated%20Images/Qunli.png" alt="Qunli Liu">
       <div>
         <h3>Qunli Liu, Ph.D. Student</h3>
+      <p class="student-enrollment"><strong>Ph.D. Student Since:</strong> August 2026–Present</p>
       <p>
       Qunli Liu holds a <b>M.S.</b> in Data Science from the University of California, Irvine and <b>B.A.</b> in Data Science from the University of California, Berkeley.
       <br>His research interests include physiological signal analysis, behavior data analysis and statistical modeling. His current work examines human operator performance in surveillance tasks and how environmental factors shape human activity and mobility behavior in urban environments.
