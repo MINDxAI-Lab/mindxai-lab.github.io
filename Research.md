@@ -35,6 +35,332 @@ title: Research
     color: #165f66;
   }
 
+  .research-updates {
+    margin: 18px 0 24px;
+    padding: 20px 22px 18px;
+    border: 1px solid #dce7e7;
+    border-radius: 8px;
+    background: #fff;
+    scroll-margin-top: 90px;
+  }
+
+  .research-updates-heading {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 16px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #dce7e7;
+  }
+
+  .research-updates h2 {
+    margin: 0;
+    color: #165f66;
+    font-size: 1.25rem;
+    line-height: 1.35;
+  }
+
+  .research-updates-all {
+    flex: 0 0 auto;
+    color: #1f7a7f;
+    font-size: 0.88rem;
+    font-weight: 700;
+    text-decoration: none;
+  }
+
+  .research-updates-all:hover,
+  .research-updates-all:focus {
+    color: #165f66;
+    text-decoration: underline;
+  }
+
+  .research-updates-legend {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 14px;
+    margin: 13px 0 3px;
+    padding: 0;
+    color: #4d5b5d;
+    font-size: 0.78rem;
+    font-weight: 700;
+    list-style: none;
+  }
+
+  .research-updates-legend li {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+  }
+
+  .research-updates-legend-marker,
+  .research-timeline-dot {
+    display: inline-block;
+    flex: 0 0 auto;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+  }
+
+  .research-updates-legend-marker--publication,
+  .research-timeline-event--publication .research-timeline-dot {
+    background: #b24852;
+  }
+
+  .research-updates-legend-marker--funding,
+  .research-timeline-event--funding .research-timeline-dot {
+    background: #c78723;
+  }
+
+  .research-updates-legend-marker--conference,
+  .research-timeline-event--conference .research-timeline-dot {
+    background: #52789b;
+  }
+
+  .research-timeline {
+    margin-top: 8px;
+  }
+
+  .research-timeline-viewport {
+    overflow-x: auto;
+    overscroll-behavior-inline: contain;
+    scrollbar-width: none;
+  }
+
+  .research-timeline-viewport::-webkit-scrollbar {
+    display: none;
+  }
+
+  .research-timeline-events {
+    position: relative;
+    width: calc(100% - 44px);
+    min-width: 720px;
+    height: 72px;
+    margin: 0 22px;
+    padding: 0;
+    list-style: none;
+  }
+
+  .research-timeline-events::before {
+    position: absolute;
+    top: 29px;
+    right: 0;
+    left: 0;
+    height: 2px;
+    background: #dce7e7;
+    content: "";
+  }
+
+  .research-timeline-event {
+    position: absolute;
+    top: 0;
+    left: calc(var(--timeline-position) + var(--timeline-offset));
+    width: 44px;
+    transform: translateX(-50%);
+  }
+
+  .research-timeline-event button {
+    display: grid;
+    grid-template-rows: 22px 14px 20px;
+    justify-items: center;
+    width: 44px;
+    min-height: 56px;
+    padding: 0;
+    border: 0;
+    color: #637174;
+    background: transparent;
+    font: inherit;
+    cursor: pointer;
+  }
+
+  .research-timeline-event time {
+    grid-row: 1;
+    font-size: 0.71rem;
+    font-weight: 700;
+    line-height: 1.25;
+  }
+
+  .research-timeline-dot {
+    grid-row: 2;
+    align-self: center;
+    z-index: 1;
+    box-sizing: content-box;
+    border: 2px solid #fff;
+  }
+
+  .research-timeline-event button[aria-selected="true"] .research-timeline-dot,
+  .research-timeline-event button:hover .research-timeline-dot {
+    box-shadow: 0 0 0 2px #fff, 0 0 0 3.5px currentColor;
+  }
+
+  .research-timeline-event--publication button {
+    color: #b24852;
+  }
+
+  .research-timeline-event--funding button {
+    color: #a66b12;
+  }
+
+  .research-timeline-event--conference button {
+    color: #3c668c;
+  }
+
+  .research-timeline-year {
+    grid-row: 3;
+    position: relative;
+    min-height: 18px;
+    color: #637174;
+    font-size: 0.68rem;
+    font-weight: 700;
+    line-height: 1.4;
+  }
+
+  .research-timeline-year::before {
+    position: absolute;
+    top: -4px;
+    left: 50%;
+    width: 1px;
+    height: 5px;
+    background: #b7cdcd;
+    content: "";
+    transform: translateX(-50%);
+  }
+
+  .research-timeline-year--empty {
+    visibility: hidden;
+  }
+
+  .research-timeline-month--empty {
+    visibility: hidden;
+  }
+
+  .research-timeline-content {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    gap: 18px;
+    align-items: start;
+    min-height: 114px;
+    margin-top: 8px;
+  }
+
+  .research-timeline-detail {
+    min-width: 0;
+  }
+
+  .research-timeline-detail article[hidden] {
+    display: none;
+  }
+
+  .research-timeline-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7px;
+    align-items: center;
+    margin: 0 0 5px;
+    color: #4d5b5d;
+    font-size: 0.82rem;
+    font-weight: 700;
+    line-height: 1.4;
+  }
+
+  .research-timeline-type {
+    display: inline-flex;
+    align-items: center;
+    min-height: 1.6em;
+    padding: 1px 7px;
+    border-radius: 999px;
+    font-size: 0.74rem;
+  }
+
+  .research-timeline-type--publication {
+    color: #8d313b;
+    background: #f8e8ea;
+  }
+
+  .research-timeline-type--funding {
+    color: #82530a;
+    background: #fbf1df;
+  }
+
+  .research-timeline-type--conference {
+    color: #315c80;
+    background: #e9f0f6;
+  }
+
+  .research-timeline-detail h3 {
+    margin: 0 0 5px;
+    font-size: 1rem;
+    line-height: 1.45;
+  }
+
+  .research-timeline-detail h3 a {
+    color: #1f7a7f;
+    text-decoration: none;
+  }
+
+  .research-timeline-detail h3 a:hover,
+  .research-timeline-detail h3 a:focus {
+    color: #165f66;
+    text-decoration: underline;
+  }
+
+  .research-timeline-summary {
+    margin: 0;
+    color: #4d5b5d;
+    font-size: 0.92rem;
+    line-height: 1.58;
+  }
+
+  .research-timeline-controls {
+    display: flex;
+    gap: 6px;
+    padding-top: 4px;
+  }
+
+  .research-timeline-control {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    padding: 0;
+    border: 1px solid #9ebebe;
+    border-radius: 50%;
+    color: #1f7a7f;
+    background: #fff;
+    cursor: pointer;
+  }
+
+  .research-timeline-control:hover:not(:disabled),
+  .research-timeline-control:focus-visible:not(:disabled) {
+    color: #fff;
+    background: #1f7a7f;
+  }
+
+  .research-timeline-control:disabled {
+    border-color: #dce7e7;
+    color: #a9b6b8;
+    cursor: not-allowed;
+  }
+
+  .research-updates a:focus-visible,
+  .research-timeline-event button:focus-visible,
+  .research-timeline-control:focus-visible {
+    outline: 2px solid #1f7a7f;
+    outline-offset: 3px;
+  }
+
+  .research-updates-screen-reader-status {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+  }
+
   .research-filters {
     display: flex;
     flex-wrap: wrap;
@@ -383,6 +709,16 @@ title: Research
   }
 
   @media (max-width: 480px) {
+    .research-updates {
+      padding: 17px 16px 16px;
+    }
+
+    .research-updates-heading {
+      align-items: flex-start;
+      flex-direction: column;
+      gap: 7px;
+    }
+
     .research-filters button {
       width: 100%;
     }
@@ -396,6 +732,22 @@ title: Research
 
     .research-subtitle {
       font-size: 1rem;
+    }
+
+    .research-timeline-content {
+      grid-template-columns: 1fr;
+      gap: 12px;
+      min-height: 0;
+    }
+
+    .research-timeline-controls {
+      order: -1;
+      justify-content: flex-end;
+      padding-top: 0;
+    }
+
+    .research-timeline-events {
+      min-width: 640px;
     }
 
     .research-topic-description {
@@ -427,6 +779,130 @@ title: Research
 
 <div class="research-page">
   <h1>Ongoing Research Projects</h1>
+
+  {%- assign research_update_posts = site.posts | where_exp: "post", "post.tags contains 'news'" -%}
+  {%- assign research_update_count = 0 -%}
+  {%- assign research_update_start_ordinal = 0 -%}
+  {%- assign research_update_end_ordinal = 0 -%}
+  {%- for post in research_update_posts reversed -%}
+    {%- if post.tags contains 'publications' or post.tags contains 'funding' or post.tags contains 'conferences' -%}
+      {%- assign research_update_year_number = post.date | date: "%Y" | plus: 0 -%}
+      {%- assign research_update_month_number = post.date | date: "%m" | plus: 0 -%}
+      {%- assign research_update_day_number = post.date | date: "%d" | plus: 0 -%}
+      {%- assign research_update_month_ordinal = research_update_year_number | times: 12 | plus: research_update_month_number -%}
+      {%- assign research_update_ordinal = research_update_month_ordinal | times: 31 | plus: research_update_day_number -%}
+      {%- if research_update_count == 0 -%}
+        {%- assign research_update_start_ordinal = research_update_ordinal -%}
+      {%- endif -%}
+      {%- assign research_update_end_ordinal = research_update_ordinal -%}
+      {%- assign research_update_count = research_update_count | plus: 1 -%}
+    {%- endif -%}
+  {%- endfor -%}
+  {%- assign research_update_span = research_update_end_ordinal | minus: research_update_start_ordinal -%}
+  {%- if research_update_span == 0 -%}
+    {%- assign research_update_span = 1 -%}
+  {%- endif -%}
+  {%- capture research_related_news -%}
+  <section class="research-updates" id="research-updates" aria-labelledby="research-updates-heading">
+    <div class="research-updates-heading">
+      <h2 id="research-updates-heading">Research-Related News</h2>
+      <a class="research-updates-all" href="{{ '/News.html' | relative_url }}">View all news <span aria-hidden="true">→</span></a>
+    </div>
+    <ul class="research-updates-legend" aria-label="Research news categories">
+      <li><span class="research-updates-legend-marker research-updates-legend-marker--publication" aria-hidden="true"></span>Publications</li>
+      <li><span class="research-updates-legend-marker research-updates-legend-marker--funding" aria-hidden="true"></span>Research Funding</li>
+      <li><span class="research-updates-legend-marker research-updates-legend-marker--conference" aria-hidden="true"></span>Conference Presentations</li>
+    </ul>
+    <div class="research-timeline" data-research-updates>
+      <div class="research-timeline-viewport" aria-label="Research news timeline">
+        <ol class="research-timeline-events" role="tablist" aria-label="Select a research news item">
+          {%- assign research_update_index = 0 -%}
+          {%- assign previous_update_year = '' -%}
+          {%- assign previous_update_month = '' -%}
+          {%- for post in research_update_posts reversed -%}
+            {%- if post.tags contains 'publications' or post.tags contains 'funding' or post.tags contains 'conferences' -%}
+              {%- if post.tags contains 'publications' -%}
+                {%- assign research_update_type = 'publication' -%}
+                {%- assign research_update_label = 'Publication' -%}
+              {%- elsif post.tags contains 'funding' -%}
+                {%- assign research_update_type = 'funding' -%}
+                {%- assign research_update_label = 'Research funding' -%}
+              {%- else -%}
+                {%- assign research_update_type = 'conference' -%}
+                {%- assign research_update_label = 'Conference presentation' -%}
+              {%- endif -%}
+              {%- assign research_update_index = research_update_index | plus: 1 -%}
+              {%- assign research_update_year = post.date | date: "%Y" -%}
+              {%- assign research_update_month = post.date | date: "%Y-%m" -%}
+              {%- assign research_update_year_number = post.date | date: "%Y" | plus: 0 -%}
+              {%- assign research_update_month_number = post.date | date: "%m" | plus: 0 -%}
+              {%- assign research_update_day_number = post.date | date: "%d" | plus: 0 -%}
+              {%- assign research_update_month_ordinal = research_update_year_number | times: 12 | plus: research_update_month_number -%}
+              {%- assign research_update_ordinal = research_update_month_ordinal | times: 31 | plus: research_update_day_number -%}
+              {%- assign research_update_offset = research_update_ordinal | minus: research_update_start_ordinal -%}
+              {%- assign research_update_position = research_update_offset | times: 100.0 | divided_by: research_update_span | round: 2 -%}
+              <li class="research-timeline-event research-timeline-event--{{ research_update_type }}" role="presentation" data-timeline-position="{{ research_update_position }}" style="--timeline-position: {{ research_update_position }}%; --timeline-offset: 0px;">
+                <button type="button" id="research-update-tab-{{ research_update_index }}" role="tab" aria-controls="research-update-panel-{{ research_update_index }}" aria-selected="{% if research_update_index == research_update_count %}true{% else %}false{% endif %}" data-research-update-tab data-research-update-index="{{ research_update_index | minus: 1 }}" aria-label="{{ research_update_label }}: {{ post.date | date: '%B %-d, %Y' }} — {{ post.title | escape }}">
+                  {%- if research_update_month != previous_update_month -%}
+                  <time datetime="{{ post.date | date: '%Y-%m-%d' }}">{{ post.date | date: "%b" }}</time>
+                  {%- else -%}
+                  <span class="research-timeline-month--empty" aria-hidden="true">{{ post.date | date: "%b" }}</span>
+                  {%- endif -%}
+                  <span class="research-timeline-dot" aria-hidden="true"></span>
+                  {%- if research_update_year != previous_update_year -%}
+                  <span class="research-timeline-year" aria-hidden="true">’{{ post.date | date: "%y" }}</span>
+                  {%- else -%}
+                  <span class="research-timeline-year research-timeline-year--empty" aria-hidden="true">’{{ post.date | date: "%y" }}</span>
+                  {%- endif -%}
+                </button>
+              </li>
+              {%- assign previous_update_year = research_update_year -%}
+              {%- assign previous_update_month = research_update_month -%}
+            {%- endif -%}
+          {%- endfor -%}
+        </ol>
+      </div>
+      <div class="research-timeline-content">
+        <div class="research-timeline-detail">
+          {%- assign research_update_index = 0 -%}
+          {%- for post in research_update_posts reversed -%}
+            {%- if post.tags contains 'publications' or post.tags contains 'funding' or post.tags contains 'conferences' -%}
+              {%- if post.tags contains 'publications' -%}
+                {%- assign research_update_type = 'publication' -%}
+                {%- assign research_update_label = 'Publication' -%}
+              {%- elsif post.tags contains 'funding' -%}
+                {%- assign research_update_type = 'funding' -%}
+                {%- assign research_update_label = 'Research Funding' -%}
+              {%- else -%}
+                {%- assign research_update_type = 'conference' -%}
+                {%- assign research_update_label = 'Conference Presentation' -%}
+              {%- endif -%}
+              {%- assign research_update_index = research_update_index | plus: 1 -%}
+          <article id="research-update-panel-{{ research_update_index }}" role="tabpanel" aria-labelledby="research-update-tab-{{ research_update_index }}" data-research-update-panel{% unless research_update_index == research_update_count %} hidden{% endunless %}>
+            <p class="research-timeline-meta">
+              <time datetime="{{ post.date | date: '%Y-%m-%d' }}">{{ post.display_date | default: post.date | date: "%B %-d, %Y" }}</time>
+              <span class="research-timeline-type research-timeline-type--{{ research_update_type }}">{{ research_update_label }}</span>
+            </p>
+            <h3><a href="{{ post.url | relative_url }}">{{ post.title | escape }} <span aria-hidden="true">→</span></a></h3>
+            <p class="research-timeline-summary">{{ post.summary | strip_html | escape }}</p>
+          </article>
+            {%- endif -%}
+          {%- endfor -%}
+        </div>
+        <div class="research-timeline-controls" aria-label="Research news navigation">
+          <button class="research-timeline-control" type="button" data-research-update-previous aria-label="Show previous news item">
+            <span aria-hidden="true">←</span>
+          </button>
+          <button class="research-timeline-control" type="button" data-research-update-next aria-label="Show next news item">
+            <span aria-hidden="true">→</span>
+          </button>
+        </div>
+      </div>
+      <p class="research-updates-screen-reader-status" data-research-update-status role="status"></p>
+    </div>
+  </section>
+  {%- endcapture -%}
+
   <div class="research-overview" aria-label="Research overview">
     <p class="research-subtitle">Our research advances <strong>human-centered AI and adaptive systems</strong> that coordinate with people as their states, goals, and capabilities evolve.</p>
   </div>
@@ -720,6 +1196,9 @@ title: Research
     </article>
   </section>
 
+  {{ research_related_news }}
+
 </div>
 
 <script src="{{ '/assets/js/research-filters.js' | relative_url }}" defer></script>
+<script src="{{ '/assets/js/research-updates-timeline.js' | relative_url }}" defer></script>
