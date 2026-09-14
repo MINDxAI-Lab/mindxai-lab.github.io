@@ -90,6 +90,10 @@ title: News
     background: #f6fbfb;
   }
 
+  .news-card > div:only-child {
+    grid-column: 1 / -1;
+  }
+
   .news-thumb {
     display: block;
     width: 100%;

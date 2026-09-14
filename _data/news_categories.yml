@@ -4,6 +4,8 @@ publications:
   label: Journal Publications
 conferences:
   label: Conferences & Talks
+service:
+  label: Service & Outreach
 honors:
   label: Honors & Recognition
 lab-life:
