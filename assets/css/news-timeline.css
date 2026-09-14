@@ -562,3 +562,123 @@
   font-size: 0.75rem;
   font-weight: 700;
 }
+
+/* Shared founding mascot and animation for both news timelines. */
+.news-timeline-founding {
+  position: absolute;
+  top: 0;
+  list-style: none;
+  pointer-events: none;
+}
+
+.news-timeline-founding-mascot {
+  /* Animate small details while the face, torso and feet stay anchored. */
+  --founding-hand-outline: 30.6% 51.4%, 29.2% 48.6%, 27.8% 48.1%, 26.7% 46.6%, 24% 45.6%, 23.5% 44.7%, 24.2% 43.9%, 26.3% 44.4%, 24.4% 42.7%, 23.9% 41.7%, 24.4% 41.1%, 25.2% 41.4%, 27.8% 43.2%, 26.1% 40.4%, 25.8% 39.3%, 26.4% 38.7%, 27.2% 39%, 29.4% 42.5%, 28.7% 39.8%, 28.8% 38.8%, 29.4% 38.3%, 30.1% 38.6%, 31.8% 42.4%, 32.8% 41.5%, 33.7% 41.6%, 34.1% 42.2%, 33.8% 43.4%, 33.1% 45.3%, 32.9% 46.7%, 33.2% 47.8%, 32.5% 49.9%;
+  --founding-hair-outline: 66% 40%, 73% 42%, 78% 46%, 77% 59%, 71% 60%, 65% 58%, 64.3% 56.3%, 66.3% 54.5%, 62.5% 54.5%, 62.5% 52.2%, 65% 51%, 64% 44.3%;
+  --founding-coat-left-outline: 35% 72%, 44.3% 72%, 42.1% 84%, 36% 82.5%, 35.7% 80.9%, 31.8% 77.9%;
+  --founding-coat-right-outline: 57.7% 72.5%, 65.3% 72.5%, 67.8% 77.8%, 64.5% 81.2%, 60.3% 83.5%;
+  position: absolute;
+  top: calc(var(--timeline-axis-y) - 48px);
+  left: 0;
+  width: 48px;
+  height: 48px;
+  transform: translateX(-50%);
+}
+
+.news-timeline-founding-mascot img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  max-width: none;
+  object-fit: contain;
+}
+
+.news-timeline-founding-part,
+.news-timeline-founding-eyelids {
+  display: none;
+}
+
+@supports (clip-path: polygon(evenodd, 0 0, 100% 0, 100% 100%)) {
+  .news-timeline-founding-body {
+    clip-path: polygon(evenodd,
+      0 0, 100% 0, 100% 100%, 0 100%, 0 0,
+      var(--founding-hand-outline), 30.6% 51.4%, 0 0,
+      var(--founding-hair-outline), 66% 40%, 0 0,
+      var(--founding-coat-left-outline), 35% 72%, 0 0,
+      var(--founding-coat-right-outline), 57.7% 72.5%, 0 0);
+  }
+
+  .news-timeline-founding-part,
+  .news-timeline-founding-eyelids {
+    display: block;
+  }
+
+  .news-timeline-founding-hand {
+    clip-path: polygon(var(--founding-hand-outline));
+    transform-origin: 31.2% 50.5%;
+    animation: lab-founding-wave 3.6s ease-in-out infinite;
+  }
+
+  .news-timeline-founding-hair {
+    --breeze-angle: 2.6deg;
+    clip-path: polygon(var(--founding-hair-outline));
+    transform-origin: 66% 41%;
+    animation: lab-founding-breeze 5.8s ease-in-out infinite;
+  }
+
+  .news-timeline-founding-coat-left {
+    --breeze-angle: 1.3deg;
+    clip-path: polygon(var(--founding-coat-left-outline));
+    transform-origin: 40% 72%;
+    animation: lab-founding-breeze 5.2s ease-in-out -1.1s infinite;
+  }
+
+  .news-timeline-founding-coat-right {
+    --breeze-angle: 1.1deg;
+    clip-path: polygon(var(--founding-coat-right-outline));
+    transform-origin: 61.5% 72.5%;
+    animation: lab-founding-breeze 6s ease-in-out -1.4s infinite;
+  }
+
+  .news-timeline-founding-eyelids {
+    opacity: 0;
+    animation: lab-founding-blink 4.3s linear infinite;
+  }
+}
+
+@keyframes lab-founding-wave {
+  0%, 50%, 100% { transform: rotate(0deg); }
+  10% { transform: rotate(-12deg); }
+  20% { transform: rotate(7deg); }
+  30% { transform: rotate(-10deg); }
+  40% { transform: rotate(5deg); }
+}
+
+@keyframes lab-founding-breeze {
+  0%, 50%, 100% { transform: rotate(0deg); }
+  25% { transform: rotate(var(--breeze-angle)); }
+  75% { transform: rotate(calc(-1 * var(--breeze-angle))); }
+}
+
+@keyframes lab-founding-blink {
+  0%, 93%, 100% { opacity: 0; }
+  95%, 97% { opacity: 1; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .news-timeline-founding-body { clip-path: none; }
+  .news-timeline-founding-part,
+  .news-timeline-founding-eyelids { display: none; animation: none; }
+}
+
+.news-timeline-founding-caption {
+  position: absolute;
+  top: calc(var(--timeline-label-y) + 43px);
+  left: -20px;
+  color: #165f66;
+  font-size: 0.64rem;
+  font-weight: 700;
+  line-height: 1.4;
+  white-space: nowrap;
+}

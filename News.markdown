@@ -181,7 +181,9 @@ title: News
     <div class="news-date-ruler">
       <button type="button" class="news-date-scroll" data-news-date-earlier aria-label="Scroll to earlier months" aria-controls="news-date-viewport">←</button>
       <div class="news-date-viewport research-timeline-viewport" id="news-date-viewport" tabindex="0" aria-label="News timeline; scroll horizontally to explore">
-        <ol class="research-timeline-events" aria-label="Jump to a news item"></ol>
+        <ol class="research-timeline-events" aria-label="Jump to a news item">
+          {% include news-timeline-founding.html %}
+        </ol>
       </div>
       <button type="button" class="news-date-scroll" data-news-date-later aria-label="Scroll to later months" aria-controls="news-date-viewport">→</button>
     </div>

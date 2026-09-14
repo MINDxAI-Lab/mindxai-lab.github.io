@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1254 1254" fill="none">
+  <defs>
+    <radialGradient id="left-skin" cx="512" cy="490" r="61" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fdcbb7"/>
+      <stop offset=".4" stop-color="#fdd2be"/>
+      <stop offset=".7" stop-color="#fdddc8"/>
+      <stop offset="1" stop-color="#fde0cb"/>
+    </radialGradient>
+    <radialGradient id="right-skin" cx="735" cy="456" r="68" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fcc5ae"/>
+      <stop offset=".35" stop-color="#fcccb5"/>
+      <stop offset=".55" stop-color="#fdd7c0"/>
+      <stop offset=".75" stop-color="#fddfc9"/>
+      <stop offset="1" stop-color="#fee2cd"/>
+    </radialGradient>
+  </defs>
+  <!-- Covers follow the face side of the fringe and stop above the cheek blush. -->
+  <path fill="url(#left-skin)" d="M 464 364 C 472 370 485 360 500 360 C 524 361 546 371 556 392 C 565 412 564 446 554 466 C 545 480 511 480 490 475 C 466 470 451 453 442 438 C 437 431 433 418 433 406 L 445 402 L 451 387 L 438 375 L 463 377 Z"/>
+  <path fill="url(#right-skin)" d="M 657 374 C 660 348 677 329 699 318 C 715 310 730 318 737 317 L 748 311 L 746 323 C 756 326 766 333 773 332 L 776 331 L 780 345 L 786 357 L 790 370 C 791 391 784 415 770 430 C 757 444 724 447 704 440 C 680 433 668 412 666 390 Z"/>
+  <g stroke="#27191b" stroke-width="7" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M 460 426 C 479 398 523 394 547 418"/>
+    <path d="M 678 386 C 697 357 741 353 769 377"/>
+  </g>
+</svg>

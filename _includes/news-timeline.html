@@ -56,6 +56,9 @@
     </div>
     <div class="research-timeline-viewport" aria-label="News timeline">
       <ol class="research-timeline-events" role="tablist" aria-label="Select a news item">
+        {%- if include.founding -%}
+          {% include news-timeline-founding.html %}
+        {%- endif -%}
         {%- assign timeline_previous_year = '' -%}
         {%- assign timeline_previous_month = '' -%}
         {%- for post in timeline_posts -%}

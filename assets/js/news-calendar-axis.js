@@ -3,6 +3,8 @@
 
   function create(root, track, dateStrings) {
     var events = Array.from(track.querySelectorAll('.research-timeline-event'));
+    var founding = track.querySelector('[data-timeline-founding]');
+    var foundingDate = founding ? founding.dataset.timelineFounding.split('-').map(Number) : null;
     // One equal-width slot per calendar month, with years anchored at January.
     var dates = dateStrings.map(function (dateString) {
       var parts = dateString.split('-').map(Number);
@@ -11,8 +13,15 @@
     });
     var firstYear = Math.min.apply(null, dates.map(function (date) { return date.year; }));
     var lastYear = Math.max.apply(null, dates.map(function (date) { return date.year; }));
+    if (foundingDate) {
+      firstYear = Math.min(firstYear, foundingDate[0]);
+      lastYear = Math.max(lastYear, foundingDate[0]);
+    }
     var startMonth = firstYear * 12;
     var monthCount = (lastYear - firstYear + 1) * 12;
+    if (foundingDate) {
+      founding.style.left = ((foundingDate[0] * 12 + foundingDate[1] - 1 - startMonth) / monthCount * 100) + '%';
+    }
     var calendarAxis = document.createElement('li');
     calendarAxis.className = 'research-calendar-axis';
     calendarAxis.setAttribute('role', 'presentation');
@@ -68,11 +77,11 @@
       });
       var minimumLane = Math.min.apply(null, placed.map(function (point) { return point.y; }).concat([0]));
       var maximumLane = Math.max.apply(null, placed.map(function (point) { return point.y; }).concat([0]));
-      var axisY = Math.max(48, 12 - minimumLane);
+      var axisY = Math.max(founding ? 60 : 48, 12 - minimumLane);
       var labelsY = axisY + Math.max(40, maximumLane) + 12;
       track.style.setProperty('--timeline-axis-y', axisY + 'px');
       track.style.setProperty('--timeline-label-y', labelsY + 'px');
-      track.style.height = (labelsY + 44) + 'px';
+      track.style.height = (labelsY + (founding ? 62 : 44)) + 'px';
     }
 
     return { firstYear: firstYear, lastYear: lastYear, layout: layout };
