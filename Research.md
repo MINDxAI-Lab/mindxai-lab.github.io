@@ -210,6 +210,12 @@ title: Research
     scroll-margin-top: 90px;
   }
 
+  .research-project--funded {
+    border: 2px solid #278488;
+    border-left: 6px solid #0f6065;
+    box-shadow: 0 3px 10px rgba(15, 96, 101, 0.14);
+  }
+
   .research-project img {
     width: 360px;
     height: 240px;
@@ -462,7 +468,7 @@ title: Research
   {%- endfor -%}
 
   <section class="research-project-list" id="research-project-list" aria-label="MINDxAI Lab research projects">
-      <article class="research-project" id="project-cognitive-emotional-driving-automation" data-research-topics="{{ site.data.research_projects['project-cognitive-emotional-driving-automation'].topics | join: ' ' }}">
+      <article class="research-project research-project--funded" id="project-cognitive-emotional-driving-automation" data-research-topics="{{ site.data.research_projects['project-cognitive-emotional-driving-automation'].topics | join: ' ' }}">
       <figure>
         <img src="/assets/images/banners/Updated Images/Picture2.jpg" alt="NSF EDSE automation intervention project graphic">
         <figcaption>
@@ -520,7 +526,7 @@ title: Research
       </div>
     </article>
 
-    <article class="research-project" id="project-ai-vr-manufacturing-foundry" data-research-topics="{{ site.data.research_projects['project-ai-vr-manufacturing-foundry'].topics | join: ' ' }}">
+    <article class="research-project research-project--funded" id="project-ai-vr-manufacturing-foundry" data-research-topics="{{ site.data.research_projects['project-ai-vr-manufacturing-foundry'].topics | join: ' ' }}">
       <figure>
         <img src="/assets/images/banners/VR_manufacturing_extended.png" alt="AI-enabled virtual reality manufacturing foundry project graphic">
         <figcaption>
@@ -540,7 +546,7 @@ title: Research
       </div>
     </article>
 
-    <article class="research-project" id="project-aggressive-driving-mixed-traffic" data-research-topics="{{ site.data.research_projects['project-aggressive-driving-mixed-traffic'].topics | join: ' ' }}">
+    <article class="research-project research-project--funded" id="project-aggressive-driving-mixed-traffic" data-research-topics="{{ site.data.research_projects['project-aggressive-driving-mixed-traffic'].topics | join: ' ' }}">
       <figure>
         <img src="/assets/images/banners/Updated Images/AD.png" alt="Aggressive Driving project graphic">
         <figcaption>
@@ -608,7 +614,7 @@ title: Research
       </div>
     </article>
 
-    <article class="research-project" id="project-teen-driver-safety-education" data-research-topics="{{ site.data.research_projects['project-teen-driver-safety-education'].topics | join: ' ' }}">
+    <article class="research-project research-project--funded" id="project-teen-driver-safety-education" data-research-topics="{{ site.data.research_projects['project-teen-driver-safety-education'].topics | join: ' ' }}">
       <figure>
         <img src="/assets/images/banners/High%20school.png" alt="Teen Driver Safety Education project graphic">
         <figcaption>
