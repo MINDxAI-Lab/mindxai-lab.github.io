@@ -487,7 +487,7 @@ title: Research
             <a href="https://openaccess-api.cms-conferences.org/articles/download/978-1-964867-75-5_71" target="_blank" rel="noopener">Das, U.&#42;, Chowdhury, M. H.&#42;, <b>Liu, Y.</b>&dagger;, and Kaber, D. (2025). A systematic review of ground-truth labeling and prediction for cognitive workload adaptive systems. <i>International Conference on Applied Human Factors and Ergonomics</i>.</a>
             </li>
             <li>
-              Chowdhury, M. H.&#42;, Wang, S., and <b>Liu, Y.</b>&dagger; (2026). Mediation analysis of workload and emotion on the performance of supervision tasks. <i>Proceedings of the Human Factors and Ergonomics Society Annual Meeting</i>. Accepted.
+              <a href="https://doi.org/10.1177/10711813261484464" target="_blank" rel="noopener">Chowdhury, M. H.&#42;, Wang, S., and <b>Liu, Y.</b>&dagger; (2026). Mediation analysis of workload and emotion on the performance of supervision tasks. <i>Proceedings of the Human Factors and Ergonomics Society Annual Meeting</i>.</a>
             </li>
           </ol>
         </div>

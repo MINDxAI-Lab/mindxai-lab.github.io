@@ -61,7 +61,7 @@ title: Publications
     <section class="publication-group" aria-labelledby="refereed-conference-proceedings">
       <h2 id="refereed-conference-proceedings">Refereed Conference Proceedings</h2>
       <article class="publication-entry" id="publication-workload-emotion-supervision" data-publication-topics="{{ site.data.publication_topics['workload-emotion-supervision'].topics | join: ' ' }}">
-        <p class="publication-citation"><b>[C1]</b>. Chowdhury, M. H.&#42;, Wang, S., and <b>Liu, Y.</b>&dagger; (2026). Mediation analysis of workload and emotion on the performance of supervision tasks. <i>Proceedings of the Human Factors and Ergonomics Society Annual Meeting</i>. Accepted.</p>
+        <p class="publication-citation"><b>[C1]</b>. Chowdhury, M. H.&#42;, Wang, S., and <b>Liu, Y.</b>&dagger; (2026). Mediation analysis of workload and emotion on the performance of supervision tasks. <i>Proceedings of the Human Factors and Ergonomics Society Annual Meeting</i>. <a href="https://doi.org/10.1177/10711813261484464" target="_blank" rel="noopener"><b>[Link]</b></a></p>
         {% include publication-tags.html publication="workload-emotion-supervision" %}
       </article>
       <article class="publication-entry" id="publication-novice-driver-aggressive-overtaking" data-publication-topics="{{ site.data.publication_topics['novice-driver-aggressive-overtaking'].topics | join: ' ' }}">
