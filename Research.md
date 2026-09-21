@@ -166,16 +166,22 @@ title: Research
   }
 
   .research-funding-status {
-    display: inline-block;
-    margin: 0 0 7px;
-    padding: 3px 8px;
-    border: 1px solid #b8d4d0;
-    border-radius: 4px;
-    color: #276866;
-    background: #eef7f4;
-    font-size: 0.72rem;
+    display: inline-flex;
+    align-items: center;
+    margin: 0 9px 2px 0;
+    padding: 4px 9px;
+    border: 1px solid #233b6a;
+    border-radius: 999px;
+    color: #fff;
+    background: #314e89;
+    box-shadow: 0 1px 2px rgba(45, 86, 139, 0.22);
+    font-size: 0.68rem;
     font-weight: 700;
+    letter-spacing: 0.045em;
     line-height: 1.35;
+    text-transform: uppercase;
+    vertical-align: 0.1em;
+    white-space: nowrap;
   }
 
   .research-project .research-project-tag {
@@ -477,7 +483,7 @@ title: Research
         </figcaption>
       </figure>
       <div>
-        <h3>Cognitive-Emotional State Assessment for Adaptive Automation Intervention</h3>
+        {% include research-project-heading.html project="project-cognitive-emotional-driving-automation" title="Cognitive-Emotional State Assessment for Adaptive Automation Intervention" %}
         {% include research-project-tags.html project="project-cognitive-emotional-driving-automation" %}
 <p>
   This project aims to develop an integrated cognitive-emotional state assessment system to support real-time automation intervention and adaptive system design. By combining physiological sensing, behavioral performance data, and machine learning, the project aims to detect changes in human cognitive workload, emotional state, and task engagement during human-automation interaction.
@@ -535,7 +541,7 @@ title: Research
         </figcaption>
       </figure>
       <div>
-        <h3>AI-Enabled Virtual Reality Manufacturing Foundry</h3>
+        {% include research-project-heading.html project="project-ai-vr-manufacturing-foundry" title="AI-Enabled Virtual Reality Manufacturing Foundry" %}
         {% include research-project-tags.html project="project-ai-vr-manufacturing-foundry" %}
         <p>
           This NSF FINDERS FOUNDRY Planning project develops an AI-enabled virtual reality platform to help high school students explore modern manufacturing careers. The platform will provide safe, accessible, and authentic opportunities for students to learn manufacturing workflows, practice decision-making, and interact with a supportive AI mentor.
@@ -555,7 +561,7 @@ title: Research
         </figcaption>
       </figure>
       <div>
-        <h3>Aggressive Driving in Mixed Traffic</h3>
+        {% include research-project-heading.html project="project-aggressive-driving-mixed-traffic" title="Aggressive Driving in Mixed Traffic" %}
         {% include research-project-tags.html project="project-aggressive-driving-mixed-traffic" %}
         <p>
           This project studies how aggressive driving behaviors in mixed human-AV traffic propagate from individual driver state and local maneuvers to traffic-flow safety and efficiency. The work combines CARLA-SUMO human-in-the-loop experiments, empirical human driver modeling, SUMO/TraCI traffic-flow simulation, and human-aware adaptive AV control to understand how surrounding AV aggressiveness and human driver aggressiveness shape workload, trust, stress, speed choice, braking, lane changes, congestion, and surrogate safety outcomes.
@@ -623,7 +629,7 @@ title: Research
         </figcaption>
       </figure>
       <div>
-        <h3>Teen Driver Safety Education</h3>
+        {% include research-project-heading.html project="project-teen-driver-safety-education" title="Teen Driver Safety Education" %}
         {% include research-project-tags.html project="project-teen-driver-safety-education" %}
         <p>
           This project develops a simulator-ready curriculum package to support teen driver safety education in Kentucky high schools. The work will align teacher lesson plans, student materials, classroom debriefs, and an interactive driving scenario with KYTC and KOHS safety messaging on distracted driving and aggressive driving.
@@ -642,7 +648,7 @@ title: Research
         </figcaption>
       </figure>
       <div>
-        <h3>Human-Centered Design for Natural Upper-Limb Prosthetic Control</h3>
+        {% include research-project-heading.html project="project-prosthetic-control" title="Human-Centered Design for Natural Upper-Limb Prosthetic Control" %}
         {% include research-project-tags.html project="project-prosthetic-control" %}
         <p>          This project focuses on advancing upper-limb prosthetic control from conventional control modes toward more natural and intuitive control. Our prior work compared alternative prosthetic control strategies, generated workload and usability evidence for early-stage design, and examined VR as a scalable platform for testing prosthetic manipulation tasks before full physical-device deployment. Together, these studies provide human-centered design guidance for selecting and refining prosthetic control interfaces that better align with users’ movement intentions, improve performance, reduce workload, and support rehabilitation training.
         </p>
@@ -678,7 +684,7 @@ title: Research
         </figcaption>
       </figure>
       <div>
-        <h3>AI-Driven Scalp EEG Modeling for Seizure Detection and Signal Enhancement</h3>
+        {% include research-project-heading.html project="project-eeg-seizure-modeling" title="AI-Driven Scalp EEG Modeling for Seizure Detection and Signal Enhancement" %}
         {% include research-project-tags.html project="project-eeg-seizure-modeling" %}
         <p>
           We develop AI methods that transform multichannel scalp EEG into spatial, visual, and geometry-aware representations for neurological condition detection. This work supports robust seizure detection, EEG spatial super-resolution, and reliable biomedical signal modeling for real-time and clinically meaningful assessment.
@@ -716,7 +722,7 @@ title: Research
         </figcaption>
       </figure>
       <div>
-        <h3>Communication Barriers in Patient-Provider Interactions</h3>
+        {% include research-project-heading.html project="project-communication-barriers-healthcare" title="Communication Barriers in Patient-Provider Interactions" %}
         {% include research-project-tags.html project="project-communication-barriers-healthcare" %}
         <p>
           This project examines how communication barriers disrupt patient-provider communication and affect patient experience, clinical decision-making, health outcomes, and healthcare system efficiency. Building on a scoping review of patient-provider communication studies, the work maps how barriers intersect and identifies intervention opportunities including interpreter services, cultural and empathy training, plain-language and visual supports, AI-enabled translation and chatbot tools, clinical note-taking agents, and wearable or remote-monitoring technologies. The goal is to inform adaptive, patient-centered communication systems that combine AI support with real-time human-state and context awareness.

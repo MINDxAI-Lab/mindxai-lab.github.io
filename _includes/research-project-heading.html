@@ -1,0 +1,2 @@
+{%- assign project = site.data.research_projects[include.project] -%}
+<h3>{%- if project.funded -%}<span class="research-funding-status">Funded Project</span>{%- endif -%}{{ include.title | escape }}</h3>
