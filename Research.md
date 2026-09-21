@@ -734,7 +734,7 @@ title: Research
   {%- assign research_publication_news = research_all_news | where_exp: 'post', "post.tags contains 'publications'" -%}
   {%- assign research_conference_news = research_all_news | where_exp: 'post', "post.tags contains 'conferences'" -%}
   {%- assign research_news_posts = research_funding_news | concat: research_publication_news | concat: research_conference_news | uniq -%}
-  {% include news-timeline.html posts=research_news_posts id='research-updates' title='Research-Related News' %}
+  {% include news-timeline.html posts=research_news_posts id='research-updates' title='Research-Related News' start='latest' founding=true %}
 
 </div>
 
