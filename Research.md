@@ -520,6 +520,26 @@ title: Research
       </div>
     </article>
 
+    <article class="research-project" id="project-ai-vr-manufacturing-foundry" data-research-topics="{{ site.data.research_projects['project-ai-vr-manufacturing-foundry'].topics | join: ' ' }}">
+      <figure>
+        <img src="/assets/images/banners/VR_manufacturing_extended.png" alt="AI-enabled virtual reality manufacturing foundry project graphic">
+        <figcaption>
+          <a href="https://www.nsf.gov/awardsearch/show-award/?AWD_ID=2627659&HistoricalAwards=false" target="_blank" rel="noopener">Sponsor: NSF FINDERS FOUNDRY</a>
+          <span>PI: Yunmei Liu</span>
+        </figcaption>
+      </figure>
+      <div>
+        <h3>AI-Enabled Virtual Reality Manufacturing Foundry</h3>
+        {% include research-project-tags.html project="project-ai-vr-manufacturing-foundry" %}
+        <p>
+          This NSF FINDERS FOUNDRY Planning project develops an AI-enabled virtual reality platform to help high school students explore modern manufacturing careers. The platform will provide safe, accessible, and authentic opportunities for students to learn manufacturing workflows, practice decision-making, and interact with a supportive AI mentor.
+        </p>
+        <p>
+          By making advanced manufacturing careers more visible and engaging, the project aims to strengthen students’ interest in manufacturing pathways and help them understand AI as a transparent learning support for feedback, reflection, and problem solving.
+        </p>
+      </div>
+    </article>
+
     <article class="research-project" id="project-aggressive-driving-mixed-traffic" data-research-topics="{{ site.data.research_projects['project-aggressive-driving-mixed-traffic'].topics | join: ' ' }}">
       <figure>
         <img src="/assets/images/banners/Updated Images/AD.png" alt="Aggressive Driving project graphic">
@@ -604,25 +624,6 @@ title: Research
         </p>
         <p>
           The project will integrate a classroom rotation model, driving-log feedback on behaviors such as speed choice, following distance, braking, and hazard response, and an optional wearable-sensor component that provides a student-friendly driver-state snapshot. A classroom pilot will assess the module's feasibility and learning value before the final toolkit is delivered for use by educators and transportation safety partners.
-        </p>
-      </div>
-    </article>
-    <article class="research-project" id="project-ai-vr-manufacturing-foundry" data-research-topics="{{ site.data.research_projects['project-ai-vr-manufacturing-foundry'].topics | join: ' ' }}">
-      <figure>
-        <img src="/assets/images/banners/VR_manufacturing_extended.png" alt="AI-enabled virtual reality manufacturing foundry project graphic">
-        <figcaption>
-          <a href="https://www.nsf.gov/awardsearch/show-award/?AWD_ID=2627659&HistoricalAwards=false" target="_blank" rel="noopener">Sponsor: NSF FINDERS FOUNDRY</a>
-          <span>PI: Yunmei Liu</span>
-        </figcaption>
-      </figure>
-      <div>
-        <h3>AI-Enabled Virtual Reality Manufacturing Foundry</h3>
-        {% include research-project-tags.html project="project-ai-vr-manufacturing-foundry" %}
-        <p>
-          This NSF FINDERS FOUNDRY Planning project develops an AI-enabled virtual reality platform to help high school students explore modern manufacturing careers. The platform will provide safe, accessible, and authentic opportunities for students to learn manufacturing workflows, practice decision-making, and interact with a supportive AI mentor.
-        </p>
-        <p>
-          By making advanced manufacturing careers more visible and engaging, the project aims to strengthen students’ interest in manufacturing pathways and help them understand AI as a transparent learning support for feedback, reflection, and problem solving.
         </p>
       </div>
     </article>
