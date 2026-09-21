@@ -590,7 +590,7 @@ title: Research
       </div>
       <div class="project-video-demo">
         <h4>Video Demo</h4>
-        <video controls preload="metadata" aria-label="Aggressive Driving in Mixed Traffic demonstration video">
+        <video controls autoplay muted playsinline preload="metadata" aria-label="Aggressive Driving in Mixed Traffic demonstration video">
           <source src="/assets/images/banners/aggressive%20driving.mp4" type="video/mp4">
           Your browser does not support the video element.
         </video>
