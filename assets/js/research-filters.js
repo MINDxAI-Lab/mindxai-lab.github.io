@@ -50,8 +50,8 @@
       description.hidden = description.dataset.researchDescription !== activeTopic;
     });
     status.textContent = activeTopic === 'all'
-      ? 'Showing all ' + visibleCount + ' projects.'
-      : 'Showing ' + visibleCount + ' project' + (visibleCount === 1 ? '' : 's') + ' in ' + selected.dataset.researchLabel + '.';
+      ? 'Showing all ' + visibleCount + ' projects across application areas.'
+      : 'Application area: ' + selected.dataset.researchLabel + ' — showing ' + visibleCount + ' project' + (visibleCount === 1 ? '' : 's') + '.';
   }
 
   function showHashTarget() {

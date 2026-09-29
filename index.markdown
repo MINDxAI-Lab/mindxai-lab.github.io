@@ -2,9 +2,11 @@
 layout: home
 title: Dr. Yunmei Liu
 nav_title: Home
+description: "Dr. Yunmei Liu studies Adaptive Human–AI Systems: how people and AI adjust to each other over time, across multiple application areas."
 ---
 
 <link rel="stylesheet" href="{{ '/assets/css/news-timeline.css' | relative_url }}?v={{ site.time | date: '%s' }}">
+<link rel="stylesheet" href="{{ '/assets/css/research-identity.css' | relative_url }}?v={{ site.time | date: '%s' }}">
 
 <style>
   .mindxai-home h1,
@@ -327,16 +329,17 @@ nav_title: Home
 
 <div class="mindxai-home">
   <h1><strong>Welcome to the MINDxAI Lab!</strong></h1>
+  {% include research-identity.html id='home-research-identity' %}
   <!-- <p class="lead">Modeling Interaction, cogNition, and Decision-making by Artificial Intelligence</p> -->
 
   <div class="home-layout">
     <main class="home-main">
       <div class="home-section">
         <p>
-          The <strong>M</strong>odeling <strong>I</strong>nteraction, cog<strong>N</strong>ition, and <strong>D</strong>ecision-making by <strong>A</strong>rtificial <strong>I</strong>ntelligence (<strong>MINDxAI</strong>) Lab is directed by <a href="/Team.html#yunmei-liu"><strong>Dr. Yunmei Liu</strong></a>, Assistant Professor in the <b>Department of Industrial and Systems Engineering</b> at the <b>University of Louisville</b>. The lab develops human-centered AI and adaptive systems that improve how people interact with complex human-in-the-loop systems.
+          The <strong>M</strong>odeling <strong>I</strong>nteraction, cog<strong>N</strong>ition, and <strong>D</strong>ecision-making by <strong>A</strong>rtificial <strong>I</strong>ntelligence (<strong>MINDxAI</strong>) Lab is directed by <a href="/Team.html#yunmei-liu"><strong>Dr. Yunmei Liu</strong></a>, Assistant Professor in the <b>Department of Industrial and Systems Engineering</b> at the <b>University of Louisville</b>. Our central research focus is <strong>Adaptive Human–AI Systems</strong>: understanding and supporting the ways people and AI adapt to one another during interaction.
         </p>
         <p>
-          We model human cognitive, emotional, physiological, and behavioral states through experiments, wearable sensing, simulation, machine learning, and multimodal data analysis. Our research spans transportation and automated driving, smart manufacturing and workforce development, rehabilitation robotics and assistive technologies, and healthcare and biomedical AI.
+          We combine human-subject experiments, wearable sensing, simulation, machine learning, and multimodal data analysis to model evolving cognitive, emotional, physiological, and behavioral states and inform adaptive AI support. We develop and evaluate these approaches across application areas including transportation, manufacturing, education, rehabilitation, and healthcare.
         </p>
       </div>
       <div class="home-opening" aria-labelledby="home-opening-heading">
@@ -388,7 +391,8 @@ nav_title: Home
       </div>
 
       <section class="home-section" id="home-research" aria-labelledby="home-research-heading">
-        <h2 id="home-research-heading">Research Areas</h2>
+        <h2 id="home-research-heading">Application Areas</h2>
+        <p>Our research on <strong>Adaptive Human–AI Systems</strong> connects the application areas below. These are the domains and interaction settings in which we develop and evaluate our methods. Select an application area to explore related projects.</p>
         <div class="research-area-grid">
           {% for topic in site.data.research_topics %}
           <a class="research-area-item" href="{{ '/Research.html' | relative_url }}#{{ topic[0] }}" aria-labelledby="home-area-{{ topic[0] }}">

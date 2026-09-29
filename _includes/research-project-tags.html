@@ -1,7 +1,7 @@
 {%- assign project = site.data.research_projects[include.project] -%}
-<div class="research-project-tags" aria-label="Project topics">
+<div class="research-project-tags" aria-label="Project application areas">
   {%- for topic_key in project.topics -%}
     {%- assign topic = site.data.research_topics[topic_key] -%}
-  <a class="research-project-tag" href="#{{ topic_key }}" data-research-topic-link="{{ topic_key }}" aria-label="View projects in {{ topic.label | escape }}">{{ topic.label | escape }}</a>
+  <a class="research-project-tag" href="#{{ topic_key }}" data-research-topic-link="{{ topic_key }}" aria-label="View projects in application area: {{ topic.label | escape }}">{{ topic.label | escape }}</a>
   {%- endfor -%}
 </div>

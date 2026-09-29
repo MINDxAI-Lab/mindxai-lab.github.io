@@ -50,6 +50,7 @@ title: More About the PI
     <ul>
       <li><strong>Associate Editor</strong>, IEEE Transactions on Human-Machine Systems, 2024-present.</li>
       <li><strong>Program Vice Chair</strong>, HFES Surface Transportation Technical Group, 2026-present.</li>
+      <li><strong>Co-Chair</strong>, Human Factors &amp; Ergonomics Track, 2027 IISE Annual Conference.</li>
       <li><strong>NSF Review Panelist</strong>, evaluating proposals in human-centered AI and intelligent systems.</li>
       <li><strong>Associate Chair</strong>, International Conference on Automotive User Interfaces and Interactive Vehicular Applications (AutoUI), 2024.</li>
       <li><strong>Section/Track Chair</strong>, IEEE ICHMS 2022 and HFES ASPIRE 2025.</li>

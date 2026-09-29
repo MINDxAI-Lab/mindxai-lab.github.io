@@ -1,9 +1,11 @@
 ---
 layout: home
 title: Research
+description: "Adaptive Human–AI Systems research by Dr. Yunmei Liu and the MINDxAI Lab: how people and AI adjust to each other over time, with projects organized by application area."
 ---
 
 <link rel="stylesheet" href="{{ '/assets/css/news-timeline.css' | relative_url }}?v={{ site.time | date: '%s' }}">
+<link rel="stylesheet" href="{{ '/assets/css/research-identity.css' | relative_url }}?v={{ site.time | date: '%s' }}">
 
 <style>
   .research-page h1,
@@ -18,12 +20,7 @@ title: Research
 
   .research-overview {
     max-width: none;
-    margin: 18px 0 34px;
-    padding: 18px 22px;
-    border: 1px solid #dce7e7;
-    border-left: 4px solid #389092;
-    border-radius: 8px;
-    background: #f7fbfb;
+    margin: 0 0 34px;
   }
 
   .research-subtitle {
@@ -406,8 +403,7 @@ title: Research
 
   @media (max-width: 760px) {
     .research-overview {
-      margin: 16px 0 30px;
-      padding: 16px;
+      margin: 0 0 30px;
     }
 
     .research-subtitle {
@@ -443,15 +439,16 @@ title: Research
 </style>
 
 <div class="research-page">
-  <h1>Ongoing Research Projects</h1>
-
+  {% include research-identity.html id='research-identity' primary=true %}
 
   <div class="research-overview" aria-label="Research overview">
-    <p class="research-subtitle">Our research advances <strong>human-centered AI and adaptive systems</strong> that coordinate with people as their states, goals, and capabilities evolve.</p>
+    <p class="research-subtitle">We investigate how people's cognitive, emotional, and behavioral states evolve during interaction with AI, and how AI can adapt its behavior and support in response. Our methods combine human-subject experiments, wearable sensing, simulation, machine learning, and multimodal data analysis to understand and support this mutual adaptation.</p>
   </div>
 
-  <p class="research-filter-help" id="research-filter-help" hidden><strong>Filter by topic</strong> Click a topic to explore, or choose All to see every project.</p>
-  <div class="research-filters" role="group" aria-label="Filter research projects by topic" aria-describedby="research-filter-help" hidden>
+  <h2>Ongoing Research Projects</h2>
+  <p>Our projects advance <strong>Adaptive Human–AI Systems</strong> across the following <strong>application areas</strong>. These areas organize the domains and interaction settings in which we develop and evaluate our methods.</p>
+  <p class="research-filter-help" id="research-filter-help" hidden><strong>Filter by application area</strong> Choose an application area to explore related projects, or All to see projects across every area.</p>
+  <div class="research-filters" role="group" aria-label="Filter research projects by application area" aria-describedby="research-filter-help" hidden>
     <button type="button" data-research-filter="all" data-research-label="All projects" aria-label="All projects: {{ site.data.research_projects.size }} projects" aria-pressed="true" aria-controls="research-project-list"><span>All</span><span class="research-filter-count" aria-hidden="true">{{ site.data.research_projects.size }}</span></button>
     {%- for topic in site.data.research_topics -%}
       {%- assign topic_key = topic[0] -%}
@@ -468,7 +465,7 @@ title: Research
 
   {%- for topic in site.data.research_topics -%}
   <section class="research-topic-description" data-research-description="{{ topic[0] }}" aria-labelledby="topic-heading-{{ topic[0] }}" hidden>
-    <h2 id="topic-heading-{{ topic[0] }}">{{ topic[1].label | escape }}</h2>
+    <h2 id="topic-heading-{{ topic[0] }}">Application Area: {{ topic[1].label | escape }}</h2>
     <p>{{ topic[1].description | escape }}</p>
   </section>
   {%- endfor -%}
@@ -625,6 +622,7 @@ title: Research
         <img src="/assets/images/banners/High%20school.png" alt="Teen Driver Safety Education project graphic">
         <figcaption>
           <a href="/news/kytc-teen-driver-safety-contract.html" target="_blank" rel="noopener">Sponsor: NHTSA with KYTC</a>
+          <span>Project No.: M3DA-2027-14</span>
           <span>PI: Yunmei Liu</span>
         </figcaption>
       </figure>
