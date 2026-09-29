@@ -116,7 +116,7 @@ title: Opportunities
       </p>
       <div class="email-format">
         <p><strong>How to apply</strong></p>
-        <p>Send your email to <a href="mailto:yunmei.liu@louisville.edu">yunmei.liu@louisville.edu</a>.</p>
+        <p>Send your email to {{ site.email_display }}.</p>
         <p><strong>Subject:</strong> <code>2027 PhD position: [Your Name]</code></p>
         <p>Attach your CV and transcripts, and briefly describe your research interests, previous research experience, and technical background. Emails that do not follow this format may be treated as AI-generated and will not be reviewed.</p>
       </div>
@@ -145,7 +145,7 @@ title: Opportunities
       </ul>
       <div class="email-format">
         <p><strong>How to apply</strong></p>
-        <p>Send your email to <a href="mailto:yunmei.liu@louisville.edu">yunmei.liu@louisville.edu</a>.</p>
+        <p>Send your email to {{ site.email_display }}.</p>
         <p><strong>Subject:</strong> <code>Undergraduate Research Assistant Application: [Your Major; Freshman/Sophomore/Junior/Senior]</code></p>
         <p>Attach a resume or CV and an unofficial transcript.</p>
       </div>

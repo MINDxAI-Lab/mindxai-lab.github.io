@@ -354,7 +354,7 @@ title: Team
           <a class="profile-link" href="https://www.linkedin.com/in/yunmei-liu-16a14023a/" target="_blank" rel="noopener" aria-label="LinkedIn">
             <img src="/assets/images/banners/Updated%20Images/IN.png" alt="LinkedIn">
           </a>
-          <a class="profile-link" href="mailto:yunmei.liu@louisville.edu" aria-label="Email">
+          <a class="profile-link" href="#pi-email" aria-label="View email address">
             <img src="/assets/images/banners/Updated%20Images/E.png" alt="Email">
           </a>
         </div>
@@ -530,7 +530,7 @@ title: Team
       Department of Industrial and Systems Engineering<br>
       132 Eastern Pkwy, JS 309<br>
       Louisville, KY 40292<br>
-      Email: <a href="mailto:yunmei.liu@louisville.edu">yunmei.liu@louisville.edu</a><br>
+      Email: {{ site.email_display }}<br>
       Phone: 502-852-8858
     </div>
   </section> -->

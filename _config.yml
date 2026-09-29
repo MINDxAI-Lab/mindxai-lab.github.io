@@ -25,7 +25,7 @@
 # in the templates via {{ site.myvariable }}.
 
 title: MINDxAI Lab @ UofL
-email: yunmei.liu@louisville.edu
+email_display: yunmei.liu [at] louisville.edu
 author: Dr. Yunmei Liu
 copyright: Copyright ©
 description: >- # this means to ignore newlines until "baseurl:"
