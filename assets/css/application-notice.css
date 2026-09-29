@@ -1,0 +1,13 @@
+.page-content .application-subject-notice {
+  margin: 32px 0 0;
+  color: #fff;
+  font-size: 0.9rem;
+  line-height: 1.65;
+  text-align: left;
+  overflow-wrap: anywhere;
+}
+
+.application-subject-notice strong {
+  color: #fff;
+  font-weight: 600;
+}

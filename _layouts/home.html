@@ -4,6 +4,10 @@ layout: default
 
 {{ content }}
 
+{% if site.header_pages contains page.path %}
+  {% include application-subject-notice.html %}
+{% endif %}
+
 <!-- {%- for post in site.posts -%}
   {% if post.hide == null or post.hide == false %}
     <li>
@@ -18,4 +22,3 @@ layout: default
   
   {% endif %}
 {%- endfor -%} -->
-
