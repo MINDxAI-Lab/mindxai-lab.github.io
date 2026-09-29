@@ -362,12 +362,15 @@ title: Team
       <div>
 
 <p>
-  <a href="https://profiles.louisville.edu/yunmei.liu/about" target="_blank" rel="noopener"><b>Dr. Liu</b></a> is an <b>Assistant Professor</b> in the Department of Industrial and Systems Engineering at the University of Louisville and Director of the <strong>MINDxAI Lab</strong>. She also directs the <i>Human-Centric AI Theme</i> at the <a href="https://engineering.louisville.edu/chse/human-systems-engineering/people/" target="_blank" rel="noopener">Center for Human Systems Engineering (CHSE)</a> and is an affiliated faculty member of the <a href="https://engineering.louisville.edu/research/centersinstitutes/larri/larri-personnel/" target="_blank" rel="noopener">Louisville Automation & Robotics Research Institute (LARRI) </a> . Her research uses experimental and data-driven approaches to understand human limitations and inform the design of safer and more effective human-centered AI and human-in-the-loop systems.
+  <a href="https://profiles.louisville.edu/yunmei.liu/about" target="_blank" rel="noopener"><b>Dr. Liu</b></a> is an <b>Assistant Professor</b> in the Department of Industrial and Systems Engineering at the University of Louisville and Director of the <strong>MINDxAI Lab</strong>. She also directs the <i>Human-Centric AI Theme</i> at the <a href="https://engineering.louisville.edu/chse/human-systems-engineering/people/" target="_blank" rel="noopener">Center for Human Systems Engineering (CHSE)</a> and is an affiliated faculty member of the <a href="https://engineering.louisville.edu/research/centersinstitutes/larri/larri-personnel/" target="_blank" rel="noopener">Louisville Automation &amp; Robotics Research Institute (LARRI)</a>.
 </p>
 
 <p>
-  Dr. Liu’s research focuses on intelligent human-automation interaction, cognitive workload modeling, physiological computing, and human-centric AI. Across domains such as transportation, automation, rehabilitation, and interactive AI systems, her work aims to design intelligent technologies that better understand people, adapt to human needs, and support safer decision-making in complex real-world environments.
+  Dr. Liu studies <strong>adaptive human–AI systems</strong>, focusing on mutual adaptation between people and AI over time. Her work examines human interactions with AI, autonomous systems, and robots, with particular attention to the relationships among cognitive and emotional states, task demands, and performance. She combines behavioral experiments, physiological sensing, simulation, machine learning, and statistical modeling to develop human-state assessment methods and guide AI assistant design and adaptive automation.
+</p>
 
+<p>
+  Her application domains include transportation and automated driving, smart manufacturing, education and workforce development, rehabilitation and assistive technologies, and healthcare and biomedical AI. Across these domains, her research connects empirical evidence about human cognition and behavior with the design of human-in-the-loop systems that support safety, learning, and effective collaboration.
 </p>
 
 <p>
@@ -375,12 +378,7 @@ title: Team
 </p>
 
 <p>
-  She serves as an <b>Associate Editor</b> for <i>IEEE Transactions on Human-Machine Systems</i> and as <b>Vice Program Chair</b> of the Surface Transportation Technical Group of the Human Factors and Ergonomics Society. She also regularly reviews for leading journals and conferences in human factors and human-computer interaction.
-</p>
-
-<p>
-  Before joining the University of Louisville, Dr. Liu received her Ph.D. in Industrial and Systems Engineering from the <b>University of Florida</b>, with a minor in Statistics. She also holds an M.S. in Management Science and Engineering from <b>Nanjing University </b>and a B.S. in Industrial Engineering from <b>Shandong University</b>.
-
+  For education, teaching, service, and honors, see <a href="{{ '/MoreAboutPI.html' | relative_url }}">More About the PI</a>.
 </p>
       </div>
     </div>
@@ -394,7 +392,7 @@ title: Team
         <h3>Yan Chen, Ph.D. Student</h3>
         <p class="student-enrollment"><strong>Ph.D. Student Since:</strong> August 2024–Present</p>
 <p>
-  Yan Chen holds a <b>B.S. </b>in Control Science and Engineering from Shandong University. <br>His research interests include human-centered driving systems, human adaptation in mixed traffic, aggressive driving behavior, and AI for healthcare. His current work develops vision-language model approaches for EEG analysis and examines how autonomous vehicle aggressiveness affects human driver behavior, safety, and traffic efficiency in mixed-traffic environments.
+  Yan Chen holds a <b>B.S. </b>in Control Science and Engineering from Shandong University. <br>His research interests include human-centered driving systems, human adaptation in mixed traffic, aggressive driving behavior, and AI for healthcare. His current work develops vision-language model approaches for EEG analysis and examines the effects of autonomous vehicle aggressiveness on human driver behavior, safety, and traffic efficiency in mixed-traffic environments.
 </p>
 
 <p>
@@ -440,7 +438,7 @@ title: Team
       <div>
         <h3>Udit Kumar Das, Ph.D. Student</h3>
         <p class="student-enrollment"><strong>Ph.D. Student Since:</strong> August 2026–Present</p>
-        <p>Udit Kumar has an <b>M.S.</b> Industrial and Systems Engineering from University of Louisville and an in Applied Statistics and Data Science from Jahangirnagar University and a <b>B.S.</b> in Petroleum and Mining Engineering from Military Institute of Science and Technology, Bangladesh. <br>His research focuses on human factors, driver behavior, cognitive workload, and human–AI interaction in transportation. His current research investigates how aggressive driving behaviors affect novice drivers’ visual attention, workload, and driving behavior in simulated driving environments.</p>
+        <p>Udit Kumar has an <b>M.S.</b> Industrial and Systems Engineering from University of Louisville and an in Applied Statistics and Data Science from Jahangirnagar University and a <b>B.S.</b> in Petroleum and Mining Engineering from Military Institute of Science and Technology, Bangladesh. <br>His research focuses on human factors, driver behavior, cognitive workload, and human–AI interaction in transportation. His current research investigates the effects of aggressive driving behaviors on novice drivers’ visual attention, workload, and driving behavior in simulated driving environments.</p>
 <p>
   <strong>Role in Lab Projects:</strong> Student lead for the lab’s project on Human-Autonomy/AI Teaming; Supports the lab’s project on <a href="/Research.html#project-aggressive-driving-mixed-traffic">Aggressive Driving in Mixed Traffic</a>.
 </p>
@@ -465,7 +463,7 @@ title: Team
       <p class="student-enrollment"><strong>Ph.D. Student Since:</strong> August 2026–Present</p>
       <p>
       Qunli Liu holds a <b>M.S.</b> in Data Science from the University of California, Irvine and <b>B.A.</b> in Data Science from the University of California, Berkeley.
-      <br>His research interests include physiological signal analysis, behavior data analysis and statistical modeling. His current work examines human operator performance in surveillance tasks and how environmental factors shape human activity and mobility behavior in urban environments.
+      <br>His research interests include physiological signal analysis, behavior data analysis and statistical modeling. His current work examines human operator performance in surveillance tasks and the relationships between environmental factors, human activity, and mobility behavior in urban environments.
     </p>
     <p>
       <strong>Role in Lab Projects:</strong> Supports the lab’s smart manufacturing and rehabilitation robotics projects.

@@ -6,6 +6,7 @@ title: Publications
 
 <div class="publications-page">
   <h1>Publications</h1>
+  <p class="publication-scholar-note">A complete list of Dr. Yunmei Liu’s publications is available on <a href="https://scholar.google.com/citations?user=FeLtzgcAAAAJ&amp;hl=en&amp;sortby=pubdate" target="_blank" rel="noopener">Google Scholar</a>.</p>
   {% include publication-filters.html %}
   <div id="publication-list">
     <section class="publication-group" aria-labelledby="peer-reviewed-journal-articles">

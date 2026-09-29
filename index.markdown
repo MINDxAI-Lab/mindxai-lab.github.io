@@ -2,7 +2,7 @@
 layout: home
 title: Dr. Yunmei Liu
 nav_title: Home
-description: "Dr. Yunmei Liu studies Adaptive Human–AI Systems: how people and AI adjust to each other over time, across multiple application areas."
+description: "Dr. Yunmei Liu studies Adaptive Human–AI Systems, focusing on mutual adaptation between people and AI over time across application domains."
 ---
 
 <link rel="stylesheet" href="{{ '/assets/css/news-timeline.css' | relative_url }}?v={{ site.time | date: '%s' }}">
@@ -329,17 +329,19 @@ description: "Dr. Yunmei Liu studies Adaptive Human–AI Systems: how people and
 
 <div class="mindxai-home">
   <h1><strong>Welcome to the MINDxAI Lab!</strong></h1>
-  {% include research-identity.html id='home-research-identity' %}
+  <div class="research-glance" aria-label="Research at a glance">
+    {% include research-identity.html id='home-research-identity' label='Research at a Glance:' %}
+  </div>
   <!-- <p class="lead">Modeling Interaction, cogNition, and Decision-making by Artificial Intelligence</p> -->
 
   <div class="home-layout">
     <main class="home-main">
       <div class="home-section">
         <p>
-          The <strong>M</strong>odeling <strong>I</strong>nteraction, cog<strong>N</strong>ition, and <strong>D</strong>ecision-making by <strong>A</strong>rtificial <strong>I</strong>ntelligence (<strong>MINDxAI</strong>) Lab is directed by <a href="/Team.html#yunmei-liu"><strong>Dr. Yunmei Liu</strong></a>, Assistant Professor in the <b>Department of Industrial and Systems Engineering</b> at the <b>University of Louisville</b>. Our central research focus is <strong>Adaptive Human–AI Systems</strong>: understanding and supporting the ways people and AI adapt to one another during interaction.
+          The <strong>M</strong>odeling <strong>I</strong>nteraction, cog<strong>N</strong>ition, and <strong>D</strong>ecision-making by <strong>A</strong>rtificial <strong>I</strong>ntelligence (<strong>MINDxAI</strong>) Lab is directed by <a href="/Team.html#yunmei-liu"><strong>Dr. Yunmei Liu</strong></a>, Assistant Professor in the <b>Department of Industrial and Systems Engineering</b> at the <b>University of Louisville</b>.
         </p>
         <p>
-          We combine human-subject experiments, wearable sensing, simulation, machine learning, and multimodal data analysis to model evolving cognitive, emotional, physiological, and behavioral states and inform adaptive AI support. We develop and evaluate these approaches across application areas including transportation, manufacturing, education, rehabilitation, and healthcare.
+          Our research examines human responses to intelligent systems, the design of adaptive support responsive to human states and needs, and the evolution of human–AI interaction over time. We combine behavioral experiments, physiological sensing, simulation, and computational modeling to connect evidence about cognition, emotion, and performance with system design.
         </p>
       </div>
       <div class="home-opening" aria-labelledby="home-opening-heading">
@@ -391,14 +393,16 @@ description: "Dr. Yunmei Liu studies Adaptive Human–AI Systems: how people and
       </div>
 
       <section class="home-section" id="home-research" aria-labelledby="home-research-heading">
-        <h2 id="home-research-heading">Application Areas</h2>
-        <p>Our research on <strong>Adaptive Human–AI Systems</strong> connects the application areas below. These are the domains and interaction settings in which we develop and evaluate our methods. Select an application area to explore related projects.</p>
+        <h2 id="home-research-heading">Application Domains</h2>
+        <p>Select a domain to explore related research projects.</p>
         <div class="research-area-grid">
           {% for topic in site.data.research_topics %}
+          {% if topic[1].kind == 'domain' %}
           <a class="research-area-item" href="{{ '/Research.html' | relative_url }}#{{ topic[0] }}" aria-labelledby="home-area-{{ topic[0] }}">
             <h3 id="home-area-{{ topic[0] }}"><span>{{ topic[1].label | escape | replace: '/', '/<wbr>' }}</span><svg class="research-area-arrow" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 10h12M11 5l5 5-5 5" /></svg></h3>
             <p>{{ topic[1].summary | escape }}</p>
           </a>
+          {% endif %}
           {% endfor %}
         </div>
       </section>

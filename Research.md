@@ -1,7 +1,7 @@
 ---
 layout: home
 title: Research
-description: "Adaptive Human–AI Systems research by Dr. Yunmei Liu and the MINDxAI Lab: how people and AI adjust to each other over time, with projects organized by application area."
+description: "Adaptive Human–AI Systems research by Dr. Yunmei Liu and the MINDxAI Lab, examining mutual adaptation between people and AI over time across application domains."
 ---
 
 <link rel="stylesheet" href="{{ '/assets/css/news-timeline.css' | relative_url }}?v={{ site.time | date: '%s' }}">
@@ -18,21 +18,6 @@ description: "Adaptive Human–AI Systems research by Dr. Yunmei Liu and the MIN
     text-align: center;
   }
 
-  .research-overview {
-    max-width: none;
-    margin: 0 0 34px;
-  }
-
-  .research-subtitle {
-    margin: 0;
-    color: #37494c;
-    font-size: 1.08rem;
-    line-height: 1.7;
-  }
-
-  .research-subtitle strong {
-    color: #165f66;
-  }
 
 
   .research-filters {
@@ -77,7 +62,7 @@ description: "Adaptive Human–AI Systems research by Dr. Yunmei Liu and the MIN
 
   .research-filter-help {
     margin: 0 0 12px;
-    color: #4d5b5d;
+    color: #344447;
     font-size: 0.9rem;
     line-height: 1.6;
   }
@@ -114,7 +99,7 @@ description: "Adaptive Human–AI Systems research by Dr. Yunmei Liu and the MIN
 
   .research-filter-status {
     margin: 14px 0 22px;
-    color: #637174;
+    color: #344447;
     font-size: 0.9rem;
   }
 
@@ -146,7 +131,7 @@ description: "Adaptive Human–AI Systems research by Dr. Yunmei Liu and the MIN
 
   .research-topic-description p {
     margin: 0;
-    color: #4d5b5d;
+    color: #344447;
     line-height: 1.65;
   }
 
@@ -234,7 +219,7 @@ description: "Adaptive Human–AI Systems research by Dr. Yunmei Liu and the MIN
     height: 240px;
     border: 1px dashed #b9d4d4;
     border-radius: 8px;
-    color: #637174;
+    color: #344447;
     background: #f7fbfb;
     text-align: center;
   }
@@ -276,7 +261,7 @@ description: "Adaptive Human–AI Systems research by Dr. Yunmei Liu and the MIN
     margin-top: 16px;
     border: 1px dashed #b9d4d4;
     border-radius: 6px;
-    color: #637174;
+    color: #344447;
     background: #f7fbfb;
     font-weight: 700;
   }
@@ -305,7 +290,7 @@ description: "Adaptive Human–AI Systems research by Dr. Yunmei Liu and the MIN
   .research-project figcaption span {
     display: block;
     margin-top: 4px;
-    color: #4d5b5d;
+    color: #344447;
     font-weight: 700;
   }
 
@@ -439,35 +424,22 @@ description: "Adaptive Human–AI Systems research by Dr. Yunmei Liu and the MIN
 </style>
 
 <div class="research-page">
-  {% include research-identity.html id='research-identity' primary=true %}
-
-  <div class="research-overview" aria-label="Research overview">
-    <p class="research-subtitle">We investigate how people's cognitive, emotional, and behavioral states evolve during interaction with AI, and how AI can adapt its behavior and support in response. Our methods combine human-subject experiments, wearable sensing, simulation, machine learning, and multimodal data analysis to understand and support this mutual adaptation.</p>
+  <h1>Ongoing Research Projects</h1>
+  <div class="research-glance" aria-label="Research at a glance">
+    {% include research-identity.html id='research-identity' label='Research at a Glance:' %}
   </div>
 
-  <h2>Ongoing Research Projects</h2>
-  <p>Our projects advance <strong>Adaptive Human–AI Systems</strong> across the following <strong>application areas</strong>. These areas organize the domains and interaction settings in which we develop and evaluate our methods.</p>
-  <p class="research-filter-help" id="research-filter-help" hidden><strong>Filter by application area</strong> Choose an application area to explore related projects, or All to see projects across every area.</p>
-  <div class="research-filters" role="group" aria-label="Filter research projects by application area" aria-describedby="research-filter-help" hidden>
-    <button type="button" data-research-filter="all" data-research-label="All projects" aria-label="All projects: {{ site.data.research_projects.size }} projects" aria-pressed="true" aria-controls="research-project-list"><span>All</span><span class="research-filter-count" aria-hidden="true">{{ site.data.research_projects.size }}</span></button>
-    {%- for topic in site.data.research_topics -%}
-      {%- assign topic_key = topic[0] -%}
-      {%- assign topic_count = 0 -%}
-      {%- for project in site.data.research_projects -%}
-        {%- if project[1].topics contains topic_key -%}
-          {%- assign topic_count = topic_count | plus: 1 -%}
-        {%- endif -%}
-      {%- endfor -%}
-    <button type="button" data-research-filter="{{ topic_key }}" data-research-label="{{ topic[1].label | escape }}" aria-label="{{ topic[1].label | escape }}: {{ topic_count }} {% if topic_count == 1 %}project{% else %}projects{% endif %}" aria-pressed="false" aria-controls="research-project-list"><span>{{ topic[1].label | escape }}</span><span class="research-filter-count" aria-hidden="true">{{ topic_count }}</span></button>
-    {%- endfor -%}
-  </div>
+  <p class="research-filter-help" id="research-filter-help" hidden><strong>Filter by application domain</strong> Select a domain to explore related projects, or All to view every project.</p>
+  {% include topic-filters.html kind='research' items=site.data.research_projects controls='research-project-list' all_label='All projects' noun='project' %}
   <p class="research-filter-status" role="status" aria-live="polite" hidden></p>
 
   {%- for topic in site.data.research_topics -%}
+  {%- if topic[1].kind == 'domain' -%}
   <section class="research-topic-description" data-research-description="{{ topic[0] }}" aria-labelledby="topic-heading-{{ topic[0] }}" hidden>
-    <h2 id="topic-heading-{{ topic[0] }}">Application Area: {{ topic[1].label | escape }}</h2>
+    <h2 id="topic-heading-{{ topic[0] }}">Application Domain: {{ topic[1].label | escape }}</h2>
     <p>{{ topic[1].description | escape }}</p>
   </section>
+  {%- endif -%}
   {%- endfor -%}
 
   <section class="research-project-list" id="research-project-list" aria-label="MINDxAI Lab research projects">
@@ -483,10 +455,10 @@ description: "Adaptive Human–AI Systems research by Dr. Yunmei Liu and the MIN
         {% include research-project-heading.html project="project-cognitive-emotional-driving-automation" title="Cognitive-Emotional State Assessment for Adaptive Automation Intervention" %}
         {% include research-project-tags.html project="project-cognitive-emotional-driving-automation" %}
 <p>
-  This project aims to develop an integrated cognitive-emotional state assessment system to support real-time automation intervention and adaptive system design. By combining physiological sensing, behavioral performance data, and machine learning, the project aims to detect changes in human cognitive workload, emotional state, and task engagement during human-automation interaction.
+  This project examines the interplay among cognitive workload, emotion, task demands, and human performance to inform adaptive automation intervention. The research develops cognitive-emotional state assessment methods that support automation responsive to changing task conditions and operator needs.
 </p>
 <p>
-  The resulting models will help identify when and how automation should intervene, adapt, or provide support in order to improve safety. This work contributes to the design of human-centered automation systems that respond not only to task conditions, but also to the evolving cognitive and emotional states of the human operator.
+  We integrate physiological sensing, behavioral performance data, and machine learning to assess workload, emotion, and task engagement. The resulting models are intended to guide the timing and form of automation support during safety-critical tasks.
 </p>
         <a class="project-button" href="https://mindxai-lab.github.io/nsf-edse-automation-intervention/" target="_blank" rel="noopener">Website</a>
         <div class="project-publications">
@@ -541,10 +513,10 @@ description: "Adaptive Human–AI Systems research by Dr. Yunmei Liu and the MIN
         {% include research-project-heading.html project="project-ai-vr-manufacturing-foundry" title="AI-Enabled Virtual Reality Manufacturing Foundry" %}
         {% include research-project-tags.html project="project-ai-vr-manufacturing-foundry" %}
         <p>
-          This NSF FINDERS FOUNDRY Planning project develops an AI-enabled virtual reality platform to help high school students explore modern manufacturing careers. The platform will provide safe, accessible, and authentic opportunities for students to learn manufacturing workflows, practice decision-making, and interact with a supportive AI mentor.
+          This NSF FINDERS FOUNDRY Planning project advances the design of an <strong>AI-enabled VR manufacturing assistant</strong> that combines intelligent assistance with immersive manufacturing simulation. A central technical focus is the AI assistant itself: its capabilities for supporting manufacturing exploration and decision-making through feedback, reflection, and safety guidance, and its integration into the interactive VR environment.
         </p>
         <p>
-          By making advanced manufacturing careers more visible and engaging, the project aims to strengthen students’ interest in manufacturing pathways and help them understand AI as a transparent learning support for feedback, reflection, and problem solving.
+          The planning phase will establish AI assistant requirements, VR scenarios, and human–AI interaction models, informed by student and educator needs. High school manufacturing education provides the application context for the integrated AI–VR system, supporting students’ understanding of manufacturing workflows and exploration of career pathways. These activities will establish a foundation for subsequent platform development.
         </p>
       </div>
     </article>
@@ -561,7 +533,10 @@ description: "Adaptive Human–AI Systems research by Dr. Yunmei Liu and the MIN
         {% include research-project-heading.html project="project-aggressive-driving-mixed-traffic" title="Aggressive Driving in Mixed Traffic" %}
         {% include research-project-tags.html project="project-aggressive-driving-mixed-traffic" %}
         <p>
-          This project studies how aggressive driving behaviors in mixed human-AV traffic propagate from individual driver state and local maneuvers to traffic-flow safety and efficiency. The work combines CARLA-SUMO human-in-the-loop experiments, empirical human driver modeling, SUMO/TraCI traffic-flow simulation, and human-aware adaptive AV control to understand how surrounding AV aggressiveness and human driver aggressiveness shape workload, trust, stress, speed choice, braking, lane changes, congestion, and surrogate safety outcomes.
+          This project examines human driver responses to automated-vehicle driving styles and their implications for human-aware AV control. The research connects driver workload, trust, stress, and behavior with safety and efficiency in mixed human–AV traffic.
+        </p>
+        <p>
+          We combine CARLA–SUMO human-in-the-loop experiments, empirical driver modeling, and SUMO/TraCI traffic-flow simulation to examine the effects of surrounding AV aggressiveness and human driver aggressiveness on speed choice, braking, lane changes, congestion, and surrogate safety outcomes. The work aims to inform adaptive AV policies that account for human responses.
         </p>
         <!-- <a class="project-button" href="https://mindxai-lab.github.io/nsf-edse-automation-intervention/" target="_blank" rel="noopener">Website</a> -->
         <a class="project-outline-button" href="https://hfesam2025.conference-program.com/presentation/?id=LECT696&sess=sess263" target="_blank" rel="noopener">Presentation 1: HFES 2025</a>
@@ -630,10 +605,10 @@ description: "Adaptive Human–AI Systems research by Dr. Yunmei Liu and the MIN
         {% include research-project-heading.html project="project-teen-driver-safety-education" title="Teen Driver Safety Education" %}
         {% include research-project-tags.html project="project-teen-driver-safety-education" %}
         <p>
-          This project develops a simulator-ready curriculum package to support teen driver safety education in Kentucky high schools. The work will align teacher lesson plans, student materials, classroom debriefs, and an interactive driving scenario with KYTC and KOHS safety messaging on distracted driving and aggressive driving.
+          This project translates human-centered transportation research into simulator-based education that supports teen drivers’ recognition of unsafe behavior and reflection on driving decisions. The curriculum addresses distracted and aggressive driving in Kentucky high schools, aligned with KYTC and KOHS safety messaging.
         </p>
         <p>
-          The project will integrate a classroom rotation model, driving-log feedback on behaviors such as speed choice, following distance, braking, and hazard response, and an optional wearable-sensor component that provides a student-friendly driver-state snapshot. A classroom pilot will assess the module's feasibility and learning value before the final toolkit is delivered for use by educators and transportation safety partners.
+          Teacher lesson plans, student materials, classroom rotations and debriefs, and an interactive driving scenario will integrate feedback on speed choice, following distance, braking, and hazard response. An optional wearable-sensor component will provide a student-friendly driver-state snapshot. A classroom pilot will assess feasibility and learning value before delivery of the educator toolkit.
         </p>
       </div>
     </article>
@@ -648,7 +623,11 @@ description: "Adaptive Human–AI Systems research by Dr. Yunmei Liu and the MIN
       <div>
         {% include research-project-heading.html project="project-prosthetic-control" title="Human-Centered Design for Natural Upper-Limb Prosthetic Control" %}
         {% include research-project-tags.html project="project-prosthetic-control" %}
-        <p>          This project focuses on advancing upper-limb prosthetic control from conventional control modes toward more natural and intuitive control. Our prior work compared alternative prosthetic control strategies, generated workload and usability evidence for early-stage design, and examined VR as a scalable platform for testing prosthetic manipulation tasks before full physical-device deployment. Together, these studies provide human-centered design guidance for selecting and refining prosthetic control interfaces that better align with users’ movement intentions, improve performance, reduce workload, and support rehabilitation training.
+        <p>
+          This project evaluates the effects of prosthetic control strategies on task performance, cognitive workload, and user experience. The research informs interfaces that better align with movement intentions and support natural, intuitive interaction with assistive devices.
+        </p>
+        <p>
+          Our prior work compared alternative control modes and evaluated VR as a platform for prosthetic manipulation tasks and early-stage design. These studies provide evidence for selecting and refining control interfaces and developing rehabilitation training.
         </p>
         <div class="project-publications">
           <h4>Prior Related Work: Upper-Limb Prosthetic Control</h4>
@@ -685,8 +664,10 @@ description: "Adaptive Human–AI Systems research by Dr. Yunmei Liu and the MIN
         {% include research-project-heading.html project="project-eeg-seizure-modeling" title="AI-Driven Scalp EEG Modeling for Seizure Detection and Signal Enhancement" %}
         {% include research-project-tags.html project="project-eeg-seizure-modeling" %}
         <p>
-          We develop AI methods that transform multichannel scalp EEG into spatial, visual, and geometry-aware representations for neurological condition detection. This work supports robust seizure detection, EEG spatial super-resolution, and reliable biomedical signal modeling for real-time and clinically meaningful assessment.
-
+          This project develops AI representations of multichannel scalp EEG for seizure detection and signal enhancement. It advances methods for interpreting complex physiological data, with applications in neurological assessment.
+        </p>
+        <p>
+          Spatial, visual, and geometry-aware representations support robust seizure detection, EEG spatial super-resolution, and biomedical signal modeling.
         </p>
         <!-- <a class="project-button" href="https://mindxai-lab.github.io/nsf-edse-automation-intervention/" target="_blank" rel="noopener">Website</a> -->
         <div class="project-publications">
@@ -723,7 +704,10 @@ description: "Adaptive Human–AI Systems research by Dr. Yunmei Liu and the MIN
         {% include research-project-heading.html project="project-communication-barriers-healthcare" title="Communication Barriers in Patient-Provider Interactions" %}
         {% include research-project-tags.html project="project-communication-barriers-healthcare" %}
         <p>
-          This project examines how communication barriers disrupt patient-provider communication and affect patient experience, clinical decision-making, health outcomes, and healthcare system efficiency. Building on a scoping review of patient-provider communication studies, the work maps how barriers intersect and identifies intervention opportunities including interpreter services, cultural and empathy training, plain-language and visual supports, AI-enabled translation and chatbot tools, clinical note-taking agents, and wearable or remote-monitoring technologies. The goal is to inform adaptive, patient-centered communication systems that combine AI support with real-time human-state and context awareness.
+          This project characterizes linguistic, cultural, psychological, and mental-model barriers in patient–provider communication and their relationships with healthcare experiences and outcomes. The research informs future adaptive assistance responsive to human needs and clinical context.
+        </p>
+        <p>
+          Building on a scoping review, we map overlapping barriers and identify opportunities for human and technological support, including interpreter services, cultural and empathy training, plain-language and visual aids, and AI-enabled tools. This evidence helps define the communication needs that future support systems must recognize and address.
         </p>
 
         <div class="project-publications">

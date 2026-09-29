@@ -3,6 +3,19 @@
   letter-spacing: 0;
 }
 
+.publication-scholar-note {
+  margin: 0;
+  color: #29383b;
+  line-height: 1.65;
+  text-align: left;
+}
+.publication-scholar-note a {
+  color: #185f63;
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
 .publication-browse { margin: 28px 0 24px; }
 .publication-filter-help {
   margin: 0 0 12px;

@@ -41,7 +41,7 @@
     empty.hidden = count !== 0;
     status.textContent = selectedTopic === 'all'
       ? 'Showing all ' + count + ' publications.'
-      : 'Application area: ' + selected.dataset.publicationLabel + ' — showing ' + count + ' publication' + (count === 1 ? '' : 's') + '.';
+      : 'Application domain: ' + selected.dataset.publicationLabel + ' — showing ' + count + ' publication' + (count === 1 ? '' : 's') + '.';
     return selected;
   }
 

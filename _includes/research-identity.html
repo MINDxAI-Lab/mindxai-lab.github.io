@@ -1,9 +1,1 @@
-<section class="research-identity" aria-labelledby="{{ include.id }}-heading">
-  <p class="research-identity-kicker">Research focus &middot; Dr. Yunmei Liu</p>
-  {% if include.primary %}
-  <h1 class="research-identity-title" id="{{ include.id }}-heading">Adaptive Human–AI Systems</h1>
-  {% else %}
-  <h2 class="research-identity-title" id="{{ include.id }}-heading">Adaptive Human–AI Systems</h2>
-  {% endif %}
-  <p class="research-identity-statement">I study adaptive human–AI systems, focusing on how people and AI adjust to each other over time.</p>
-</section>
+<p class="research-identity" id="{{ include.id }}">{% if include.label %}<strong class="research-identity-label">{{ include.label }}</strong> {% endif %}We study <strong>adaptive human–AI systems</strong>, focusing on mutual adaptation between people and AI over time. Our work examines human-in-the-loop interactions with AI, autonomous systems, and robots across application domains.</p>

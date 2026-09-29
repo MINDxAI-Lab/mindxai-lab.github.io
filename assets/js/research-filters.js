@@ -18,10 +18,11 @@
     'area-rehabilitation-robotics-assistive-technologies': 'rehabilitation-robotics-assistive-technologies',
     'area-healthcare-biomedical-ai': 'healthcare-biomedical-ai',
     'theme-adaptive-health-training-safety': 'transportation-automated-driving',
-    'theme-human-ai-automation': 'human-ai-autonomy-robot-teaming',
+    'theme-human-ai-automation': 'all',
     'theme-physiological-biomedical-modeling': 'healthcare-biomedical-ai',
-    'human-ai-teaming-learning': 'human-ai-autonomy-robot-teaming',
-    'human-ai-teaming': 'human-ai-autonomy-robot-teaming',
+    'human-ai-autonomy-robot-teaming': 'all',
+    'human-ai-teaming-learning': 'all',
+    'human-ai-teaming': 'all',
     'learning-education': 'education-workforce-development'
   };
 
@@ -50,8 +51,8 @@
       description.hidden = description.dataset.researchDescription !== activeTopic;
     });
     status.textContent = activeTopic === 'all'
-      ? 'Showing all ' + visibleCount + ' projects across application areas.'
-      : 'Application area: ' + selected.dataset.researchLabel + ' — showing ' + visibleCount + ' project' + (visibleCount === 1 ? '' : 's') + '.';
+      ? 'Showing all ' + visibleCount + ' projects across domains.'
+      : 'Application domain: ' + selected.dataset.researchLabel + ' — showing ' + visibleCount + ' project' + (visibleCount === 1 ? '' : 's') + '.';
   }
 
   function showHashTarget() {

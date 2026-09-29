@@ -1,40 +1,42 @@
+.research-glance {
+  width: 100%;
+  box-sizing: border-box;
+  margin: 8px 0 28px;
+  padding: 13px 22px 14px;
+  border: 1px solid #d9e5e6;
+  border-radius: 8px;
+  background: #fbfdfd;
+}
+
+.research-identity-label {
+  color: #244e51;
+  font-weight: 700;
+}
+
+.research-glance .research-identity {
+  margin: 0 auto;
+  max-width: none;
+  text-align: left;
+}
+
 .research-identity {
-  margin: 22px 0 26px;
-  padding: 24px 28px;
-  border-left: 4px solid #1f7a7f;
-  border-radius: 0 8px 8px 0;
-  background: #eef6f6;
-}
-
-.research-identity .research-identity-kicker {
-  margin: 0 0 8px;
-  color: #426265;
-  font-size: 0.76rem;
-  font-weight: 700;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-}
-
-.research-identity .research-identity-title {
-  margin: 0 0 10px;
-  color: #165f66;
-  font-size: clamp(1.65rem, 3vw, 2.2rem);
-  font-weight: 700;
-  line-height: 1.2;
-  text-align: left;
-}
-
-.research-identity .research-identity-statement {
-  max-width: 58rem;
-  margin: 0;
-  color: #283f43;
-  font-size: 1.1rem;
-  line-height: 1.65;
-  text-align: left;
+  max-width: 800px;
+  margin: 4px auto 24px;
+  padding: 0;
+  color: #29383b;
+  font-size: 0.96rem;
+  line-height: 1.6;
+  text-align: center;
 }
 
 @media (max-width: 760px) {
+  .research-glance {
+    margin: 6px 0 24px;
+    padding: 12px 16px 13px;
+  }
+
   .research-identity {
-    padding: 20px 18px;
+    margin: 0 auto 20px;
+    font-size: 0.91rem;
   }
 }

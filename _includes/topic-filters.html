@@ -1,0 +1,14 @@
+<div class="{{ include.kind }}-filters" role="group" aria-label="Filter {{ include.kind }} by application domain" aria-describedby="{{ include.kind }}-filter-help" hidden>
+  <button type="button" data-{{ include.kind }}-filter="all" data-{{ include.kind }}-label="{{ include.all_label }}" aria-label="{{ include.all_label }}: {{ include.items.size }} {{ include.noun }}s" aria-pressed="true" aria-controls="{{ include.controls }}"><span>All</span><span class="{{ include.kind }}-filter-count" aria-hidden="true">{{ include.items.size }}</span></button>
+  {%- for topic in site.data.research_topics -%}
+    {%- if topic[1].kind == 'domain' -%}
+      {%- assign topic_count = 0 -%}
+      {%- for item in include.items -%}
+        {%- if item[1].topics contains topic[0] -%}
+          {%- assign topic_count = topic_count | plus: 1 -%}
+        {%- endif -%}
+      {%- endfor -%}
+  <button type="button" data-{{ include.kind }}-filter="{{ topic[0] }}" data-{{ include.kind }}-label="{{ topic[1].label | escape }}" aria-label="{{ topic[1].label | escape }}: {{ topic_count }} {{ include.noun }}{% if topic_count != 1 %}s{% endif %}" aria-pressed="false" aria-controls="{{ include.controls }}"><span>{{ topic[1].label | escape }}</span><span class="{{ include.kind }}-filter-count" aria-hidden="true">{{ topic_count }}</span></button>
+    {%- endif -%}
+  {%- endfor -%}
+</div>
